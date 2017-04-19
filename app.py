@@ -64,5 +64,5 @@ def images():
 
 @app.route('/edit')
 def edit():
-	result = request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/api.php')
+	result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/api.php')
 	return Response(json.dumps(result), mimetype='application/json')
