@@ -30,10 +30,10 @@ __dir__ = os.path.dirname(__file__)
 app.config.update(
     yaml.safe_load(open(os.path.join(__dir__, 'config.yaml'))))
 
-key = app.config['COSTUMER_KEY']
-secret = app.config['COSTUMER_SECRET']
+key = app.config['CONSUMER_KEY']
+secret = app.config['CONSUMER_SECRET']
 
-mwoauth = MWOAuth(costumer_key=key, costumer_secret=secret)
+mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
 app.register_blueprint(mwoauth.bp)
 
 @app.route('/')
