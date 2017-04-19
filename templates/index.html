@@ -25,6 +25,10 @@
 			width: 1280px;
 			height: 720px;
 		}
+
+    .carousel-caption {
+      font-size: 45px;
+    }
   </style>
 </head>
 <body>
@@ -61,17 +65,14 @@
                <!--
                 zde bude for cyklus ktery z jsony vytahne url a jmeno obrazku
                -->
-					    <div class="item active">
-					      <img src="http://placehold.it/1280x720">
-					    </div>
-						  <div class="item">
-						    <img src="http://placehold.it/1280x720">
-							</div>
-					    <div class="item">
-					      <img src="http://placehold.it/1280x720">
-					    </div>
+               <div class="item active">
+ 					      <img src="http://placehold.it/1280x720">
+                 <div class="carousel-caption">
+                   test
+                 </div>
+ 					     </div>
 
-						<div>
+ 						<div class="listovani">
 						<!-- Controls -->
 						 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-left"></span>
@@ -93,12 +94,21 @@
 			</div>
 
 			<div class="col">
-				<button class="btn btn-primary">Submit</button>
+				<button class="btn btn-primary submit" >Submit</button>
 			</div>
 	</div>
 
-
 <script>
+  addItemToCarousel = function(url) {
+    $( "<div class=\"item\"><img src=\"" + url + "\"></div>" ).insertAfter( ".item" );
+  };
+  $( document ).ready(function() {
+    console.log("start");
+    addItemToCarousel("http://placehold.it/1280x720");
+    $( ".submit" ).click(function() {
+      console.log("click");
+    });
+  });
 </script>
 </body>
 </html>
