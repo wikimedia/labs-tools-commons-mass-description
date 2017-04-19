@@ -31,9 +31,23 @@
 
   <!-- navbar -->
   <nav class="navbar navbar-inverse bg-faded" style="background-color:#337ab7;border-color: 2e6da4">
-      <a class="navbar-brand" href="#" style="color: #fff">
-        ImageDescriptionEditor
-      </a>
+    <div class="container-fluid">
+      <div class="row" style="padding-left: 15px">
+        <div class="col">
+          <a class="navbar-brand" href="#" style="color: #fff">
+            ImageDescriptionEditor
+          </a>
+        </div>
+        <div class="col" style="float: right">
+          {% if username %}
+            <a class="navbar-brand" href="#" style="color: #fff">{{ username }}</a>
+            <a class="navbar-brand" href="{{ url_for('logout') }}" style="color: #fff">logout</a>
+          {% else %}
+            <a class="navbar-brand" href="{{ url_for('login') }}" style="color: #fff">login</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
   </nav>
 
 	<div class="container">
