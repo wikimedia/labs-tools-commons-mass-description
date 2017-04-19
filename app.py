@@ -64,5 +64,8 @@ def images():
 
 @app.route('/edit')
 def edit():
-	result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/api.php')
-	return Response(json.dumps(result), mimetype='application/json')
+	username = mwoauth.get_current_user(True)
+	data = mwoauth.request({'action': "query", "list": "usercontribs",
+				'ucuser': str(username), 'ucprop': "timestamp",
+				'format': "json"}, url='https://commons.wikimedia.org/w/api.php')
+	return data
