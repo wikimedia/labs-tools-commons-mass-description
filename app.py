@@ -65,13 +65,12 @@ def images():
 @app.route('/edit')
 def edit():
 	username = mwoauth.get_current_user(cached=False)
-	result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/')
-	return result
-	#response = mwoauth.request({'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, url='https://commons.wikimedia.org/w/api.php')
-	#return response
-	#token = response['query']['tokens']['csrftoken']
-	#data = mwoauth.request({'action': 'edit', 'summary': 'Test', 'pageid': 57297576, 'token': token, 'text': 'aaa'}, url='https://commons.wikimedia.org/w/api.php')
-	#return data
+	#result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/')
+	#data = mwoauth.request({'action': "query", "list": "usercontribs",
+	#'ucuser': str(username), 'ucprop': "timestamp",
+	#'format': "json"})
+	data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
+	return data
 
 if __name__ == "__main__":
 	app.run(debug=True, threaded=True)
