@@ -106,7 +106,7 @@
   getItems = function() {
     $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
       //for (var i = 0; i < json.length; i++) {
-        console.log(json[i]['url'], json[i]['title']);
+        //console.log(json[i]['url'], json[i]['title']);
         addItemToCarousel(json[0]['url'], json[0]['title']);
         addItemToCarousel(json[1]['url'], json[1]['title']);
         addItemToCarousel(json[2]['url'], json[2]['title']);
@@ -116,7 +116,8 @@
     });
   };
   addItemToCarousel = function(url, caption) {
-    $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption\">" + caption + "</div></div>" ).insertAfter( ".item" );
+    $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption\">" + caption + "</div></div>" ).insertBefore( ".listovani" );
+    return true;
   };
 
   $( document ).ready(function() {
