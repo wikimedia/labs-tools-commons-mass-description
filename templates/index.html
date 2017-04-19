@@ -28,7 +28,6 @@
   </style>
 </head>
 <body>
-
   <!-- navbar -->
   <nav class="navbar navbar-inverse bg-faded" style="background-color:#337ab7;border-color: 2e6da4">
     <div class="container-fluid">
@@ -38,6 +37,7 @@
             ImageDescriptionEditor
           </a>
         </div>
+
         <div class="col" style="float: right">
           {% if username %}
             <a class="navbar-brand" href="#" style="color: #fff">{{ username }}</a>
@@ -58,6 +58,9 @@
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
 					  <!-- Wrapper for slides -->
 						 <div class="carousel-inner">
+               <!--
+                zde bude for cyklus ktery z jsony vytahne url a jmeno obrazku
+               -->
 					    <div class="item active">
 					      <img src="http://placehold.it/1280x720">
 					    </div>
