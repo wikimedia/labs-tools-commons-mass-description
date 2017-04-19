@@ -65,15 +65,12 @@
                <!--
                 zde bude for cyklus ktery z jsony vytahne url a jmeno obrazku
                -->
-
-
                <div class="item active">
  					      <img src="http://placehold.it/1280x720">
                  <div class="carousel-caption">
                    test
                  </div>
  					     </div>
-
 
  						<div class="listovani">
 						<!-- Controls -->
@@ -105,14 +102,10 @@
 
   getItems = function() {
     $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
-      //for (var i = 0; i < json.length; i++) {
+      for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
-        addItemToCarousel(json[0]['url'], json[0]['title']);
-        addItemToCarousel(json[1]['url'], json[1]['title']);
-        addItemToCarousel(json[2]['url'], json[2]['title']);
-        addItemToCarousel(json[3]['url'], json[3]['title']);
-        addItemToCarousel(json[4]['url'], json[4]['title']);
-      //}
+        addItemToCarousel(json[i]['url'], json[i]['title']);
+      }
     });
   };
   addItemToCarousel = function(url, caption) {
