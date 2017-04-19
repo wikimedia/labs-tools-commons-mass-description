@@ -37,20 +37,9 @@ app.config.update(
 
 @app.route('/')
 def index():
-	username = flask.session.get('username', None)
-	urlImages = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
-	r = requests.get(urlImages)
-	dataOrig = json.loads(r.text)
-	data = dataOrig['query']['categorymembers']
-	images = []
-	for image in data:
-		urlToAsk = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
-		response = requests.get(urlToAsk)
-		imageDataOrig = json.loads(response.text)
-		imageData = imageDataOrig['query']['pages']
-		url = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
-		images.append(url)
-	return flask.render_template('index.html', username=username, images=images)
+    username = flask.session.get('username', None)
+    return flask.render_template(
+        'index.html', username=username)
 
 
 @app.route('/login')
