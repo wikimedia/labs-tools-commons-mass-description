@@ -21,6 +21,9 @@ import flask
 import mwoauth
 import os
 import yaml
+import simplejson as json
+import requests
+from urllib.parse import quote
 
 
 app = flask.Flask(__name__)
@@ -95,3 +98,23 @@ def logout():
     """Log the user out by clearing their session."""
     flask.session.clear()
     return flask.redirect(flask.url_for('index'))
+
+@app.route('/images')
+def images():
+	urlImages = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
+	r = requests.get(urlImages)
+	dataOrig = json.loads(r.text)
+	data = dataOrig['query']['categorymembers']
+
+	res = []
+	for image in data:
+		imageRes = {}
+		imageRes['title'] = image['title'].replace('File:', '')
+		urlToAsk = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
+		response = requests.get(urlToAsk)
+		imageDataOrig = json.loads(response.text)
+		imageData = imageDataOrig['query']['pages']
+		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
+		res.append(imageRes)
+
+	return json.dumps(res)
