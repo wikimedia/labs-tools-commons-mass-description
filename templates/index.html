@@ -106,7 +106,8 @@
   getItems = function() {
     $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
       for (var i = 0; i < json.length; i++) {
-        json[i]["url", 'title'];
+        console.log(json[i]['url'], json[i]['title']);
+        addItemToCarousel(json[i]['url'], json[i]['title']);
       }
     });
   };
@@ -116,7 +117,6 @@
   $( document ).ready(function() {
     console.log("start");
     getItems();
-    addItemToCarousel("http://placehold.it/1280x720", "testovaciObrazek");
     $( ".submit" ).click(function() {
       console.log("click");
     });
