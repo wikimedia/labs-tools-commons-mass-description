@@ -24,7 +24,7 @@ import yaml
 import simplejson as json
 import requests
 from urllib.parse import quote
-
+from flask import Response
 
 app = flask.Flask(__name__)
 
@@ -116,5 +116,4 @@ def images():
 		imageData = imageDataOrig['query']['pages']
 		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
 		res.append(imageRes)
-
-	return json.dumps(res)
+	return Response(json.dumps(res), mimetype='application/json')
