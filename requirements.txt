@@ -4,3 +4,4 @@ mwoauth
 requests
 simplejson
 flask-mwoauth
+site
