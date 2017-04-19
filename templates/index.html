@@ -65,12 +65,15 @@
                <!--
                 zde bude for cyklus ktery z jsony vytahne url a jmeno obrazku
                -->
+
+
                <div class="item active">
  					      <img src="http://placehold.it/1280x720">
                  <div class="carousel-caption">
                    test
                  </div>
  					     </div>
+
 
  						<div class="listovani">
 						<!-- Controls -->
@@ -99,12 +102,13 @@
 	</div>
 
 <script>
-  addItemToCarousel = function(url) {
-    $( "<div class=\"item\"><img src=\"" + url + "\"></div>" ).insertAfter( ".item" );
+
+  addItemToCarousel = function(url, caption) {
+    $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption\">" + caption + "</div></div>" ).insertAfter( ".item" );
   };
   $( document ).ready(function() {
     console.log("start");
-    addItemToCarousel("http://placehold.it/1280x720");
+    addItemToCarousel("http://placehold.it/1280x720", "testovaciObrazek");
     $( ".submit" ).click(function() {
       console.log("click");
     });
