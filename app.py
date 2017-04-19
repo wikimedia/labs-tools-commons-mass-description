@@ -61,3 +61,8 @@ def images():
 		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
 		res.append(imageRes)
 	return Response(json.dumps(res), mimetype='application/json')
+
+@app.route('/edit')
+def edit():
+	result = request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/api.php')
+	return Response(json.dumps(result), mimetype='application/json')
