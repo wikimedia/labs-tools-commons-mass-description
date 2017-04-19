@@ -103,11 +103,17 @@
 
 <script>
 
+  getItems = function() {
+    $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
+      console.log(json);
+    });
+  };
   addItemToCarousel = function(url, caption) {
     $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption\">" + caption + "</div></div>" ).insertAfter( ".item" );
   };
   $( document ).ready(function() {
     console.log("start");
+    getItems();
     addItemToCarousel("http://placehold.it/1280x720", "testovaciObrazek");
     $( ".submit" ).click(function() {
       console.log("click");
