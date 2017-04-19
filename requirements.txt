@@ -3,3 +3,4 @@ pyyaml
 mwoauth
 requests
 simplejson
+flask-mwoauth
