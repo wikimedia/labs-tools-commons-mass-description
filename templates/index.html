@@ -122,7 +122,7 @@
   };
 
   checkLast = function() {
-    if (getElementsByClassName('active').hasClass('lastElemnet') == true)
+    if (document.getElementsByClassName('active').hasClass('lastElemnet') == true)
     {
       $('.active').removeClass('lastElemnet');
       getItems();
@@ -130,7 +130,6 @@
   }
 
   $( document ).ready(function() {
-    console.log(checkTen);
     getItems();
     $( ".submit" ).click(function() {
       console.log("click");
