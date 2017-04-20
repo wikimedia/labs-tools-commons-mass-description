@@ -72,8 +72,9 @@ def edit():
 	#'ucuser': str(username), 'ucprop': "timestamp",
 	#'format': "json"})
 	#data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
-
-	return username
+    r = requests.post(url=app.config['OAUTH_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'Commons mass description filler 0.1'})
+    return r.content
+	#return username
 
 @app.route('/login')
 def login():
