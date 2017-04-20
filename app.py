@@ -67,7 +67,7 @@ def images():
 @app.route('/edit')
 def edit():
 	username = username = flask.session.get('username', None)
-	r = requests.post(url=app.config['OAUTH_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'AA'})
+	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'AA'})
 	return r.content
 
 
