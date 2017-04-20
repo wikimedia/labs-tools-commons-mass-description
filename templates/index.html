@@ -122,7 +122,8 @@
   };
 
   checkLast = function() {
-    if (document.getElementsByClassName('active').hasClass('lastElemnet') == true)
+    var temp = document.getElementsByClassName('active');
+    if (temp.hasClass('lastElemnet') == true)
     {
       $('.active').removeClass('lastElemnet');
       getItems();
