@@ -33,6 +33,7 @@ app.config.update(
 
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
+glbAccessToken = None
 
 #mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
 #app.register_blueprint(mwoauth.bp)
@@ -65,18 +66,19 @@ def images():
 
 @app.route('/edit')
 def edit():
-	username = mwoauth.get_current_user(cached=False)
+	username = username = flask.session.get('username', None)
 	#result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/')
 	#data = mwoauth.request({'action': "query", "list": "usercontribs",
 	#'ucuser': str(username), 'ucprop': "timestamp",
 	#'format': "json"})
-	data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
-	return data
+	#data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
+
+	return username
 
 @app.route('/login')
 def login():
     """Initiate an OAuth login.
-	
+
     Call the MediaWiki server to get request secrets and then redirect the
     user to the MediaWiki server to sign the request.
     """
@@ -110,12 +112,12 @@ def oauth_callback():
             consumer_token,
             mwoauth.RequestToken(**flask.session['request_token']),
             flask.request.query_string)
-
         identity = mwoauth.identify(
-            app.config['OAUTH_MWURI'], consumer_token, access_token)	
+            app.config['OAUTH_MWURI'], consumer_token, access_token)
+        glbAccessToken = access_token
     except Exception:
         app.logger.exception('OAuth authentication failed')
-	
+
     else:
         flask.session['access_token'] = dict(zip(
             access_token._fields, access_token))
