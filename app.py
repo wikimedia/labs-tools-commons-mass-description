@@ -22,6 +22,7 @@ from urllib.parse import quote
 from flask import Response
 import mwoauth
 import mwoauth.flask
+from requests_oauthlib import OAuth1
 
 app = flask.Flask(__name__)
 
@@ -34,6 +35,7 @@ app.config.update(
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 glbAccessToken = None
+glbRequestToken = None
 
 #mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
 #app.register_blueprint(mwoauth.bp)
@@ -67,7 +69,8 @@ def images():
 @app.route('/edit')
 def edit():
 	username = username = flask.session.get('username', None)
-	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'Commons Mass Description filler'})
+	auth = OAuth1(key, client_secret=secret, resource_owner_key=glbRequestToken.key, resource_owner_secret=glbRequestToken.secret)
+	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=auth, headers={'User-Agent': 'Commons Mass Description filler'})
 	return r.content
 
 
@@ -90,6 +93,7 @@ def login():
         flask.session['request_token'] = dict(zip(
             request_token._fields, request_token))
         return flask.redirect(redirect)
+    glbRequestToken = request_token
 
 
 @app.route('/oauth-callback')
