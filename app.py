@@ -67,14 +67,9 @@ def images():
 @app.route('/edit')
 def edit():
 	username = username = flask.session.get('username', None)
-	#result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/')
-	#data = mwoauth.request({'action': "query", "list": "usercontribs",
-	#'ucuser': str(username), 'ucprop': "timestamp",
-	#'format': "json"})
-	#data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
-    r = requests.post(url=app.config['OAUTH_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'Commons mass description filler 0.1'})
-    return r.content
-	#return username
+	r = requests.post(url=app.config['OAUTH-MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'AA'})
+	return r.content
+
 
 @app.route('/login')
 def login():
