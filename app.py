@@ -22,6 +22,7 @@ from urllib.parse import quote
 from flask import Response
 import mwoauth
 import mwoauth.flask
+from requests_oauthlib import OAuth1
 
 app = flask.Flask(__name__)
 
@@ -33,7 +34,6 @@ app.config.update(
 
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
-glbAccessToken = None
 
 #mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
 #app.register_blueprint(mwoauth.bp)
@@ -67,7 +67,9 @@ def images():
 @app.route('/edit')
 def edit():
 	username = username = flask.session.get('username', None)
-	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, auth=glbAccessToken, headers={'User-Agent': 'Commons Mass Description filler'})
+	request_token = flask.session.get('request_token', None)
+	auth = OAuth1(key, secret, request_token['key'], request_token['secret'])
+	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
 
@@ -110,7 +112,6 @@ def oauth_callback():
             flask.request.query_string)
         identity = mwoauth.identify(
             app.config['OAUTH_MWURI'], consumer_token, access_token)
-        glbAccessToken = access_token
     except Exception:
         app.logger.exception('OAuth authentication failed')
 
