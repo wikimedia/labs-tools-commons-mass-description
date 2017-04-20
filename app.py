@@ -72,14 +72,14 @@ def edit():
 	r = requests.post(url=app.config['API_MWURI'], params={'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
-
+"""
 @app.route('/login')
 def login():
-    """Initiate an OAuth login.
+    ""Initiate an OAuth login.
 
     Call the MediaWiki server to get request secrets and then redirect the
     user to the MediaWiki server to sign the request.
-    """
+    ""
     consumer_token = mwoauth.ConsumerToken(
         app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
     try:
@@ -92,11 +92,19 @@ def login():
         flask.session['request_token'] = dict(zip(
             request_token._fields, request_token))
         return flask.redirect(redirect)
+"""
 
+@app.route('/login')
+def login():
+	consumer_token = mwoauth.ConsumerToken(key, secret)
+	handshaker = mwoauth.Handshaker(app.config['OAUTH_MWURI'])
+	redirect, request_token = handshaker.initiate()
+	return flask.redirect(redirect)
 
+"""
 @app.route('/oauth-callback')
 def oauth_callback():
-    """OAuth handshake callback."""
+    ""OAuth handshake callback.""
     if 'request_token' not in flask.session:
         flask.flash(u'OAuth callback failed. Are cookies disabled?')
         return flask.redirect(flask.url_for('index'))
@@ -121,7 +129,11 @@ def oauth_callback():
         flask.session['username'] = identity['username']
 
     return flask.redirect(flask.url_for('index'))
+"""
 
+@app.route('/oauth-callback')
+def oauth_callback():
+	access_token = handshaker.complete(app.config['OAUTH_MWURI'], consumer_token, mwoauth.RequestToken(**flask.session['request_token']), flask.request.query_string)
 
 @app.route('/logout')
 def logout():
