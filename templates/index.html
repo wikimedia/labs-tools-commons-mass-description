@@ -104,7 +104,7 @@
     $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
       for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
-        if(i != 9){
+        if(i != 8){
           addItemToCarousel(json[i]['url'], json[i]['title'], false);
         }
         else {
