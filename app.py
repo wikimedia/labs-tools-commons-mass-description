@@ -47,11 +47,13 @@ def index():
 @app.route('/images')
 def images():
 	toFetch = 10
-	offset = request.args.get('offset')
-	if offset == None:
+	offset = 0
+	if request.args.get('offset') == None:
 		offset = 0
 	else:
-		offset = int(offset)
+		offset = int(request.args.get('offset'))
+	if offset < 0:
+		offset = 0
 	toFetch += offset
 	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
 	r = requests.get(urlImages)
@@ -68,6 +70,7 @@ def images():
 		imageData = imageDataOrig['query']['pages']
 		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
 		res.append(imageRes)
+	res = res[-10:]
 	return Response(json.dumps(res), mimetype='application/json')
 
 @app.route('/edit')
