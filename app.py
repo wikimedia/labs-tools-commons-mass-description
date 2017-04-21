@@ -21,6 +21,7 @@ import requests
 from urllib.parse import quote
 from flask import Response
 from flask_mwoauth import MWOAuth
+from flask import request
 
 app = flask.Flask(__name__)
 
@@ -45,7 +46,14 @@ def index():
 
 @app.route('/images')
 def images():
-	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
+	toFetch = 10
+	offset = request.args.get('offset')
+	if offset == None:
+		offset = 0
+	else:
+		offset = int(offset)
+	toFetch += offset
+	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
 	r = requests.get(urlImages)
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
