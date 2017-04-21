@@ -115,7 +115,7 @@
   };
   addItemToCarousel = function(url, caption, lastElement) {
     if (lastElement == true) {
-      $( "<div class=\"item\"><img src=\"" + url + "\ lastElemnet\"><div class=\"carousel-caption width=\"1280\" height=\"720\" \">" + caption + "</div></div>" ).insertBefore( ".listovani" );
+      $( "<div class=\"item\"><img src=\"" + url + "\" class=\"lastElemnet\"><div class=\"carousel-caption width=\"1280\" height=\"720\" \">" + caption + "</div></div>" ).insertBefore( ".listovani" );
     }else {
       $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption width=\"1280\" height=\"720\" \">" + caption + "</div></div>" ).insertBefore( ".listovani" );
     }
