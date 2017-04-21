@@ -45,7 +45,7 @@ def index():
 
 @app.route('/images')
 def images():
-	urlImages = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
+	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
 	r = requests.get(urlImages)
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
@@ -54,7 +54,7 @@ def images():
 	for image in data:
 		imageRes = {}
 		imageRes['title'] = image['title'].replace('File:', '')
-		urlToAsk = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
+		urlToAsk = app.config['API_MWURI'] + '?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
 		response = requests.get(urlToAsk)
 		imageDataOrig = json.loads(response.text)
 		imageData = imageDataOrig['query']['pages']
