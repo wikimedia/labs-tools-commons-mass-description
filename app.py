@@ -23,6 +23,8 @@ from flask import Response
 import mwoauth
 import mwoauth.flask
 from requests_oauthlib import OAuth1
+from flask_mwoauth import MWOAuth
+from flask import request
 
 app = flask.Flask(__name__)
 
@@ -47,7 +49,16 @@ def index():
 
 @app.route('/images')
 def images():
-	urlImages = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
+	toFetch = 10
+	offset = 0
+	if request.args.get('offset') == None:
+		offset = 0
+	else:
+		offset = int(request.args.get('offset'))
+	if offset < 0:
+		offset = 0
+	toFetch += offset
+	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
 	r = requests.get(urlImages)
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
@@ -56,12 +67,13 @@ def images():
 	for image in data:
 		imageRes = {}
 		imageRes['title'] = image['title'].replace('File:', '')
-		urlToAsk = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
+		urlToAsk = app.config['API_MWURI'] + '?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
 		response = requests.get(urlToAsk)
 		imageDataOrig = json.loads(response.text)
 		imageData = imageDataOrig['query']['pages']
 		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
 		res.append(imageRes)
+	res = res[-10:]
 	return Response(json.dumps(res), mimetype='application/json')
 
 @app.route('/edit')
