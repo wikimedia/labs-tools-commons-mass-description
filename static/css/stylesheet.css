@@ -1,0 +1,13 @@
+    .hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+		.carousel-inner {
+			width: 1280px;
+			height: 720px;
+		}
+
+    .carousel-caption {
+      font-size: 45px;
+    }
