@@ -100,8 +100,10 @@
 
 <script>
 
+  var offset = 0;
+
   getItems = function() {
-    $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
+    $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + offset, function( json ) {
       for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
         if(i != 8){
@@ -130,19 +132,25 @@
     }
   }
 
+  offset = function() {
+    offset += 1;
+  }
+
   $( document ).ready(function() {
     getItems();
     $( ".submit" ).click(function() {
-      console.log("click");
+        
     });
 
     //handle carousel clicks
     $(".left").click(function () {
       checkLast();
+      offset();
     });
 
     $(".right").click(function () {
       checkLast();
+      offset();
     });
 
   });
