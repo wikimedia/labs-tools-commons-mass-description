@@ -132,8 +132,12 @@
     }
   }
 
-  offset = function() {
-    data_offset += 1;
+  offset = function(var left_or_right) {
+    if(left_or_right == "+") {
+      data_offset += 1;
+    }else if(left_or_right == "-") {
+      data_offset -= 1;
+    }
   }
 
   $( document ).ready(function() {
@@ -145,12 +149,12 @@
     //handle carousel clicks
     $(".left").click(function () {
       checkLast();
-      offset();
+      offset("+");
     });
 
     $(".right").click(function () {
       checkLast();
-      offset();
+      offset("-");
     });
 
   });
