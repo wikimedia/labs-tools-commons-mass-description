@@ -59,7 +59,7 @@
 				<div class="col">
 
 					 <!-- Carousel -->
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 					  <!-- Wrapper for slides -->
 						 <div class="carousel-inner">
                <!--
@@ -74,10 +74,10 @@
 
  						<div class="listovani">
 						<!-- Controls -->
-						 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						 <a class="left carousel-control" href="#maincarousel" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-left"></span>
 					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					  <a class="right carousel-control" href="#maincarousel" role="button" data-slide="next">
 					    <span class="glyphicon glyphicon-chevron-right"></span>
 					  </a>
 					</div>
@@ -100,9 +100,15 @@
 
 <script>
 
+  $('#maincarousel').carousel({
+	 interval: 1000,
+	    wrap: false
+  });
+
   var data_offset = 0;
 
   getItems = function() {
+    console.log(data_offset);
     $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + data_offset, function( json ) {
       for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
@@ -132,7 +138,7 @@
     }
   }
 
-  offset = function(var left_or_right) {
+  offset = function(left_or_right) {
     if(left_or_right == "+") {
       data_offset += 1;
     }else if(left_or_right == "-") {
@@ -149,12 +155,12 @@
     //handle carousel clicks
     $(".left").click(function () {
       checkLast();
-      offset("+");
+      offset("-");
     });
 
     $(".right").click(function () {
       checkLast();
-      offset("-");
+      offset("+");
     });
 
   });
