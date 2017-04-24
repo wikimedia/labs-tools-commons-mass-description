@@ -20,7 +20,11 @@ import simplejson as json
 import requests
 from urllib.parse import quote
 from flask import Response
+import mwoauth
+import mwoauth.flask
+from requests_oauthlib import OAuth1
 from flask_mwoauth import MWOAuth
+from flask import request
 
 app = flask.Flask(__name__)
 
@@ -33,19 +37,28 @@ app.config.update(
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
-mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
-app.register_blueprint(mwoauth.bp)
+#mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
+#app.register_blueprint(mwoauth.bp)
 
 @app.route('/')
 def index():
-    username = mwoauth.get_current_user(True)
+    username = flask.session.get('username', None)
     return flask.render_template(
         'index.html', username=username)
 
 
 @app.route('/images')
 def images():
-	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=10'
+	toFetch = 10
+	offset = 0
+	if request.args.get('offset') == None:
+		offset = 0
+	else:
+		offset = int(request.args.get('offset'))
+	if offset < 0:
+		offset = 0
+	toFetch += offset
+	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
 	r = requests.get(urlImages)
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
@@ -60,17 +73,74 @@ def images():
 		imageData = imageDataOrig['query']['pages']
 		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
 		res.append(imageRes)
+	res = res[-10:]
 	return Response(json.dumps(res), mimetype='application/json')
 
 @app.route('/edit')
 def edit():
-	username = mwoauth.get_current_user(cached=False)
-	#result = mwoauth.request({'action': 'query', 'meta': 'userinfo'}, url='https://commons.wikimedia.org/w/')
-	#data = mwoauth.request({'action': "query", "list": "usercontribs",
-	#'ucuser': str(username), 'ucprop': "timestamp",
-	#'format': "json"})
-	data = mwoauth.request({'action': 'query', 'meta': 'userinfo'})
-	return data
+	username = username = flask.session.get('username', None)
+	request_token = flask.session.get('request_token', None)
+	auth = OAuth1(key, secret, request_token['key'], request_token['secret'])
+	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+	return r.content
+
+
+@app.route('/login')
+def login():
+    """Initiate an OAuth login.
+
+    Call the MediaWiki server to get request secrets and then redirect the
+    user to the MediaWiki server to sign the request.
+    """
+    consumer_token = mwoauth.ConsumerToken(
+        app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
+    try:
+        redirect, request_token = mwoauth.initiate(
+            app.config['OAUTH_MWURI'], consumer_token)
+    except Exception:
+        app.logger.exception('mwoauth.initiate failed')
+        return flask.redirect(flask.url_for('index'))
+    else:
+        flask.session['request_token'] = dict(zip(
+            request_token._fields, request_token))
+        return flask.redirect(redirect)
+
+
+@app.route('/oauth-callback')
+def oauth_callback():
+    """OAuth handshake callback."""
+    if 'request_token' not in flask.session:
+        flask.flash(u'OAuth callback failed. Are cookies disabled?')
+        return flask.redirect(flask.url_for('index'))
+
+    consumer_token = mwoauth.ConsumerToken(
+        app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
+
+    try:
+        access_token = mwoauth.complete(
+            app.config['OAUTH_MWURI'],
+            consumer_token,
+            mwoauth.RequestToken(**flask.session['request_token']),
+            flask.request.query_string)
+        identity = mwoauth.identify(
+            app.config['OAUTH_MWURI'], consumer_token, access_token)
+    except Exception:
+        app.logger.exception('OAuth authentication failed')
+
+    else:
+        flask.session['access_token'] = dict(zip(
+            access_token._fields, access_token))
+        flask.session['username'] = identity['username']
+
+    return flask.redirect(flask.url_for('index'))
+
+
+@app.route('/logout')
+def logout():
+    """Log the user out by clearing their session."""
+    flask.session.clear()
+    return flask.redirect(flask.url_for('index'))
+
 
 if __name__ == "__main__":
 	app.run(debug=True, threaded=True)

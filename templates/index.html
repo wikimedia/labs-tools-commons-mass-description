@@ -45,9 +45,9 @@
         <div class="col" style="float: right">
           {% if username %}
             <a class="navbar-brand" href="#" style="color: #fff">{{ username }}</a>
-            <a class="navbar-brand" href="{{ url_for('mwoauth.logout') }}" style="color: #fff">logout</a>
+            <a class="navbar-brand" href="{{ url_for('logout') }}" style="color: #fff">logout</a>
           {% else %}
-            <a class="navbar-brand" href="{{ url_for('mwoauth.login') }}" style="color: #fff">login</a>
+            <a class="navbar-brand" href="{{ url_for('login') }}" style="color: #fff">login</a>
           {% endif %}
         </div>
       </div>
