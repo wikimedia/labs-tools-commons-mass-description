@@ -15,8 +15,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/css/stylesheet.css">
-  <script src="https://tools-static.wmflabs.org/commons-mass-description/js/main.js">
+  <style>
+    .hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+		.carousel-inner {
+			width: 1280px;
+			height: 720px;
+		}
+
+    .carousel-caption {
+      font-size: 45px;
+    }
+  </style>
 </head>
 <body>
   <!-- navbar -->
@@ -86,6 +99,53 @@
 	</div>
 
 <script>
+
+  getItems = function() {
+    $.get("https://tools.wmflabs.org/commons-mass-description/images", function( json ) {
+      for (var i = 0; i < json.length; i++) {
+        //console.log(json[i]['url'], json[i]['title']);
+        if(i != 8){
+          addItemToCarousel(json[i]['url'], json[i]['title'], false);
+        }
+        else {
+          addItemToCarousel(json[i]['url'], json[i]['title'], true);
+        }
+      }
+    });
+  };
+  addItemToCarousel = function(url, caption, lastElement) {
+    if (lastElement == true) {
+      $( "<div class=\"item lastElement\"><img src=\"" + url + "\"><div class=\"carousel-caption width=\"1280\" height=\"720\" \">" + caption + "</div></div>" ).insertBefore( ".listovani" );
+    }else {
+      $( "<div class=\"item\"><img src=\"" + url + "\"><div class=\"carousel-caption width=\"1280\" height=\"720\" \">" + caption + "</div></div>" ).insertBefore( ".listovani" );
+    }
+  };
+
+  checkLast = function() {
+    var temp = $('.active');
+    if (temp.hasClass('lastElement') == true)
+    {
+      $('.active').removeClass('lastElement');
+      getItems();
+    }
+  }
+
+  $( document ).ready(function() {
+    getItems();
+    $( ".submit" ).click(function() {
+      console.log("click");
+    });
+
+    //handle carousel clicks
+    $(".left").click(function () {
+      checkLast();
+    });
+
+    $(".right").click(function () {
+      checkLast();
+    });
+
+  });
 </script>
 </body>
 </html>
