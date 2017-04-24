@@ -103,6 +103,7 @@
   var data_offset = 0;
 
   getItems = function() {
+    console.log(data_offset);
     $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + data_offset, function( json ) {
       for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
@@ -132,7 +133,7 @@
     }
   }
 
-  offset = function(var left_or_right) {
+  offset = function(left_or_right) {
     if(left_or_right == "+") {
       data_offset += 1;
     }else if(left_or_right == "-") {
