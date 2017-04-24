@@ -100,10 +100,10 @@
 
 <script>
 
-  var offset = 0;
+  var data_offset = 0;
 
   getItems = function() {
-    $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + offset, function( json ) {
+    $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + data_offset, function( json ) {
       for (var i = 0; i < json.length; i++) {
         //console.log(json[i]['url'], json[i]['title']);
         if(i != 8){
@@ -133,13 +133,13 @@
   }
 
   offset = function() {
-    offset += 1;
+    data_offset += 1;
   }
 
   $( document ).ready(function() {
     getItems();
     $( ".submit" ).click(function() {
-        
+
     });
 
     //handle carousel clicks
