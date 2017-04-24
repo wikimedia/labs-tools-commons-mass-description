@@ -81,7 +81,7 @@ def edit():
 	username = username = flask.session.get('username', None)
 	request_token = flask.session.get('request_token', None)
 	auth = OAuth1(key, secret, request_token['key'], request_token['secret'])
-	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'})
+	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
 
