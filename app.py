@@ -107,7 +107,7 @@ def edit():
 	token = json.loads(r.content)['query']['tokens']['csrftoken']
 
 	text = str(code)
-	payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text}
+	payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text, 'token': token}
 	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
