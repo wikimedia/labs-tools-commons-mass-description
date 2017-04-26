@@ -90,8 +90,11 @@ def edit():
 	if description == None or image == None:
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
 		return Response(json.dumps(reply), mimetype='application/json')
-	reply = {'status': 'ok', 'data': {'image': image, 'description': description}}
-	return Response(json.dumps(reply), mimetype='application/json')
+	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': 'User:Martin Urbanec/sand'}
+	r = requests.post(url=app.config['API_MWURI'], params=data)
+	data = json.loads(r.content)
+	data = data['query']['pages']
+	return data[data.keys()[0]]['revisions']['*']
 
 @app.route('/login')
 def login():
