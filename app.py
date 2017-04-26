@@ -61,17 +61,25 @@ def images():
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
 
+	filenames = []
+	i = 0
+	for image in data:
+		filenames.append(image['title'])
+
+	filenames = filenames[-10:]
+
+	url = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote("|".join(filenames))
+	r = requests.get(url)
+	data = json.loads(r.text)
+	data = data["query"]["pages"]
+
 	res = []
 	for image in data:
 		imageRes = {}
-		imageRes['title'] = image['title'].replace('File:', '')
-		urlToAsk = app.config['API_MWURI'] + '?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
-		response = requests.get(urlToAsk)
-		imageDataOrig = json.loads(response.text)
-		imageData = imageDataOrig['query']['pages']
-		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
+		imageRes['title'] = data[image]["title"].replace("\n", "")
+		imageRes["url"] = data[image]["imageinfo"][0]["url"]
 		res.append(imageRes)
-	res = res[-10:]
+
 	return Response(json.dumps(res), mimetype='application/json')
 
 @app.route('/edit')
