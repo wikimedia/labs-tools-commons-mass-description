@@ -79,8 +79,8 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_secret', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	print('[info] Request_token_key in /edit for ' + username + ': ' + str(request_token_key))
 	print('[info] Request_token_secret in /edit for ' + username + ': ' + str(request_token_secret))
+	print('[info] Request_token_key in /edit for ' + username + ': ' + str(request_token_key))
 	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
