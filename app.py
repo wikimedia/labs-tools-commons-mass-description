@@ -37,9 +37,6 @@ app.config.update(
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
-#mwoauth = MWOAuth(consumer_key=key, consumer_secret=secret)
-#app.register_blueprint(mwoauth.bp)
-
 @app.route('/')
 def index():
     username = flask.session.get('username', None)
