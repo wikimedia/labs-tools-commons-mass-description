@@ -101,7 +101,7 @@ def edit():
 		if template.name.matches('Information'):
 			if template.has('description'):
 				template.remove('description')
-			template.add('description', description)
+			template.add('description', description + '\n')
 
 	text = str(code)
 	return text
