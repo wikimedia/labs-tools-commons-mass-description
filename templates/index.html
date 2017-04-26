@@ -99,22 +99,6 @@
 
          var data_offset = 0;
 
-         //$('#myCarousel').on('slid', '', checkitem);  // on caroussel move
-         function checkitem()
-         {
-           var $this = $('#myCarousel');
-           if($('.carousel-inner .item:first').hasClass('active')) {
-             $this.children('.left.carousel-control').hide();
-             $this.children('.right.carousel-control').show();
-           } else if($('.carousel-inner .item:last').hasClass('active')) {
-             $this.children('.left.carousel-control').show();
-             $this.children('.right.carousel-control').hide();
-           } else {
-             $this.children('.carousel-control').show();
-
-           }
-         }
-
          getItems = function() {
            console.log(data_offset);
            $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + data_offset, function( json ) {
@@ -155,7 +139,11 @@
          }
 
          $( document ).ready(function() {
-           checkitem();
+
+           $(".item").click(function(){
+               $("#myCarousel").carousel(0);
+           });
+
            $('.carousel').carousel('pause');
            getItems();
            $( ".submit" ).click(function() {
