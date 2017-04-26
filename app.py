@@ -79,8 +79,6 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	token = json.loads(r.content)['query']['tokens']['csrftoken']
 	"""
 	payload = {'format': 'json', 'action': 'edit', 'title': 'User:Martin Urbanec/sand', 'section': 'new', 'sectiontitle': 'Test', 'text': 'This is message posted using entriely new tool!', 'summary': '/* Test */ Hello', 'watchlist': 'nochange', 'token': token}
 	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
@@ -88,9 +86,11 @@ def edit():
 	"""
 	description = request.args.get('description')
 	image = request.args.get('image')
+
 	if description == None or image == None:
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
 		return Response(json.dumps(reply), mimetype='application/json')
+	
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
 	data = json.loads(r.content)['query']['pages']
@@ -103,8 +103,13 @@ def edit():
 				template.remove('description')
 			template.add('description', description + '\n')
 
+	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+	token = json.loads(r.content)['query']['tokens']['csrftoken']
+
 	text = str(code)
-	return text
+	payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text}
+	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+	return r.content
 
 @app.route('/login')
 def login():
