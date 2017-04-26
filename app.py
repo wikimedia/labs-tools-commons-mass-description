@@ -117,8 +117,8 @@ def edit():
 		text = str(code)
 		payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text, 'token': token}
 		r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-		#TODO: Return own JSON
-		return r.content
+		reply = {'status': 'ok', data={}}
+		return Response(json.dumps(reply), mimetype="application/json")
 	else:
 		reply = {'status': 'error', 'data': {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
 		return Response(json.dumps(reply), mimetype="application/json")
