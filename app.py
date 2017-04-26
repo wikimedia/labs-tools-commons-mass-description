@@ -132,12 +132,12 @@ def checkDescription(code):
 				return False
 			else:
 				if template.has('description'):
-					if template.get('description').value.replace('\n', '') == '':
+					if template.get('description').value == '' or template.get('description').value == '\n':
 						return False
 					else:
 						return True
 				elif template.has('Description'):
-					if template.get('Description').value.replace('\n', '') == '':
+					if template.get('Description').value == '' or template.get('Description').value == '\n':
 						return False
 					else:
 						return True
