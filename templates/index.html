@@ -94,12 +94,8 @@
         <center><h1>Prosim prihlaste se</h1></center>
       </div>
       {% endif %}
-
+      
       <script>
-         $('#maincarousel').carousel({
-         interval: 250,
-            wrap: false
-         });
 
          var data_offset = 0;
 
@@ -143,6 +139,10 @@
          }
 
          $( document ).ready(function() {
+           $('#maincarousel').carousel({
+           interval: 250,
+              wrap: false
+           });
            getItems();
            $( ".submit" ).click(function() {
               //$('.active').removeClass('active');
