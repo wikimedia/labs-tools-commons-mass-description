@@ -77,7 +77,7 @@ def images():
 def edit():
 	username = username = flask.session.get('username', None)
 	request_token_secret = flask.session.get('request_token_secret', None)
-	request_token_key = flask.session.get('request_token_secret', None)
+	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
 	print('[info] Request_token_secret in /edit for ' + username + ': ' + str(request_token_secret))
 	print('[info] Request_token_key in /edit for ' + username + ': ' + str(request_token_key))
