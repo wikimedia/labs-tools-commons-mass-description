@@ -94,7 +94,7 @@
         <center><h1>Prosim prihlaste se</h1></center>
       </div>
       {% endif %}
-      
+
       <script>
 
          var data_offset = 0;
@@ -138,11 +138,8 @@
            }
          }
 
-         $( document ).ready(function() {
-           $('#maincarousel').carousel({
-           interval: 250,
-              wrap: false
-           });
+         $( document ).ready(function() {      
+          $('.carousel').carousel('pause');
            getItems();
            $( ".submit" ).click(function() {
               //$('.active').removeClass('active');
