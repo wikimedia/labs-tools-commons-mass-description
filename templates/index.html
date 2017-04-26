@@ -67,6 +67,7 @@
                      test
                   </div>
                </div>
+
                <div class="listovani">
                   <!-- Controls -->
                   <a class="left carousel-control" href="#maincarousel" role="button" data-slide="prev">
@@ -138,8 +139,13 @@
            }
          }
 
-         $( document ).ready(function() {      
-          $('.carousel').carousel('pause');
+         $( document ).ready(function() {
+
+           $(".item").click(function(){
+               $("#maincarousel").carousel(0);
+           });
+
+           $('.carousel').carousel('pause');
            getItems();
            $( ".submit" ).click(function() {
               //$('.active').removeClass('active');
