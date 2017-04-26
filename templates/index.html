@@ -89,6 +89,8 @@
             <button class="btn btn-primary submit">Submit</button>
          </div>
       </div>
+      {% else %}
+        <h1>Prihlas se Prosim</h1>
       {% endif %}
 
       <script>
@@ -141,7 +143,7 @@
          $( document ).ready(function() {
            getItems();
            $( ".submit" ).click(function() {
-
+              //$('.active').removeClass('active');
            });
 
            //handle carousel clicks
