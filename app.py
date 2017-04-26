@@ -122,7 +122,7 @@ def edit():
 		#TODO: Return own JSON
 		return r.content
 	else:
-		reply = {'status': 'error', data: {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
+		reply = {'status': 'error', 'data': {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
 		return Response(json.dumps(reply), mimetype="application/json")
 
 def checkDescription(code):
