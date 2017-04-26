@@ -91,25 +91,73 @@ def edit():
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
 		return Response(json.dumps(reply), mimetype='application/json')
 	
+	#TODO: Check if description is still needed
+
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
 	data = json.loads(r.content)['query']['pages']
 	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
 	code = mwparserfromhell.parse(text)
 
+	if not checkDescription(code):
+		for template in code.filter_templates():
+			if template.name.matches('Information') or template.name.matches('information'):
+				if template.has('description'):
+					template.remove('description')
+				else:
+					template.add('description', description + '\n')
+					break
+				if template.has('Description'):
+					template.remove('Description')
+				else:
+					template.add('Description', description + '\n')
+					break
+
+		r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+		token = json.loads(r.content)['query']['tokens']['csrftoken']
+
+		text = str(code)
+		payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text, 'token': token}
+		r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+		#TODO: Return own JSON
+		return r.content
+	else:
+		reply = {'status': 'error', data: {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
+		return Response(json.dumps(reply), mimetype="application/json")
+
+def checkDescription(code):
 	for template in code.filter_templates():
-		if template.name.matches('Information'):
-			if template.has('description'):
-				template.remove('description')
-			template.add('description', description + '\n')
+		if template.name.matches('Information') or template.name.matches('information'):
+			if not(template.has('description') or template.has('Description')):
+				return False
+			else:
+				if template.has('description'):
+					if template.get('description').value.replace('\n', '') == '':
+						return False
+					else:
+						return True
+				elif template.has('Description'):
+					if template.get('Description').value.replace('\n', '') == '':
+						return False
+					else
+						return True
+				else:
+					return False
+			break
+	return False
 
-	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	token = json.loads(r.content)['query']['tokens']['csrftoken']
+@app.route('/description')
+def checkDescriptionPage():
+	image = request.args.get('image')
+	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
+	r = requests.post(url=app.config['API_MWURI'], params=data)
+	data = json.loads(r.content)['query']['pages']
+	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
+	code = mwparserfromhell.parse(text)
 
-	text = str(code)
-	payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text, 'token': token}
-	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	return r.content
+	reply = {'description': checkDescription(code)}
+
+	return Response(json.dumps(reply), mimetype="application/json")
 
 @app.route('/login')
 def login():
