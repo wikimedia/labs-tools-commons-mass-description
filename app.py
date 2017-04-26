@@ -139,7 +139,7 @@ def checkDescription(code):
 				elif template.has('Description'):
 					if template.get('Description').value.replace('\n', '') == '':
 						return False
-					else
+					else:
 						return True
 				else:
 					return False
