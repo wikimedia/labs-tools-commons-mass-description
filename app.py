@@ -94,7 +94,7 @@ def edit():
 	r = requests.post(url=app.config['API_MWURI'], params=data)
 	data = json.loads(r.content)
 	data = data['query']['pages']
-	return data[data.keys()[0]]['revisions']['*']
+	return data[str(list(data.keys())[0])]['revisions'][0]['*']
 
 @app.route('/login')
 def login():
