@@ -25,6 +25,7 @@ import mwoauth.flask
 from requests_oauthlib import OAuth1
 from flask_mwoauth import MWOAuth
 from flask import request
+import mwparserfromhell
 
 app = flask.Flask(__name__)
 
@@ -92,9 +93,18 @@ def edit():
 		return Response(json.dumps(reply), mimetype='application/json')
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
-	data = json.loads(r.content)
-	data = data['query']['pages']
-	return data[str(list(data.keys())[0])]['revisions'][0]['*']
+	data = json.loads(r.content)['query']['pages']
+	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
+	code = mwparserfromhell.parse(text)
+
+	for template in code.filter_templates():
+		if template.name.matches('Information'):
+			if template.has('description'):
+				template.remove('description')
+			template.add('description', description)
+
+	text = str(code)
+	return text
 
 @app.route('/login')
 def login():
