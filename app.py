@@ -79,11 +79,6 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	"""
-	payload = {'format': 'json', 'action': 'edit', 'title': 'User:Martin Urbanec/sand', 'section': 'new', 'sectiontitle': 'Test', 'text': 'This is message posted using entriely new tool!', 'summary': '/* Test */ Hello', 'watchlist': 'nochange', 'token': token}
-	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	return r.content
-	"""
 	description = request.args.get('description')
 	image = request.args.get('image')
 
