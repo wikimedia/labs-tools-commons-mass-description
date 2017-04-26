@@ -119,7 +119,7 @@ def edit():
 		r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 		data = json.loads(r.content)
 		if data['edit']['result'] == 'Success':
-			reply = {'status': 'ok', 'data'={}}
+			reply = {'status': 'ok', 'data': {}}
 			return Response(json.dumps(reply), mimetype="application/json")
 		else:
 			reply = {'status': 'error', 'data': {'errorcode': 'mwinternal', 'description': 'There was some internal MediaWiki error. Useful details may be present in API reply from MediaWiki', 'apireply': data}}
