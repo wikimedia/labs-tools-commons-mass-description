@@ -75,12 +75,12 @@ def images():
 
 @app.route('/edit')
 def edit():
-	username = username = flask.session.get('username', None)
-	request_token = flask.session.get('request_token', None)
-	auth = OAuth1(key, secret, request_token['key'], request_token['secret'])
-	print('[info] Request_token_key in /edit for ' + username + ': ' + str(request_token['key']))
-	print('[info] Request_token_secret in /edit for ' + username + ': ' + str(request_token['secret']))
-	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'userinfo'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+	request_token_secret = flask.session.get('request_token_secret', None)
+	request_token_key = flask.session.get('request_token_key', None)
+	auth = OAuth1(key, secret, request_token_key, request_token_secret)
+	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+	token = json.loads(r.content)['query']['tokens']['csrftoken']
+	r = requests.post(url=url=app.config['API_MWURI'], params={'format': 'json', 'action': 'edit', 'title': 'User:Martin Urbanec/sand', 'section': 'new', 'sectiontitle': 'Test', 'text': 'This is message posted using entriely new tool!', 'summary': '/* Test */ Hello', 'watchlist': 'nochange', 'token': token}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
 
 
@@ -123,9 +123,8 @@ def oauth_callback():
 	except Exception:
 		app.logger.exception('OAuth authentication failed')
 	else:
-		print('[info] Request_token_secret received from MW for ' + identity['username'] + ': ' + str(dict(zip(access_token._fields, access_token))['secret']))
-		print('[info] Request_token_key received from MW for ' + identity['username'] + ': ' + str(dict(zip(access_token._fields, access_token))['key']))
-		flask.session['access_token'] = dict(zip(access_token._fields, access_token))
+		flask.session['request_token_secret'] = dict(zip(access_token._fields, access_token))['secret']
+		flask.session['request_token_key'] = dict(zip(access_token._fields, access_token))['key']
 		flask.session['username'] = identity['username']
 
 	return flask.redirect(flask.url_for('index'))
