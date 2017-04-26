@@ -80,10 +80,18 @@ def edit():
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
 	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	token = json.loads(r.content)['query']['tokens']['csrftoken']
+	"""
 	payload = {'format': 'json', 'action': 'edit', 'title': 'User:Martin Urbanec/sand', 'section': 'new', 'sectiontitle': 'Test', 'text': 'This is message posted using entriely new tool!', 'summary': '/* Test */ Hello', 'watchlist': 'nochange', 'token': token}
 	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 	return r.content
-
+	"""
+	description = request.args.get('description')
+	image = request.args.get('image')
+	if description == None or image == None:
+		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
+		return Response(json.dumps(reply), mimetype='application/json')
+	reply = {'status': 'ok', 'data': {'image': image, 'description': description}}
+	return Response(json.dumps(reply), mimetype='application/json')
 
 @app.route('/login')
 def login():
