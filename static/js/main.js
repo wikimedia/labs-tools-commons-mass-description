@@ -4,8 +4,11 @@ var removeFirstSlide = false;
 addDescription = function() {
 
 	$(".alert-danger").addClass("hidden");
+	console.log($(".alert-danger").hasClass("hidden"))
 	$(".alert-warning").addClass("hidden");
+	console.log($(".alert-success").hasClass("hidden"))
 	$(".alert-success").addClass("hidden");
+	console.log($(".alert-success").hasClass("hidden"))
 
 	var desc = $('#descript').val();
 	$('#descript').val('');
