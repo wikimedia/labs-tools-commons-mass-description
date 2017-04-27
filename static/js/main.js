@@ -81,10 +81,12 @@ offset = function(left_or_right) {
 
 function fade_out_success() {
 	$(".alert-success").fadeOut().empty();
+	$(".alert-success").addClass("hidden");
 }
 
 function fade_out_warning() {
 	$(".alert-warning").fadeOut().empty();
+	$(".alert-success").addClass("hidden");
 }
 
 $( document ).ready(function() {
