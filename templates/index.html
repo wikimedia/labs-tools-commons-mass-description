@@ -75,7 +75,7 @@
 				</div>
 				<!-- End Carousel -->
 			</div>
-			<div class="hidden">
+			<div id="hs" class="hidden">
 				<div class="col">
 					<div class="form-group">
 						<label for="description">Description</label>
@@ -161,18 +161,21 @@
 			  }
 			}
 
-			$( document ).ready(function() {
-
+			hideShowDes = function() {
 				if($('#firstSlide').hasClass(".active") == true)
 				{
-					$('#descript').addClass('.hidden');
+					$('#hs').addClass('.hidden');
 					console.log(true);
 				}else {
-					$('#descript').removeClass('.hidden');
+					$('#hs').removeClass('.hidden');
 					console.log(false);
 				}
+			}
 
-			 $('#maincarousel').carousel({ interval: 500, wrap: false });
+			$( document ).ready(function() {
+
+				hideShowDes();
+			 	$('#maincarousel').carousel({ interval: 500, wrap: false });
 			  $('#maincarousel').carousel('pause');
 			  getItems();
 			  $( ".submit" ).click(function() {
@@ -182,11 +185,13 @@
 			  //handle carousel clicks
 			  $(".left").click(function () {
 			    offset("-");
+					hideShowDes();
 			  });
 
 			  $(".right").click(function () {
 			    checkLast();
 			    offset("+");
+					hideShowDes();
 			  });
 
 			});
