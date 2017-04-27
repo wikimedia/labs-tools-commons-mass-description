@@ -19,7 +19,7 @@ import yaml
 import simplejson as json
 import requests
 from urllib.parse import quote
-from flask import Response
+from flask import Response, make_response
 import mwoauth
 import mwoauth.flask
 from requests_oauthlib import OAuth1
@@ -89,7 +89,9 @@ def images():
 		imageRes["url"] = data[image]["imageinfo"][0]["url"]
 		res.append(imageRes)
 
-	return Response(json.dumps(res), mimetype='application/json')
+	r = Response(json.dumps(res), mimetype='application/json')
+	r.headers.set('Access-Control-Allow-Origin', '*')
+	return r
 
 @app.route('/edit')
 def edit():
@@ -104,7 +106,9 @@ def edit():
 
 	if description == None or image == None:
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
-		return Response(json.dumps(reply), mimetype='application/json')
+		r = Response(json.dumps(reply), mimetype='application/json')
+		r.headers.set('Access-Control-Allow-Origin', '*')
+		return r
 
 	if lang != None:
 		description = '{{' + lang + '|' + description + '}}'
@@ -137,13 +141,20 @@ def edit():
 		data = json.loads(r.content)
 		if data['edit']['result'] == 'Success':
 			reply = {'status': 'ok', 'data': {}}
-			return Response(json.dumps(reply), mimetype="application/json")
+			r = Response(json.dumps(reply), mimetype="application/json")
+			r.headers.set('Access-Control-Allow-Origin', '*')
+			return r
 		else:
 			reply = {'status': 'error', 'data': {'errorcode': 'mwinternal', 'description': 'There was some internal MediaWiki error. Useful details may be present in API reply from MediaWiki', 'apireply': data}}
-			return Response(json.dumps(reply), mimetype="application/json")
+			r = Response(json.dumps(reply), mimetype="application/json")
+			r.headers.set('Access-Control-Allow-Origin', '*')
+			return r
 	else:
 		reply = {'status': 'error', 'data': {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
-		return Response(json.dumps(reply), mimetype="application/json")
+		r = Response(json.dumps(reply), mimetype="application/json")
+		r.headers.set('Access-Control-Allow-Origin', '*')
+		return r
+
 
 def checkDescription(code):
 	for template in code.filter_templates():
@@ -179,7 +190,9 @@ def checkDescriptionPage():
 
 	reply = {'description': checkDescription(code)}
 
-	return Response(json.dumps(reply), mimetype="application/json")
+	r = Response(json.dumps(reply), mimetype="application/json")
+	r.headers.set('Access-Control-Allow-Origin', '*')
+	return r
 
 @app.route('/login')
 def login():
