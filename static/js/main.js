@@ -3,6 +3,10 @@ var removeFirstSlide = false;
 
 addDescription = function() {
 
+	$(".alert-danger").addClass("hidden");
+	$(".alert-warning").addClass("hidden");
+	$(".alert-success").addClass("hidden");
+
 	var desc = $('#descript').val();
 	$('#descript').val('');
 	if(desc != "")
@@ -81,12 +85,10 @@ offset = function(left_or_right) {
 
 function fade_out_success() {
 	$(".alert-success").fadeOut().empty();
-	$(".alert-success").addClass("hidden");
 }
 
 function fade_out_warning() {
 	$(".alert-warning").fadeOut().empty();
-	$(".alert-success").addClass("hidden");
 }
 
 $( document ).ready(function() {
