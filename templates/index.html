@@ -97,6 +97,11 @@
 		<script>
 			var data_offset = 0;
 
+			function sleep(delay) {
+				var start = new Date().getTime();
+				while (new Date().getTime() < start + delay);
+			}
+
 			addDescription = function() {
 
 				var desc = $('#descript').val();
@@ -191,6 +196,7 @@
 			  $(".right").click(function () {
 			    checkLast();
 			    offset("+");
+					sleep(1500);
 					hideShowDes();
 			  });
 
