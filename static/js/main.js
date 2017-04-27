@@ -98,10 +98,6 @@ function fade_out_warning() {
 
 $( document ).ready(function() {
 
-	$('.alert').on('close.bs.alert', function (e) {
-    e.preventDefault();
-	});
-
 	$('#maincarousel').carousel({ interval: 500, wrap: false });
 	$('#maincarousel').carousel('pause');
 	getItems();
