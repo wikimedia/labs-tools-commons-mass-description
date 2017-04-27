@@ -96,6 +96,7 @@
 		{% endif %}
 		<script>
 			var data_offset = 0;
+			var removeFirstSlide = false;
 
 			addDescription = function() {
 
@@ -173,13 +174,28 @@
 			  //handle carousel clicks
 			  $(".left").click(function () {
 			    offset("-");
+					//remove first slide
+					if (removeFirstSlide == true)
+					{
+						//$(".firstSlide").remove();
+						$("div.firstSlide").remove()
+					}
+					removeFirstSlide = true;
 			  });
 
 			  $(".right").click(function () {
 			    checkLast();
 			    offset("+");
+					//remove first slide
 					$("#hs").removeClass('hidden');
-					$(".firstSlide").hide();
+					//$(".firstSlide").hide();
+					$("div.firstSlide").remove();
+					if (removeFirstSlide == true)
+					{
+						//$(".firstSlide").remove();
+						$("div.firstSlide").remove()
+					}
+					removeFirstSlide = true;
 			  });
 
 			});
