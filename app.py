@@ -25,6 +25,7 @@ import mwoauth.flask
 from requests_oauthlib import OAuth1
 from flask_mwoauth import MWOAuth
 from flask import request
+import mwparserfromhell
 
 app = flask.Flask(__name__)
 
@@ -60,17 +61,25 @@ def images():
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
 
+	filenames = []
+	i = 0
+	for image in data:
+		filenames.append(image['title'])
+
+	filenames = filenames[-10:]
+
+	url = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote("|".join(filenames))
+	r = requests.get(url)
+	data = json.loads(r.text)
+	data = data["query"]["pages"]
+
 	res = []
 	for image in data:
 		imageRes = {}
-		imageRes['title'] = image['title'].replace('File:', '')
-		urlToAsk = app.config['API_MWURI'] + '?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote(image['title'])
-		response = requests.get(urlToAsk)
-		imageDataOrig = json.loads(response.text)
-		imageData = imageDataOrig['query']['pages']
-		imageRes['url'] = imageData[list(imageData.keys())[0]]['imageinfo'][0]['url']
+		imageRes['title'] = data[image]["title"].replace("\n", "")
+		imageRes["url"] = data[image]["imageinfo"][0]["url"]
 		res.append(imageRes)
-	res = res[-10:]
+
 	return Response(json.dumps(res), mimetype='application/json')
 
 @app.route('/edit')
@@ -78,23 +87,83 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	token = json.loads(r.content)['query']['tokens']['csrftoken']
-	"""
-	payload = {'format': 'json', 'action': 'edit', 'title': 'User:Martin Urbanec/sand', 'section': 'new', 'sectiontitle': 'Test', 'text': 'This is message posted using entriely new tool!', 'summary': '/* Test */ Hello', 'watchlist': 'nochange', 'token': token}
-	r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
-	return r.content
-	"""
 	description = request.args.get('description')
 	image = request.args.get('image')
+
 	if description == None or image == None:
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
 		return Response(json.dumps(reply), mimetype='application/json')
+
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
-	data = json.loads(r.content)
-	data = data['query']['pages']
-	return data[str(list(data.keys())[0])]['revisions'][0]['*']
+	data = json.loads(r.content)['query']['pages']
+	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
+	code = mwparserfromhell.parse(text)
+
+	if not checkDescription(code):
+		for template in code.filter_templates():
+			if template.name.matches('Information') or template.name.matches('information'):
+				if template.has('description'):
+					template.remove('description')
+				else:
+					template.add('description', description + '\n')
+					break
+				if template.has('Description'):
+					template.remove('Description')
+				else:
+					template.add('Description', description + '\n')
+					break
+
+		r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+		token = json.loads(r.content)['query']['tokens']['csrftoken']
+
+		text = str(code)
+		payload = {'format': 'json', 'action': 'edit', 'title': image, 'summary': 'Add description', 'text': text, 'token': token}
+		r = requests.post(url=app.config['API_MWURI'], data=payload, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
+		data = json.loads(r.content)
+		if data['edit']['result'] == 'Success':
+			reply = {'status': 'ok', 'data': {}}
+			return Response(json.dumps(reply), mimetype="application/json")
+		else:
+			reply = {'status': 'error', 'data': {'errorcode': 'mwinternal', 'description': 'There was some internal MediaWiki error. Useful details may be present in API reply from MediaWiki', 'apireply': data}}
+			return Response(json.dumps(reply), mimetype="application/json")
+	else:
+		reply = {'status': 'error', 'data': {'errorcode': 'descriptionalreadypresent', 'description': 'Description of the image was already present. Skipping. '}}
+		return Response(json.dumps(reply), mimetype="application/json")
+
+def checkDescription(code):
+	for template in code.filter_templates():
+		if template.name.matches('Information') or template.name.matches('information'):
+			if not(template.has('description') or template.has('Description')):
+				return False
+			else:
+				if template.has('description'):
+					if template.get('description').value == '' or template.get('description').value == '\n':
+						return False
+					else:
+						return True
+				elif template.has('Description'):
+					if template.get('Description').value == '' or template.get('Description').value == '\n':
+						return False
+					else:
+						return True
+				else:
+					return False
+			break
+	return False
+
+@app.route('/description')
+def checkDescriptionPage():
+	image = request.args.get('image')
+	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
+	r = requests.post(url=app.config['API_MWURI'], params=data)
+	data = json.loads(r.content)['query']['pages']
+	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
+	code = mwparserfromhell.parse(text)
+
+	reply = {'description': checkDescription(code)}
+
+	return Response(json.dumps(reply), mimetype="application/json")
 
 @app.route('/login')
 def login():
