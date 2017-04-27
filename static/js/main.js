@@ -43,6 +43,7 @@ addDescription = function() {
 		});
 	}
 	else {
+		console.log("remove class hidden to warning")
 		$('.alert-warning').removeClass('hidden');
 		setTimeout(fade_out_warning, 3000);
 	}
