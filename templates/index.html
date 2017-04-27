@@ -101,8 +101,11 @@
 				if(desc != "")
 				{
 
+					//add class remove to remove this element after trigger click on .right
 					$('#descript').addClass('remove');
-					$(".left").click();
+					$(".right").click();
+					$( ".remove" ).remove()
+					;
 					//escape spaces
 					for (p in desc)
 					{
