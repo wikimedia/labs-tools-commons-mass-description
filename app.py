@@ -59,8 +59,8 @@ def images():
 	if offset < 0:
 		offset = 0
 	toFetch += offset
-	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
-	r = requests.get(urlImages)
+	data = {'action': 'query', 'format': 'json', 'list': 'categorymembers', 'cmtitle': 'Category%3AMedia_lacking_a_description', 'cmprop': 'title', 'cmtype': 'file', 'cmlimit': str(toFetch)}
+	r = requests.get(url=app.config['API_MWURI'], params=data)
 	dataOrig = json.loads(r.text)
 	data = dataOrig['query']['categorymembers']
 
@@ -71,8 +71,8 @@ def images():
 
 	filenames = filenames[-10:]
 
-	url = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote("|".join(filenames))
-	r = requests.get(url)
+	data = {'action': 'query', 'format': 'json', 'prop': 'imageinfo', 'iiprop': 'url', 'titles': quote("|".join(filenames))}
+	r = requests.get(url=app.config['API_MWURI'], params=data)
 	data = json.loads(r.text)
 	data = data["query"]["pages"]
 
