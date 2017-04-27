@@ -26,7 +26,6 @@
 			.carousel-caption {
 			font-size: 45px;
 			}
-
 			.alert {
 				margin-top:20px;
 				width: 1280px;
@@ -82,10 +81,10 @@
 			</div>
 			<div id="hs" class="hidden">
 				<div class="col">
-					<div class="alert alert-danger hidden">
+					<div class="alert alert-danger alert-dismissible hidden">
 					  <strong>Saving failed!</strong> There was an unexpected error. Please continue with describing another images.
 					</div>
-					<div class="alert alert-success hidden">
+					<div class="alert alert-success alert-dismissible hidden">
 					  <strong>Saved!</strong> Your edit was sucessfully saved.
 					</div>
 				</div>
@@ -201,13 +200,6 @@
 			  //handle carousel clicks
 			  $(".left").click(function () {
 			    offset("-");
-					//remove first slide
-					if (removeFirstSlide == true)
-					{
-						//$(".firstSlide").remove();
-						$("div.firstSlide").remove()
-					}
-					removeFirstSlide = true;
 			  });
 
 			  $(".right").click(function () {
