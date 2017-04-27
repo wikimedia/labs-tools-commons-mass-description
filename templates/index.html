@@ -57,7 +57,7 @@
 			<div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
-					<div class="item active" id="firstSlide">
+					<div class="item active" h>
 						<img src="https://placehold.it/1280x720">
 						<div class="carousel-caption">
 							test
@@ -161,20 +161,8 @@
 			  }
 			}
 
-			hideShowDes = function() {
-				if($('#firstSlide').hasClass("active") == true)
-				{
-					$('#hs').addClass('hidden');
-					console.log(true);
-				}else {
-					$('#hs').removeClass('hidden');
-					console.log(false);
-				}
-			}
-
 			$( document ).ready(function() {
 
-				hideShowDes();
 			 	$('#maincarousel').carousel({ interval: 500, wrap: false });
 			  $('#maincarousel').carousel('pause');
 			  getItems();
@@ -185,13 +173,12 @@
 			  //handle carousel clicks
 			  $(".left").click(function () {
 			    offset("-");
-					hideShowDes();
 			  });
 
 			  $(".right").click(function () {
 			    checkLast();
 			    offset("+");
-					hideShowDes();
+					$("#hs").removeClass('hidden');
 			  });
 
 			});
