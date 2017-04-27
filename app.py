@@ -59,9 +59,9 @@ def images():
 	if offset < 0:
 		offset = 0
 	toFetch += offset
-	data = {'action': 'query', 'format': 'json', 'list': 'categorymembers', 'cmtitle': 'Category%3AMedia_lacking_a_description', 'cmprop': 'title', 'cmtype': 'file', 'cmlimit': str(toFetch)}
-	r = requests.get(url=app.config['API_MWURI'], params=data)
-	dataOrig = json.loads(r.text)
+	payload = {'action': 'query', 'format': 'json', 'list': 'categorymembers', 'cmtitle': 'Category:Media_lacking_a_description', 'cmprop': 'title', 'cmtype': 'file', 'cmlimit': str(toFetch)}
+	r = requests.post(url=app.config['API_MWURI'], params=payload)
+	dataOrig = json.loads(r.content)
 	data = dataOrig['query']['categorymembers']
 
 	filenames = []
@@ -71,9 +71,9 @@ def images():
 
 	filenames = filenames[-10:]
 
-	data = {'action': 'query', 'format': 'json', 'prop': 'imageinfo', 'iiprop': 'url', 'titles': quote("|".join(filenames))}
-	r = requests.get(url=app.config['API_MWURI'], params=data)
-	data = json.loads(r.text)
+	payload = {'action': 'query', 'format': 'json', 'prop': 'imageinfo', 'iiprop': 'url', 'titles': "|".join(filenames)}
+	r = requests.get(url=app.config['API_MWURI'], params=payload)
+	data = json.loads(r.content)
 	data = data["query"]["pages"]
 
 	res = []
