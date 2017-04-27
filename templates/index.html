@@ -57,7 +57,7 @@
 			<div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
-					<div class="item active">
+					<div class="item active" id="firstSlide">
 						<img src="https://placehold.it/1280x720">
 						<div class="carousel-caption">
 							test
@@ -75,14 +75,16 @@
 				</div>
 				<!-- End Carousel -->
 			</div>
-			<div class="col">
-				<div class="form-group">
-					<label for="description">Description</label>
-					<textarea class="form-control" rows="5" style="width: 1280px" id="descript"></textarea>
+			<div class="hidden">
+				<div class="col">
+					<div class="form-group">
+						<label for="description">Description</label>
+						<textarea class="form-control" rows="2" style="width: 1280px" id="descript"></textarea>
+					</div>
 				</div>
-			</div>
-			<div class="col">
-				<button class="btn btn-primary submit">Submit</button>
+				<div class="col">
+					<button class="btn btn-primary submit">Submit</button>
+				</div>
 			</div>
 		</div>
 		{% else %}
@@ -100,7 +102,6 @@
 				var desc = $('#descript').val();
 				if(desc != "")
 				{
-
 					//add class remove to remove this element after trigger click on .right
 					$('.active').addClass('remove');
 					$(".right").click();
@@ -161,6 +162,13 @@
 			}
 
 			$( document ).ready(function() {
+
+				if($('#firstSlide').hasClass(".active") == true)
+				{
+					$('#descript').addClass('.hidden');
+				}else {
+					$('#descript').removeClass('.hidden');
+				}
 
 			 $('#maincarousel').carousel({ interval: 500, wrap: false });
 			  $('#maincarousel').carousel('pause');
