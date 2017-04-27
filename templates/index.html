@@ -76,6 +76,14 @@
 				<!-- End Carousel -->
 			</div>
 			<div id="hs" class="hidden">
+				<div class="">
+					<div class="alert alert-danger hidden">
+					  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+					</div>
+					<div class="alert alert-success hidden">
+					  <strong>Success!</strong> Indicates a successful or positive action.
+					</div>
+				</div>
 				<div class="col">
 					<div class="form-group">
 						<label for="description">Description</label>
@@ -124,8 +132,10 @@
 						if(json['status'] == 'ok')
 						{
 							console.log('edited');
+							$('.alert-success').removeClass('hidden');
 						}else {
 							console.log('error');
+							$('.alert-success').removeClass('hidden');
 						}
 					});
 				}
