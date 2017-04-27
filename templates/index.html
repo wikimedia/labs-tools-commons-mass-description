@@ -101,6 +101,8 @@
 				if(desc != "")
 				{
 
+					$('#descript').addClass('remove');
+					$(".left").click();
 					//escape spaces
 					for (p in desc)
 					{
@@ -111,7 +113,7 @@
 					}
 
 					data = desc;
-					$.get( "https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + data, function ( json ) {
+					$.get("https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + data, function ( json ) {
 						console.log(json);
 					});
 				}
