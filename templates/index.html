@@ -138,7 +138,7 @@
 						{
 							console.log('edited');
 							$('.alert-success').removeClass('hidden');
-							setTimeout(fade_out("alert-success"), 3000);
+							setTimeout(fade_out, 3000);
 						}else {
 							console.log('error');
 							$('.alert-danger').removeClass('hidden');
@@ -185,8 +185,8 @@
 			  }
 			}
 
-			function fade_out(divorclass) {
-  			$(divorclass).fadeOut().empty();
+			function fade_out() {
+  			$(".alert-success").fadeOut().empty();
 			}
 
 			$( document ).ready(function() {
