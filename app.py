@@ -40,13 +40,16 @@ secret = app.config['CONSUMER_SECRET']
 
 @app.route('/')
 def index():
-    username = flask.session.get('username', None)
-    return flask.render_template(
-        'index.html', username=username)
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
+	username = flask.session.get('username', None)
+	return flask.render_template('index.html', username=username)
 
 
 @app.route('/images')
 def images():
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
 	toFetch = 10
 	offset = 0
 	if request.args.get('offset') == None:
@@ -84,6 +87,8 @@ def images():
 
 @app.route('/edit')
 def edit():
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
@@ -153,6 +158,8 @@ def checkDescription(code):
 
 @app.route('/description')
 def checkDescriptionPage():
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
 	image = request.args.get('image')
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
@@ -166,28 +173,31 @@ def checkDescriptionPage():
 
 @app.route('/login')
 def login():
-    """Initiate an OAuth login.
-
-    Call the MediaWiki server to get request secrets and then redirect the
-    user to the MediaWiki server to sign the request.
-    """
-    consumer_token = mwoauth.ConsumerToken(
-        app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
-    try:
-        redirect, request_token = mwoauth.initiate(
-            app.config['OAUTH_MWURI'], consumer_token)
-    except Exception:
-        app.logger.exception('mwoauth.initiate failed')
-        return flask.redirect(flask.url_for('index'))
-    else:
-        flask.session['request_token'] = dict(zip(
-            request_token._fields, request_token))
-        return flask.redirect(redirect)
+	"""Initiate an OAuth login.
+	Call the MediaWiki server to get request secrets and then redirect the
+	user to the MediaWiki server to sign the request.
+	"""
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
+	consumer_token = mwoauth.ConsumerToken(
+		app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
+	try:
+		redirect, request_token = mwoauth.initiate(
+		app.config['OAUTH_MWURI'], consumer_token)
+	except Exception:
+		app.logger.exception('mwoauth.initiate failed')
+		return flask.redirect(flask.url_for('index'))
+	else:
+		flask.session['request_token'] = dict(zip(
+		request_token._fields, request_token))
+		return flask.redirect(redirect)
 
 
 @app.route('/oauth-callback')
 def oauth_callback():
 	"""OAuth handshake callback."""
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
 	if 'request_token' not in flask.session:
 		flask.flash(u'OAuth callback failed. Are cookies disabled?')
 		return flask.redirect(flask.url_for('index'))
@@ -212,10 +222,17 @@ def oauth_callback():
 
 @app.route('/logout')
 def logout():
-    """Log the user out by clearing their session."""
-    flask.session.clear()
-    return flask.redirect(flask.url_for('index'))
+	"""Log the user out by clearing their session."""
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
+	flask.session.clear()
+	return flask.redirect(flask.url_for('index'))
 
+@app.route('/proto')
+def proto():
+	if request.headers['X-Forwarded-Proto'] == "http":
+		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
+	return "2"
 
 if __name__ == "__main__":
 	app.run(debug=True, threaded=True)
