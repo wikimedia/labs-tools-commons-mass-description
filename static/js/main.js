@@ -19,7 +19,7 @@ addDescription = function() {
 			{
 				p = "%20";
 			}else {
-				$('.alert-success').removeClass('hidden');
+				$('.alert-warning').removeClass('hidden');
 				setTimeout(fade_out_warning, 3000);
 			}
 		}
