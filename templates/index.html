@@ -101,13 +101,14 @@
 			addDescription = function() {
 
 				var desc = $('#descript').val();
+				$('#descript').val('');
 				if(desc != "")
 				{
 					//add class remove to remove this element after trigger click on .right
 					$('.active').addClass('remove');
 					$(".right").click();
-					$( ".remove" ).remove()
-					;
+					$( ".remove" ).remove();
+
 					//escape spaces
 					for (p in desc)
 					{
