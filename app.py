@@ -103,16 +103,15 @@ def edit():
 	if not checkDescription(code):
 		for template in code.filter_templates():
 			if template.name.matches('Information') or template.name.matches('information'):
-				if template.has('description'):
-					template.remove('description')
+				if template.has("description"):
+					template.remove("description")
+					template.add("description", description + '\n')
+				elif template.has("Description"):
+					template.remove("Description")
+					template.add("Description", description + '\n')
 				else:
-					template.add('description', description + '\n')
-					break
-				if template.has('Description'):
-					template.remove('Description')
-				else:
-					template.add('Description', description + '\n')
-					break
+					template.add("description", description + '\n')
+				break
 
 		r = requests.post(url=app.config['API_MWURI'], params={'format': 'json', 'action': 'query', 'meta': 'tokens', 'type': 'csrf'}, headers={'User-Agent': 'Commons Mass Description filler'}, auth=auth)
 		token = json.loads(r.content)['query']['tokens']['csrftoken']
