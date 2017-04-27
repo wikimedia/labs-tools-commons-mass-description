@@ -120,7 +120,7 @@
 
 					data = desc;
 					$.get("https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + data, function ( json ) {
-						console.log(json);
+						console.log(json['status']);
 					});
 				}
 			};
