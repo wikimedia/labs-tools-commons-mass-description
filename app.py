@@ -94,10 +94,14 @@ def edit():
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
 	description = request.args.get('description')
 	image = request.args.get('image')
+	lang = request.args.get('lang')
 
 	if description == None or image == None:
 		reply = {'status': 'error', 'data': {'errorcode': 'mustpassparams', 'description': 'You must pass both "description" and "image" GET params'}}
 		return Response(json.dumps(reply), mimetype='application/json')
+
+	if lang != None:
+		description = '{{' + lang + '|' + description + '}}'
 
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
