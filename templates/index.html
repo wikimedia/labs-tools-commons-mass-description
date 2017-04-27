@@ -28,6 +28,7 @@
 			}
 
 			.alert {
+				padding-top:25px;
 				width: 1280px;
 			}
 		</style>
@@ -137,6 +138,7 @@
 						{
 							console.log('edited');
 							$('.alert-success').removeClass('hidden');
+							setTimeout(fade_out("alert-success"), 3000);
 						}else {
 							console.log('error');
 							$('.alert-danger').removeClass('hidden');
@@ -181,6 +183,10 @@
 			  }else if(left_or_right == "-") {
 			    data_offset -= 1;
 			  }
+			}
+
+			function fade_out(divorclass) {
+  			$(divorclass).fadeOut().empty();
 			}
 
 			$( document ).ready(function() {
