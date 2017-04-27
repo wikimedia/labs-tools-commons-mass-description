@@ -57,9 +57,6 @@
 			<div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
-					<!--
-						zde bude for cyklus ktery z jsony vytahne url a jmeno obrazku
-						-->
 					<div class="item active">
 						<img src="http://placehold.it/1280x720">
 						<div class="carousel-caption">
@@ -114,7 +111,6 @@
 			  console.log(data_offset);
 			  $.get("https://tools.wmflabs.org/commons-mass-description/images?offset=" + data_offset, function( json ) {
 			    for (var i = 0; i < json.length; i++) {
-			      //console.log(json[i]['url'], json[i]['title']);
 			      if(i != 9){
 			        addItemToCarousel(json[i]['url'], json[i]['title'], false);
 			      }
