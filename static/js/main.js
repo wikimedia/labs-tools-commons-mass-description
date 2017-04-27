@@ -14,10 +14,12 @@ addDescription = function() {
 	$('#descript').val('');
 	if(desc != "")
 	{
+		/*
 		//add class remove to remove this element after trigger click on .right
 		$('.active').addClass('remove');
 		$(".right").click();
 		$( ".remove" ).remove();
+		*/
 
 		//escape spaces
 		for (p in desc)
@@ -96,6 +98,11 @@ function fade_out_warning() {
 }
 
 $( document ).ready(function() {
+
+	$('.alert').on('close.bs.alert', function (e) {
+    e.preventDefault();
+    $(this).addClass('hidden');
+	});
 
 	$('#maincarousel').carousel({ interval: 500, wrap: false });
 	$('#maincarousel').carousel('pause');
