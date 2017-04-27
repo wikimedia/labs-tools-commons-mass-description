@@ -100,7 +100,17 @@
 				var desc = $('#descript').val();
 				if(desc != "")
 				{
-					data = 'test'
+
+					//escape spaces
+					for (p in desc)
+					{
+						if( p == " ")
+						{
+							p = "%20%";
+						}
+					}
+
+					data = desc;
 					$.get( "https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + data, function ( json ) {
 						console.log(json);
 					});
