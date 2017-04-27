@@ -51,6 +51,12 @@ def images():
 	if request.headers['X-Forwarded-Proto'] == "http":
 		return flask.redirect(request.url.replace('http://', 'https://')) # Force HTTPS for our users
 	toFetch = 10
+	if request.args.get('toFetch') == None:
+		toFetch = 10
+	else:
+		offset = int(request.args.get('toFetch'))
+	if toFetch < 1:
+		toFetch = 10
 	offset = 0
 	if request.args.get('offset') == None:
 		offset = 0
