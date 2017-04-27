@@ -18,6 +18,9 @@ addDescription = function() {
 			if( p == " ")
 			{
 				p = "%20";
+			}else {
+				$('.alert-success').removeClass('hidden');
+				setTimeout(fade_out_warning, 3000);
 			}
 		}
 
@@ -28,7 +31,7 @@ addDescription = function() {
 			{
 				console.log('edited');
 				$('.alert-success').removeClass('hidden');
-				setTimeout(fade_out, 3000);
+				setTimeout(fade_out_success, 3000);
 			}else {
 				console.log('error');
 				$('.alert-danger').removeClass('hidden');
@@ -75,8 +78,12 @@ offset = function(left_or_right) {
 	}
 }
 
-function fade_out() {
+function fade_out_success() {
 	$(".alert-success").fadeOut().empty();
+}
+
+function fade_out_warning() {
+	$(".alert-warning").fadeOut().empty();
 }
 
 $( document ).ready(function() {
