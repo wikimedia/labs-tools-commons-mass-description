@@ -18,9 +18,6 @@ addDescription = function() {
 			if( p == " ")
 			{
 				p = "%20";
-			}else {
-				$('.alert-warning').removeClass('hidden');
-				setTimeout(fade_out_warning, 3000);
 			}
 		}
 
@@ -37,6 +34,10 @@ addDescription = function() {
 				$('.alert-danger').removeClass('hidden');
 			}
 		});
+	}
+	else {
+		$('.alert-warning').removeClass('hidden');
+		setTimeout(fade_out_warning, 3000);
 	}
 };
 
