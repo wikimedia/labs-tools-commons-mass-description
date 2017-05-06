@@ -111,7 +111,13 @@ def edit():
 		return r
 
 	if lang != None:
-		description = '{{' + lang + '|' + description + '}}'
+		if checkLang(lang):
+			description = '{{' + lang + '|' + description + '}}'
+		else:
+			reply = {'status': 'error', 'data': {'errorcode': 'nonexistentlang', 'description': 'You can\'t pass nonexistent language code. Won\'t process.'}}
+			r = Response(json.dumps(reply), mimetype='application/json')
+			r.headers.set('Access-Control-Allow-Origin', '*')
+			return r
 
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
@@ -190,6 +196,23 @@ def checkDescriptionPage():
 
 	reply = {'description': checkDescription(code)}
 
+	r = Response(json.dumps(reply), mimetype="application/json")
+	r.headers.set('Access-Control-Allow-Origin', '*')
+	return r
+
+def checkLang(lang):
+	pagetocheck = 'Template:' + lang.lower()
+	data = {'action': 'query', 'format': 'json', 'titles': pagetocheck}
+	r = requests.post(url=app.config['API_MWURI'], params=data)
+	d = json.loads(r.content)
+	if list(d['query']['pages'].keys())[0] == '-1':
+		return False
+	return True
+
+@app.route('/checkLang')
+def checkLangPage():
+	res = checkLang(request.args.get('lang'))
+	reply = {'langexist': res}
 	r = Response(json.dumps(reply), mimetype="application/json")
 	r.headers.set('Access-Control-Allow-Origin', '*')
 	return r
