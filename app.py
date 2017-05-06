@@ -122,7 +122,13 @@ def edit():
 	data = {'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'format': 'json', 'titles': image}
 	r = requests.post(url=app.config['API_MWURI'], params=data)
 	data = json.loads(r.content)['query']['pages']
-	text = data[str(list(data.keys())[0])]['revisions'][0]['*']
+	pageid = list(data.keys())[0]
+	if pageid == "-1":
+		reply = {'status': 'error', 'data': {'errorcode': 'nonexistentimg', 'description': 'The image you are trying to edit doesn\t exist'}}
+		r = Response(json.dumps(reply), mimetype='application/json')
+		r.headers.set('Access-Control-Allow-Origin', '*')
+		return r
+	text = data[str(pageid)]['revisions'][0]['*']
 	code = mwparserfromhell.parse(text)
 
 	if not checkDescription(code):
