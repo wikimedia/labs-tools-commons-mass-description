@@ -12,6 +12,10 @@ addDescription = function() {
 
 	var desc = $('#descript').val();
 	$('#descript').val('');
+	// Shouldn't there be .active? See #29
+	var filename = $('.left').find('.carousel-caption').text();
+	console.log(filename);
+
 	if(desc != "")
 	{
 
@@ -29,8 +33,7 @@ addDescription = function() {
 			}
 		}
 
-		data = desc;
-		$.get("https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + data, function ( json ) {
+		$.get("https://tools.wmflabs.org/commons-mass-description/edit?image=User:Martin_Urbanec/sand&description=" + desc, function ( json ) {
 			//console.log(json['status']);
 			if(json['status'] == 'ok')
 			{
