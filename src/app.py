@@ -18,7 +18,7 @@ import os
 import yaml
 import simplejson as json
 import requests
-from urllib.parse import quote
+from urllib import quote
 from flask import Response, make_response
 import mwoauth
 import mwoauth.flask
@@ -28,6 +28,7 @@ from flask import request
 import mwparserfromhell
 
 app = flask.Flask(__name__)
+application = app
 
 
 # Load configuration from YAML file
