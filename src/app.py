@@ -19,7 +19,7 @@ import yaml
 import simplejson as json
 import requests
 from urllib.parse import quote
-from flask import Response, make_response, redirect
+from flask import Response, make_response, redirect, request
 import mwoauth
 import mwoauth.flask
 from requests_oauthlib import OAuth1
