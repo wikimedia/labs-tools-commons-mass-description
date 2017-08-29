@@ -39,6 +39,14 @@ app.config.update(
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
+@app.before_request
+def force_https():
+    if request.headers.get('X-Forwarded-Proto') == 'http':
+        return redirect(
+            'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
+            code=301
+        )
+
 @app.route('/')
 def index():
 	return flask.render_template('index.html', username=flask.session.get('username'))
