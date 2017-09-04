@@ -5,7 +5,9 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class LoginService {
 
-  constructor(private _http: Http) { }
+  constructor(private _http: Http) { 
+    this.isLogged();
+  }
 
   private _url = "https://tools.wmflabs.org/commons-mass-description/api-username";
 

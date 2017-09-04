@@ -142,6 +142,7 @@ var LoginService = (function () {
     function LoginService(_http) {
         this._http = _http;
         this._url = "https://tools.wmflabs.org/commons-mass-description/api-username";
+        this.isLogged();
     }
     LoginService.prototype.isLogged = function () {
         return this._http.get(this._url)
@@ -180,7 +181,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-2\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Common-mass-description</a>\n    </div>\n\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-2\">\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"#\">{{ login[0] }}</a></li>\n        <li><a href=\"#\">Login</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-2\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Common-mass-description</a>\n    </div>\n\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-2\">\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"#\">{{ login.username }}</a></li>\n        <li><a href=\"#\">Login</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ }),
 
@@ -205,13 +206,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var NavbarComponent = (function () {
     function NavbarComponent(_login) {
         this._login = _login;
-        this.login = [];
+        this.login = {};
     }
     NavbarComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this._login.isLogged()
-            .subscribe(function (resLoginData) { return _this.login = resLoginData; });
-        console.log(this.login);
+        this._login.isLogged().subscribe(function (data) {
+            console.log(data);
+            _this.login = data;
+        });
     };
     return NavbarComponent;
 }());
