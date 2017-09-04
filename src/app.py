@@ -84,15 +84,17 @@ def images():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	result = r.json()
-	keys = list(result['query']['pages'].keys())
-	keys = keys[-paginateby:]
-	for key in keys:
-		imagedata = result['query']['pages'][key]
-		newimagedata = {
-			'url': imagedata['imageinfo'][0]['url'],
-			'name': imagedata['title']
-		}
-		data['images'].append(newimagedata)
+	toskip = limit-paginateby
+	i = 0
+	for key in result['query']['pages']:
+		if i > toskip:
+			imagedata = result['query']['pages'][key]
+			newimagedata = {
+				'url': imagedata['imageinfo'][0]['url'],
+				'name': imagedata['title']
+			}
+			data['images'].append(newimagedata)
+		i += 1
 	return jsonify(data)
 
 @app.route('/login')
