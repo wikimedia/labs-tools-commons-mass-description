@@ -64,6 +64,8 @@ def images():
 	offset = request.args.get('offset')
 	if offset == None:
 		offset = 0
+	else:
+		offset = int(offset)
 	offset += 1
 	limit = paginateby*offset
 	data = {
