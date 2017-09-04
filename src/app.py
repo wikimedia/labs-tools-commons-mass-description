@@ -79,7 +79,7 @@ def images():
 	for page in result['query']['pages']:
 		imagedata = result['query']['pages'][page]
 		newimagedata = {
-			'url': imagedata['imageinfo']['url'],
+			'url': imagedata['imageinfo'][0]['url'],
 			'name': imagedata['title']
 		}
 		data['images'].append(newimagedata)
