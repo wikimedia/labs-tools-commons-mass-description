@@ -60,6 +60,12 @@ def username():
 
 @app.route('/api-images')
 def images():
+	paginateby = 10
+	offset = request.args.get('offset')
+	if offset == None:
+		offset = 0
+	offset += 1
+	limit = paginateby*offset
 	data = {
 		'status': 'ok',
 		'images': []
@@ -70,13 +76,13 @@ def images():
 		"prop": "imageinfo",
 		"generator": "categorymembers",
 		"iiprop": "url",
-		"iilimit": "10",
+		"iilimit": limit,
 		"gcmtitle": "Category:Media_lacking_a_description",
 		"gcmtype": "file"
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	result = r.json()
-	for page in result['query']['pages']:
+	for page in result['query']['pages'][-10:]:
 		imagedata = result['query']['pages'][page]
 		newimagedata = {
 			'url': imagedata['imageinfo'][0]['url'],
