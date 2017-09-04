@@ -58,6 +58,33 @@ def username():
 	data = {'username': flask.session.get('username')}
 	return jsonify(data)
 
+@app.route('/api-images')
+def images():
+	data = {
+		'status': 'ok',
+		'images': []
+	}
+	params = {
+		"action": "query",
+		"format": "json",
+		"prop": "imageinfo",
+		"generator": "categorymembers",
+		"iiprop": "url",
+		"iilimit": "10",
+		"gcmtitle": "Category:Media_lacking_a_description",
+		"gcmtype": "file"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	result = r.json()
+	for page in result['query']['pages']:
+		imagedata = result['query']['pages'][page]
+		newimagedata = {
+			'url': imagedata['imageinfo']['url'],
+			'name': imagedata['title']
+		}
+		data['images'].append(newimagedata)
+	return jsonify(data)
+
 @app.route('/login')
 def login():
 	"""Initiate an OAuth login.
