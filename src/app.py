@@ -45,7 +45,11 @@ def force_https():
 
 @app.route('/')
 def index():
-	return flask.render_template('index.html', username=flask.session.get('username'))
+	return flask.render_template('index.html')
+
+@app.route('/api-username')
+def username():
+	return flask.session.get('username')
 
 @app.route('/login')
 def login():
