@@ -19,7 +19,7 @@ import yaml
 import simplejson as json
 import requests
 from urllib.parse import quote
-from flask import redirect, request
+from flask import redirect, request, jsonify
 import mwoauth
 import mwparserfromhell
 
@@ -49,7 +49,8 @@ def index():
 
 @app.route('/api-username')
 def username():
-	return flask.session.get('username')
+	data = {'username': flask.session.get('username')}
+	return jsonify(data)
 
 @app.route('/login')
 def login():
