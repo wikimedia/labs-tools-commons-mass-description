@@ -90,6 +90,7 @@ def images():
 		offset = int(offset)
 	if offset != 0:
 		limit *= offset
+		limit += paginateby
 	data = {
 		'status': 'ok',
 		'images': []
