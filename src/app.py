@@ -136,7 +136,7 @@ def edit():
 		"text": "Test",
 		"token": edittoken
 	}
-	r = request.post(app.config['API_MWURI'], data=params)
+	r = requests.post(app.config['API_MWURI'], data=params, auth=auth)
 	return jsonify(r.json())
 
 @app.route('/api-langs')
