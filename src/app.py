@@ -114,7 +114,8 @@ def images():
 		imageRes["url"] = data[image]["imageinfo"][0]["url"]
 		res.append(imageRes)
 
-	return jsonify(res)
+	return Response(json.dumps(res), mimetype='application/json')
+
 
 @app.route('/login')
 def login():
