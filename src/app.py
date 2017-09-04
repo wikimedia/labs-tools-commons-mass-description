@@ -75,7 +75,7 @@ def imageinfo():
 	data = r.json()
 	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
 	imagedata = {
-		'url': data['url']
+		'url': data['imageinfo'][0]['url']
 	}
 	return imagedata
 
