@@ -22,6 +22,7 @@ from urllib.parse import quote
 from flask import redirect, request, jsonify
 import mwoauth
 import mwparserfromhell
+from requests_oauthlib import OAuth1
 
 app = flask.Flask(__name__)
 application = app
@@ -114,6 +115,29 @@ def images():
 		images.append(newimagedata)
 	res['images'] = images[-10:]
 	return jsonify(res)
+
+@app.route('/api-edit')
+def edit():
+	data = request.get_json()
+	request_token_secret = flask.session.get('request_token_secret', None)
+	request_token_key = flask.session.get('request_token_key', None)
+	auth = OAuth1(key, secret, request_token_key, request_token_secret)
+	params = {
+		"action": "query",
+		"format": "json",
+		"meta": "tokens"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	edittoken = r.json()['query']['tokens']['csrftoken']
+	params = {
+		"action": "edit",
+		"format": "json",
+		"title": "User:Martin Urbanec/sand",
+		"text": "Test",
+		"token": edittoken
+	}
+	r = request.post(app.config['API_MWURI'], data=params)
+	return jsonify(r.json())
 
 @app.route('/api-langs')
 def langs():
