@@ -81,39 +81,28 @@ def imageinfo():
 
 @app.route('/api-images')
 def images():
-	toFetch = 10
-	offset = 0
-	if request.args.get('offset') == None:
-		offset = 0
-	else:
-		offset = int(request.args.get('offset'))
-	if offset < 0:
-		offset = 0
-	toFetch += offset
-	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
-	r = requests.get(urlImages)
-	dataOrig = json.loads(r.text)
-	data = dataOrig['query']['categorymembers']
-
-	filenames = []
-	i = 0
-	for image in data:
-		filenames.append(image['title'])
-
-	filenames = filenames[-10:]
-
-	url = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote("|".join(filenames))
-	r = requests.get(url)
-	data = json.loads(r.text)
-	data = data["query"]["pages"]
-
-	res = []
-	for image in data:
-		imageRes = {}
-		imageRes['title'] = data[image]["title"].replace("\n", "")
-		imageRes["url"] = data[image]["imageinfo"][0]["url"]
-		res.append(imageRes)
-
+	params = {
+		"action": "query",
+		"format": "json",
+		"prop": "imageinfo",
+		"generator": "categorymembers",
+		"iiprop": "url",
+		"iilimit": "10",
+		"gcmtitle": "Category:Media_lacking_a_description",
+		"gcmtype": "file"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	data = r.json()
+	res = {
+		'images': []
+	}
+	for page in data['query']['pages']:
+		imagedata = data['query']['pages'][page]
+		newimagedata = {
+			'title': imagedata['title'],
+			'url': imagedata['imageinfo'][0]['url']
+		}
+		res['images'].append(newimagedata)
 	return jsonify(res)
 
 @app.route('/login')
