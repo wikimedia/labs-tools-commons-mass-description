@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.img-small {\n    min-width: 50px;\n    min-height: 50px;\n    max-width: 50px;\n    max-height: 50px;\n}", ""]);
 
 // exports
 
