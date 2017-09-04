@@ -114,7 +114,7 @@ def images():
 			'name': imagedata['title']
 		}
 		data['images'].append(newimagedata)
-	data['images'] = data['images'][-paginateby:]
+	data['images'] = data['images'][-10:]
 	return jsonify(data)
 
 @app.route('/login')
