@@ -61,6 +61,8 @@ def username():
 @app.route('/api-imageinfo')
 def imageinfo():
 	title = request.args.get('title')
+	if title == None:
+		return 'bad request'
 	params = {
 		"action": "query",
 		"format": "json",
@@ -71,7 +73,7 @@ def imageinfo():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	data = r.json()
-	data = data['query']['pages'][data['query']['pages'].keys()[0]]
+	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
 	imagedata = {
 		'url': data['url']
 	}
