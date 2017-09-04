@@ -1,0 +1,9 @@
+#!/bin/bash
+
+scriptdir="`dirname \"$0\"`"
+dir="$scriptdir/.."
+
+sed -i 's@src="@src="https://tools-static.wmflabs.org/commons-mass-description/@g' $dir/angular/src/dist/index.html
+cp $dir/angular/src/dist/index.html $dir/src/templates/index.html
+cp $dir/angular/src/dist/*.js $dir/static
+cp $dir/angular/src/dist/*.css $dir/static
