@@ -77,7 +77,7 @@ def imageinfo():
 	imagedata = {
 		'url': data['imageinfo'][0]['url']
 	}
-	return imagedata
+	return jsonify(imagedata)
 
 @app.route('/api-images')
 def images():
