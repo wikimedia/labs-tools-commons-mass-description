@@ -81,41 +81,41 @@ def imageinfo():
 
 @app.route('/api-images')
 def images():
-	paginateby = 10
-	limit = paginateby
-	offset = request.args.get('offset')
-	if offset == None:
+	toFetch = 10
+	offset = 0
+	if request.args.get('offset') == None:
 		offset = 0
 	else:
-		offset = int(offset)
-	if offset != 0:
-		limit *= offset
-		limit += paginateby
-	data = {
-		'status': 'ok',
-		'images': []
-	}
-	params = {
-		"action": "query",
-		"format": "json",
-		"prop": "imageinfo",
-		"generator": "categorymembers",
-		"iiprop": "url",
-		"iilimit": str(limit),
-		"gcmtitle": "Category:Media_lacking_a_description",
-		"gcmtype": "file"
-	}
-	r = requests.get(app.config['API_MWURI'], params=params)
-	result = r.json()
-	for page in result['query']['pages']:
-		imagedata = result['query']['pages'][page]
-		newimagedata = {
-			'url': imagedata['imageinfo'][0]['url'],
-			'name': imagedata['title']
-		}
-		data['images'].append(newimagedata)
-	data['images'] = data['images'][-10:]
-	return jsonify(data)
+		offset = int(request.args.get('offset'))
+	if offset < 0:
+		offset = 0
+	toFetch += offset
+	urlImages = app.config['API_MWURI'] + '?action=query&format=json&list=categorymembers&cmtitle=Category%3AMedia_lacking_a_description&cmprop=title&cmtype=file&cmlimit=' + str(toFetch)
+	r = requests.get(urlImages)
+	dataOrig = json.loads(r.text)
+	data = dataOrig['query']['categorymembers']
+
+	filenames = []
+	i = 0
+	for image in data:
+		filenames.append(image['title'])
+
+	filenames = filenames[-10:]
+
+	url = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=' + quote("|".join(filenames))
+	r = requests.get(url)
+	data = json.loads(r.text)
+	data = data["query"]["pages"]
+
+	res = []
+	for image in data:
+		imageRes = {}
+		imageRes['title'] = data[image]["title"].replace("\n", "")
+		imageRes["url"] = data[image]["imageinfo"][0]["url"]
+		res.append(imageRes)
+
+	return Response(json.dumps(res), mimetype='application/json')
+
 
 @app.route('/login')
 def login():

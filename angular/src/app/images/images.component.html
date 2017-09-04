@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <table class="table">
+    <thead>
+      <th>img</th>
+      <th>name</th>
+      <th>description</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let img of images.images">
+        <td><img class="img-small" src="{{ img.url }}" alt=""></td>
+        <td><a (click)="onSelect(img)">{{ img.name }}</a></td>
+        <td><input class="form-control" type="text"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
