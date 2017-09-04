@@ -14,7 +14,8 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li *ngIf="login.username != null; else log"><a href="#">{{ login.username }}</a></li>
-        <ng-template #log><li><a href="#">Login</a></li></ng-template>
+        <li *ngIf="login.username != null"><a href="logout">Logout</a></li>
+        <ng-template #log><li><a href="login">Login</a></li></ng-template>
       </ul>
     </div>
   </div>
