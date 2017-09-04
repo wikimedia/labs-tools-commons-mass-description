@@ -7,10 +7,6 @@ cd $dir/angular
 ng build
 cd $OLDPWD
 sed -i 's@src="@src="https://tools-static.wmflabs.org/commons-mass-description/@g' $dir/angular/dist/index.html
-for i in $(find $dir/angular/dist -type f)
-do
-    sed -i 's/ZAVORKAOTEVIRACI/{/g;s/ZAVORKAZAVIRACI/}/g' $i
-done
 cp $dir/angular/dist/index.html $dir/src/templates/index.html
 cp $dir/angular/dist/*.js $dir/static
 cp $dir/angular/dist/*.css $dir/static
