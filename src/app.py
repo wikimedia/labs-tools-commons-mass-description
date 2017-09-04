@@ -84,13 +84,19 @@ def images():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	result = r.json()
-	for page in list(result['query']['pages'].keys())[-10:]:
+	keys = list(result['query']['pages'].keys())
+	keys.reverse()
+	i = 0
+	for page in result['query']['pages']:
 		imagedata = result['query']['pages'][page]
 		newimagedata = {
 			'url': imagedata['imageinfo'][0]['url'],
 			'name': imagedata['title']
 		}
 		data['images'].append(newimagedata)
+		i += 1
+		if i > 10:
+			break
 	return jsonify(data)
 
 @app.route('/login')
