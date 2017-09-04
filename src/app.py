@@ -82,7 +82,7 @@ def images():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	result = r.json()
-	for page in result['query']['pages'][-10:]:
+	for page in result['query']['pages'].keys()[-10:]:
 		imagedata = result['query']['pages'][page]
 		newimagedata = {
 			'url': imagedata['imageinfo'][0]['url'],
