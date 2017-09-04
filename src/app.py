@@ -127,7 +127,7 @@ def edit():
 		"format": "json",
 		"meta": "tokens"
 	}
-	r = requests.get(app.config['API_MWURI'], params=params)
+	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
 	edittoken = r.json()['query']['tokens']['csrftoken']
 	params = {
 		"action": "edit",
