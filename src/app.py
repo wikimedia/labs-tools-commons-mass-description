@@ -84,7 +84,7 @@ def images():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	result = r.json()
-	keys = result['query']['pages'].keys()
+	keys = list(result['query']['pages'].keys())
 	keys = keys[-paginateby:]
 	for key in keys:
 		imagedata = result['query']['pages'][key]
