@@ -81,6 +81,15 @@ def imageinfo():
 
 @app.route('/api-images')
 def images():
+	paginateby = 10
+	limit = paginateby
+	offset = request.args.get('offset')
+	if offset == None:
+		offset = 0
+	else:
+		offset = int(offset)
+	if offset != 0:
+		limit *= offset
 	data = {
 		'status': 'ok',
 		'images': []
@@ -91,7 +100,7 @@ def images():
 		"prop": "imageinfo",
 		"generator": "categorymembers",
 		"iiprop": "url",
-		"iilimit": "10",
+		"iilimit": str(limit),
 		"gcmtitle": "Category:Media_lacking_a_description",
 		"gcmtype": "file"
 	}
@@ -104,6 +113,7 @@ def images():
 			'name': imagedata['title']
 		}
 		data['images'].append(newimagedata)
+	data['images'] = data['images'][-paginateby:]
 	return jsonify(data)
 
 @app.route('/login')
