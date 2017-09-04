@@ -42,6 +42,12 @@ def force_https():
             'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
             code=301
         )
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    return response
 
 @app.route('/')
 def index():
