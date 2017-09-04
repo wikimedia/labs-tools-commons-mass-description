@@ -13,8 +13,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
 
-        <li *ngIf="login.username != null; else login"><a href="#">{{ login.username }}</a></li>
-        <ng-template #login><li><a href="#">Login</a></li></ng-template>
+        <li *ngIf="login.username != null; else log"><a href="#">{{ login.username }}</a></li>
+        <ng-template #log><li><a href="#">Login</a></li></ng-template>
       </ul>
     </div>
   </div>
