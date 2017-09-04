@@ -6,7 +6,7 @@ dir="$scriptdir/.."
 cd $dir/angular
 ng build
 cd $OLDPWD
-sed -i 's@src="@src="https://tools-static.wmflabs.org/commons-mass-description/@g' $dir/angular/dist/index.html
+sed -i 's@type="text/javascript" src="@type="text/javascript" src="https://tools-static.wmflabs.org/commons-mass-description/@g' $dir/angular/dist/index.html
 cp $dir/angular/dist/index.html $dir/src/templates/index.html
 cp $dir/angular/dist/*.js $dir/static
 cp $dir/angular/dist/*.css $dir/static
