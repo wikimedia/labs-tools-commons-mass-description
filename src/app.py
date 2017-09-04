@@ -67,7 +67,7 @@ def imageinfo():
 		"action": "query",
 		"format": "json",
 		"prop": "imageinfo",
-		"titles": "File:\"Importados\".jpg",
+		"titles": title,
 		"iiprop": "url",
 		"iilimit": "10"
 	}
