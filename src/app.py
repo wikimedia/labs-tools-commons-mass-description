@@ -115,6 +115,31 @@ def images():
 	res['images'] = images[-10:]
 	return jsonify(res)
 
+@app.route('/api-langs')
+def langs():
+	params = {
+		"action": "sitematrix",
+		"format": "json",
+		"smtype": "language",
+		"smstate": "all",
+		"smlangprop": "code|name",
+		"smlimit": "max"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	data = r.json()
+	langs = []
+	for key in data['sitematrix'].keys():
+		if key != 'count':
+			langs.append({
+				'code': data['sitematrix'][key]['code'],
+				'name': data['sitematrix'][key]['name']
+			})
+	res = {
+		'status': 'ok',
+		'langs': langs
+	}
+	return jsonify(res)
+
 @app.route('/login')
 def login():
 	"""Initiate an OAuth login.
