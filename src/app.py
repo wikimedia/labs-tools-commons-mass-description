@@ -58,6 +58,27 @@ def username():
 	data = {'username': flask.session.get('username')}
 	return jsonify(data)
 
+@app.route('/api-imageinfo')
+def imageinfo():
+	title = request.args.get('title')
+	if title == None:
+		return 'bad request'
+	params = {
+		"action": "query",
+		"format": "json",
+		"prop": "imageinfo",
+		"titles": "File:\"Importados\".jpg",
+		"iiprop": "url",
+		"iilimit": "10"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	data = r.json()
+	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
+	imagedata = {
+		'url': data['imageinfo'][0]['url']
+	}
+	return jsonify(imagedata)
+
 @app.route('/api-images')
 def images():
 	paginateby = 10
