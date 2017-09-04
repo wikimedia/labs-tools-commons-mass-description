@@ -67,7 +67,8 @@ def images():
 		offset = 0
 	else:
 		offset = int(offset)
-	limit *= offset
+	if offset != 0:
+		limit *= offset
 	data = {
 		'status': 'ok',
 		'images': []
