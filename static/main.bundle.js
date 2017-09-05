@@ -334,7 +334,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/images/images.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div *ngIf=\"login.username != null; else log\" class=\"container-fluid\">\n  <table class=\"table\">\n    <thead>\n      <th>img</th>\n      <th>name</th>\n      <th>description</th>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let img of images.images\">\n        <td><a (click)=\"onSelect(img)\"><img class=\"img-small\" src=\"{{ img.url }}\"></a></td>\n        <td><a (click)=\"onSelect(img)\">{{ img.title }}</a></td>\n        <td><input class=\"form-control\" type=\"text\"></td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n<ng-template #log>\n  <h1>Please log in</h1>\n</ng-template>"
+module.exports = "\n<div *ngIf=\"login.username != null; else log\" class=\"container-fluid\">\n  <table class=\"table\">\n    <thead>\n      <th>img</th>\n      <th>name</th>\n      <th>description</th>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let img of images.images\">\n        <td><a (click)=\"onSelect(img)\"><img class=\"img-small\" src=\"{{ img.url }}\"></a></td>\n        <td><a (click)=\"onSelect(img)\">{{ img.title }}</a></td>\n        <td><input class=\"form-control\" type=\"text\"></td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n<ng-template #log>\n  <h1>Please <a href=\"https://tools.wmflabs.org/commons-mass-description/login\">login</a></h1>\n</ng-template>"
 
 /***/ }),
 
