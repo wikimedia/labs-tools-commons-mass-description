@@ -334,7 +334,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/images/images.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <table class=\"table\">\n    <thead>\n      <th>img</th>\n      <th>name</th>\n      <th>description</th>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let img of images.images\">\n        <td><img class=\"img-small\" src=\"{{ img.url }}\" alt=\"\"></td>\n        <td><a (click)=\"onSelect(img)\">{{ img.name }}</a></td>\n        <td><input class=\"form-control\" type=\"text\"></td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+module.exports = "\n<div *ngIf=\"login.username != null; else log\" class=\"container-fluid\">\n  <table class=\"table\">\n    <thead>\n      <th>img</th>\n      <th>name</th>\n      <th>description</th>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let img of images.images\">\n        <td><a (click)=\"onSelect(img)\"><img class=\"img-small\" src=\"{{ img.url }}\"></a></td>\n        <td><a (click)=\"onSelect(img)\">{{ img.title }}</a></td>\n        <td><input class=\"form-control\" type=\"text\"></td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n<ng-template #log>\n  <h1>Please log in</h1>\n</ng-template>"
 
 /***/ }),
 
@@ -346,6 +346,7 @@ module.exports = "<div class=\"container-fluid\">\n  <table class=\"table\">\n  
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_service__ = __webpack_require__("../../../../../src/app/images.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_service__ = __webpack_require__("../../../../../src/app/login.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -358,11 +359,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ImagesComponent = (function () {
-    function ImagesComponent(_router, _images) {
+    function ImagesComponent(_router, _images, _login) {
         this._router = _router;
         this._images = _images;
+        this._login = _login;
         this.images = [];
+        this.login = {};
     }
     ImagesComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -370,9 +374,13 @@ var ImagesComponent = (function () {
             console.log(data);
             _this.images = data;
         });
+        this._login.isLogged().subscribe(function (data) {
+            console.log(data);
+            _this.login = data;
+        });
     };
     ImagesComponent.prototype.onSelect = function (img) {
-        this._router.navigate(['/image', img.name]);
+        this._router.navigate(['/image', img.title]);
     };
     return ImagesComponent;
 }());
@@ -382,10 +390,10 @@ ImagesComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/images/images.component.html"),
         styles: [__webpack_require__("../../../../../src/app/images/images.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__images_service__["a" /* ImagesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__images_service__["a" /* ImagesService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__images_service__["a" /* ImagesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__images_service__["a" /* ImagesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__login_service__["a" /* LoginService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__login_service__["a" /* LoginService */]) === "function" && _c || Object])
 ], ImagesComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=images.component.js.map
 
 /***/ }),
