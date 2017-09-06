@@ -163,7 +163,7 @@ def edit():
 		"action": "edit",
 		"format": "json",
 		"title": page,
-		"text": "Test",
+		"text": str(code),
 		"token": edittoken
 	}
 	r = requests.post(app.config['API_MWURI'], data=params, auth=auth)
