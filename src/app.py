@@ -119,9 +119,22 @@ def images():
 @app.route('/api-edit')
 def edit():
 	data = request.get_json()
+	page = data['image']
+	page = "User:Martin Urbanec/sand" # Debug
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
+	params = {
+		"action": "query",
+		"format": "json",
+		"prop": "revisions",
+		"titles": page,
+		"rvprop": "content"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
+	data = r.json()
+	content = data['query']['pages'][data['query']['pages'].keys()[0]]['revisions'][0]['*']
+	return content
 	params = {
 		"action": "query",
 		"format": "json",
@@ -132,7 +145,7 @@ def edit():
 	params = {
 		"action": "edit",
 		"format": "json",
-		"title": "User:Martin Urbanec/sand",
+		"title": page,
 		"text": "Test",
 		"token": edittoken
 	}
