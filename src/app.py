@@ -119,7 +119,7 @@ def images():
 @app.route('/api-edit')
 def edit():
 	data = request.get_json()
-	page = data['image']
+	#page = data['image'] # Disabled due to debug
 	page = "User:Martin Urbanec/sand" # Debug
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
