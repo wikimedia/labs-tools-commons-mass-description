@@ -152,6 +152,7 @@ def edit():
 			if not parampresent:
 				template.add('description', description)
 			break
+	return str(code)
 	params = {
 		"action": "query",
 		"format": "json",
