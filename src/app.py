@@ -133,7 +133,7 @@ def edit():
 	}
 	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
 	data = r.json()
-	content = data['query']['pages'][data['query']['pages'].keys()[0]]['revisions'][0]['*']
+	content = data['query']['pages'][list(data['query']['pages'].keys())[0]]['revisions'][0]['*']
 	return content
 	params = {
 		"action": "query",
