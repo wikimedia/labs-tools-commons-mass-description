@@ -121,6 +121,8 @@ def edit():
 	data = request.get_json()
 	#page = data['image'] # Disabled due to debug
 	page = "User:Martin Urbanec/sand" # Debug
+	#description = data['description'] # Disabled due to debug
+	description = "Test"
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
@@ -134,7 +136,22 @@ def edit():
 	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
 	data = r.json()
 	content = data['query']['pages'][list(data['query']['pages'].keys())[0]]['revisions'][0]['*']
-	return content
+	code = mwparserfromhell.parse(content)
+	for template in code.filter_templates():
+		templatename = template.name
+		templatename.replace('\n', '')
+		if templatename.lower() == 'information':
+			parampresent = False
+			for param in template.params:
+				paramname = param.name
+				paramname.replace(' ', '')
+				if paramname == 'description':
+					parampresent = True
+					param.value = description
+					break
+			if not parampresent:
+				template.add('description', description)
+			break
 	params = {
 		"action": "query",
 		"format": "json",
