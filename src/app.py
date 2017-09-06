@@ -147,6 +147,7 @@ def edit():
 				paramname.replace(' ', '')
 				if paramname == 'description':
 					parampresent = True
+					print 'Parampresent'
 					param.value = description
 					break
 			if not parampresent:
