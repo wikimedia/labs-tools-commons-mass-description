@@ -141,17 +141,9 @@ def edit():
 		templatename = str(template.name)
 		templatename.replace('\n', '')
 		if templatename.lower() == 'information':
-			parampresent = False
-			for param in template.params:
-				paramname = param.name
-				paramname.replace(' ', '')
-				if paramname == 'description':
-					parampresent = True
-					print 'Parampresent'
-					param.value = description
-					break
-			if not parampresent:
-				template.add('description', description)
+			if template.has('description'):
+				template.remove('description')
+			template.add('description', description)
 			break
 	return str(code)
 	params = {
