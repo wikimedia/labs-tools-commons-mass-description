@@ -138,7 +138,7 @@ def edit():
 	content = data['query']['pages'][list(data['query']['pages'].keys())[0]]['revisions'][0]['*']
 	code = mwparserfromhell.parse(content)
 	for template in code.filter_templates():
-		templatename = template.name
+		templatename = str(template.name)
 		templatename.replace('\n', '')
 		if templatename.lower() == 'information':
 			parampresent = False
