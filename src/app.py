@@ -148,6 +148,17 @@ def editall():
 	for item in languages:
 		langcodes.append(item['code'])
 	for image in data:
+		if 'description' not in image or 'lang' not in image or 'title' not in image:
+			if 'title' in image:
+				title = image['title']
+			else:
+				title = 'n-a'
+			response = {
+				'status': 'error',
+				'errorcode': 'mustpassparams',
+				'title': title
+			}
+			return jsonify(response)
 		if image['lang'] not in langcodes:
 			response = {
 				'status': 'error',
