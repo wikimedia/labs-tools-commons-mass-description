@@ -119,8 +119,20 @@ def images():
 @app.route('/api-edit', methods=['post'])
 def editall():
 	data = request.get_json()
+	langs = langs()['langs']
+	langcodes = []
+	for item in langs:
+		langcodes.append(item['code'])
 	for image in data:
-		imageres = edit(image['title'], image['description'], image['lang'])
+		if image['lang'] not in langcodes:
+			response = {
+				'status': 'error',
+				'errorcode': 'nonexistentlang',
+				'title': image['title']
+			}
+			return jsonify(response)
+		description = '{{' + image['lang'] + '|' + image['description'] + '}}'
+		imageres = edit(image['title'], description)
 		if imageres['status'] != 'ok':
 			response = {
 				'status': 'error',
@@ -131,7 +143,7 @@ def editall():
 	response = {'status': 'ok'}
 	return jsonify(response)
 
-def edit(page, description, lang):
+def edit(page, description):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
