@@ -126,8 +126,13 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-
-	return jsonify(r.json())
+	alldata = {
+		'page': page,
+		'description': description,
+		'request_token_secret': request_token_secret,
+		'request_token_key': request_token_key
+	}
+	return jsonify(alldata)
 
 @app.route('/api-langs')
 def langs():
