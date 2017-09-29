@@ -118,7 +118,7 @@ def images():
 
 @app.route('/api-edit', methods=['post'])
 def edit():
-	data = request.get_json()
+	data = request.form
 	#page = data['image'] # Disabled due to debug
 	page = "User:Martin Urbanec/sand" # Debug
 	description = data['description'] # Disabled due to debug
