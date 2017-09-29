@@ -6,6 +6,7 @@ else
 	branch=master
 fi
 
+sleep 1 &&
 cd ~/src &&
 git pull &&
 git checkout $branch &&
