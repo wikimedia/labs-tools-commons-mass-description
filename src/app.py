@@ -117,11 +117,21 @@ def images():
 	return jsonify(res)
 
 @app.route('/api-edit', methods=['post'])
-def edit():
-	data = request.form
-	#page = data['image'] # Disabled due to debug
-	page = "User:Martin Urbanec/sand" # Debug
-	description = data['description'] # Disabled due to debug
+def editall():
+	data = request.get_json()
+	for image in data:
+		imageres = edit(image['title'], image['description'], image['lang'])
+		if imageres['status'] != 'ok':
+			response = {
+				'status': 'error',
+				'errordata': imageres['errordata']['errorcode'],
+				'title': image['title']
+			}
+			return jsonify(response)
+	response = {'status': 'ok'}
+	return jsonify(response)
+
+def edit(page, description, lang):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
@@ -140,12 +150,22 @@ def edit():
 	)
 	data = r.json()
 	pageid = list(data['query']['pages'].keys())[0]
+	if pageid == '-1':
+		return {
+			'status': 'error',
+			'errorcode': 'nonexistentpage'
+		}
 	pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
 	code = mwparserfromhell.parse(pagecontent)
 	for template in code.filter_templates():
 		if template.name.strip() == 'Information':
 			for param in template.params:
 				if param.name.strip() == 'description':
+					if params.value.strip() != '':
+						return {
+							'status': 'error',
+							'errorcode': 'alreadydescribed'
+						}
 					param.value = description + '\n'
 					break
 			break
@@ -174,7 +194,9 @@ def edit():
 		data=payload,
 		auth=auth
 	)
-	return r.content
+	return {
+		'status': 'ok'
+	}
 
 @app.route('/api-langs')
 def langs():
