@@ -126,40 +126,7 @@ def edit():
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	params = {
-		"action": "query",
-		"format": "json",
-		"prop": "revisions",
-		"titles": page,
-		"rvprop": "content"
-	}
-	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
-	data = r.json()
-	content = data['query']['pages'][list(data['query']['pages'].keys())[0]]['revisions'][0]['*']
-	code = mwparserfromhell.parse(content)
-	for template in code.filter_templates():
-		templatename = str(template.name)
-		templatename.replace('\n', '')
-		if templatename.lower() == 'information':
-			if template.has('description'):
-				template.remove('description')
-			template.add('description', description)
-			break
-	params = {
-		"action": "query",
-		"format": "json",
-		"meta": "tokens"
-	}
-	r = requests.get(app.config['API_MWURI'], params=params, auth=auth)
-	edittoken = r.json()['query']['tokens']['csrftoken']
-	params = {
-		"action": "edit",
-		"format": "json",
-		"title": page,
-		"text": str(code),
-		"token": edittoken
-	}
-	r = requests.post(app.config['API_MWURI'], data=params, auth=auth)
+
 	return jsonify(r.json())
 
 @app.route('/api-langs')
