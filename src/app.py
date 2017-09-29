@@ -143,9 +143,9 @@ def images():
 @app.route('/api-edit', methods=['post'])
 def editall():
 	data = request.get_json()
-	langs = langs()['langs']
+	languages = langs()['langs']
 	langcodes = []
-	for item in langs:
+	for item in languages:
 		langcodes.append(item['code'])
 	for image in data:
 		if image['lang'] not in langcodes:
