@@ -155,7 +155,7 @@ def editall():
 				'title': image['title']
 			}
 			return jsonify(response)
-		description = '{{' + image['lang'] + '|' + image['description'] + '}}'
+		description = '{{' + image['lang'] + '|1=' + image['description'] + '}}'
 		imageres = edit(image['title'], description)
 		if imageres['status'] != 'ok':
 			response = {
