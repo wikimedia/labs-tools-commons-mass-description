@@ -161,7 +161,7 @@ def edit(page, description, lang):
 		if template.name.strip() == 'Information':
 			for param in template.params:
 				if param.name.strip() == 'description':
-					if params.value.strip() != '':
+					if param.value.strip() != '':
 						return {
 							'status': 'error',
 							'errorcode': 'alreadydescribed'
