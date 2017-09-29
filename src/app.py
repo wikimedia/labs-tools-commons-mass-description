@@ -122,17 +122,60 @@ def edit():
 	#page = data['image'] # Disabled due to debug
 	page = "User:Martin Urbanec/sand" # Debug
 	#description = data['description'] # Disabled due to debug
-	description = "Test"
+	description = "Test via api"
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	alldata = {
-		'page': page,
-		'description': description,
-		'request_token_secret': request_token_secret,
-		'request_token_key': request_token_key
+	payload = {
+		"action": "query",
+		"format": "json",
+		"prop": "revisions",
+		"titles": page,
+		"rvprop": "content",
+		"rvlimit": "1"
 	}
-	return jsonify(alldata)
+	r = requests.get(
+		app.config['API_MWURI'],
+		params=payload,
+		auth=auth
+	)
+	data = r.json()
+	pageid = list(data['query']['pages'].keys())[0]
+	pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
+	code = mwparserfromhell.parse(pagecontent)
+	for template in code.filter_templates():
+		if template.name.strip() == 'Information':
+			for param in template.params:
+				if param.name.strip() == 'description':
+					param.value = description + '\n'
+					break
+			break
+	payload = {
+		"action": "query",
+		"format": "json",
+		"meta": "tokens",
+		"type": "csrf"
+	}
+	r = requests.get(
+		app.config['API_MWURI'],
+		params=payload,
+		auth=auth
+	)
+	token = r.json()['query']['tokens']['csrftoken']
+	payload = {
+		"action": "edit",
+		"format": "json",
+		"title": page,
+		"text": str(code),
+		"summary": "Added description with Commons mass description tool",
+		"token": token
+	}
+	r = requests.post(
+		app.config['API_MWURI'],
+		data=payload,
+		auth=auth
+	)
+	return r.content
 
 @app.route('/api-langs')
 def langs():
