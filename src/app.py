@@ -121,8 +121,7 @@ def edit():
 	data = request.get_json()
 	#page = data['image'] # Disabled due to debug
 	page = "User:Martin Urbanec/sand" # Debug
-	#description = data['description'] # Disabled due to debug
-	description = "Test via api"
+	description = data['description'] # Disabled due to debug
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
