@@ -19,7 +19,7 @@ import yaml
 import simplejson as json
 import requests
 from urllib.parse import quote
-from flask import redirect, request, jsonify
+from flask import redirect, request, jsonify, make_response
 import mwoauth
 import mwparserfromhell
 from requests_oauthlib import OAuth1
@@ -158,14 +158,14 @@ def editall():
 				'errorcode': 'mustpassparams',
 				'title': title
 			}
-			return jsonify(response)
+			return make_response(jsonify(response), 400)
 		if image['lang'] not in langcodes:
 			response = {
 				'status': 'error',
 				'errorcode': 'nonexistentlang',
 				'title': image['title']
 			}
-			return jsonify(response)
+			return make_response(jsonify(response), 400)
 		description = '{{' + image['lang'] + '|1=' + image['description'] + '}}'
 		imageres = edit(image['title'], description)
 		if imageres['status'] != 'ok':
@@ -174,7 +174,7 @@ def editall():
 				'errorcode': imageres['errorcode'],
 				'title': image['title']
 			}
-			return jsonify(response)
+			return make_response(jsonify(response), 400)
 	response = {'status': 'ok'}
 	return jsonify(response)
 
