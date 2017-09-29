@@ -124,7 +124,7 @@ def editall():
 		if imageres['status'] != 'ok':
 			response = {
 				'status': 'error',
-				'errordata': imageres['errorcode'],
+				'errorcode': imageres['errorcode'],
 				'title': image['title']
 			}
 			return jsonify(response)
