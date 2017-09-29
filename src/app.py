@@ -116,7 +116,7 @@ def images():
 	res['images'] = images[-10:]
 	return jsonify(res)
 
-@app.route('/api-edit')
+@app.route('/api-edit', methods=['post'])
 def edit():
 	data = request.get_json()
 	#page = data['image'] # Disabled due to debug
