@@ -199,6 +199,9 @@ def edit(page, description, lang):
 	}
 
 @app.route('/api-langs')
+def apilangs():
+	return jsonify(langs())
+
 def langs():
 	params = {
 		"action": "sitematrix",
@@ -221,7 +224,7 @@ def langs():
 		'status': 'ok',
 		'langs': langs
 	}
-	return jsonify(res)
+	return res
 
 @app.route('/login')
 def login():
