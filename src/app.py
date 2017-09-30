@@ -241,9 +241,20 @@ def edit(page, description):
 		data=payload,
 		auth=auth
 	)
-	return {
-		'status': 'ok'
-	}
+	data = r.json()
+	if 'edit' in data:
+		return {
+			'status': 'ok'
+		}
+	else:
+		if data['error']['code'] == 'blocked':
+			errorcode = 'blocked'
+		else:
+			errorcode = 'unknown'
+		return {
+			'status': 'error',
+			'errorcode': errorcode
+		}
 
 @app.route('/api-langs')
 def apilangs():
