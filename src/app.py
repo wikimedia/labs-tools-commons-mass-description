@@ -105,7 +105,7 @@ def imageinfo(title):
 	}
 
 @app.route('/api-imageinfo')
-def api-imageinfo():
+def apiimageinfo():
 	title = request.args.get('title')
 	if title == None:
 		return 'bad request'
