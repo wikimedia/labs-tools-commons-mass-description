@@ -104,6 +104,36 @@ def imageinfo():
 	}
 	return jsonify(imagedata)
 
+@app.route('/api-blocked')
+def blocked():
+	username = flask.session.get('username')
+	if username == None:
+		response = {
+			'status': 'error',
+			'errorcode': 'anonymoususe'
+		}
+		return jsonify(response)
+	payload = {
+		"action": "query",
+		"format": "json",
+		"list": "users",
+		"usprop": "blockinfo",
+		"ususers": username
+	}
+	r = requests.get(app.config['API_MWURI'], params=payload)
+	data = r.json()['query']['users'][0]
+	response = {
+		'status': 'ok',
+		'blockstatus': 'blockid' in data
+	}
+	if response['blockstatus']:
+		response['blockdata'] = {
+			'blockedby': data['blockedby'],
+			'blockexpiry': data['blockexpiry'],
+			'blockreason': data['blockreason']
+		}
+	return jsonify(response)
+
 @app.route('/api-described')
 def apidescribed():
 	title = request.args.get('title')
