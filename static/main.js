@@ -57,6 +57,9 @@ function sendForm() {
 		success: function (data) {
 			console.log(data);
 		},
+		error: function (request, error) {
+			console.log(error);
+		}
 		contentType: "application/json",
 		dataType: "json"
 	})
