@@ -180,7 +180,7 @@ def described(page):
 						return True
 					return False
 
-@app.route('/api-imageinfos')
+@app.route('/api-imageinfos', methods=['post'])
 def imageinfos():
 	data = request.get_json()
 	res = []
