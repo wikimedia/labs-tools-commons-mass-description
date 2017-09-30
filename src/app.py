@@ -102,6 +102,7 @@ def imageinfo(title):
 		'url': data['imageinfo'][0]['url'],
 		'thumburl': thumburl(data['imageinfo'][0]['url'], 50),
 		'title': title,
+		'described': described(title),
 	}
 
 @app.route('/api-imageinfo')
