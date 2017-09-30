@@ -121,6 +121,18 @@ def blocked():
 			'errorcode': 'anonymoususe'
 		}
 		return jsonify(response)
+	elif username == 'Martin Urbanec (test 2)':
+		# Debug, we want one infinitely blocked account for debugging block interface in the frontend
+		response = {
+			'status': 'ok',
+			'blockstatus': True,
+			'blockdata': {
+				'blockedby': 'System',
+				'blockexpiry': 'infinite',
+				'blockreason': 'Debugging'
+			}
+		}
+		return jsonify(response)
 	payload = {
 		"action": "query",
 		"format": "json",
