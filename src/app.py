@@ -258,8 +258,7 @@ def editall():
 				'title': image['title']
 			}
 			return make_response(jsonify(response), 400)
-		description = '{{' + image['lang'] + '|1=' + image['description'] + '}}'
-		imageres = edit(image['title'], description)
+		imageres = edit(image['title'], image['description'], image['lang'])
 		if imageres['status'] != 'ok':
 			response = {
 				'status': 'error',
@@ -270,7 +269,7 @@ def editall():
 	response = {'status': 'ok'}
 	return jsonify(response)
 
-def edit(page, description):
+def edit(page, description, lang):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
@@ -305,7 +304,7 @@ def edit(page, description):
 							'status': 'error',
 							'errorcode': 'alreadydescribed'
 						}
-					param.value = description + '\n'
+					param.value = '{{' + lang + '|1=' + description + '}}' + '\n'
 					break
 			break
 	payload = {
