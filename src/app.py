@@ -124,8 +124,7 @@ def described(page):
 	}
 	r = requests.get(
 		app.config['API_MWURI'],
-		params=payload,
-		auth=auth
+		params=payload
 	)
 	data = r.json()
 	pageid = list(data['query']['pages'].keys())[0]
