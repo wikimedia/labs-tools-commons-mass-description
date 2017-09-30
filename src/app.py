@@ -104,6 +104,46 @@ def imageinfo():
 	}
 	return jsonify(imagedata)
 
+@app.route('/api-described')
+def apidescribed():
+	title = request.args.get('title')
+	if title == None:
+		return 'bad request'
+	return {
+		'described': described(title)
+	}
+
+def described(page):
+	payload = {
+		"action": "query",
+		"format": "json",
+		"prop": "revisions",
+		"titles": page,
+		"rvprop": "content",
+		"rvlimit": "1"
+	}
+	r = requests.get(
+		app.config['API_MWURI'],
+		params=payload,
+		auth=auth
+	)
+	data = r.json()
+	pageid = list(data['query']['pages'].keys())[0]
+	if pageid == '-1':
+		return {
+			'status': 'error',
+			'errorcode': 'nonexistentpage'
+		}
+	pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
+	code = mwparserfromhell.parse(pagecontent)
+	for template in code.filter_templates():
+		if template.name.strip() == 'Information':
+			for param in template.params:
+				if param.name.strip() == 'description':
+					if param.value.strip() != '':
+						return True
+					return False
+
 @app.route('/api-images')
 def images():
 	paginateby = 10
