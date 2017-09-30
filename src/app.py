@@ -52,7 +52,7 @@ def after_request(response):
 
 @app.errorhandler(404)
 def not_found(e):
-	return redirect('https://' + request.headers['Host'] + '/?path=' + request.headers['X-Original-URI'])
+	return redirect('https://' + request.headers['Host'] + '/' + request.headers['X-Original-URI'].split('/')[1] + '/?path=' + "/".join(request.headers['X-Original-URI'].split('/')[2:]))
 
 @app.route('/')
 def index():
