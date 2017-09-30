@@ -59,7 +59,7 @@ function sendForm() {
 		},
 		error: function (request, error) {
 			console.log(error);
-		}
+		},
 		contentType: "application/json",
 		dataType: "json"
 	})
