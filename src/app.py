@@ -341,6 +341,8 @@ def edit(page, description):
 	else:
 		if data['error']['code'] == 'blocked':
 			errorcode = 'blocked'
+		elif data['error']['code'] == 'protectedpage':
+			errorcode = 'protectedpage'
 		else:
 			errorcode = 'unknown'
 		return {
