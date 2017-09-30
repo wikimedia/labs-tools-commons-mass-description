@@ -270,8 +270,8 @@ def editall():
 				'title': image['title']
 			}
 			return make_response(jsonify(response), 400)
-		image['title'] = 'User:Martin Urbanec/sand' # Just for debugging
-		imageres = edit(image['title'], image['description'], image['lang'])
+		#imageres = edit(image['title'], image['description'], image['lang'])
+		imageres = edit('User:Martin Urbanec/sand', image['description'], image['lang']) # Debugging
 		if imageres['status'] != 'ok':
 			response = {
 				'status': 'error',
