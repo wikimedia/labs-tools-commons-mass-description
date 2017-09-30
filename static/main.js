@@ -46,7 +46,7 @@ function sendForm() {
 		rowdata['lang'] = $('#langs')[0].value;
 		request.push(rowdata);
 	}
-	$post(
+	$.post(
 		'https://tools.wmflabs.org/commons-mass-description/api-edit',
 		request,
 		function (data) {
