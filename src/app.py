@@ -86,11 +86,7 @@ def langs():
 def thumburl(url, size):
 	return url.replace('commons', 'commons/thumb') + '/' + str(size) + 'px-' + url.split('/')[-1] + '.png'
 
-@app.route('/api-imageinfo')
-def imageinfo():
-	title = request.args.get('title')
-	if title == None:
-		return 'bad request'
+def imageinfo(title):
 	params = {
 		"action": "query",
 		"format": "json",
@@ -102,11 +98,18 @@ def imageinfo():
 	r = requests.get(app.config['API_MWURI'], params=params)
 	data = r.json()
 	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
-	imagedata = {
+	return {
 		'url': data['imageinfo'][0]['url'],
-		'thumburl': thumburl(data['imageinfo'][0]['url'], 50)
+		'thumburl': thumburl(data['imageinfo'][0]['url'], 50),
+		'title': title,
 	}
-	return jsonify(imagedata)
+
+@app.route('/api-imageinfo')
+def api-imageinfo():
+	title = request.args.get('title')
+	if title == None:
+		return 'bad request'
+	return jsonify(imageinfo(title))
 
 @app.route('/api-blocked')
 def blocked():
@@ -176,6 +179,14 @@ def described(page):
 					if param.value.strip() != '':
 						return True
 					return False
+
+@app.route('/api-imageinfos')
+def imageinfos():
+	data = request.get_json()
+	res = []
+	for image in data:
+		res.append(imageinfo(image))
+	return jsonify(res)
 
 @app.route('/api-images')
 def images():
