@@ -153,13 +153,18 @@ def images():
 	else:
 		offset = int(offsetsrc)
 	limit = paginateby*(offset+1)
+	categorysrc = request.args.get('category')
+	if categorysrc == None:
+		category = "Category:Media_lacking_a_description"
+	else:
+		category = categorysrc
 	params = {
 		"action": "query",
 		"format": "json",
 		"prop": "imageinfo",
 		"generator": "categorymembers",
 		"iiprop": "url",
-		"gcmtitle": "Category:Media_lacking_a_description",
+		"gcmtitle": category.replace(' ', '_'),
 		"gcmtype": "file",
 		"gcmlimit": limit
 	}
@@ -172,11 +177,12 @@ def images():
 	images = []
 	for page in data['query']['pages']:
 		imagedata = data['query']['pages'][page]
-		newimagedata = {
-			'title': imagedata['title'],
-			'url': imagedata['imageinfo'][0]['url']
-		}
-		images.append(newimagedata)
+		if category == "Category:Media_lacking_a_description" or described(imagedata['title']) == False:
+			newimagedata = {
+				'title': imagedata['title'],
+				'url': imagedata['imageinfo'][0]['url']
+			}
+			images.append(newimagedata)
 	res['images'] = images[-10:]
 	return jsonify(res)
 
