@@ -83,6 +83,9 @@ def langs():
 	}
 	return res
 
+def thumburl(url, size):
+	return url.replace('commons', 'commons/thumb') + '/' + str(size) + 'px-' + url.split('/')[-1] + '.png'
+
 @app.route('/api-imageinfo')
 def imageinfo():
 	title = request.args.get('title')
@@ -100,7 +103,8 @@ def imageinfo():
 	data = r.json()
 	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
 	imagedata = {
-		'url': data['imageinfo'][0]['url']
+		'url': data['imageinfo'][0]['url'],
+		'thumburl': thumburl(data['imageinfo'][0]['url'], 50)
 	}
 	return jsonify(imagedata)
 
@@ -209,7 +213,8 @@ def images():
 		if category == "Category:Media_lacking_a_description" or described(imagedata['title']) == False:
 			newimagedata = {
 				'title': imagedata['title'],
-				'url': imagedata['imageinfo'][0]['url']
+				'url': imagedata['imageinfo'][0]['url'],
+				'thumburl': thumburl(imagedata['imageinfo'][0]['url'], 50)
 			}
 			images.append(newimagedata)
 	res['images'] = images[-10:]
