@@ -50,10 +50,6 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
     return response
 
-@app.errorhandler(404)
-def not_found(e):
-	return redirect('https://' + request.headers['Host'] + '/' + request.headers['X-Original-URI'].split('/')[1] + '/?path=' + "/".join(request.headers['X-Original-URI'].split('/')[2:]))
-
 @app.route('/')
 def index():
 	username = flask.session.get('username')
