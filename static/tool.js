@@ -64,4 +64,5 @@ function sendForm() {
 		contentType: "application/json",
 		dataType: "json"
 	})*/
+	$('#offset').text(Number($('#offset').text())+1);
 }
