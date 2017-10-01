@@ -1,3 +1,8 @@
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+	  event.preventDefault();
+	  $(this).ekkoLightbox();
+});
+
 var entityMap = {
   '&': '&amp;',
   '<': '&lt;',
