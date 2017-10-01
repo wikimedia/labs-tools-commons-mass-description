@@ -57,8 +57,13 @@ def not_found(e):
 @app.route('/')
 def index():
 	username = flask.session.get('username')
-	logged = username is not None
-	return flask.render_template('index.html', username=username, logged=logged, blocked=blocked())
+	if username is not None:
+		if blocked()['blockstatus']:
+			return flask.render_template('blocked.html')
+		else:
+			return flask.render_template('tool.html')
+	else:
+		return flask.render_template('login.html')
 
 @app.route('/api-username')
 def username():

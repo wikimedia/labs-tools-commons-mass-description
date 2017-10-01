@@ -8,9 +8,6 @@
 		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/materialize.min.css">
 		<script src="https://tools-static.wmflabs.org/commons-mass-description/jquery-3.1.1.min.js" charset="utf-8"></script>
 		<script src="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.js"></script>
-		{% if logged %}
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/main.js" charset="utf-8"></script>
-		{% endif %}
 	</head>
 	<body>
 		<nav class="light-blue lighten-1" role="navigation">
@@ -18,25 +15,8 @@
 				<a class="brand-logo" href="#">CMD</a>
 			</div>
 		</nav>
-		{% if logged %}
 		<div class="container">
-			<label for="langs">Zvolte si jazyk</label>
-			<select class="browser-default" name="langs" id="langs">
-			</select>
-			<table>
-				<thead>
-					<th>Obrázek</th>
-					<th>Popisek</th>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
-			<button onclick="sendForm()" class="btn wafes-effect wafes-light" name="action" disabled="">Odeslat</button>
+			<h1>Prosíme, <a href="login">přihlašte se</a></h1>
 		</div>
-		{% else %}
-		<div class="container">
-			<h1>Prosím, <a href="login">přihlašte se</a></h1>
-		</div>
-		{% endif %}
 	</body>
 </html>
