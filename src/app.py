@@ -61,6 +61,17 @@ def index():
 	else:
 		return flask.render_template('login.html')
 
+@app.route('/describe-all')
+def all():
+	username = flask.session.get('username')
+	if username is not None:
+		if blocked()['blockstatus']:
+			return flask.render_template('blocked.html')
+		else:
+			return flask.render_template('describe-all.html')
+	else:
+		return flask.render_template('login.html')
+
 @app.route('/api-username')
 def username():
 	data = {'username': flask.session.get('username')}

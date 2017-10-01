@@ -16,6 +16,7 @@
 		<script src="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.js"></script>
 
 		<!-- My JS -->
+		<script src="https://tools-static.wmflabs.org/commons-mass-description/tool.js" charset="utf-8"></script>
 		<script src="https://tools-static.wmflabs.org/commons-mass-description/all.js" charset="utf-8"></script>
 	</head>
 	<body>
@@ -29,12 +30,19 @@
 			</div>
 		</nav>
 		<div class="container">
-			<h1>Zvolte si způsob vybrání obrázků k popisu</h1>
-			<ul>
-				<li><a href="describe-all">Všechny nepopsané</a></li>
-				<li><a href="describe-category">Podle kategorie</a></li>
-				<li><a href="describe-textfile">Podle textového souboru</a></li>
-			</ul>
+			<label for="langs">Zvolte si jazyk</label>
+			<select class="browser-default" name="langs" id="langs">
+			</select>
+			<table>
+				<thead>
+					<th>Obrázek</th>
+					<th>Popisek</th>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<button onclick="sendForm()" class="btn wafes-effect wafes-light" name="action" disabled="">Odeslat</button>
+			<span id="offset">0</span>
 		</div>
 	</body>
 </html>
