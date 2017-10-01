@@ -28,7 +28,8 @@ $.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', functi
 fillPics();
 
 function fillPics() {
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset='+$('#offset').text();
+	//var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset='+$('#offset').text();
+	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images'; // Debug, just to test if the rest works
 	console.log(url);
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data['images'].length; i++) {
