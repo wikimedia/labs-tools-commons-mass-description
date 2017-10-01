@@ -27,6 +27,15 @@ $.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', functi
 })
 fillPics();
 
+function fillBlocked() {
+	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
+		console.log(data);
+	});
+	$('#sysop').text("js");
+	$('#reason').text("js");
+	$('#expiry').text("js");
+}
+
 function fillPics() {
 	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-images', function (data) {
 		for (var i = 0; i < data['images'].length; i++) {
