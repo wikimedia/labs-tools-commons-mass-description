@@ -30,7 +30,6 @@ fillPics();
 function fillPics() {
 	//var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset='+$('#offset').text();
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images'; // Debug, just to test if the rest works
-	console.log(url);
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data['images'].length; i++) {
 			var row = '<div class="imagerow"><tr><td><img class="image" alt="' + escapeHtml(data['images'][i]['title']) + '" src="' + data['images'][i]['thumburl'] + '"></td><td><input type="text" class="description" id="description-' + i + '"></td></div>';
