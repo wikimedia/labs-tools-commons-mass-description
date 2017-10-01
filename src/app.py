@@ -58,7 +58,7 @@ def not_found(e):
 def index():
 	username = flask.session.get('username')
 	logged = username is not None
-	return flask.render_template('index.html', username=username, logged=logged)
+	return flask.render_template('index.html', username=username, logged=logged, blocked=blocked())
 
 @app.route('/api-username')
 def username():
@@ -119,6 +119,9 @@ def apiimageinfo():
 	return jsonify(imageinfo(title))
 
 @app.route('/api-blocked')
+def apiblocked():
+	return jsonify(blocked())
+
 def blocked():
 	username = flask.session.get('username')
 	if username == None:
@@ -126,7 +129,7 @@ def blocked():
 			'status': 'error',
 			'errorcode': 'anonymoususe'
 		}
-		return jsonify(response)
+		return response
 	elif username == 'Martin Urbanec (test 2)':
 		# Debug, we want one infinitely blocked account for debugging block interface in the frontend
 		response = {
@@ -138,7 +141,7 @@ def blocked():
 				'blockreason': 'Debugging'
 			}
 		}
-		return jsonify(response)
+		return response
 	payload = {
 		"action": "query",
 		"format": "json",
@@ -158,7 +161,7 @@ def blocked():
 			'blockexpiry': data['blockexpiry'],
 			'blockreason': data['blockreason']
 		}
-	return jsonify(response)
+	return response
 
 @app.route('/api-described')
 def apidescribed():

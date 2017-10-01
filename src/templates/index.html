@@ -19,6 +19,7 @@
 			</div>
 		</nav>
 		{% if logged %}
+		{% if not blocked %}
 		<div class="container">
 			<label for="langs">Zvolte si jazyk</label>
 			<select class="browser-default" name="langs" id="langs">
@@ -33,6 +34,11 @@
 			</table>
 			<button onclick="sendForm()" class="btn wafes-effect wafes-light" name="action" disabled="">Odeslat</button>
 		</div>
+		{% else %}
+		<div class="container">
+			<h1>Váš uživatelský účet byl zablokován</h1>
+		</div>
+		{% endif %}
 		{% else %}
 		<div class="container">
 			<h1>Prosím, <a href="login">přihlašte se</a></h1>
