@@ -56,7 +56,9 @@ def not_found(e):
 
 @app.route('/')
 def index():
-	return flask.render_template('index.html')
+	username = flask.session.get('username')
+	logged = username is not None
+	return flask.render_template('index.html', username=username, logged=logged)
 
 @app.route('/api-username')
 def username():
