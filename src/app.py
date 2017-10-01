@@ -72,6 +72,28 @@ def all():
 	else:
 		return flask.render_template('login.html')
 
+@app.route('/describe-category')
+def category():
+	username = flask.session.get('username')
+	if username is not None:
+		if blocked()['blockstatus']:
+			return flask.render_template('blocked.html')
+		else:
+			return flask.render_template('describe-category.html')
+	else:
+		return flask.render_template('login.html')
+
+@app.route('/describe-textfile')
+def textfile():
+	username = flask.session.get('username')
+	if username is not None:
+		if blocked()['blockstatus']:
+			return flask.render_template('blocked.html')
+		else:
+			return flask.render_template('describe-textfile.html')
+	else:
+		return flask.render_template('login.html')
+
 @app.route('/api-username')
 def username():
 	data = {'username': flask.session.get('username')}
