@@ -25,7 +25,9 @@
 			</ul>
 			<script type="text/javascript">
 				$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
-					console.log(data);
+					$('#sysop').text(data['blockdata']['blockedby']);
+					$('#reason').text(data['blockdata']['blockreason']);
+					$('#expiry').text(data['blockdata']['blockexpiry']);
 				});
 			</script>
 		</div>
