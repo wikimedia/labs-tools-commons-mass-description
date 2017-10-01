@@ -65,4 +65,5 @@ function sendForm() {
 		dataType: "json"
 	})*/
 	$('#offset').text(Number($('#offset').text())+1);
+	fillPics();
 }
