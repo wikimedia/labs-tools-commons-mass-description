@@ -51,7 +51,7 @@ function sendForm() {
 		rowdata['lang'] = $('#langs')[0].value;
 		request.push(rowdata);
 	}
-	$.ajax({
+	/*$.ajax({
 		type: 'POST',
 		url: 'https://tools.wmflabs.org/commons-mass-description/api-edit',
 		data: JSON.stringify(request),
@@ -63,5 +63,5 @@ function sendForm() {
 		},
 		contentType: "application/json",
 		dataType: "json"
-	})
+	})*/
 }
