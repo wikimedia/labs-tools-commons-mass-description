@@ -302,7 +302,7 @@ def edit(id, description, lang):
 		"format": "json",
 		"pageid": id,
 		"text": str(code),
-		"summary": "Added description with Commons mass description tool",
+		"summary": "Added description with [[:toollabs:commons-mass-description|Commons mass description tool]]",
 		"token": token
 	}
 	r = requests.post(
