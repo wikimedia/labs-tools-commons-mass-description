@@ -62,6 +62,10 @@ def index():
 	else:
 		return flask.render_template('login.html')
 
+@app.route('/report')
+def report():
+	return flask.render_template('report.html')
+
 @app.route('/api-username')
 def username():
 	data = {'username': flask.session.get('username')}
