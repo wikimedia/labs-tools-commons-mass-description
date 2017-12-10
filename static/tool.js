@@ -37,6 +37,7 @@ function sendForm() {
 	for (var i = 0; i < images.length; i++) {
 		var image = images[i];
 		var id = Number(image.name.replace('description-', ''));
+		console.log(id);
 		var description = image.value;
 		var imagepayload = {
 			'id': id,
