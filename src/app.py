@@ -23,6 +23,7 @@ from flask import redirect, request, jsonify, make_response
 import mwoauth
 import mwparserfromhell
 from requests_oauthlib import OAuth1
+import random
 
 app = flask.Flask(__name__)
 application = app
@@ -167,13 +168,6 @@ def described(page):
 
 @app.route('/api-images')
 def images():
-	paginateby = 10
-	offsetsrc = request.args.get('offset')
-	if offsetsrc == None:
-		offset = 0
-	else:
-		offset = int(offsetsrc)
-	limit = paginateby*(offset+1)
 	categorysrc = request.args.get('category')
 	if categorysrc == None:
 		category = "Category:Media_lacking_a_description"
@@ -187,7 +181,7 @@ def images():
 		"iiprop": "url",
 		"gcmtitle": category.replace(' ', '_'),
 		"gcmtype": "file",
-		"gcmlimit": limit
+		"gcmlimit": 'max'
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	data = r.json()
@@ -206,7 +200,12 @@ def images():
 				'thumburl': thumburl(imagedata['imageinfo'][0]['url'], 100)
 			}
 			images.append(newimagedata)
-	res['images'] = images[-10:]
+	used = []
+	for i in range(0, 10):
+		r = random.randint(0, len(images)-1)
+		if r not in used:
+			used.append(r)
+			res['images'].append(images[r])
 	return jsonify(res)
 
 @app.route('/api-edit', methods=['post'])
