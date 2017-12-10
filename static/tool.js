@@ -18,7 +18,7 @@ function escapeHtml (string) {
 function sendForm() {
 	swal("Vaše data právě zpracováváme");
 	$('button')[0].disabled = true;
-	var images = $('input');
+	var images = $("input[name^='description-']");
 	var language = $('#langs').val();
 	var payload = [];
 	for (var i = 0; i < images.length; i++) {
