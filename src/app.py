@@ -235,6 +235,7 @@ def images():
 		if category == "Category:Media_lacking_a_description" or described(imagedata['title']) == False:
 			newimagedata = {
 				'title': imagedata['title'],
+				'id': imagedata['pageid'],
 				'url': imagedata['imageinfo'][0]['url'],
 				'thumburl': thumburl(imagedata['imageinfo'][0]['url'], 50)
 			}
