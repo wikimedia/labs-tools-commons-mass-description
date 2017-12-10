@@ -201,11 +201,14 @@ def images():
 			}
 			images.append(newimagedata)
 	used = []
-	for i in range(0, 10):
-		r = random.randint(0, len(images)-1)
-		if r not in used:
-			used.append(r)
-			res['images'].append(images[r])
+	if len(images)==500:
+		for i in range(0, 10):
+			r = random.randint(0, len(images)-1)
+			if r not in used:
+				used.append(r)
+				res['images'].append(images[r])
+	else:
+		res['images'] = images[-10:]
 	return jsonify(res)
 
 @app.route('/api-edit', methods=['post'])
