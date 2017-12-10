@@ -68,8 +68,5 @@ $( document ).ready(function() {
 			$('#langs').append(row);
 		}
 	});
-	$('#display').change(function () {
-		fillPics();
-	});
 	fillPics();
 });
