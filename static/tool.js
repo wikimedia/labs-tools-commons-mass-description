@@ -15,9 +15,7 @@ function escapeHtml (string) {
   });
 }
 
-
-var display = Number($('#display').val());
-$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs?display=' + display, function (data) {
+$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', function (data) {
 	for (var i = 0; i < data['langs'].length; i++) {
 		if (data['langs'][i]['code'] == 'cs') {
 			var row = '<option value="' + data['langs'][i]['code'] + '" selected>' + data['langs'][i]['name'] + '</option>';
