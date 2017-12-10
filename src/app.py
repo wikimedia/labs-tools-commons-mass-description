@@ -168,6 +168,11 @@ def described(page):
 
 @app.route('/api-images')
 def images():
+	displaysrc = request.args.get('display')
+	if displaysrc == None:
+		display = 10
+	else:
+		display = int(displaysrc)
 	categorysrc = request.args.get('category')
 	if categorysrc == None:
 		category = "Category:Media_lacking_a_description"
@@ -202,13 +207,13 @@ def images():
 			images.append(newimagedata)
 	used = []
 	if len(images)==500:
-		for i in range(0, 10):
+		for i in range(0, display):
 			r = random.randint(0, len(images)-1)
 			if r not in used:
 				used.append(r)
 				res['images'].append(images[r])
 	else:
-		res['images'] = images[-10:]
+		res['images'] = images[-display:]
 	return jsonify(res)
 
 @app.route('/api-edit', methods=['post'])
