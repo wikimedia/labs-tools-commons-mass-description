@@ -64,7 +64,14 @@ def index():
 
 @app.route('/report')
 def report():
-	return flask.render_template('report.html')
+	username = flask.session.get('username')
+	if username is not None:
+		if blocked()['blockstatus']:
+			return flask.render_template('blocked.html')
+		else:
+			return flask.render_template('report.html')
+	else:
+		return flask.render_template('login.html')
 
 @app.route('/api-username')
 def username():
