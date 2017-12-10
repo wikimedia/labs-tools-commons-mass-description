@@ -12,3 +12,8 @@ $.postJSON = function(url, data, callback) {
         'success': callback
     });
 };
+
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};

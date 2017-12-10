@@ -43,7 +43,7 @@ function sendForm() {
 }
 
 function fillPics() {
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + '&category=' + $('#category').val().replace(' ', '_');
+	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + '&category=' + $('#category').val().replaceAll(' ', '_');
 	console.log(url);
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
