@@ -274,9 +274,9 @@ def edit(id, description, lang):
 	pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
 	code = mwparserfromhell.parse(pagecontent)
 	for template in code.filter_templates():
-		if template.name.strip() == 'Information':
+		if template.name.strip() == 'Information' or template.name.strip() == 'information':
 			for param in template.params:
-				if param.name.strip() == 'description':
+				if param.name.strip() == 'description' or param.name.strip() == 'Description':
 					if param.value.strip() != '':
 						return {
 							'status': 'error',
