@@ -66,6 +66,10 @@ $( document ).ready(function() {
 			}
 			$('#langs').append(row);
 		}
-	})
+	});
+	$('#display').change(function () {
+		$('#tbody').empty();
+		fillPics();
+	});
 	fillPics();
 });
