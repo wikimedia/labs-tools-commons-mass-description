@@ -132,9 +132,9 @@ def apidescribed():
 	title = request.args.get('title')
 	if title == None:
 		return 'bad request'
-	return {
+	return jsonify({
 		'described': described(title)
-	}
+	})
 
 def described(page):
 	payload = {
