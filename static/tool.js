@@ -31,6 +31,26 @@ $.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', functi
 function sendForm() {
 	swal("Vaše data právě zpracováváme");
 	$('button')[0].disabled = true;
+	var images = $('input');
+	var language = $('#langs').val();
+	var payload = [];
+	for (var i = 0; i < images.length; i++) {
+		var image = images[i];
+		var id = Number(image.name.replace('description-', ''));
+		var description = image.value;
+		var imagepayload = {
+			'id': id,
+			'description': description,
+			'lang': language,
+		};
+		payload.pushd(imagepayload);
+		break;
+	}
+	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
+		console.log(data);
+		//fillPics();
+		//$('button')[0].disabled = false;
+	})
 }
 
 function fillPics() {
