@@ -107,7 +107,7 @@ def imageinfo(title):
 	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
 	return {
 		'url': data['imageinfo'][0]['url'],
-		'thumburl': thumburl(data['imageinfo'][0]['url'], 50),
+		'thumburl': thumburl(data['imageinfo'][0]['url'], 100),
 		'title': title,
 		'described': described(title),
 	}
@@ -237,7 +237,7 @@ def images():
 				'title': imagedata['title'],
 				'id': imagedata['pageid'],
 				'url': imagedata['imageinfo'][0]['url'],
-				'thumburl': thumburl(imagedata['imageinfo'][0]['url'], 50)
+				'thumburl': thumburl(imagedata['imageinfo'][0]['url'], 100)
 			}
 			images.append(newimagedata)
 	res['images'] = images[-10:]
