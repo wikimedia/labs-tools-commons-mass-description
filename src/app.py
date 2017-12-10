@@ -93,32 +93,6 @@ def langs():
 def thumburl(url, size):
 	return url.replace('commons', 'commons/thumb') + '/' + str(size) + 'px-' + url.split('/')[-1] + '.png'
 
-def imageinfo(title):
-	params = {
-		"action": "query",
-		"format": "json",
-		"prop": "imageinfo",
-		"titles": title,
-		"iiprop": "url",
-		"iilimit": "10"
-	}
-	r = requests.get(app.config['API_MWURI'], params=params)
-	data = r.json()
-	data = data['query']['pages'][list(data['query']['pages'].keys())[0]]
-	return {
-		'url': data['imageinfo'][0]['url'],
-		'thumburl': thumburl(data['imageinfo'][0]['url'], 100),
-		'title': title,
-		'described': described(title),
-	}
-
-@app.route('/api-imageinfo')
-def apiimageinfo():
-	title = request.args.get('title')
-	if title == None:
-		return 'bad request'
-	return jsonify(imageinfo(title))
-
 @app.route('/api-blocked')
 def apiblocked():
 	return jsonify(blocked())
@@ -190,14 +164,6 @@ def described(page):
 					if param.value.strip() != '':
 						return True
 					return False
-
-@app.route('/api-imageinfos', methods=['post'])
-def imageinfos():
-	data = request.get_json()
-	res = []
-	for image in data:
-		res.append(imageinfo(image))
-	return jsonify(res)
 
 @app.route('/api-images')
 def images():
