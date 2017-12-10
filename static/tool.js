@@ -45,6 +45,7 @@ function sendForm() {
 function fillPics() {
 	$('tbody').empty();
 	$('#send')[0].disabled = true;
+	$('#search')[0].disabled = true;
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + '&category=' + $('#category').val().replaceAll(' ', '_');
 	console.log(url);
 	$.getJSON(url, function (data) {
@@ -53,6 +54,7 @@ function fillPics() {
 			$('tbody').append('<tr><td><a href="' + image.url + '" data-lightbox="image-' + image.id + '"><img src="' + image.thumburl + '"></a></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
 		}
 		$('#send')[0].disabled = false;
+		$('#search')[0].disabled = false;
 	});
 }
 
