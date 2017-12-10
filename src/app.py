@@ -24,6 +24,8 @@ import mwoauth
 import mwparserfromhell
 from requests_oauthlib import OAuth1
 import random
+import smtplib
+from email.mime.text import MIMEText
 
 app = flask.Flask(__name__)
 application = app
@@ -62,8 +64,23 @@ def index():
 	else:
 		return flask.render_template('login.html')
 
-@app.route('/report')
+@app.route('/report', methods=['get', 'post'])
 def report():
+	if request.method == 'POST':
+		title = request.form.get('title')
+		body = request.form.get('body')
+		sender = 'tools.commons-mass-description@tools.wmflabs.org'
+		recipient = "bugs@webappky.cz"
+		mail = "!projects #commons-mass-description\n\n" + body
+		msg = MIMEText(mail)
+		msg['Subject'] = title
+		msg['From'] = sender
+		msg['To'] = recipient
+		s = smtplib.SMTP('mail.tools.wmflabs.org')
+		s.ehlo()
+		s.sendmail(sender, recipient, msg.as_string())
+		s.quit()
+		return flask.render_template('reported.html')
 	username = flask.session.get('username')
 	if username is not None:
 		if blocked()['blockstatus']:
