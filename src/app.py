@@ -71,7 +71,7 @@ def report():
 		body = request.form.get('body')
 		sender = 'tools.commons-mass-description@tools.wmflabs.org'
 		recipient = "bugs@webappky.cz"
-		mail = "!projects #commons-mass-description\n\n" + body
+		mail = "!projects #commons-mass-description\n\n" + body + '\n\nNahlásil: ' + flask.session.get('username')
 		msg = MIMEText(mail)
 		msg['Subject'] = title
 		msg['From'] = sender
