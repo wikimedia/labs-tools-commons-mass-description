@@ -43,6 +43,7 @@ function sendForm() {
 }
 
 function fillPics() {
+	$('tbody').empty();
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + '&category=' + $('#category').val().replaceAll(' ', '_');
 	console.log(url);
 	$.getJSON(url, function (data) {
@@ -67,7 +68,6 @@ $( document ).ready(function() {
 		}
 	});
 	$('#display').change(function () {
-		$('tbody').empty();
 		fillPics();
 	});
 	fillPics();
