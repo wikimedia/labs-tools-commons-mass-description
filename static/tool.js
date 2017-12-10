@@ -68,7 +68,7 @@ $( document ).ready(function() {
 		}
 	});
 	$('#display').change(function () {
-		$('#tbody').empty();
+		$('tbody').empty();
 		fillPics();
 	});
 	fillPics();
