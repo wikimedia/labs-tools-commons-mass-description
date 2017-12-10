@@ -35,7 +35,7 @@ function sendForm() {
 
 function fillPics() {
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset=' + $('#offset').text()
-	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-images', function (data) {
+	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
 			var image = data.images[i];
 			$('tbody').append('<tr><td><img src="' + image.thumburl + '"></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
