@@ -28,6 +28,11 @@ $.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', functi
 	}
 })
 
+function sendForm() {
+	swal("Vaše data právě zpracováváme");
+	$('button')[0].disabled = true;
+}
+
 function fillPics() {
 	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-images', function (data) {
 		for (var i = 0; i < data.images.length; i++) {
@@ -35,6 +40,7 @@ function fillPics() {
 			$('tbody').append('<tr><td><img src="' + image.thumburl + '"></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
 			break;
 		}
-	})
+		$('button')[0].disabled = false;
+	});
 }
 fillPics();
