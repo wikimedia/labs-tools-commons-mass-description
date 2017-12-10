@@ -347,7 +347,8 @@ def edit(id, description, lang):
 	data = r.json()
 	if 'edit' in data:
 		return {
-			'status': 'ok'
+			'status': 'ok',
+			'reply': data
 		}
 	else:
 		if data['error']['code'] == 'blocked':
