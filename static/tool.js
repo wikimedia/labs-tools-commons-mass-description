@@ -34,7 +34,7 @@ function sendForm() {
 }
 
 function fillPics() {
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset=' + $('#offset').text()
+	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?offset=' + $('#offset').text();
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
 			var image = data.images[i];
