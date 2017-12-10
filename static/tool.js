@@ -37,7 +37,6 @@ function sendForm() {
 	for (var i = 0; i < images.length; i++) {
 		var image = images[i];
 		var id = Number(image.name.replace('description-', ''));
-		console.log(id);
 		var description = image.value;
 		if (description!='') {
 			var imagepayload = {
@@ -46,6 +45,7 @@ function sendForm() {
 				'lang': language,
 			};
 			payload.push(imagepayload);
+			console.log(id);
 		}
 	}
 	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
