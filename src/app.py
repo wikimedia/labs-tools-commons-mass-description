@@ -251,37 +251,37 @@ def editall():
 	for item in languages:
 		langcodes.append(item['code'])
 	for image in data:
-		if 'description' not in image or 'lang' not in image or 'title' not in image:
-			if 'title' in image:
-				title = image['title']
+		if 'description' not in image or 'lang' not in image or 'id' not in image:
+			if 'id' in image:
+				id = image['id']
 			else:
-				title = 'n-a'
+				id = 'n-a'
 			response = {
 				'status': 'error',
 				'errorcode': 'mustpassparams',
-				'title': title
+				'id': id
 			}
 			return make_response(jsonify(response), 400)
 		if image['lang'] not in langcodes:
 			response = {
 				'status': 'error',
 				'errorcode': 'nonexistentlang',
-				'title': image['title']
+				'id': image['id']
 			}
 			return make_response(jsonify(response), 400)
-		image['title'] = 'User:Martin Urbanec/sand' # Just for debugging
-		imageres = edit(image['title'], image['description'], image['lang'])
+		image['id'] = '57297576' # Just for debugging; User:Martin Urbanec/sand
+		imageres = edit(image['id'], image['description'], image['lang'])
 		if imageres['status'] != 'ok':
 			response = {
 				'status': 'error',
 				'errorcode': imageres['errorcode'],
-				'title': image['title']
+				'id': image['id']
 			}
 			return make_response(jsonify(response), 400)
 	response = {'status': 'ok'}
 	return jsonify(response)
 
-def edit(page, description, lang):
+def edit(id, description, lang):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
@@ -289,7 +289,7 @@ def edit(page, description, lang):
 		"action": "query",
 		"format": "json",
 		"prop": "revisions",
-		"titles": page,
+		"pageids": id,
 		"rvprop": "content",
 		"rvlimit": "1"
 	}
@@ -334,7 +334,7 @@ def edit(page, description, lang):
 	payload = {
 		"action": "edit",
 		"format": "json",
-		"title": page,
+		"pageid": id,
 		"text": str(code),
 		"summary": "Added description with Commons mass description tool",
 		"token": token
