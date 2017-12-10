@@ -43,7 +43,7 @@ function sendForm() {
 			'description': description,
 			'lang': language,
 		};
-		payload.pushd(imagepayload);
+		payload.push(imagepayload);
 		break;
 	}
 	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
