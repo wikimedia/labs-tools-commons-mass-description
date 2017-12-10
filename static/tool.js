@@ -37,13 +37,14 @@ function sendForm() {
 	}
 	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
 		console.log(data);
-		//fillPics();
-		//$('button')[0].disabled = false;
+		fillPics();
+		$('button')[0].disabled = false;
 	})
 }
 
 function fillPics() {
 	$('tbody').empty();
+	$('#send')[0].disabled = true;
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + '&category=' + $('#category').val().replaceAll(' ', '_');
 	console.log(url);
 	$.getJSON(url, function (data) {
