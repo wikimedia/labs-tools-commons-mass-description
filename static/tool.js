@@ -17,7 +17,7 @@ function escapeHtml (string) {
 
 function sendForm() {
 	swal("Vaše data právě zpracováváme");
-	$('button')[0].disabled = true;
+	$('#send').disabled = true;
 	var images = $("input[name^='description-']");
 	var language = $('#langs').val();
 	var payload = [];
@@ -51,7 +51,7 @@ function fillPics() {
 			var image = data.images[i];
 			$('tbody').append('<tr><td><a href="' + image.url + '" data-lightbox="image-' + image.id + '"><img src="' + image.thumburl + '"></a></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
 		}
-		$('button')[0].disabled = false;
+		$('#send')[0].disabled = false;
 	});
 }
 
