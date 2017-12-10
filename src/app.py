@@ -30,6 +30,9 @@ from email.mime.text import MIMEText
 app = flask.Flask(__name__)
 application = app
 
+ua = "Commons Mass Description (https://tools.wmflabs.org/commons-mass-description; martin.urbanec@wikimedia.cz)"
+requests.utils.default_user_agent = lambda: ua
+
 
 # Load configuration from YAML file
 __dir__ = os.path.dirname(__file__)
