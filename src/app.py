@@ -204,23 +204,40 @@ def images():
 		display = 10
 	else:
 		display = int(displaysrc)
-	categorysrc = request.args.get('category')
-	if categorysrc == None:
-		category = "Category:Media_lacking_a_description"
+	user = request.args.get('user')
+	if user:
+		category = ""
+		payload = {
+			"action": "query",
+			"format": "json",
+			"prop": "imageinfo",
+			"generator": "allimages",
+			"iiprop": "url",
+			"gaisort": "timestamp",
+			"gaidir": "descending",
+			"gaiuser": user,
+			"gailimit": "max"
+		}
+		r = requests.get(app.config['API_MWURI'], params=payload)
+		data = r.json()
 	else:
-		category = categorysrc
-	params = {
-		"action": "query",
-		"format": "json",
-		"prop": "imageinfo",
-		"generator": "categorymembers",
-		"iiprop": "url",
-		"gcmtitle": category.replace(' ', '_'),
-		"gcmtype": "file",
-		"gcmlimit": 'max'
-	}
-	r = requests.get(app.config['API_MWURI'], params=params)
-	data = r.json()
+		categorysrc = request.args.get('category')
+		if categorysrc == None:
+			category = "Category:Media_lacking_a_description"
+		else:
+			category = categorysrc
+		params = {
+			"action": "query",
+			"format": "json",
+			"prop": "imageinfo",
+			"generator": "categorymembers",
+			"iiprop": "url",
+			"gcmtitle": category.replace(' ', '_'),
+			"gcmtype": "file",
+			"gcmlimit": 'max'
+		}
+		r = requests.get(app.config['API_MWURI'], params=params)
+		data = r.json()
 	res = {
 		'images': [],
 		'status': 'ok'
