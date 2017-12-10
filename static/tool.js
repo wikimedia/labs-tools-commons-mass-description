@@ -36,16 +36,16 @@ function sendForm() {
 	var payload = [];
 	for (var i = 0; i < images.length; i++) {
 		var image = images[i];
+		var id = Number(image.name.replace('description-', ''));
+		console.log(id);
 		var description = image.value;
-		if (description!='') {
-			var id = Number(image.name.replace('description-', ''));
-			var imagepayload = {
-				'id': id,
-				'description': description,
-				'lang': language,
-			};
-			payload.push(imagepayload);
-		}
+		var imagepayload = {
+			'id': id,
+			'description': description,
+			'lang': language,
+		};
+		payload.push(imagepayload);
+		break;
 	}
 	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
 		console.log(data);
