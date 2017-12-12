@@ -51,7 +51,7 @@ function fillPics() {
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
 			var image = data.images[i];
-			$('tbody').append('<tr><td><a href="' + image.url + '" data-lightbox="image-' + image.id + '"><img src="' + image.thumburl + '"></a></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
+			$('tbody').append('<tr id="image-row-' + image.id + '"><td><a href="' + image.url + '" data-lightbox="image-' + image.id + '"><img src="' + image.thumburl + '"></a></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
 		}
 		$('#send')[0].disabled = false;
 		$('#search')[0].disabled = false;
