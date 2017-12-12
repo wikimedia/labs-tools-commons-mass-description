@@ -191,6 +191,37 @@ def described(page):
 						return True
 					return False
 
+def getcategories(id):
+	payload = {
+		"action": "query",
+		"format": "json",
+		"prop": "revisions",
+		"pageids": id,
+		"rvprop": "content",
+		"rvlimit": "1"
+	}
+	r = requests.get(app.config['API_MWURI'], params=payload)
+	data = r.json()
+	pagecontent = data['query']['pages'][str(id)]['revisions'][0]['*']
+	lines = pagecontent.split('\n')
+	categories = []
+	for line in lines:
+		if '[category' in line.lower():
+			categories.append(line.replace('[', '').replace(']', ''))
+	return categories
+
+@app.route('/api-categories')
+def api_categories():
+	pageid = request.args.get('pageid')
+	if pageid:
+		pageid = int(pageid)
+		return jsonify({
+			'status': 'ok',
+			'categories': getcategories(pageid)
+		})
+	else:
+		return jsonify({'status': 'error', 'errorcode': 'mustpassparams'})
+
 @app.route('/api-images')
 def images():
 	displaysrc = request.args.get('display')
