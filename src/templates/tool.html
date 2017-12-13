@@ -29,8 +29,17 @@
 		<option>50</option>
 		<option>100</option>
 	</select>
-	<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
-	<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
+	<input id="nofilter-button" type="radio" value="nofilter">
+	<input id="category-button" type="radio" value="category">
+	<input id="user-button" type="radio" value="user">
+	<div class="filter-by-cat">
+		<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
+		<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
+	</div>
+	<div class="filter-by-user">
+		<label for="user">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
+		<input type="text" name="user" id="user" value="User:Media lacking a description" placeholder="Prosím, uveďte i prefix User:">
+	</div>
 	<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
 	<table>
 		<thead>
@@ -42,4 +51,24 @@
 	</table>
 	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
 </div>
+
+<script>
+	$('.filter-by-cat').hide();
+	$('.filter-by-user').hide();
+
+	$( "#nofilter-button" ).bind( "click", function() {
+		$('.filter-by-cat').hide();
+		$('.filter-by-user').hide();
+	});
+
+	$( "#category-button" ).bind( "click", function() {
+		$('.filter-by-cat').show();
+		$('.filter-by-user').hide();
+	});
+
+	$( "#user-button" ).bind( "click", function() {
+		$('.filter-by-cat').hide();
+		$('.filter-by-user').show();
+	});
+</script>
 {% endblock %}
