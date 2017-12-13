@@ -58,6 +58,13 @@ function fillPics() {
 	});
 }
 
+async function fillCats(id) {
+	var url = 'https://tools.wmflabs.org/commons-mass-description/api-categories?pageid=' + id;
+	$.getJSON(url, function (data) {
+		
+	});
+}
+
 $( document ).ready(function() {
 	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', function (data) {
 		for (var i = 0; i < data['langs'].length; i++) {
