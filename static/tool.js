@@ -46,9 +46,16 @@ function fillPics() {
 	$('tbody').empty();
 	$('#send')[0].disabled = true;
 	$('#search')[0].disabled = true;
-	var filtercategory = '&category=' + $('#category').val().replaceAll(' ', '_');
-	var filteruser =  '&user=' + $('#user').val().replaceAll(' ', '_');
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val();
+	var filter = "";
+	var filtera = $('input:checked[name="filter"]').val();
+	if (filtera == "nofilter") {
+		filter = "&category=Category:Media_lacking_a_description"
+	} else if (filtera == "category") {
+		filter = '&category=' + $('#category').val().replaceAll(' ', '_');
+	} else if (filtera == "user") {
+		filter = '&user=' + $('#user').val().replaceAll(' ', '_');
+	}
+	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + filter;
 	console.log(url);
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
