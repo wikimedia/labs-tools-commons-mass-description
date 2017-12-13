@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Commons mass description</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="{{STATIC_URL}}material-icons.css">
-		<link rel="stylesheet" href="{{STATIC_URL}}sweetalert.min.css">
-		<link rel="stylesheet" href="{{STATIC_URL}}materialize.min.css">
+{% extends 'base.html' %}
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="{{STATIC_URL}}stylesheet.css">
+{% block head %}
+<!-- My JS -->
+<script src="{{STATIC_URL}}all.js" charset="utf-8"></script>
+{% endblock %}
 
-		<!-- External JS -->
-		<script src="{{STATIC_URL}}jquery.min.js" charset="utf-8"></script>
-		<script src="{{STATIC_URL}}sweetalert.min.js"></script>
-
-		<!-- My JS -->
-		<script src="{{STATIC_URL}}all.js" charset="utf-8"></script>
-	</head>
-	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a class="brand-logo" href="/commons-mass-description">CMD</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="report">Nahlásit problém</a></li>
-					<li><a href="logout">Odhlásit se</a></li>
-					<li id="username"></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<form method="post">
-				<label for="title">Shrnutí problému</label><br>
-				<input type="text" name="title" id="title" value="">
-				<label for="body">Podrobnější informace o problému</label><br>
-				<textarea name="body" rows="8" cols="80"></textarea>
-				<button type="submit" class="btn btn-primary" id="submit">Odeslat</button>
-			</form>
-		</div>
-	</body>
-</html>
+{% block body %}
+<nav class="light-blue lighten-1" role="navigation">
+	<div class="nav-wrapper container">
+		<a class="brand-logo" href="/commons-mass-description">CMD</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="report">Nahlásit problém</a></li>
+			<li><a href="logout">Odhlásit se</a></li>
+			<li id="username"></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<form method="post">
+		<label for="title">Shrnutí problému</label><br>
+		<input type="text" name="title" id="title" value="">
+		<label for="body">Podrobnější informace o problému</label><br>
+		<textarea name="body" rows="8" cols="80"></textarea>
+		<button type="submit" class="btn btn-primary" id="submit">Odeslat</button>
+	</form>
+</div>
+{% endblock %}

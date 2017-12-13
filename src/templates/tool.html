@@ -1,61 +1,45 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Commons mass description</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="{{STATIC_URL}}material-icons.css">
-		<link rel="stylesheet" href="{{STATIC_URL}}sweetalert.min.css">
-		<link rel="stylesheet" href="{{STATIC_URL}}materialize.min.css">
-		<link rel="stylesheet" href="{{STATIC_URL}}lightbox/css/lightbox.min.css">
+{% extends 'base.html' %}
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="{{STATIC_URL}}stylesheet.css">
+{% block head %}
+<!-- My JS -->
+<script src="{{STATIC_URL}}tool.js" charset="utf-8"></script>
+<script src="{{STATIC_URL}}all.js" charset="utf-8"></script>
+{% endblock %}
 
-		<!-- External JS -->
-		<script src="{{STATIC_URL}}jquery.min.js" charset="utf-8"></script>
-		<script src="{{STATIC_URL}}sweetalert.min.js"></script>
-		<script src="{{STATIC_URL}}lightbox/js/lightbox.min.js" charset="utf-8"></script>
-
-		<!-- My JS -->
-		<script src="{{STATIC_URL}}tool.js" charset="utf-8"></script>
-		<script src="{{STATIC_URL}}all.js" charset="utf-8"></script>
-	</head>
-	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a class="brand-logo" href="/commons-mass-description">CMD</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="report">Nahlásit problém</a></li>
-					<li><a href="logout">Odhlásit se</a></li>
-					<li id="username"></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<label for="langs">Zvolte si jazyk</label>
-			<select class="browser-default" name="langs" id="langs">
-			</select>
-			<label for="display">Zvolte si počet zobrazených obrázků</label>
-			<select class="browser-default" name="display" id="display">
-				<option>1</option>
-				<option>5</option>
-				<option selected="">10</option>
-				<option>50</option>
-				<option>100</option>
-			</select>
-			<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
-			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
-			<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
-			<table>
-				<thead>
-					<th>Obrázek</th>
-					<th>Popisek</th>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
-			<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
-		</div>
-	</body>
-</html>
+{% block body %}
+<nav class="light-blue lighten-1" role="navigation">
+	<div class="nav-wrapper container">
+		<a class="brand-logo" href="/commons-mass-description">CMD</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="report">Nahlásit problém</a></li>
+			<li><a href="logout">Odhlásit se</a></li>
+			<li id="username"></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<label for="langs">Zvolte si jazyk</label>
+	<select class="browser-default" name="langs" id="langs">
+	</select>
+	<label for="display">Zvolte si počet zobrazených obrázků</label>
+	<select class="browser-default" name="display" id="display">
+		<option>1</option>
+		<option>5</option>
+		<option selected="">10</option>
+		<option>50</option>
+		<option>100</option>
+	</select>
+	<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
+	<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
+	<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
+	<table>
+		<thead>
+			<th>Obrázek</th>
+			<th>Popisek</th>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
+</div>
+{% endblock %}
