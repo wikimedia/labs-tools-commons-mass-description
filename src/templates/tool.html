@@ -18,29 +18,31 @@
 	</div>
 </nav>
 <div class="container">
-	<label for="langs">Zvolte si jazyk</label>
-	<select class="browser-default" name="langs" id="langs">
-	</select>
-	<label for="display">Zvolte si počet zobrazených obrázků</label>
-	<select class="browser-default" name="display" id="display">
-		<option>1</option>
-		<option>5</option>
-		<option selected="">10</option>
-		<option>50</option>
-		<option>100</option>
-	</select>
-	<input id="nofilter-button" type="radio" value="nofilter">
-	<input id="category-button" type="radio" value="category">
-	<input id="user-button" type="radio" value="user">
-	<div class="filter-by-cat">
-		<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
-		<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
-	</div>
-	<div class="filter-by-user">
-		<label for="user">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
-		<input type="text" name="user" id="user" value="User:Media lacking a description" placeholder="Prosím, uveďte i prefix User:">
-	</div>
-	<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
+	<form>
+		<label for="langs">Zvolte si jazyk</label>
+		<select class="browser-default" name="langs" id="langs">
+		</select>
+		<label for="display">Zvolte si počet zobrazených obrázků</label>
+		<select class="browser-default" name="display" id="display">
+			<option>1</option>
+			<option>5</option>
+			<option selected="">10</option>
+			<option>50</option>
+			<option>100</option>
+		</select>
+		<input id="nofilter-button" type="radio" value="nofilter">
+		<input id="category-button" type="radio" value="category">
+		<input id="user-button" type="radio" value="user">
+		<div class="filter-by-cat">
+			<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
+			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
+		</div>
+		<div class="filter-by-user">
+			<label for="user">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
+			<input type="text" name="user" id="user" value="User:Media lacking a description" placeholder="Prosím, uveďte i prefix User:">
+		</div>
+		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
+	</form>
 	<table>
 		<thead>
 			<th>Obrázek</th>
