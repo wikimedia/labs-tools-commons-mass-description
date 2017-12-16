@@ -61,16 +61,22 @@ function fillPics() {
 		for (var i = 0; i < data.images.length; i++) {
 			var image = data.images[i];
 			$('tbody').append('<tr id="image-row-' + image.id + '"><td><a href="' + image.url + '" data-lightbox="image-' + image.id + '"><img src="' + image.thumburl + '"></a></td><td><input type="text" name="description-' + image.id + '"></td></tr>');
+			fillCat(image.id)
 		}
 		$('#send')[0].disabled = false;
 		$('#search')[0].disabled = false;
 	});
 }
 
-async function fillCats(id) {
+async function fillCat(id) {
 	var url = 'https://tools.wmflabs.org/commons-mass-description/api-categories?pageid=' + id;
 	$.getJSON(url, function (data) {
-		
+		var html = "<td><ul>";
+		for (var i = 0; i < data.categories.length; i++) {
+			html += '<li><a href="https://commons.wikimedia.org/wiki/' + data.categories[i] + '">' + data.categories[i] + '</a></li>';
+		}
+		html += "</ul></td>";
+		$('#image-row-' + id).append(html);
 	});
 }
 
