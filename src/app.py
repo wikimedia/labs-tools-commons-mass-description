@@ -207,7 +207,7 @@ def getcategories(id):
 	categories = []
 	for line in lines:
 		if '[category' in line.lower():
-			categories.append(line.replace('[', '').replace(']', ''))
+			categories.append(line.replace('[', '').replace(']', '').split('|')[0])
 	return categories
 
 @app.route('/api-categories')
