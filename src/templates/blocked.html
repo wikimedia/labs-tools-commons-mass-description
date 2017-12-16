@@ -1,49 +1,35 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Commons mass description</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/material-icons.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/materialize.min.css">
+{% extends 'base.html' %}
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/stylesheet.css">
+{% block head %}
+<!-- My JS -->
+<script src="{{config.STATIC_URL}}all.js" charset="utf-8"></script>
+{% endblock %}
 
-		<!-- External JS -->
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/jquery.min.js" charset="utf-8"></script>
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.js"></script>
-
-		<!-- My JS -->
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/all.js" charset="utf-8"></script>
-	</head>
-	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a class="brand-logo" href="/commons-mass-description">CMD</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="report">Nahlásit problém</a></li>
-					<li><a href="logout">Odhlásit se</a></li>
-					<li id="username"></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<h1>Váš uživatelský účet byl zablokován</h1>
-			<h4>Podrobnosti o zablokování</h4>
-			<ul>
-				<li>Blokující správce: <span id="sysop"></span></li>
-				<li>Důvod zablokování: <span id="reason"></span></li>
-				<li>Blokování vyprší: <span id="expiry"></span></li>
-			</ul>
-			<script type="text/javascript">
-				$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
-					$('#sysop').text(data['blockdata']['blockedby']);
-					$('#reason').text(data['blockdata']['blockreason']);
-					$('#expiry').text(data['blockdata']['blockexpiry']);
-				});
-			</script>
-		</div>
-	</body>
-</html>
+{% block body %}
+<nav class="light-blue lighten-1" role="navigation">
+	<div class="nav-wrapper container">
+		<a class="brand-logo" href="/commons-mass-description">CMD</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="report">Nahlásit problém</a></li>
+			<li><a href="logout">Odhlásit se</a></li>
+			<li id="username"></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h1>Váš uživatelský účet byl zablokován</h1>
+	<h4>Podrobnosti o zablokování</h4>
+	<ul>
+		<li>Blokující správce: <span id="sysop"></span></li>
+		<li>Důvod zablokování: <span id="reason"></span></li>
+		<li>Blokování vyprší: <span id="expiry"></span></li>
+	</ul>
+	<script type="text/javascript">
+		$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
+			$('#sysop').text(data['blockdata']['blockedby']);
+			$('#reason').text(data['blockdata']['blockreason']);
+			$('#expiry').text(data['blockdata']['blockexpiry']);
+		});
+	</script>
+</div>
+{% endblock %}

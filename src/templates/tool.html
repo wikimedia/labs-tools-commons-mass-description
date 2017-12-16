@@ -1,62 +1,81 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Commons mass description</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/material-icons.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/materialize.min.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/lightbox/css/lightbox.min.css">
+{% extends 'base.html' %}
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/stylesheet.css">
+{% block head %}
+<!-- My JS -->
+<script src="{{config.STATIC_URL}}tool.js" charset="utf-8"></script>
+<script src="{{config.STATIC_URL}}all.js" charset="utf-8"></script>
+{% endblock %}
 
-		<!-- External JS -->
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/jquery.min.js" charset="utf-8"></script>
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.js"></script>
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/lightbox/js/lightbox.min.js" charset="utf-8"></script>
-
-		<!-- My JS -->
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/tool.js" charset="utf-8"></script>
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/all.js" charset="utf-8"></script>
-	</head>
-	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a class="brand-logo" href="/commons-mass-description">CMD</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="report">Nahlásit problém</a></li>
-					<li><a href="logout">Odhlásit se</a></li>
-					<li id="username"></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<label for="langs">Zvolte si jazyk</label>
-			<select class="browser-default" name="langs" id="langs">
-			</select>
-			<label for="display">Zvolte si počet zobrazených obrázků</label>
-			<select class="browser-default" name="display" id="display">
-				<option>1</option>
-				<option>5</option>
-				<option selected="">10</option>
-				<option>50</option>
-				<option>100</option>
-			</select>
+{% block body %}
+<nav class="light-blue lighten-1" role="navigation">
+	<div class="nav-wrapper container">
+		<a class="brand-logo" href="/commons-mass-description">CMD</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="report">Nahlásit problém</a></li>
+			<li><a href="logout">Odhlásit se</a></li>
+			<li id="username"></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<form>
+		<label for="langs">Zvolte si jazyk</label>
+		<select class="browser-default" name="langs" id="langs">
+		</select>
+		<label for="display">Zvolte si počet zobrazených obrázků</label>
+		<select class="browser-default" name="display" id="display">
+			<option>1</option>
+			<option>5</option>
+			<option selected="">10</option>
+			<option>50</option>
+			<option>100</option>
+		</select>
+		<label for="nofilter-button">nofilter</label>
+		<input id="nofilter-button" type="radio" name="filter" value="nofilter" checked>
+		<label for="category-button">category</label>
+		<input id="category-button" type="radio" name="filter" value="category">
+		<label for="user-button">user</label>
+		<input id="user-button" type="radio" name="filter" value="user">
+		<br>
+		<div class="filter-by-cat">
 			<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
 			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
-			<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
-			<table>
-				<thead>
-					<th>Obrázek</th>
-					<th>Popisek</th>
-					<th>Kategorie</th>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
-			<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
 		</div>
-	</body>
-</html>
+		<div class="filter-by-user">
+			<label for="user">Zadejte název uploadera, jehož obrázky si přejete popisovat</label>
+			<input type="text" name="user" id="user" value="Aktron" placeholder="Uživatelské jméno">
+		</div>
+		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
+	</form>
+	<table>
+		<thead>
+			<th>Obrázek</th>
+			<th>Popisek</th>
+			<th>Kategorie</th>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
+</div>
+
+<script>
+	$('.filter-by-cat').hide();
+	$('.filter-by-user').hide();
+
+	$( "#nofilter-button" ).bind( "click", function() {
+		$('.filter-by-cat').hide();
+		$('.filter-by-user').hide();
+	});
+
+	$( "#category-button" ).bind( "click", function() {
+		$('.filter-by-cat').show();
+		$('.filter-by-user').hide();
+	});
+
+	$( "#user-button" ).bind( "click", function() {
+		$('.filter-by-cat').hide();
+		$('.filter-by-user').show();
+	});
+</script>
+{% endblock %}

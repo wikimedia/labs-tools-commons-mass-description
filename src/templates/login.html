@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Commons mass description</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/material-icons.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.css">
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/materialize.min.css">
+{% extends 'base.html' %}
 
-		<!-- My CSS -->
-		<link rel="stylesheet" href="https://tools-static.wmflabs.org/commons-mass-description/stylesheet.css">
-
-		<!-- External JS -->
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/jquery.min.js" charset="utf-8"></script>
-		<script src="https://tools-static.wmflabs.org/commons-mass-description/sweetalert.min.js"></script>
-	</head>
-	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container">
-				<a class="brand-logo" href="/commons-mass-description">CMD</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="login">Přihlásit se</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<h1>Prosíme, <a href="login">přihlašte se</a></h1>
-		</div>
-	</body>
-</html>
+{% block body %}
+<nav class="light-blue lighten-1" role="navigation">
+	<div class="nav-wrapper container">
+		<a class="brand-logo" href="/commons-mass-description">CMD</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="login">Přihlásit se</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h1>Prosíme, <a href="login">přihlašte se</a></h1>
+</div>
+{% endblock %}
