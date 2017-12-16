@@ -112,7 +112,7 @@ def langs():
 			})
 	res = {
 		'status': 'ok',
-		'langs': langs
+		'langs': sorted(langs, key=lambda k: k['name'])
 	}
 	return res
 
