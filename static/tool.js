@@ -16,7 +16,7 @@ function escapeHtml (string) {
 }
 
 function sendForm() {
-	swal("Vaše data právě zpracováváme");
+	swal("Your data are being processed right now");
 	$('#send').disabled = true;
 	var images = $("input[name^='description-']");
 	var language = $('#langs').val();
