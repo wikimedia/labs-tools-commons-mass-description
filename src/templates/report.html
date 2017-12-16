@@ -10,19 +10,19 @@
 	<div class="nav-wrapper container">
 		<a class="brand-logo" href="/commons-mass-description">CMD</a>
 		<ul class="right hide-on-med-and-down">
-			<li><a href="report">Nahlásit problém</a></li>
-			<li><a href="logout">Odhlásit se</a></li>
+			<li><a href="report">Report a problem</a></li>
+			<li><a href="logout">Logout</a></li>
 			<li id="username"></li>
 		</ul>
 	</div>
 </nav>
 <div class="container">
 	<form method="post">
-		<label for="title">Shrnutí problému</label><br>
+		<label for="title">Summary of your problem</label><br>
 		<input type="text" name="title" id="title" value="">
-		<label for="body">Podrobnější informace o problému</label><br>
+		<label for="body">Detailed information about your problem</label><br>
 		<textarea name="body" class="materialize-textarea" rows="8" cols="80"></textarea>
-		<button type="submit" class="btn btn-primary" id="submit">Odeslat</button>
+		<button type="submit" class="btn btn-primary" id="submit">Submit</button>
 	</form>
 </div>
 {% endblock %}

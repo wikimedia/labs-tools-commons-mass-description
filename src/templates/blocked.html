@@ -10,19 +10,19 @@
 	<div class="nav-wrapper container">
 		<a class="brand-logo" href="/commons-mass-description">CMD</a>
 		<ul class="right hide-on-med-and-down">
-			<li><a href="report">Nahlásit problém</a></li>
-			<li><a href="logout">Odhlásit se</a></li>
+			<li><a href="report">Report a problem</a></li>
+			<li><a href="logout">Logout</a></li>
 			<li id="username"></li>
 		</ul>
 	</div>
 </nav>
 <div class="container">
-	<h1>Váš uživatelský účet byl zablokován</h1>
-	<h4>Podrobnosti o zablokování</h4>
+	<h1>Your user account has been blocked</h1>
+	<h4>Summary of your block</h4>
 	<ul>
-		<li>Blokující správce: <span id="sysop"></span></li>
-		<li>Důvod zablokování: <span id="reason"></span></li>
-		<li>Blokování vyprší: <span id="expiry"></span></li>
+		<li>Blocking sysop: <span id="sysop"></span></li>
+		<li>Reason of block: <span id="reason"></span></li>
+		<li>Block will expiry: <span id="expiry"></span></li>
 	</ul>
 	<script type="text/javascript">
 		$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
