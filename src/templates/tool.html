@@ -30,30 +30,13 @@
 			<option>50</option>
 			<option>100</option>
 		</select>
-		<div class="mdc-radio">
-		  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="filter" checked value="nofilter">
-		  <div class="mdc-radio__background">
-		    <div class="mdc-radio__outer-circle"></div>
-		    <div class="mdc-radio__inner-circle"></div>
-		  </div>
-		</div>
-		<label id="radio-1-label" for="radio-1">Do not filter</label>
-		<div class="mdc-radio">
-		  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="filter" value="category">
-		  <div class="mdc-radio__background">
-		    <div class="mdc-radio__outer-circle"></div>
-		    <div class="mdc-radio__inner-circle"></div>
-		  </div>
-		</div>
-		<label id="radio-2-label" for="radio-2">Filter by category</label>
-		<div class="mdc-radio">
-		  <input class="mdc-radio__native-control" type="radio" id="radio-3" name="filter" value="user">
-		  <div class="mdc-radio__background">
-		    <div class="mdc-radio__outer-circle"></div>
-		    <div class="mdc-radio__inner-circle"></div>
-		  </div>
-		</div>
-		<label id="radio-2-label" for="radio-2">Filter by uploader</label>
+		<label for="nofilter-button">Do not filter</label>
+		<input id="nofilter-button" type="radio" name="filter" value="nofilter" checked>
+		<label for="category-button">Filter by category</label>
+		<input id="category-button" type="radio" name="filter" value="category">
+		<label for="user-button">Filter by uploader</label>
+		<input id="user-button" type="radio" name="filter" value="user">
+		<br>
 		<div class="filter-by-cat">
 			<label for="category">Enter name of category that you want to use at the source of the table below</label>
 			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Include the prefix Category:">
