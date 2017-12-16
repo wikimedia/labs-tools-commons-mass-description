@@ -11,18 +11,18 @@
 	<div class="nav-wrapper container">
 		<a class="brand-logo" href="/commons-mass-description">CMD</a>
 		<ul class="right hide-on-med-and-down">
-			<li><a href="report">Nahlásit problém</a></li>
-			<li><a href="logout">Odhlásit se</a></li>
+			<li><a href="report">Report a problem</a></li>
+			<li><a href="logout">Logout</a></li>
 			<li id="username"></li>
 		</ul>
 	</div>
 </nav>
 <div class="container">
 	<form>
-		<label for="langs">Zvolte si jazyk</label>
+		<label for="langs">Choose a language</label>
 		<select class="browser-default" name="langs" id="langs">
 		</select>
-		<label for="display">Zvolte si počet zobrazených obrázků</label>
+		<label for="display">Choose a number of displayed images</label>
 		<select class="browser-default" name="display" id="display">
 			<option>1</option>
 			<option>5</option>
@@ -30,33 +30,33 @@
 			<option>50</option>
 			<option>100</option>
 		</select>
-		<label for="nofilter-button">nofilter</label>
+		<label for="nofilter-button">Do not filter</label>
 		<input id="nofilter-button" type="radio" name="filter" value="nofilter" checked>
-		<label for="category-button">category</label>
+		<label for="category-button">Filter by category</label>
 		<input id="category-button" type="radio" name="filter" value="category">
-		<label for="user-button">user</label>
+		<label for="user-button">Filter by uploader</label>
 		<input id="user-button" type="radio" name="filter" value="user">
 		<br>
 		<div class="filter-by-cat">
-			<label for="category">Zadejte název kategorie, ze které si přejete popisovat obrázky</label>
-			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Prosím, uveďte i prefix Category:">
+			<label for="category">Enter name of category that you want to use at the source of the table below</label>
+			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="Include the prefix Category:">
 		</div>
 		<div class="filter-by-user">
-			<label for="user">Zadejte název uploadera, jehož obrázky si přejete popisovat</label>
-			<input type="text" name="user" id="user" value="Aktron" placeholder="Uživatelské jméno">
+			<label for="user">Enter username of uploader which pictures you would like to describe</label>
+			<input type="text" name="user" id="user" value="Aktron" placeholder="Username, do not include prefix User:">
 		</div>
-		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Načíst obrázky</button>
+		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">Load pictures</button>
 	</form>
 	<table>
 		<thead>
-			<th>Obrázek</th>
-			<th>Popisek</th>
-			<th>Kategorie</th>
+			<th>Picture</th>
+			<th>Description</th>
+			<th>Categories</th>
 		</thead>
 		<tbody>
 		</tbody>
 	</table>
-	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Odeslat</button>
+	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">Send</button>
 </div>
 
 <script>
