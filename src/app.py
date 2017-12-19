@@ -111,7 +111,7 @@ def users():
 				rowres.append(item)
 		users.append(rowres)
 	with conn.cursor() as cur:
-		sql = 'select count(*) from change_tag where ct_tag="OAuth CID: 821" and rev_user>0;'
+		sql = 'select count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and rev_user>0;'
 		cur.execute(sql)
 		data = cur.fetchall()
 	total = data[0][0]
