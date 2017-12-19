@@ -105,7 +105,10 @@ def users():
 	for user in data:
 		rowres = []
 		for item in user:
-			rowres.append(item)
+			if type(item) == type(b'a'):
+				rowres.append(item.decode('utf-8'))
+			else:
+				rowres.append(item)
 		users.append(rowres)
 	return flask.render_template('users.html', users=users, logged=logged(), username=getusername())
 
