@@ -98,7 +98,7 @@ def users():
 		sql = 'select rev_user_text, count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and rev_user>0 group by rev_user order by count(*) desc;'
 		cur.execute(sql)
 		data = cur.fetchall()
-	return flask.render_template('users.html', users=data)
+	return flask.render_template('users.html', users=data, logged=logged(), username=flask.session.get('username'))
 
 @app.route('/api-username')
 def username():
