@@ -105,7 +105,7 @@ def users():
 	for user in data:
 		rowres = []
 		for item in user:
-			rowres.append(item.decode('utf-8'))
+			rowres.append(item)
 		users.append(rowres)
 	return flask.render_template('users.html', users=users, logged=logged(), username=getusername())
 
