@@ -88,6 +88,9 @@ def report():
 	else:
 		return flask.render_template('login.html')
 
+def logged():
+	return flask.session.get('username') != None
+
 @app.route('/users')
 def users():
 	conn = toolforge.connect('commonswiki')
