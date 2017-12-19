@@ -110,7 +110,12 @@ def users():
 			else:
 				rowres.append(item)
 		users.append(rowres)
-	return flask.render_template('users.html', users=users, logged=logged(), username=getusername())
+	with conn.cursor() as cur:
+		sql = 'select count(*) from change_tag where ct_tag="OAuth CID: 821" and rev_user>0;'
+		cur.execute(sql)
+		data = cur.fetchall()
+	total = data[0][0]
+	return flask.render_template('users.html', users=users, total=total, logged=logged(), username=getusername())
 
 @app.route('/api-username')
 def username():
