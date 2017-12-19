@@ -4,14 +4,48 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Commons mass description</title>
+		<!-- External CSS -->
+		<link rel="stylesheet" href="{{config.STATIC_URL}}material-icons.css">
+		<link rel="stylesheet" href="{{config.STATIC_URL}}sweetalert.min.css">
+		<link rel="stylesheet" href="{{config.STATIC_URL}}materialize.min.css">
+		<link rel="stylesheet" href="{{config.STATIC_URL}}lightbox/css/lightbox.min.css">
 
-        {% include 'cssFiles.html' %}
+		<!-- My CSS -->
+		<link rel="stylesheet" href="{{config.STATIC_URL}}stylesheet.css">
 
-        {% include 'javascriptFiles.html' %}
+		<!-- External JS -->
+		<script src="{{config.STATIC_URL}}jquery.min.js" charset="utf-8"></script>
+		<script src="{{config.STATIC_URL}}sweetalert.min.js"></script>
+		<script src="{{config.STATIC_URL}}lightbox/js/lightbox.min.js" charset="utf-8"></script>
 
-        {% block head %}{% endblock %}
+		<!-- My JS -->
+		{% if logged %}
+		<script src="{{config.STATIC_URL}}all.js" charset="utf-8"></script>
+		{% endif %}
+	  {% block head %}{% endblock %}
 	</head>
 	<body>
+				{% if logged %}
+				<nav class="light-blue lighten-1" role="navigation">
+					<div class="nav-wrapper container">
+						<a class="brand-logo" href="/commons-mass-description">CMD</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="login">Login</a></li>
+						</ul>
+					</div>
+				</nav>
+				{% else %}
+				<nav class="light-blue lighten-1" role="navigation">
+					<div class="nav-wrapper container">
+						<a class="brand-logo" href="/commons-mass-description">CMD</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="report">Report a problem</a></li>
+							<li><a href="logout">Logout</a></li>
+							<li id="username">{{username}}</li>
+						</ul>
+					</div>
+				</nav>
+				{% endif %}
         {% block body %}{% endblock %}
 	</body>
 </html>

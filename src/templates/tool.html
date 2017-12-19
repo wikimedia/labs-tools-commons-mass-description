@@ -1,22 +1,10 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<!-- My JS -->
 <script src="{{config.STATIC_URL}}tool.js" charset="utf-8"></script>
-<script src="{{config.STATIC_URL}}all.js" charset="utf-8"></script>
 {% endblock %}
 
 {% block body %}
-<nav class="light-blue lighten-1" role="navigation">
-	<div class="nav-wrapper container">
-		<a class="brand-logo" href="/commons-mass-description">CMD</a>
-		<ul class="right hide-on-med-and-down">
-			<li><a href="report">Report a problem</a></li>
-			<li><a href="logout">Logout</a></li>
-			<li id="username"></li>
-		</ul>
-	</div>
-</nav>
 <div class="container">
 	<form>
 		<label for="langs">Choose a language</label>

@@ -56,11 +56,11 @@ def index():
 	username = flask.session.get('username')
 	if username is not None:
 		if blocked()['blockstatus']:
-			return flask.render_template('blocked.html')
+			return flask.render_template('blocked.html', logged=logged(), username=getusername())
 		else:
-			return flask.render_template('tool.html')
+			return flask.render_template('tool.html', logged=logged(), username=getusername())
 	else:
-		return flask.render_template('login.html')
+		return flask.render_template('login.html', logged=logged(), username=getusername())
 
 @app.route('/report', methods=['get', 'post'])
 def report():
@@ -78,18 +78,21 @@ def report():
 		s.ehlo()
 		s.sendmail(sender, recipient, msg.as_string())
 		s.quit()
-		return flask.render_template('reported.html')
+		return flask.render_template('reported.html', logged=logged(), username=getusername())
 	username = flask.session.get('username')
 	if username is not None:
 		if blocked()['blockstatus']:
-			return flask.render_template('blocked.html')
+			return flask.render_template('blocked.html', logged=logged(), username=getusername())
 		else:
-			return flask.render_template('report.html')
+			return flask.render_template('report.html', logged=logged(), username=getusername())
 	else:
-		return flask.render_template('login.html')
+		return flask.render_template('login.html', logged=logged(), username=getusername())
 
 def logged():
 	return flask.session.get('username') != None
+
+def getusername():
+    return flask.session.get('username')
 
 @app.route('/users')
 def users():
@@ -98,7 +101,7 @@ def users():
 		sql = 'select rev_user_text, count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and rev_user>0 group by rev_user order by count(*) desc;'
 		cur.execute(sql)
 		data = cur.fetchall()
-	return flask.render_template('users.html', users=data, logged=logged(), username=flask.session.get('username'))
+	return flask.render_template('users.html', users=data, logged=logged(), username=getusername())
 
 @app.route('/api-username')
 def username():
