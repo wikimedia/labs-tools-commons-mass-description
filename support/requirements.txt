@@ -6,3 +6,4 @@ simplejson
 flask-mwoauth
 site
 mwparserfromhell
+toolforge
