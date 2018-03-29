@@ -62,31 +62,9 @@ def index():
 	else:
 		return flask.render_template('login.html', logged=logged(), username=getusername())
 
-@app.route('/report', methods=['get', 'post'])
+@app.route('/report')
 def report():
-	if request.method == 'POST':
-		title = request.form.get('title')
-		body = request.form.get('body')
-		sender = 'tools.commons-mass-description@tools.wmflabs.org'
-		recipient = "bugs@webappky.cz"
-		mail = "!projects #commons-mass-description\n\n" + body + '\n\nNahlásil: ' + flask.session.get('username')
-		msg = MIMEText(mail)
-		msg['Subject'] = title
-		msg['From'] = sender
-		msg['To'] = recipient
-		s = smtplib.SMTP('mail.tools.wmflabs.org')
-		s.ehlo()
-		s.sendmail(sender, recipient, msg.as_string())
-		s.quit()
-		return flask.render_template('reported.html', logged=logged(), username=getusername())
-	username = flask.session.get('username')
-	if username is not None:
-		if blocked()['blockstatus']:
-			return flask.render_template('blocked.html', logged=logged(), username=getusername())
-		else:
-			return flask.render_template('report.html', logged=logged(), username=getusername())
-	else:
-		return flask.render_template('login.html', logged=logged(), username=getusername())
+	return redirect('https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description')
 
 def logged():
 	return flask.session.get('username') != None
