@@ -25,7 +25,6 @@ import mwparserfromhell
 from requests_oauthlib import OAuth1
 import random
 import toolforge
-import smtplib
 from email.mime.text import MIMEText
 
 app = flask.Flask(__name__)
