@@ -25,14 +25,10 @@ import mwparserfromhell
 from requests_oauthlib import OAuth1
 import random
 import toolforge
-import smtplib
 from email.mime.text import MIMEText
 
 app = flask.Flask(__name__)
 application = app
-
-ua = "Commons Mass Description (https://tools.wmflabs.org/commons-mass-description; martin.urbanec@wikimedia.cz)"
-requests.utils.default_user_agent = lambda: ua
 
 
 # Load configuration from YAML file
@@ -40,16 +36,18 @@ __dir__ = os.path.dirname(__file__)
 app.config.update(
     yaml.safe_load(open(os.path.join(__dir__, 'config.yaml'))))
 
+requests.utils.default_user_agent = lambda: app.config['USER_AGENT']
+
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
-
-@app.after_request
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
-    return response
+@app.before_request
+def force_https():
+    if request.headers.get('X-Forwarded-Proto') == 'http':
+        return redirect(
+            'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
+            code=301
+        )
 
 @app.route('/')
 def index():
