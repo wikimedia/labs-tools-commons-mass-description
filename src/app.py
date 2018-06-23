@@ -50,6 +50,14 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
     return response
 
+@app.before_request
+def force_https():
+    if request.headers.get('X-Forwarded-Proto') == 'http':
+        return redirect(
+            'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
+            code=301
+        )
+
 @app.route('/')
 def index():
 	username = flask.session.get('username')
