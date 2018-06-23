@@ -1,0 +1,8 @@
+{
+    "name" : "ipwatcher",
+    "title" : "IP Watcher",
+    "description" : "Stalk IP addresses or users",
+    "url" : "https://tools.wmflabs.org/ipwatcher",
+    "author" : "Martin Urbanec",
+    "repository" : "https://phabricator.wikimedia.org/source/tool-ipwatcher.git"
+}

@@ -471,5 +471,9 @@ def logout():
 	flask.session.clear()
 	return flask.redirect(flask.url_for('index'))
 
+@app.route('/toolinfo.json')
+def toolinfo():
+	return flask.render_template('toolinfo.json')
+
 if __name__ == "__main__":
 	app.run(debug=True, threaded=True)
