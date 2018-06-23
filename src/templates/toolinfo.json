@@ -1,8 +1,8 @@
 {
-    "name" : "ipwatcher",
-    "title" : "IP Watcher",
-    "description" : "Stalk IP addresses or users",
-    "url" : "https://tools.wmflabs.org/ipwatcher",
+    "name" : "commons-mass-description",
+    "title" : "Commons Mass Description",
+    "description" : "Add description to Commons images en masse",
+    "url" : "https://tools.wmflabs.org/commons-mass-description",
     "author" : "Martin Urbanec",
-    "repository" : "https://phabricator.wikimedia.org/source/tool-ipwatcher.git"
+    "repository" : "https://phabricator.wikimedia.org/source/tool-commons-mass-description.git"
 }
