@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/www/python/venv/bin/activate
+
 if test -e ~/test; then
 	branch=test
 else
@@ -10,5 +12,5 @@ sleep 1 &&
 cd ~/src &&
 git pull &&
 git checkout $branch &&
-compiletranslations &&
+pybabel compile -d ~/src/locales &&
 restartweb
