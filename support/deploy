@@ -10,4 +10,5 @@ sleep 1 &&
 cd ~/src &&
 git pull &&
 git checkout $branch &&
+compiletranslations &&
 restartweb
