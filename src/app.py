@@ -45,6 +45,10 @@ requests.utils.default_user_agent = lambda: app.config['USER_AGENT']
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
+@babel.localeselector
+def getlocale():
+	return request.accept_languages.best_match(['cs', 'en'])
+
 @app.before_request
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
