@@ -1,0 +1,206 @@
+# Czech translations for .
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the  project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0\n"
+"Report-Msgid-Bugs-To: tools.commons-mass-description@tools.wmflabs.org\n"
+"POT-Creation-Date: 2018-09-07 07:53+0200\n"
+"PO-Revision-Date: 2018-09-06 15:00+0200\n"
+"Last-Translator: Urbanecm <tools.commons-mass-"
+"description@tools.wmflabs.org>\n"
+"Language: cs\n"
+"Language-Team: LanguageTeam <tools.commons-mass-"
+"description@tools.wmflabs.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:33
+#: /data/project/commons-mass-description-test/src/templates/base.html:45
+msgid "Report a problem"
+msgstr "Nahlásit chybu"
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:34
+#: /data/project/commons-mass-description-test/src/templates/base.html:47
+msgid "Users using this tool"
+msgstr "Uživatelé používající tento nástroj"
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:35
+msgid "Logout"
+msgstr "Odhlásit se"
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:46
+msgid "Login"
+msgstr "Přihlásit se"
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:5
+msgid "Your user account has been blocked"
+msgstr "Váš uživatelský účet byl zablokován"
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:6
+msgid "Summary of your block"
+msgstr "Shrnutí zablokování"
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:8
+msgid "Blocking sysop"
+msgstr "Blokující správce"
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:9
+msgid "Reason of block"
+msgstr "Důvod zablokování"
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:10
+msgid "Block expiration"
+msgstr "Blok vyprší"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:5
+msgid "Please"
+msgstr "Prosím"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:5
+msgid "login"
+msgstr "přihlašte se"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "Commons Mass Description"
+msgstr "Commons Mass Description"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "is a tool that allows user to describe pictures and multimedia at "
+msgstr "jen nástroj umožňující uživatelům popsat fotografie a multimédia na "
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "Wikimedia Commons"
+msgstr "Wikimedia Commons"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "en masse without having to edit each image manually. You can find more at "
+msgstr ""
+"hromadně bez toho, aniž by museli ručně editovat každý obrázek. Můžete se"
+" dozvědět více na "
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "its Wikimedia Commons page"
+msgstr "stránce na Wikimedia Commons"
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:7
+msgid "If you find any bugs in this tool, please feel free to "
+msgstr "Naleznete-li jakékoliv chyby v tomto nástroji, prosím neváhejte "
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:7
+msgid "create a task at Wikimedia Phabricator"
+msgstr "vytvořit cgybové hlášení na Wikimedia Phabricator"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:10
+msgid "Choose a language"
+msgstr "Zvolte jazyk"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:13
+msgid "Choose a number of displayed images"
+msgstr "Zvolte si počet zobrazených obrázků"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:21
+msgid "Do not filter"
+msgstr "Nefiltrovat"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:23
+msgid "Filter by category"
+msgstr "Filtrovat podle kategorie"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:25
+msgid "Filter by uploader"
+msgstr "Filrovat podle uploadera"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:29
+msgid ""
+"Enter name of category that you want to use at the source of the table "
+"below"
+msgstr ""
+"Zadejte jméno kategorie, kterou chcete použít jako zdroj tabulky"
+"níže"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:30
+msgid "Include the prefix Category:"
+msgstr "Včetně prefixu Category:"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:33
+msgid "Enter username of uploader which pictures you would like to describe"
+msgstr "Zadejte uživatelské jméno uploadera, jehož obrázky chcete popsat"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:34
+msgid "Username, do not include prefix User:"
+msgstr "Uživatelské jmén, bez prefixu User:"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:36
+msgid "Load pictures"
+msgstr "Načíst obrázky"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:40
+msgid "Picture"
+msgstr "Obrázek"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:41
+msgid "Description"
+msgstr "Popisek"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:42
+msgid "Categories"
+msgstr "Kategorie"
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:47
+msgid "Send"
+msgstr "Odeslat"
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:5
+msgid "All users that ever used CMD"
+msgstr "Všichni uživatelé, kteří někdy použili CMD"
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:9
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:10
+msgid "Total number of edits"
+msgstr "Celkový počet editací"
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:24
+msgid "Total"
+msgstr "Celkem"
+
+#~ msgid ""
+#~ "<strong>Commons Mass Description</strong> is a"
+#~ " tool that allows user to describe"
+#~ " pictures and multimedia at <a "
+#~ "href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> "
+#~ "<em>en masse</em> without having to edit"
+#~ " each image manually. You can find"
+#~ " more at <a "
+#~ "href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its"
+#~ " Wikimedia Commons page</a>."
+#~ msgstr ""
+#~ "<strong>Commons Mass Description</strong> je "
+#~ "nástroj umožňujícím uživatelům hromadně "
+#~ "popisovat obrázky a multimédia na  <a"
+#~ " href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>"
+#~ " bez nutnosti editovat každý obrázek "
+#~ "manuálně. Můžete nalézt více informací "
+#~ "na <a "
+#~ "href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">stránce"
+#~ " na Commons</a>."
+
+#~ msgid ""
+#~ "If you find any bugs in this "
+#~ "tool, please feel free to <a "
+#~ "href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create"
+#~ " a task at Wikimedia Phabricator</a>"
+#~ msgstr ""
+#~ "Pokud v nástroji narazíte na jakékoliv"
+#~ " chyby, prosím, nahlašte je na <a "
+#~ "href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"Wikimedia"
+#~ " Phabricator</a>"
+

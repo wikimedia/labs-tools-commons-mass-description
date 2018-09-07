@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container">
-	<h1>All users that ever used CMD</h1>
+	<h1>{{ _("All users that ever used CMD") }}</h1>
   <table>
     <thead>
       <tr>
-        <th>Username</th>
-        <th>Total number of edits</th>
+        <th>{{ _("Username") }}</th>
+        <th>{{ _("Total number of edits") }}</th>
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@
     </tbody>
 		<tfoot>
 			<tr>
-				<td>Total</td>
+				<td>{{ _("Total") }}</td>
 				<td>{{total}}</td>
 			</tr>
 		</tfoot>

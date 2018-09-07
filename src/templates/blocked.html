@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container">
-	<h1>Your user account has been blocked</h1>
-	<h4>Summary of your block</h4>
+	<h1>{{ _("Your user account has been blocked") }}</h1>
+	<h4>{{ _("Summary of your block") }}</h4>
 	<ul>
-		<li>Blocking sysop: <span id="sysop"></span></li>
-		<li>Reason of block: <span id="reason"></span></li>
-		<li>Block will expiry: <span id="expiry"></span></li>
+		<li>{{ _("Blocking sysop") }}: <span id="sysop"></span></li>
+		<li>{{ _("Reason of block") }}: <span id="reason"></span></li>
+		<li>{{ _("Block expiration") }}: <span id="expiry"></span></li>
 	</ul>
 	<script type="text/javascript">
 		$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {

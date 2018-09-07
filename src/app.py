@@ -26,8 +26,12 @@ from requests_oauthlib import OAuth1
 import random
 import toolforge
 from email.mime.text import MIMEText
+from flask import Flask
+from flask_babel import Babel
+from flask_babel import gettext, ngettext
 
 app = flask.Flask(__name__)
+babel = Babel(app)
 application = app
 
 

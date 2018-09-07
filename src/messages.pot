@@ -1,0 +1,167 @@
+# Translations template for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-09-07 07:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:33
+#: /data/project/commons-mass-description-test/src/templates/base.html:45
+msgid "Report a problem"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:34
+#: /data/project/commons-mass-description-test/src/templates/base.html:47
+msgid "Users using this tool"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:35
+msgid "Logout"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/base.html:46
+msgid "Login"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:5
+msgid "Your user account has been blocked"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:6
+msgid "Summary of your block"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:8
+msgid "Blocking sysop"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:9
+msgid "Reason of block"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/blocked.html:10
+msgid "Block expiration"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:5
+msgid "Please"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:5
+msgid "login"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "Commons Mass Description"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "is a tool that allows user to describe pictures and multimedia at "
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "Wikimedia Commons"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "en masse without having to edit each image manually. You can find more at "
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:6
+msgid "its Wikimedia Commons page"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:7
+msgid "If you find any bugs in this tool, please feel free to "
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/login.html:7
+msgid "create a task at Wikimedia Phabricator"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:10
+msgid "Choose a language"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:13
+msgid "Choose a number of displayed images"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:21
+msgid "Do not filter"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:23
+msgid "Filter by category"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:25
+msgid "Filter by uploader"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:29
+msgid ""
+"Enter name of category that you want to use at the source of the table "
+"below"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:30
+msgid "Include the prefix Category:"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:33
+msgid "Enter username of uploader which pictures you would like to describe"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:34
+msgid "Username, do not include prefix User:"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:36
+msgid "Load pictures"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:40
+msgid "Picture"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:41
+msgid "Description"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:42
+msgid "Categories"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/tool.html:47
+msgid "Send"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:5
+msgid "All users that ever used CMD"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:9
+msgid "Username"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:10
+msgid "Total number of edits"
+msgstr ""
+
+#: /data/project/commons-mass-description-test/src/templates/users.html:24
+msgid "Total"
+msgstr ""
+
