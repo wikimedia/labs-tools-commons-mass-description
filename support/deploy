@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/www/python/venv/bin/activate
+
 if test -e ~/test; then
 	branch=test
 else
