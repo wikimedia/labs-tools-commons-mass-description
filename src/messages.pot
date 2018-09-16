@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-09-07 07:53+0200\n"
+"POT-Creation-Date: 2018-09-16 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,39 +56,24 @@ msgid "Block expiration"
 msgstr ""
 
 #: /data/project/commons-mass-description-test/src/templates/login.html:5
-msgid "Please"
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:5
-msgid "login"
+msgid "Please, <a href=\"login\">login</a>"
 msgstr ""
 
 #: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "Commons Mass Description"
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "is a tool that allows user to describe pictures and multimedia at "
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "Wikimedia Commons"
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "en masse without having to edit each image manually. You can find more at "
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "its Wikimedia Commons page"
+msgid ""
+"<strong>Commons Mass Description</strong> is a tool that allows user to "
+"describe pictures and multimedia at <a "
+"href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse "
+"without having to edit each image manually. You can find more at <a "
+"href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its"
+" Wikimedia Commons page</a>."
 msgstr ""
 
 #: /data/project/commons-mass-description-test/src/templates/login.html:7
-msgid "If you find any bugs in this tool, please feel free to "
-msgstr ""
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:7
-msgid "create a task at Wikimedia Phabricator"
+msgid ""
+"If you find any bugs in this tool, please feel free to <a "
+"href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create"
+" a task at Wikimedia Phabricator</a>."
 msgstr ""
 
 #: /data/project/commons-mass-description-test/src/templates/tool.html:10

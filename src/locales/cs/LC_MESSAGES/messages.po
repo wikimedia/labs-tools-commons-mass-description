@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: tools.commons-mass-description@tools.wmflabs.org\n"
-"POT-Creation-Date: 2018-09-07 07:53+0200\n"
+"POT-Creation-Date: 2018-09-16 13:10+0200\n"
 "PO-Revision-Date: 2018-09-06 15:00+0200\n"
 "Last-Translator: Urbanecm <tools.commons-mass-"
 "description@tools.wmflabs.org>\n"
@@ -59,42 +59,33 @@ msgid "Block expiration"
 msgstr "Blok vyprší"
 
 #: /data/project/commons-mass-description-test/src/templates/login.html:5
-msgid "Please"
-msgstr "Prosím"
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:5
-msgid "login"
-msgstr "přihlašte se"
+msgid "Please, <a href=\"login\">login</a>"
+msgstr "Prosím, <a href=\"login\">přihlašte se</a>"
 
 #: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "Commons Mass Description"
-msgstr "Commons Mass Description"
+msgid ""
+"<strong>Commons Mass Description</strong> is a tool that allows user to "
+"describe pictures and multimedia at <a "
+"href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse "
+"without having to edit each image manually. You can find more at <a "
+"href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its"
+" Wikimedia Commons page</a>."
+msgstr "<strong>Commons Mass Description</strong> je nástroj umožňující uživatelům "
+"hromadně popisovat obrázky a multimédia na <a "
+"href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> bez toho, "
+"aniž by museli každý obrázek editovat manuálně. Můžete se dozvědět více na <a "
+"href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">"
+"příslušné stránce na Commons</a>."
 
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "is a tool that allows user to describe pictures and multimedia at "
-msgstr "jen nástroj umožňující uživatelům popsat fotografie a multimédia na "
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "Wikimedia Commons"
-msgstr "Wikimedia Commons"
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "en masse without having to edit each image manually. You can find more at "
+#: /data/project/commons-mass-description-test/src/templates/login.html:7
+msgid ""
+"If you find any bugs in this tool, please feel free to <a "
+"href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create"
+" a task at Wikimedia Phabricator</a>."
 msgstr ""
-"hromadně bez toho, aniž by museli ručně editovat každý obrázek. Můžete se"
-" dozvědět více na "
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:6
-msgid "its Wikimedia Commons page"
-msgstr "stránce na Wikimedia Commons"
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:7
-msgid "If you find any bugs in this tool, please feel free to "
-msgstr "Naleznete-li jakékoliv chyby v tomto nástroji, prosím neváhejte "
-
-#: /data/project/commons-mass-description-test/src/templates/login.html:7
-msgid "create a task at Wikimedia Phabricator"
-msgstr "vytvořit cgybové hlášení na Wikimedia Phabricator"
+"Pokud v tomto nástroji naleznete chybu, prosím, ohlašte ji na <a "
+"href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia"
+" Phabricator</a>."
 
 #: /data/project/commons-mass-description-test/src/templates/tool.html:10
 msgid "Choose a language"
@@ -120,9 +111,7 @@ msgstr "Filrovat podle uploadera"
 msgid ""
 "Enter name of category that you want to use at the source of the table "
 "below"
-msgstr ""
-"Zadejte jméno kategorie, kterou chcete použít jako zdroj tabulky"
-"níže"
+msgstr "Zadejte jméno kategorie, kterou chcete použít jako zdroj tabulkyníže"
 
 #: /data/project/commons-mass-description-test/src/templates/tool.html:30
 msgid "Include the prefix Category:"
@@ -203,4 +192,58 @@ msgstr "Celkem"
 #~ " chyby, prosím, nahlašte je na <a "
 #~ "href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"Wikimedia"
 #~ " Phabricator</a>"
+
+#~ msgid "Please"
+#~ msgstr "Prosím"
+
+#~ msgid "login"
+#~ msgstr "přihlašte se"
+
+#~ msgid "Commons Mass Description"
+#~ msgstr "Commons Mass Description"
+
+#~ msgid "is a tool that allows user to describe pictures and multimedia at "
+#~ msgstr "jen nástroj umožňující uživatelům popsat fotografie a multimédia na "
+
+#~ msgid "Wikimedia Commons"
+#~ msgstr "Wikimedia Commons"
+
+#~ msgid ""
+#~ "en masse without having to edit "
+#~ "each image manually. You can find "
+#~ "more at "
+#~ msgstr ""
+#~ "hromadně bez toho, aniž by museli "
+#~ "ručně editovat každý obrázek. Můžete se"
+#~ " dozvědět více na "
+
+#~ msgid "its Wikimedia Commons page"
+#~ msgstr "stránce na Wikimedia Commons"
+
+#~ msgid "If you find any bugs in this tool, please feel free to "
+#~ msgstr "Naleznete-li jakékoliv chyby v tomto nástroji, prosím neváhejte "
+
+#~ msgid "create a task at Wikimedia Phabricator"
+#~ msgstr "vytvořit cgybové hlášení na Wikimedia Phabricator"
+
+#~ msgid ""
+#~ "<strong>Commons Mass Description</strong> is a"
+#~ " tool that allows user to describe"
+#~ " pictures and multimedia at <a "
+#~ "href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> "
+#~ "en masse without having to edit "
+#~ "each image manually. You can find "
+#~ "more at <a "
+#~ "href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its"
+#~ " Wikimedia Commons page</a>"
+#~ msgstr ""
+#~ "<strong>Commons Mass Description</strong> je "
+#~ "nástroj umožňující uživatelům hromadně "
+#~ "popisovat obrázky a multimédia na <a "
+#~ "href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> "
+#~ "bez toho, aniž by museli každý "
+#~ "obrázek editovat manuálně. Více se "
+#~ "můžete dozvědět na <a "
+#~ "href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">příslušné"
+#~ " stránce na Commons</a>."
 
