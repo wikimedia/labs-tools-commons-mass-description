@@ -27,27 +27,22 @@ import random
 import toolforge
 from email.mime.text import MIMEText
 from flask import Flask
-from flask_babel import Babel
-from flask_babel import gettext, ngettext
+from flask_jsonlocale import Locales
 
 app = flask.Flask(__name__)
-babel = Babel(app)
 application = app
-
 
 # Load configuration from YAML file
 __dir__ = os.path.dirname(__file__)
 app.config.update(
     yaml.safe_load(open(os.path.join(__dir__, 'config.yaml'))))
 
+locales = Locales(app)
+
 requests.utils.default_user_agent = lambda: app.config['USER_AGENT']
 
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
-
-@babel.localeselector
-def getlocale():
-	return request.accept_languages.best_match(['cs', 'en'])
 
 @app.before_request
 def force_https():
