@@ -1,10 +1,10 @@
 {
     "@metadata": {
-		"authors": [
-			"Martin Urbanec"
-		]
+      "authors": [
+        "Martin Urbanec"
+      ]
     },
-    "please-login": "Please login",
+    "introduction-please-login": "Please, <a href=\"\">login</a>",
     "introduction": "<strong>Commons Mass Description</strong> is a tool that allows user to describe pictures and multimedia at <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse without having to edit each image manually. You can find more at <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
     "introduction-bugs": "If you find any bugs in this tool, please feel free to <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create a task at Wikimedia Phabricator</a>.",
     "login": "Login",
@@ -15,5 +15,18 @@
     "block-sysop": "Blocking sysop",
     "block-reason": "Reason of block",
     "block-expiration": "Block expiration",
-
+    "choose-language": "Choose language",
+    "option-display-images": "Choose a number of displayed images",
+    "do-not-filter": "Do not filter",
+    "filter-by-category": "Filter by category",
+    "filter-by-uploader": "Filter by uploader",
+    "source-category": "Enter name of category that you want to use at the source of the table below",
+    "helptext-category": "Include the prefix Category:",
+    "source-uploader": "Enter username of uploader which pictures you would like to describe",
+    "helptext-uploader": "Username, do not include prefix User:",
+    "load-pictures": "Load pictures",
+    "submit": "Submit",
+    "picture": "Picture",
+    "description": "Description",
+    "Categories": "Categories"
 }

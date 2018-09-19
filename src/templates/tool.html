@@ -7,10 +7,10 @@
 {% block body %}
 <div class="container">
 	<form>
-		<label for="langs">{{ _("Choose a language") }}</label>
+		<label for="langs">{{ locale["Choose language"] }}</label>
 		<select class="browser-default" name="langs" id="langs">
 		</select>
-		<label for="display">{{ _("Choose a number of displayed images") }}</label>
+		<label for="display">{{ locale["option-display-images"] }}</label>
 		<select class="browser-default" name="display" id="display">
 			<option>1</option>
 			<option>5</option>
@@ -18,33 +18,33 @@
 			<option>50</option>
 			<option>100</option>
 		</select>
-		<label for="nofilter-button">{{ _("Do not filter") }}</label>
+		<label for="nofilter-button">{{ locale["do-not-ilter"] }}</label>
 		<input id="nofilter-button" type="radio" name="filter" value="nofilter" checked>
-		<label for="category-button">{{ _("Filter by category") }}</label>
+		<label for="category-button">{{ locale["filter-by-category"] }}</label>
 		<input id="category-button" type="radio" name="filter" value="category">
-		<label for="user-button">{{ _("Filter by uploader") }}</label>
+		<label for="user-button">{{ locale["filter-by-uploader"] }}</label>
 		<input id="user-button" type="radio" name="filter" value="user">
 		<br>
 		<div class="filter-by-cat">
-			<label for="category">{{ _("Enter name of category that you want to use at the source of the table below") }}</label>
-			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="{{ _("Include the prefix Category:") }}">
+			<label for="category">{{ locale["source-category"] }}</label>
+			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="{{ locale["helptext-category"] }}">
 		</div>
 		<div class="filter-by-user">
-			<label for="user">{{ _("Enter username of uploader which pictures you would like to describe") }}</label>
-			<input type="text" name="user" id="user" value="Aktron" placeholder="{{ _("Username, do not include prefix User:") }}">
+			<label for="user">{{ locale["source-uploader"] }}</label>
+			<input type="text" name="user" id="user" value="Aktron" placeholder="{{ locale["helptext-uploader"] }}">
 		</div>
-		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">{{ _("Load pictures") }}</button>
+		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">{{ locale["load-pictures"] }}</button>
 	</form>
 	<table>
 		<thead>
-			<th>{{ _("Picture") }}</th>
-			<th>{{ _("Description") }}</th>
-			<th>{{ _("Categories") }}</th>
+			<th>{{ locale["picture"] }}</th>
+			<th>{{ locale["description"] }}</th>
+			<th>{{ locale["categories"] }}</th>
 		</thead>
 		<tbody>
 		</tbody>
 	</table>
-	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">{{ _("Send") }}</button>
+	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">{{ locale["submit"] }}</button>
 </div>
 
 <script>

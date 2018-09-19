@@ -2,8 +2,8 @@
 
 {% block body %}
 <div class="container">
-	<h1>{{ locale['please-login'] }}</h1>
-	<p>{{ locale['introduction'] }}</p>
-	<p>{{ locale['introduction-bugs'] }}</p>
+	<h1>{{ locale['introduction-please-login']|safe}}</h1>
+	<p>{{ locale['introduction']|safe}}</p>
+	<p>{{ locale['introduction-bugs']|safe}}</p>
 </div>
 {% endblock %}
