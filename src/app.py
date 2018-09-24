@@ -16,20 +16,17 @@
 import flask
 import os
 import yaml
-import simplejson as json
 import requests
-from urllib.parse import quote
 from flask import redirect, request, jsonify, make_response
 import mwoauth
 import mwparserfromhell
 from requests_oauthlib import OAuth1
 import random
 import toolforge
-from email.mime.text import MIMEText
 from flask import Flask
 from flask_jsonlocale import Locales
 
-app = flask.Flask(__name__, static_folder='../static')
+app = Flask(__name__, static_folder='../static')
 application = app
 
 # Load configuration from YAML file
@@ -68,7 +65,7 @@ def report():
 	return redirect('https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description')
 
 def logged():
-	return flask.session.get('username') != None
+	return flask.session.get('username') is not None
 
 def getusername():
     return flask.session.get('username')
@@ -134,7 +131,7 @@ def apiblocked():
 
 def blocked():
 	username = flask.session.get('username')
-	if username == None:
+	if username is None:
 		response = {
 			'status': 'error',
 			'errorcode': 'anonymoususe'
@@ -164,7 +161,7 @@ def blocked():
 @app.route('/api-described')
 def apidescribed():
 	title = request.args.get('title')
-	if title == None:
+	if title is None:
 		return 'bad request'
 	return jsonify({
 		'described': described(title)
@@ -234,7 +231,7 @@ def api_categories():
 @app.route('/api-images')
 def images():
 	displaysrc = request.args.get('display')
-	if displaysrc == None:
+	if displaysrc is None:
 		display = 10
 	else:
 		display = int(displaysrc)
@@ -256,7 +253,7 @@ def images():
 		data = r.json()
 	else:
 		categorysrc = request.args.get('category')
-		if categorysrc == None:
+		if categorysrc is None:
 			category = "Category:Media_lacking_a_description"
 		else:
 			category = categorysrc
@@ -279,7 +276,7 @@ def images():
 	images = []
 	for page in data['query']['pages']:
 		imagedata = data['query']['pages'][page]
-		if category == "Category:Media_lacking_a_description" or described(imagedata['title']) == False:
+		if category == "Category:Media_lacking_a_description" or described(imagedata['title']) is False:
 			newimagedata = {
 				'title': imagedata['title'],
 				'id': imagedata['pageid'],
@@ -288,9 +285,9 @@ def images():
 			}
 			images.append(newimagedata)
 	used = []
-	if len(images)==500:
+	if len(images) == 500:
 		for i in range(0, display):
-			r = random.randint(0, len(images)-1)
+			r = random.randint(0, len(images) - 1)
 			if r not in used:
 				used.append(r)
 				res['images'].append(images[r])
@@ -324,7 +321,6 @@ def editall():
 				'id': image['id']
 			}
 			return make_response(jsonify(response), 400)
-		#image['id'] = '57297576' # Just for debugging; User:Martin Urbanec/sand
 		imageres = edit(str(image['id']), image['description'], image['lang'])
 		if imageres['status'] != 'ok':
 			response = {
@@ -475,6 +471,7 @@ def logout():
 @app.route('/toolinfo.json')
 def toolinfo():
 	return flask.render_template('toolinfo.json')
+
 
 if __name__ == "__main__":
 	app.run(debug=True, threaded=True)
