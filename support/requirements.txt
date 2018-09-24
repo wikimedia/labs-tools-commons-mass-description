@@ -6,3 +6,4 @@ simplejson
 flask-mwoauth
 mwparserfromhell
 toolforge
+Flask-JSONLocale

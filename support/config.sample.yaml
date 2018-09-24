@@ -3,3 +3,6 @@ CONSUMER_SECRET: <your consumer secret>
 API_MWURI: <url of the api, for Wikimedia Commons https://commons.wikimedia.org/w/api.php>
 OAUTH_MWURI: <url of OAuth endplace, for Wikimedia Commons https://commons.wikimedia.org/w/index.php>
 SECRET_KEY: <something long and secret>
+MESSAGES_DIR: ../messages # This doesn't need to be changed
+DEFAULT_LANGUAGE: en
+STATIC_URL: <absolute URL to /static folder>
