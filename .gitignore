@@ -1,5 +1,6 @@
 src/config.yaml
 reload
 venv
+/.tox
 *.pyc
 .vscode
