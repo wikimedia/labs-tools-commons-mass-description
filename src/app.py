@@ -29,7 +29,7 @@ from email.mime.text import MIMEText
 from flask import Flask
 from flask_jsonlocale import Locales
 
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, static_folder='../static')
 application = app
 
 # Load configuration from YAML file
