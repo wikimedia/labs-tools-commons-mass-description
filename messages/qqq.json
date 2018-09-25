@@ -7,6 +7,7 @@
     "introduction-please-login": "Headline of the introduction page",
     "introduction": "Description of the tool",
     "introduction-bugs": "Displayed on the introduction page and encouradges users to report any bugs they find via Phabricator",
+    "report-bug": "Link to bug report form",
     "login": "Login button",
     "logout": "Logout button",
     "users-using-tool": "Displayed in menu, linking to page displaying statistics on usage of the tool",
