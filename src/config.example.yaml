@@ -1,0 +1,9 @@
+CONSUMER_KEY: 76527ef06281bd299bf8c2c43dd7ab1e
+CONSUMER_SECRET: e6459b958de9722284d389e5f5db9b8e1cdfed4a
+API_MWURI: https://commons.wikimedia.org/w/api.php
+OAUTH_MWURI: https://commons.wikimedia.org/w/
+SECRET_KEY: secret
+STATIC_URL: /static/
+USER_AGENT: Commons Mass Description (https://tools.wmflabs.org/commons-mass-description; martin.urbanec@wikimedia.cz)
+APPLICATION_ROOT: /
+MESSAGES_DIR: ../messages
