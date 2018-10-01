@@ -35,7 +35,7 @@ function sendForm() {
 			console.log(id);
 		}
 	}
-	$.postJSON('https://tools.wmflabs.org/commons-mass-description/api-edit', payload, function (data) {
+	$.postJSON('api-edit', payload, function (data) {
 		console.log(data);
 		fillPics();
 		$('button')[0].disabled = false;
@@ -55,7 +55,7 @@ function fillPics() {
 	} else if (filtera == "user") {
 		filter = '&user=' + $('#user').val().replaceAll(' ', '_');
 	}
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-images?display=' + $('#display').val() + filter;
+	var url = 'api-images?display=' + $('#display').val() + filter;
 	console.log(url);
 	$.getJSON(url, function (data) {
 		for (var i = 0; i < data.images.length; i++) {
@@ -69,7 +69,7 @@ function fillPics() {
 }
 
 async function fillCat(id) {
-	var url = 'https://tools.wmflabs.org/commons-mass-description/api-categories?pageid=' + id;
+	var url = 'api-categories?pageid=' + id;
 	$.getJSON(url, function (data) {
 		var html = "<td><ul>";
 		for (var i = 0; i < data.categories.length; i++) {
@@ -81,7 +81,7 @@ async function fillCat(id) {
 }
 
 $( document ).ready(function() {
-	$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-langs', function (data) {
+	$.getJSON('api-langs', function (data) {
 		for (var i = 0; i < data['langs'].length; i++) {
 			if (data['langs'][i]['code'] == 'cs') {
 				var row = '<option value="' + data['langs'][i]['code'] + '" selected>' + data['langs'][i]['name'] + '</option>';

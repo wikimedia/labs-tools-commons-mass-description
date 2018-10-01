@@ -10,7 +10,7 @@
 		<li>{{ locale["block-expiration"] }}: <span id="expiry"></span></li>
 	</ul>
 	<script type="text/javascript">
-		$.getJSON('https://tools.wmflabs.org/commons-mass-description/api-blocked', function (data) {
+		$.getJSON('api-blocked', function (data) {
 			$('#sysop').text(data['blockdata']['blockedby']);
 			$('#reason').text(data['blockdata']['blockreason']);
 			$('#expiry').text(data['blockdata']['blockexpiry']);
