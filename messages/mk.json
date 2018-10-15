@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Најавете се</a>",
+	"introduction": "<strong>Масовен опис на Ризницата</strong> е алатка што им овозможува на корисниците масовно да опишуваат слики и снимки на <a href=\"https://commons.wikimedia.org/Главна_страница\">Ризницата</a> без да треба рачно да ја уредуваат секоја посебно. Повеќе ќе дознаете на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">страницата на алатката</a>.",
+	"introduction-bugs": "Ако наидете на некоја грешка во алаткава, слободно <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">создајте задача на „Фабрикатор“</a>.",
+	"report-bug": "Пријави грешка",
+	"login": "Најава",
+	"logout": "Одјава",
+	"users-using-tool": "Корисници кои ја користат алаткава",
+	"you-were-blocked": "Вашата корисничка сметка е блокирана",
+	"block-summary": "Опис на блокот",
+	"block-sysop": "Блокирал",
+	"block-reason": "Причина за блокирање",
+	"block-expiration": "Истек на блокот",
+	"choose-language": "Избери јазик",
+	"option-display-images": "Колку слики да се прикажуваат",
+	"do-not-filter": "Не филтрирај",
+	"filter-by-category": "Филтрирај по категорија",
+	"filter-by-uploader": "Филтирај по подигач",
+	"source-category": "Внесете ја категоријата што сакате да се користи како извор на долуприкажаната табела",
+	"helptext-category": "Вклучете ја претставката Категорија:",
+	"source-uploader": "Внесете корисничко име на подигачот чии слики сакате да ги опишете",
+	"helptext-uploader": "Корисничко име, без претставката Корисник:",
+	"load-pictures": "Вчитај слики",
+	"submit": "Поднеси",
+	"picture": "Слика",
+	"description": "Опис",
+	"Categories": "Категории",
+	"all-users": "Сите корисници кои некогаш ја употребиле алаткава",
+	"username": "Корисничко име",
+	"number-of-edits": "Вкупно уредувања",
+	"total": "Вкупно"
+}

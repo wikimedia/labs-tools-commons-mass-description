@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec",
+			"Revi",
+			"Ykhwong"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">로그인</a>해 주세요",
+	"report-bug": "버그 보고하기",
+	"login": "로그인",
+	"logout": "로그아웃",
+	"users-using-tool": "이 도구를 사용하는 사용자",
+	"you-were-blocked": "당신의 사용자 계정은 차단되었습니다",
+	"block-summary": "차단 사유",
+	"block-sysop": "차단한 관리자",
+	"block-reason": "차단 이유",
+	"block-expiration": "차단 만료",
+	"choose-language": "언어 선택",
+	"do-not-filter": "필터하지 않음",
+	"filter-by-category": "분류별 필터",
+	"filter-by-uploader": "업로더별 필터",
+	"helptext-category": "분류: 접두어 포함",
+	"helptext-uploader": "사용자이름 (사용자: 접두어를 포함하지 마십시오)",
+	"submit": "제출",
+	"picture": "사진",
+	"description": "설명",
+	"Categories": "분류",
+	"all-users": "CMD를 사용한 적이 있는 모든 사용자",
+	"username": "사용자 이름",
+	"number-of-edits": "총 편집 수",
+	"total": "전체"
+}

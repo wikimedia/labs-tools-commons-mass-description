@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Lütfen, <a href=\"login\">oturum açın</a>",
+	"introduction": "<strong>Commons Mass Description</strong>, kullanıcının her görüntüyü manuel olarak düzenlemesine gerek kalmadan <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>'ta resim ve multimedyaların açıklamalarını toplu yapmasına izin veren bir araçtır. Daha fazlas bilgi için <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Wikimedia Commons sayfasına bakınız</a>.",
+	"introduction-bugs": "Bu araçla ilgili herhangi bir hata bulduysanız lütfen hatayı <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia Phabricator'da bildirmekten çekinmeyin</a>.",
+	"report-bug": "Hata bildir",
+	"login": "Oturum aç",
+	"logout": "Oturumu kapat",
+	"users-using-tool": "Bu aracı kullanan kullanıcılar",
+	"you-were-blocked": "Kullanıcı hesabınız engellendi",
+	"block-summary": "Engelinizin özeti",
+	"block-sysop": "Sysop engelleme",
+	"block-reason": "Engelleme sebebi",
+	"block-expiration": "Engelin sona erişi",
+	"choose-language": "Dil seçin",
+	"option-display-images": "Görüntülenen resimlerin bir miktarını seçin",
+	"do-not-filter": "Filtreleme",
+	"filter-by-category": "Kategorilerine göre filtrele",
+	"filter-by-uploader": "Yükleyicilerine göre filtrele",
+	"source-category": "Aşağıdaki tablonun kaynağında kullanmak istediğiniz kategorinin adını girin",
+	"helptext-category": "Önek Kategori dahil",
+	"source-uploader": "Açıklamasını yapmak istediğiniz resimlerin yükleyenin kullanıcı adını girin",
+	"helptext-uploader": "Kullanıcı adı, önek Kullanıcı dahil değil:",
+	"load-pictures": "Resimleri yükle",
+	"submit": "Gönder",
+	"picture": "Resim",
+	"description": "Açıklama",
+	"Categories": "Kategoriler",
+	"all-users": "CMD'yi kullanan tüm kullanıcılar",
+	"username": "Kullanıcı adı",
+	"number-of-edits": "Düzenleme sayısı",
+	"total": "Toplam"
+}

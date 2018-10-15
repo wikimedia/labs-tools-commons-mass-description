@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Për piasì, <a href=\"login\">ch'a rintra ant ël sistema</a>",
+	"introduction": "<strong>Descrission an massa ëd Comun</strong> a l'é n'utiss ch'a-j përmet a l'utent ëd descrive an massa dle plance e dël contnù multimojen su <a href=\"https://commons.wikimedia.org\">Wikimedia Comun</a>, sensa dovèj modifiché a man minca na plancia. A peul savèjne ëd pi ansima a <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">soa pàgina ëd Wikimedia Comun</a>.",
+	"introduction-bugs": "S'a treuva dij givo an cost utiss, mersì s'a <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea na mission an Wikimedia Phabricator</a>.",
+	"report-bug": "Signalé un givo",
+	"login": "Rintré ant ël sistema",
+	"logout": "Seurte dal sistema",
+	"users-using-tool": "Utent ch'a deuvro st'utiss-sì",
+	"you-were-blocked": "So cont d'utent a l'é stàit blocà",
+	"block-summary": "Resumé ëd sò blocagi",
+	"block-sysop": "Blocagi ëd n'aministrator",
+	"block-reason": "Rason dël blocagi",
+	"block-expiration": "Fin dël blocagi",
+	"choose-language": "Serne la lenga",
+	"option-display-images": "Serne un nùmer ëd plance smonùe",
+	"do-not-filter": "Filtré nen",
+	"filter-by-category": "Filtré për categorìa",
+	"filter-by-uploader": "Filtré për carior",
+	"source-category": "Buté ël nòm ëd la categorìa ch'a veul dovré coma sorgiss ëd la tàula sì-sota",
+	"helptext-category": "Anclude ël prefiss Categorìa:",
+	"source-uploader": "Bté lë stranòm dël carior dont a veul descrive le plance",
+	"helptext-uploader": "Stranòm, anclude nen ël prefiss Utent:",
+	"load-pictures": "Carié le plance",
+	"submit": "Mandé",
+	"picture": "Plancia",
+	"description": "Descrission",
+	"Categories": "Categorìe",
+	"all-users": "Tuti j'utent ch'a l'han già dovrà CMD",
+	"username": "Stranòm",
+	"number-of-edits": "Nùmer total ëd modìfiche",
+	"total": "Total"
+}

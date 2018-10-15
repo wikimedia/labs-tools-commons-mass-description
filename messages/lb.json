@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"report-bug": "E Feeler mellen",
+	"login": "Aloggen",
+	"logout": "Ausloggen",
+	"users-using-tool": "Benotzer déi dëst Geschir benotzen",
+	"you-were-blocked": "Äre Benotzerkont gouf gespaart",
+	"block-reason": "Grond fir d'Spär",
+	"choose-language": "Sprooch eraussichen",
+	"do-not-filter": "Net filteren",
+	"load-pictures": "Biller lueden",
+	"picture": "Bild",
+	"description": "Beschreiwung",
+	"Categories": "Kategorien",
+	"username": "Benotzernumm",
+	"number-of-edits": "Gesamtzuel vun den Ännerungen",
+	"total": "Total"
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Veuillez vous <a href=\"login\">connecter</a>",
+	"introduction": "<strong>Descripion en masse de Communs</strong> est un outil qui permet à l’utilisateur de décrire en masse des images et du contenu multimédia sur <a href=\"https://commons.wikimedia.org\">Wikimédia Communs</a>, sans devoir modifier manuellement chaque image. Vous pouvez en apprendre plus sur <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sa page Wikimédia Communs</a>.",
+	"introduction-bugs": "Si vous trouvez des bogues dans cet outil, merci de <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">créer une tâche dans Wikimédia Phabricator</a>.",
+	"report-bug": "Signaler un bogue",
+	"login": "Connexion",
+	"logout": "Déconnexion",
+	"users-using-tool": "Utilisateurs de cet outil",
+	"you-were-blocked": "Votre compte utilisateur a été bloqué",
+	"block-summary": "Résumé de votre blocage",
+	"block-sysop": "Blocage d’un sysop",
+	"block-reason": "Motif de blocage",
+	"block-expiration": "Expiration du blocage",
+	"choose-language": "Choisir la langue",
+	"option-display-images": "Choisir un nombre d’images affichées",
+	"do-not-filter": "Ne pas filtrer",
+	"filter-by-category": "Filtrer par catégorie",
+	"filter-by-uploader": "Filtrer par téléchargeur",
+	"source-category": "Saisir le nom de la catégorie que vous voulez utiliser comme source du tableau ci-dessous",
+	"helptext-category": "Inclure le préfixe Catégorie:",
+	"source-uploader": "Saisir le nom d’utilisateur du téléchargeur dont vous voulez décrire les images",
+	"helptext-uploader": "Nom d’utilisateur, ne pas inclure le préfixe Utilisateur:",
+	"load-pictures": "Charger les images",
+	"submit": "Soumettre",
+	"picture": "Image",
+	"description": "Description",
+	"Categories": "Catégories",
+	"all-users": "Tous les utilisateurs qui ont déjà utilisé CMD",
+	"username": "Nom d’utilisateur",
+	"number-of-edits": "Nombre total de modifications",
+	"total": "Total"
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec",
+			"Shypoetess"
+		]
+	},
+	"introduction-please-login": "कृपया, <a href=\"login\">लॉगिन करें</a>",
+	"introduction": "<strong>कॉमन्स मास विवरण</strong> एक ऐसा उपकरण है जो उपयोगकर्ता को <a href=\"https://commons.wikimedia.org\"> विकिमीडिया कॉमन्स </a> में प्रत्येक चित्र को व्यक्तिगत रूप से संपादित किए बिना चित्रों और मल्टीमीडिया का वर्णन करने देता है । आप <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"> इसके विकिमीडिया कॉमन्स पृष्ठ </a> पर और अधिक जान सकते हैं।",
+	"introduction-bugs": "यदि आपको इस टूल में कोई भी त्रुटि मिलती है, तो कृपया <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> विकीमीडिया फ़ैब्रिकेटर पर एक कार्य बनाएँ </a>।",
+	"report-bug": "त्रुटि की सूचना दें",
+	"login": "सत्रारंभ",
+	"logout": "लॉगआउट  करें",
+	"users-using-tool": "इस उपकरण का उपयोग करने वाले उपयोगकर्ता",
+	"you-were-blocked": "आपका उपयोगकर्ता खाता अवरुद्ध कर दिया गया है",
+	"block-summary": "आपके अवरोध का सारांश",
+	"block-sysop": "अवरुद्ध करने वाला प्रबंधक",
+	"block-reason": "अवरोध करने का कारण",
+	"block-expiration": "अवरोध समाप्ति",
+	"choose-language": "भाषा चुनें",
+	"option-display-images": "कई प्रदर्शित चित्रों का चयन करें",
+	"do-not-filter": "फ़िल्टर न करें",
+	"filter-by-category": "श्रेणी के आधार पर फ़िल्टर करें",
+	"filter-by-uploader": "अपलोडकर्ता के आधार पर फ़िल्टर करें",
+	"source-category": "उस श्रेणी का नाम दर्ज करें जिसे आप नीचे दी गई तालिका के स्रोत पर उपयोग करना चाहते हैं",
+	"helptext-category": "उपसर्ग श्रेणी शामिल करें:",
+	"source-uploader": "अपलोडकर्ता का उपयोगकर्ता नाम दर्ज करें जो चित्र आप वर्णन करना चाहते हैं",
+	"helptext-uploader": "सदस्यनाम, उपसर्ग सदस्य: नहीं लगायें",
+	"load-pictures": "चित्र लोड करें",
+	"submit": "जमा करें",
+	"picture": "चित्र",
+	"description": "विवरण",
+	"Categories": "श्रेणियाँ",
+	"all-users": "सभी उपयोगकर्ता जिन्होंने कभी भी सीएमडी का उपयोग किया है",
+	"username": "सदस्यनाम",
+	"number-of-edits": "संपादन की कुल संख्या",
+	"total": "कुल"
+}

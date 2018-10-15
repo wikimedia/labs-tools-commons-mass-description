@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec",
+			"WikiPhoenix"
+		]
+	},
+	"introduction-please-login": "Var god <a href=\"login\">logga in</a>",
+	"report-bug": "Rapportera en bugg",
+	"login": "Logga in",
+	"logout": "Logga ut",
+	"users-using-tool": "Användare som använder detta verktyg",
+	"you-were-blocked": "Ditt användarkonto är blockerat",
+	"submit": "Skicka",
+	"picture": "Bild",
+	"description": "Beskrivning",
+	"Categories": "Kategorier",
+	"username": "Användarnamn",
+	"number-of-edits": "Totalt antal redigeringar",
+	"total": "Totalt"
+}

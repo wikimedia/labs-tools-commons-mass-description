@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "請<a href=\"login\">登入</a>",
+	"introduction": "<strong>Commons Mass Description</strong> 是個允許使用者在<a href=\"https://commons.wikimedia.org\">維基共享資源</a>上不需經手動編輯各圖片來整體描述圖片與多媒體的工具。您可以在該<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">維基共享資源頁面</a>來了解更多。",
+	"introduction-bugs": "若您發現任何此工具的程式錯誤，隨時請抽空在<a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">維基媒體 Phabricator</a> 建立任務。",
+	"report-bug": "回報程式錯誤",
+	"login": "登入",
+	"logout": "登出",
+	"users-using-tool": "使用此工具的使用者",
+	"you-were-blocked": "您的使用者帳號已被封鎖",
+	"block-summary": "您的封鎖摘要",
+	"block-sysop": "封鎖系統管理員",
+	"block-reason": "封鎖原因",
+	"block-expiration": "封鎖期限",
+	"choose-language": "挑選語言",
+	"option-display-images": "挑選顯示圖片的數目",
+	"do-not-filter": "不做篩選",
+	"filter-by-category": "按分類篩選",
+	"filter-by-uploader": "按上傳者篩選",
+	"source-category": "輸入您想要使用在以下來源表格的分類名稱",
+	"helptext-category": "包含字首分類：",
+	"source-uploader": "輸入您所想描述圖片的上傳者名稱",
+	"helptext-uploader": "使用者名稱，請不要包含使用者的字首：",
+	"load-pictures": "載入圖片",
+	"submit": "提交",
+	"picture": "圖片",
+	"description": "描述",
+	"Categories": "分類",
+	"all-users": "所有曾使用過 Commons Mass Description 的使用者",
+	"username": "使用者名稱",
+	"number-of-edits": "編輯總數",
+	"total": "總計"
+}

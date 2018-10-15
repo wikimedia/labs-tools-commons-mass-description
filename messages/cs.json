@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Prosím, <a href=\"login\">přihlašte se</a>",
+	"introduction-bugs": "Pokud v tomto nástroji naleznete jakékoliv chyby, neváhejte je <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">nahlásit na Wikimedia Phabricator</a>.",
+	"report-bug": "Nahlásit chybu",
+	"login": "Přihlásit se",
+	"logout": "Odhlásit se",
+	"you-were-blocked": "Váš uživatelský účet byl zablokován",
+	"block-summary": "Odůvodnění vašeho zablokování",
+	"block-sysop": "Blokující správce",
+	"block-expiration": "Blok vyprší",
+	"do-not-filter": "Nefiltrovat",
+	"filter-by-category": "Filtrovat pomocí kategorie",
+	"helptext-category": "Včetně prefixu Kategorie:",
+	"helptext-uploader": "Uživatelské jméno bez prefixu Uživatel:",
+	"submit": "Odeslat",
+	"description": "Popisek",
+	"Categories": "Kategorie",
+	"username": "Uživatelské jméno",
+	"number-of-edits": "Celkový počet editací",
+	"total": "Celkem"
+}

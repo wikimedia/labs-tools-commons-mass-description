@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec",
+			"Metalhead64"
+		]
+	},
+	"introduction-please-login": "Bitte <a href=\"login\">melde dich an</a>",
+	"introduction": "<strong>Commons Mass Description</strong> ist ein Werkzeug, das es dir ermöglicht, massenhaft Bilder und Multimedia auf <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> zu beschreiben, ohne jedes Bild manuell zu bearbeiten. Du kannst mehr auf <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">dieser Wikimedia-Commons-Seite</a> erfahren.",
+	"introduction-bugs": "Falls du in diesem Werkzeug einen Softwarefehler findest, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">erstelle bitte einen Task bei Wikimedia Phabricator</a>.",
+	"report-bug": "Einen Fehler melden",
+	"login": "Anmelden",
+	"logout": "Abmelden",
+	"users-using-tool": "Benutzer, die dieses Werkzeug verwenden",
+	"you-were-blocked": "Dein Benutzerkonto wurde gesperrt",
+	"block-summary": "Zusammenfassung deiner Sperre",
+	"block-sysop": "Sperrender Administrator",
+	"block-reason": "Sperrgrund",
+	"block-expiration": "Ablauf der Sperre",
+	"choose-language": "Sprache wählen",
+	"option-display-images": "Wähle eine Anzahl anzuzeigender Bilder aus",
+	"do-not-filter": "Nicht filtern",
+	"filter-by-category": "Nach Kategorie filtern",
+	"filter-by-uploader": "Nach Uploader filtern",
+	"source-category": "Gib den Namen der Kategorie ein, die du als Quelle der unten stehenden Tabelle verwenden möchtest.",
+	"helptext-category": "Inklusive des Präfixes Kategorie:",
+	"source-uploader": "Gib den Benutzernamen des Uploaders ein, dessen Bilder du beschreiben möchtest.",
+	"helptext-uploader": "Benutzername, ohne Präfix Benutzer:",
+	"load-pictures": "Bilder laden",
+	"submit": "Übermitteln",
+	"picture": "Bild",
+	"description": "Beschreibung",
+	"Categories": "Kategorien",
+	"all-users": "Alle Benutzer, die jemals CMD benutzt haben",
+	"username": "Benutzername",
+	"number-of-edits": "Gesamtzahl der Bearbeitungen",
+	"total": "Gesamt"
+}

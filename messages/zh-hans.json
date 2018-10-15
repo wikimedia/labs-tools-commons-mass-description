@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"A Chinese Wikipedian",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "请您先 <a href=\"login\">登录账号</a>",
+	"report-bug": "报告漏洞",
+	"login": "登录",
+	"logout": "注销",
+	"users-using-tool": "正在使该工具者",
+	"you-were-blocked": "您的用户账户被封禁",
+	"block-summary": "您的封禁摘要消息",
+	"block-sysop": "封禁操作员",
+	"block-reason": "封禁的原因",
+	"block-expiration": "封禁过期",
+	"choose-language": "更改语言",
+	"option-display-images": "选择展示的照片个数",
+	"do-not-filter": "不要过滤",
+	"filter-by-category": "按类别过滤",
+	"filter-by-uploader": "按上载者筛选",
+	"source-category": "在下面的表源中键入使用的分类名",
+	"helptext-category": "包括前缀类别：",
+	"source-uploader": "键入您想描述的图片的上传者的用户名",
+	"helptext-uploader": "用户名，不包括前缀用户：",
+	"load-pictures": "读取照片",
+	"submit": "发布",
+	"picture": "照片",
+	"description": "说明",
+	"Categories": "分类",
+	"all-users": "所有使用CMD的用户",
+	"username": "用户名",
+	"number-of-edits": "总编辑数",
+	"total": "总共"
+}

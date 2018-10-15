@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"report-bug": "Probleem melden",
+	"login": "Aanmelden",
+	"logout": "Afmelden",
+	"users-using-tool": "Gebruikers die dit hulpmiddel gebruiken",
+	"you-were-blocked": "Uw gebruikersaccount is geblokkeerd",
+	"block-summary": "Samenvatting van de blokkade",
+	"block-sysop": "Blokkerende beheerder",
+	"block-reason": "Reden voor blokkade",
+	"choose-language": "Taal kiezen",
+	"do-not-filter": "Niet filteren",
+	"filter-by-category": "Filteren op categorie",
+	"filter-by-uploader": "Filteren op uploader",
+	"load-pictures": "Afbeeldingen laden",
+	"submit": "Verzenden",
+	"picture": "Afbeelding",
+	"description": "Beschrijving",
+	"Categories": "Categorieën",
+	"all-users": "Alle gebruikers die ooit CMD hebben gebruikt",
+	"username": "Gebruikersnaam",
+	"number-of-edits": "Totaal aantal bewerkingen",
+	"total": "Totaal"
+}

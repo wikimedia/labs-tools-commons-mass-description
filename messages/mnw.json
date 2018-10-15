@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Htawmonzel"
+		]
+	},
+	"introduction-please-login": "ပဂုန်တုဲ, <a href=\"login\">လုပ်လံက်အေန်</a>",
+	"introduction": "<strong>Commons Mass Description</strong> ဂှ် ဒှ်ကိရိယာ မကဵုအခေါၚ် ကုညးလွပ်တအ် မဂွံချူ ပရူဗီုရုပ် ကေုာံ မုလ်တဳမဳဒဳယာ ပ္ဍဲ<a href=\"https://commons.wikimedia.org\">ဝဳကဳမဳဒဳယာ ကမ္မောန်ဂမၠိုၚ်</a>မဒှ်အရာ မကၠောန်မွဲဒၞာဲ ပြံၚ်လှာဲအာ သီုဖအိုတ်၊၊ ပရူဏအ် မိက်ဂွံဆက်တီမ္ဂး ဆက်ဗှ်ကေတ် ပ္ဍဲ<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">မဒှ် မုက်လိက် ဝဳကဳမဳဒဳယာ ကမ္မောန်ဂမၠိုင် ရ၊၊</a>.",
+	"introduction-bugs": "ယဝ်ရ မၞးဆဵု စၟ bugs မွဲမွဲ ပ္ဍဲကိရိယာဏအ်မ္ဂး ပဂုန်တုဲ ဗွဲမသၠးပွး လဴပတီ ကဵု Wikimedia Phabricator ပ္ဍဲ<a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">ဒၞာဲဏအ်ညိ၊၊</a>.",
+	"report-bug": "ဂရင်ဗ္တီ မဂွံဆဵု စၟဗက်",
+	"login": "လုပ်လံက်အေန်",
+	"logout": "တိတ်",
+	"users-using-tool": "မၞိဟ်လွပ်ဂမၠိုင် မစကာ ကိရိယာဏအ်",
+	"you-were-blocked": "အကံက် လွပ်မၞး မဒးဒုင် ကၟာတ်လဝ်",
+	"block-summary": "သကေမ် ဟိုတ် မၞးမဒးဒုင်ကၟာတ်",
+	"block-sysop": "ကၟာတ်လဒဵု sysop",
+	"block-reason": "ဟိုတ် မဂွံကၟာတ်",
+	"block-expiration": "အခိၚ်အပိုၚ်အခြာ မကၟာတ်",
+	"choose-language": "ရုဲစှ် အရေဝ်ဘာသာ",
+	"option-display-images": "ရုဲစှ် လၟိဟ် ဗီုရုပ် မဗၟံက်ထ္ၜး",
+	"do-not-filter": "လ္ပ ခ္ဍိုဟ်",
+	"filter-by-category": "ခ္ဍိုဟ် နကဵု ကဏ္ဍ",
+	"filter-by-uploader": "ခ္ဍိုဟ် နကဵု မၞိဟ်မပတိုန်",
+	"source-category": "စုတ် ယၟု ကဏ္ဍ မၞး မိက်ဂွံ စကာ ပ္ဍဲတၚ်ဂၞၚ် သ္ၚိအၚ် ဗွဲသၟဝ်ဝွံ",
+	"helptext-category": "စုတ်ပၠောပ် ကဏ္ဍ",
+	"source-uploader": "စုတ် ယၟုညးလွပ် မပတိုန်လဝ် နကဵု ဗီုရုပ် မၞးမိက်ဂွံ ဗၟံက်ထ္ၜး",
+	"helptext-uploader": "ယၟုညးလွပ် ဟွံပၠောပ်စုတ် -",
+	"load-pictures": "လံက်ပၠောပ် ဗီုဂမၠိုၚ်",
+	"submit": "ဗပေင်",
+	"picture": "ဗီုရုပ်",
+	"description": "မဗမံက်ထ္ၜး",
+	"Categories": "ကဏ္ဍဂမၠိုင်",
+	"all-users": "ညးလွပ် သီုဖအိုတ် မဟွံ စကာ CMD",
+	"username": "ယၟုညးလွပ်",
+	"number-of-edits": "လၟိဟ် မပလေဝ်ဒါန်လဝ် သီုဖအိုတ်",
+	"total": "ပံၚ်ဖအိုတ်"
+}

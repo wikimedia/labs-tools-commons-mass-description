@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Martin Urbanec",
+			"Zoranzoki21"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Пријавите се</a>",
+	"introduction": "<strong>Commons Mass Description</strong> је алатка која дозвољава корисницима да опишу слике и мултимедије на <a href=\"https://commons.wikimedia.org\">Викимедијиној остави</a> без потребе за уређивањем сваке слике ручно. Можете пронаћи више детаља <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">на страници на Викимедијиној Остави</a>.",
+	"introduction-bugs": "Ако пронађете било какве грешке у овој алатки, слободно <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">направите задатак на Викимедијином фабрикатору</a>.",
+	"report-bug": "Пријавите грешку",
+	"login": "Пријави ме",
+	"logout": "Одјави ме",
+	"users-using-tool": "Корисници који користе ову алатку",
+	"you-were-blocked": "Ваш кориснички налог је блокиран",
+	"block-summary": "Резиме ваше блокаде",
+	"block-sysop": "Блокирао/ла вас је администратор",
+	"block-reason": "Разлог блокаде",
+	"block-expiration": "Истек блокаде",
+	"choose-language": "Одаберите језик",
+	"option-display-images": "Одаберите број приказаних слика",
+	"do-not-filter": "Не филтрирај",
+	"filter-by-category": "Филтрирај по категорији",
+	"filter-by-uploader": "Филтрирај по отпремаоцу",
+	"source-category": "Унесите име категорије коју желите да користите у извору доленаведене табеле",
+	"helptext-category": "Укључите префикс Категорија:",
+	"source-uploader": "Унесите корисничко име отпремаоца слике коју желите да опишете",
+	"helptext-uploader": "Корисничко име, не укључујте префикс Корисник:",
+	"load-pictures": "Учитај језик",
+	"submit": "Пошаљи",
+	"picture": "Слика",
+	"description": "Опис",
+	"Categories": "Категорије",
+	"all-users": "Сви корисници који су икада користили CMD",
+	"username": "Корисничко име",
+	"number-of-edits": "Укупан број измена",
+	"total": "Укупно"
+}

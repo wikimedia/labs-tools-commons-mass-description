@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Por favor, <a href=\"login\">login</a>",
+	"introduction-bugs": "Se você encontrar algum bug nessa ferramenta, sinta-se à vontade para <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">criar uma tarefa no Wikimedia Phabricator</a>.",
+	"report-bug": "Reportar um erro",
+	"login": "Entrar",
+	"logout": "Sair",
+	"users-using-tool": "Usuários que usam essa ferramenta",
+	"you-were-blocked": "Sua conta de usuário foi bloqueada",
+	"block-summary": "Resumo do seu bloqueio",
+	"block-reason": "Razão para o bloqueio",
+	"block-expiration": "Expiração do bloqueio",
+	"choose-language": "Escolher idioma",
+	"option-display-images": "Escolha um número de imagens exibidas",
+	"do-not-filter": "Não filtre",
+	"filter-by-category": "Filtrar por categoria",
+	"filter-by-uploader": "Filtrar por uploader",
+	"source-category": "Digite o nome da categoria que você deseja usar na origem da tabela abaixo",
+	"helptext-category": "Inclua o prefixo Categoria:",
+	"source-uploader": "Insira o nome de usuário do usuário que você gostaria de descrever",
+	"helptext-uploader": "Nome de usuário, não inclua o prefixo Usuário:",
+	"load-pictures": "Carregar imagens",
+	"submit": "Enviar",
+	"picture": "Imagem",
+	"description": "Descrição",
+	"Categories": "Categorias",
+	"all-users": "Todos os usuários que já usaram o CMD",
+	"username": "Nome de usuário",
+	"number-of-edits": "Número total de edições",
+	"total": "Total"
+}

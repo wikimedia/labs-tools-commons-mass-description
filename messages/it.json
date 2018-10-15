@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"report-bug": "Segnala un errore",
+	"login": "Accedi",
+	"logout": "Esci",
+	"you-were-blocked": "La tua utenza è stata bloccata",
+	"block-reason": "Motivo del blocco",
+	"block-expiration": "Scadenza del blocco",
+	"choose-language": "Scegli la lingua",
+	"filter-by-category": "Filtra per categoria",
+	"helptext-category": "Includi il prefisso Categoria:",
+	"helptext-uploader": "Nome utente, non includere il prefisso Utente:",
+	"submit": "Invia",
+	"picture": "Immagine",
+	"description": "Descrizione",
+	"Categories": "Categorie",
+	"username": "Nome utente",
+	"number-of-edits": "Numero totale di modifiche",
+	"total": "Totale"
+}
