@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"introduction-please-login": "الرجاء <a href=\"login\"> تسجيل الدخول</a>",
+	"introduction": "<strong>الوصف الشامل لكومنز</strong> هي أداة تسمح للمستخدم بوصف الصور والوسائط المتعددة على <a href=\"https://commons.wikimedia.org\">ويكيميديا كومنز</a> بشكل جماعي دون الحاجة إلى تحرير كل صورة يدويا، يمكنك العثور على المزيد على <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"> صفحة ويكيميديا ​​كومنز الخاصة بها</a>.",
+	"introduction-bugs": "إذا وجدت أية أخطاء في هذه الأداة، فلا تتردد في <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">إنشاء مهمة في فبريكاتور ويكيميديا</a>.",
+	"report-bug": "الإبلاغ عن خطأ",
+	"login": "تسجيل الدخول",
+	"logout": "خروج",
+	"users-using-tool": "المستخدمون الذين يستخدمون هذه الأداة",
+	"you-were-blocked": "تم منع حساب المستخدم الخاص بك",
+	"block-summary": "ملخص منعك",
+	"block-sysop": "الإداري المانع",
+	"block-reason": "سبب المنع",
+	"block-expiration": "انتهاء صلاحية المنع",
+	"choose-language": "اختر لغة",
+	"option-display-images": "اختر عدد الصور المعروضة",
+	"do-not-filter": "عدم التصفية",
+	"filter-by-category": "تصفية حسب التصنيف",
+	"filter-by-uploader": "التصفية حسب الرافع",
+	"source-category": "أدخل اسم التصنيف الذي تريد استخدامه في مصدر الجدول أدناه",
+	"helptext-category": "تضمين تصنيف البادئة:",
+	"source-uploader": "أدخل اسم المستخدم الرافع الذي ترغب في وصفه",
+	"helptext-uploader": "اسم المستخدم، لا تضمن البادئة مستخدم:",
+	"load-pictures": "تحميل الصور",
+	"submit": "إرسال",
+	"picture": "الصورة",
+	"description": "الوصف",
+	"Categories": "التصنيفات",
+	"all-users": "جميع المستخدمين الذين استخدموا وشك على الإطلاق",
+	"username": "اسم المستخدم",
+	"number-of-edits": "إجمالي عدد التعديلات",
+	"total": "الإجمالي"
+}

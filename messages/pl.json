@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Zaloguj się</a>",
+	"report-bug": "Zgłoś błąd",
+	"login": "Zaloguj się",
+	"logout": "Wyloguj się",
+	"users-using-tool": "Użytkownicy używający tego narzędzia",
+	"you-were-blocked": "Twoje konto użytkownika zostało zablokowane",
+	"block-reason": "Powód blokady",
+	"choose-language": "Wybierz język",
+	"do-not-filter": "Nie filtruj",
+	"description": "Opis",
+	"Categories": "Kategorie",
+	"username": "Nazwa użytkownika",
+	"number-of-edits": "Całkowita liczba edycji"
+}

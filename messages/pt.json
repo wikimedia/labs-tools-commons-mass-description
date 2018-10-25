@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Inicie uma sessão</a>, por favor",
+	"introduction": "A <strong>Descrição Maciça Commons</strong> é uma ferramenta que permite que os utilizadores criem descrições em massa das imagens e ficheiros multimédia na wiki <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>, sem terem de editar cada imagem manualmente. Pode saber mais na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">respetiva página da wiki Wikimedia Commons</a>.",
+	"introduction-bugs": "Se encontrar defeitos nesta ferramenta <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crie uma tarefa no Wikimedia Phabricator</a>, por favor.",
+	"report-bug": "Reportar um defeito",
+	"login": "Entrar",
+	"logout": "Sair",
+	"users-using-tool": "Utilizadores desta ferramenta",
+	"you-were-blocked": "A sua conta de utilizador foi bloqueada",
+	"block-summary": "Resumo do seu bloqueio",
+	"block-sysop": "Administrador que fez o bloqueio",
+	"block-reason": "Motivo do bloqueio",
+	"block-expiration": "Expiração do bloqueio",
+	"choose-language": "Escolher língua",
+	"option-display-images": "Escolher um número de imagens apresentadas",
+	"do-not-filter": "Não filtrar",
+	"filter-by-category": "Filtrar por categoria",
+	"filter-by-uploader": "Filtrar pelo carregador",
+	"source-category": "Introduzir o nome da categoria que quer usar na origem da tabela abaixo",
+	"helptext-category": "Inclua o prefixo Categoria:",
+	"source-uploader": "Introduzir o nome do utilizador cujas imagens deseja descrever",
+	"helptext-uploader": "Nome de utilizador; não inclua o prefixo Utilizador:",
+	"load-pictures": "Carregar imagens",
+	"submit": "Enviar",
+	"picture": "Imagem",
+	"description": "Descrição",
+	"Categories": "Categorias",
+	"all-users": "Todos os utilizadores que já usaram a DMC",
+	"username": "Nome de utilizador",
+	"number-of-edits": "Número total de edições",
+	"total": "Total"
+}

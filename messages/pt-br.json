@@ -6,6 +6,7 @@
 		]
 	},
 	"introduction-please-login": "Por favor, <a href=\"login\">login</a>",
+	"introduction": "A <strong>Descrição Maciça Commons</strong> é uma ferramenta que permite que os utilizadores criem descrições em massa das imagens e ficheiros multimédia na wiki <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>, sem terem de editar cada imagem manualmente. Pode saber mais na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">respetiva página da wiki Wikimedia Commons</a>.",
 	"introduction-bugs": "Se você encontrar algum bug nessa ferramenta, sinta-se à vontade para <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">criar uma tarefa no Wikimedia Phabricator</a>.",
 	"report-bug": "Reportar um erro",
 	"login": "Entrar",
@@ -13,6 +14,7 @@
 	"users-using-tool": "Usuários que usam essa ferramenta",
 	"you-were-blocked": "Sua conta de usuário foi bloqueada",
 	"block-summary": "Resumo do seu bloqueio",
+	"block-sysop": "Bloqueio de sysop",
 	"block-reason": "Razão para o bloqueio",
 	"block-expiration": "Expiração do bloqueio",
 	"choose-language": "Escolher idioma",

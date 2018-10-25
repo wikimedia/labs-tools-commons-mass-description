@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras",
+			"Martin Urbanec"
+		]
+	},
+	"introduction-please-login": "Pe piacere, <a href=\"login\">tràse</a>",
+	"report-bug": "Segnale 'n'errore",
+	"login": "Tràse",
+	"logout": "Isse",
+	"block-summary": "Riepiloghe d'u blocche tune",
+	"block-expiration": "Scadenze d'u blocche",
+	"choose-language": "Scacchie 'na lènghe",
+	"do-not-filter": "Nò filtrà",
+	"filter-by-category": "Filtre pe categorije",
+	"helptext-category": "'Nglude 'u prefisse Categorije:",
+	"load-pictures": "Careche le fote",
+	"submit": "Conferme",
+	"picture": "Fote",
+	"description": "Descrizione",
+	"Categories": "Categorije",
+	"username": "Nome de l'utende",
+	"total": "Totale"
+}

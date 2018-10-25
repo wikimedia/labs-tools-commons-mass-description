@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"introduction-please-login": "Venligst, <a href=\"login\">log på</a>",
+	"report-bug": "Rapportér en fejl",
+	"login": "Log på",
+	"logout": "Log af",
+	"users-using-tool": "Bruger som anvender dette værktøj",
+	"choose-language": "Vælg sprog",
+	"load-pictures": "Indlæs billeder",
+	"submit": "Indsend",
+	"picture": "Billede",
+	"description": "Beskrivelse",
+	"Categories": "Kategorier",
+	"username": "Brugernavn"
+}

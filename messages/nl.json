@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Ndecouck"
 		]
 	},
 	"report-bug": "Probleem melden",
@@ -13,6 +14,7 @@
 	"block-sysop": "Blokkerende beheerder",
 	"block-reason": "Reden voor blokkade",
 	"choose-language": "Taal kiezen",
+	"option-display-images": "Kies een aantal van de weergegeven beelden",
 	"do-not-filter": "Niet filteren",
 	"filter-by-category": "Filteren op categorie",
 	"filter-by-uploader": "Filteren op uploader",

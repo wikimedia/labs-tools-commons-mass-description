@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras",
+			"Vlad5250"
+		]
+	},
+	"introduction-please-login": "Пожалуйста, <a href=\"login\">войдите</a>",
+	"report-bug": "Сообщить об ошибке",
+	"login": "Войти",
+	"logout": "Выйти",
+	"users-using-tool": "Участники, использующие этот инструмент",
+	"you-were-blocked": "Ваша учётная запись была заблокирована",
+	"block-summary": "Информация о блокировке",
+	"block-sysop": "Заблокировавший администратор",
+	"block-reason": "Причина блокировки",
+	"choose-language": "Выберите язык",
+	"do-not-filter": "Не фильтровать",
+	"filter-by-category": "Фильтр по категории",
+	"filter-by-uploader": "Фильтр по загрузившему",
+	"load-pictures": "Загрузить изображения",
+	"submit": "Отправить",
+	"picture": "Изображение",
+	"description": "Описание",
+	"Categories": "Категории",
+	"username": "Имя участника",
+	"number-of-edits": "Общее число правок",
+	"total": "Всего"
+}

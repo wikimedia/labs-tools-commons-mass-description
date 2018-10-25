@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Влизане</a>",
+	"introduction": "<strong>Commons Mass Description</strong> е инструмент, който позволява на потребителите масово да описват изображения и мултимедийни файлове от <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> без да е необходимо да се редактира всяко изображение индивидуално. Можете да намерите повече информация на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">страницата на инструмента в Общомедия</a>.",
+	"introduction-bugs": "Ако се натъкнете на грешка в инструмента, моля <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">създайте задача във Фабрикатора на Уикимедия</a>.",
+	"report-bug": "Съобщаване за грешка",
+	"login": "Влизане",
+	"logout": "Излизане",
+	"users-using-tool": "Потребители, използващи инструмента",
+	"you-were-blocked": "Вашата потребителска сметка е блокирана",
+	"block-summary": "Описание на блокирането",
+	"block-sysop": "Блокирал администратор",
+	"block-reason": "Причина за блокиране",
+	"block-expiration": "Изтичане на блока",
+	"choose-language": "Избор на език",
+	"option-display-images": "Избор на брой изображения за показване",
+	"do-not-filter": "Без филтриране",
+	"filter-by-category": "Филтриране по категория",
+	"filter-by-uploader": "Филтриране по ъплоудър",
+	"source-category": "Въведете името на категорията, която искате да използвате за източник на таблицата по-долу",
+	"helptext-category": "Включване на представка Категория:",
+	"source-uploader": "Въведете потребителското име на ъплоудъра, чийто изображения искате да опишете",
+	"helptext-uploader": "Потребителско име, без представката Потребител:",
+	"load-pictures": "Зареждане на изображения",
+	"submit": "Изпращане",
+	"picture": "Изображение",
+	"description": "Описание",
+	"Categories": "Категории",
+	"all-users": "Всички потребители, които някога са използвали CMD",
+	"username": "Потребителско име",
+	"number-of-edits": "Общ брой редакции",
+	"total": "Общо"
+}

@@ -4,11 +4,14 @@
 			"আফতাবুজ্জামান"
 		]
 	},
+	"introduction-please-login": "দয়া করে, <a href=\"login\">প্রবেশ করুন</a>",
 	"login": "প্রবেশ করুন",
 	"logout": "প্রস্থান",
+	"load-pictures": "ছবি লোড কোড়ূণ",
 	"submit": "জমা দিন",
 	"picture": "চিত্র",
 	"description": "বিবরণ",
+	"Categories": "বিষয়শ্রেণীসমূহ",
 	"username": "ব্যবহারকারী নাম",
 	"number-of-edits": "সর্বমোট সম্পাদনা সংখ্যা",
 	"total": "মোট"
