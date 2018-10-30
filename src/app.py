@@ -41,6 +41,9 @@ requests.utils.default_user_agent = lambda: app.config['USER_AGENT']
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
 
+# return code for bad requests
+HTTP_BAD_REQUEST = 400
+
 @app.before_request
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
@@ -136,7 +139,7 @@ def blocked():
             'status': 'error',
             'errorcode': 'anonymoususe'
         }
-        return response
+        return response, HTTP_BAD_REQUEST
     payload = {
         "action": "query",
         "format": "json",
@@ -162,7 +165,10 @@ def blocked():
 def apidescribed():
     title = request.args.get('title')
     if title is None:
-        return 'bad request'
+        return {
+            'status': 'error',
+            'errorcode': 'titlenotprovided'
+        }, HTTP_BAD_REQUEST
     return jsonify({
         'described': described(title)
     })
@@ -186,7 +192,7 @@ def described(page):
         return {
             'status': 'error',
             'errorcode': 'nonexistentpage'
-        }
+        }, HTTP_BAD_REQUEST
     pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
     code = mwparserfromhell.parse(pagecontent)
     for template in code.filter_templates():
@@ -226,7 +232,7 @@ def api_categories():
             'categories': getcategories(pageid)
         })
     else:
-        return jsonify({'status': 'error', 'errorcode': 'mustpassparams'})
+        return jsonify({'status': 'error', 'errorcode': 'mustpassparams'}), HTTP_BAD_REQUEST
 
 @app.route('/api-images')
 def images():
@@ -355,7 +361,7 @@ def edit(id, description, lang):
         return {
             'status': 'error',
             'errorcode': 'nonexistentpage'
-        }
+        }, HTTP_BAD_REQUEST
     pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
     code = mwparserfromhell.parse(pagecontent)
     for template in code.filter_templates():
@@ -366,7 +372,7 @@ def edit(id, description, lang):
                         return {
                             'status': 'error',
                             'errorcode': 'alreadydescribed'
-                        }
+                        }, HTTP_BAD_REQUEST
                     param.value = '{{' + lang + '|1=' + description + '}}' + '\n'
                     break
             break
@@ -411,7 +417,7 @@ def edit(id, description, lang):
         return {
             'status': 'error',
             'errorcode': errorcode
-        }
+        }, HTTP_BAD_REQUEST
 
 @app.route('/api-langs')
 def apilangs():
