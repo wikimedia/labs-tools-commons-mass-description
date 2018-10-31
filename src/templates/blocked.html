@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container">
-	<h1>{{ locale["you-were-blocked"] }}</h1>
-	<h4>{{ locale["block-summary"] }}</h4>
+	<h1>{{ _("you-were-blocked") }}</h1>
+	<h4>{{ _("block-summary") }}</h4>
 	<ul>
-		<li>{{ locale["block-sysop"] }}: <span id="sysop"></span></li>
-		<li>{{ locale["block-reason"] }}: <span id="reason"></span></li>
-		<li>{{ locale["block-expiration"] }}: <span id="expiry"></span></li>
+		<li>{{ _("block-sysop") }}: <span id="sysop"></span></li>
+		<li>{{ _("block-reason") }}: <span id="reason"></span></li>
+		<li>{{ _("block-expiration") }}: <span id="expiry"></span></li>
 	</ul>
 	<script type="text/javascript">
 		$.getJSON('api-blocked', function (data) {

@@ -7,10 +7,10 @@
 {% block body %}
 <div class="container">
 	<form>
-		<label for="langs">{{ locale["Choose language"] }}</label>
+		<label for="langs">{{ _("choose-language") }}</label>
 		<select class="browser-default" name="langs" id="langs">
 		</select>
-		<label for="display">{{ locale["option-display-images"] }}</label>
+		<label for="display">{{ _("option-display-images") }}</label>
 		<select class="browser-default" name="display" id="display">
 			<option>1</option>
 			<option>5</option>
@@ -18,33 +18,33 @@
 			<option>50</option>
 			<option>100</option>
 		</select>
-		<label for="nofilter-button">{{ locale["do-not-ilter"] }}</label>
+		<label for="nofilter-button">{{ _("do-not-filter") }}</label>
 		<input id="nofilter-button" type="radio" name="filter" value="nofilter" checked>
-		<label for="category-button">{{ locale["filter-by-category"] }}</label>
+		<label for="category-button">{{ _("filter-by-category") }}</label>
 		<input id="category-button" type="radio" name="filter" value="category">
-		<label for="user-button">{{ locale["filter-by-uploader"] }}</label>
+		<label for="user-button">{{ _("filter-by-uploader") }}</label>
 		<input id="user-button" type="radio" name="filter" value="user">
 		<br>
 		<div class="filter-by-cat">
-			<label for="category">{{ locale["source-category"] }}</label>
-			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="{{ locale["helptext-category"] }}">
+			<label for="category">{{ _("source-category") }}</label>
+			<input type="text" name="category" id="category" value="Category:Media lacking a description" placeholder="{{ _("helptext-category") }}">
 		</div>
 		<div class="filter-by-user">
-			<label for="user">{{ locale["source-uploader"] }}</label>
-			<input type="text" name="user" id="user" value="Aktron" placeholder="{{ locale["helptext-uploader"] }}">
+			<label for="user">{{ _("source-uploader") }}</label>
+			<input type="text" name="user" id="user" value="Aktron" placeholder="{{ _("helptext-uploader") }}">
 		</div>
-		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">{{ locale["load-pictures"] }}</button>
+		<button onclick="fillPics()" class="btn wafes-effect wafes-light" type="button" id="search">{{ _("load-pictures") }}</button>
 	</form>
 	<table>
 		<thead>
-			<th>{{ locale["picture"] }}</th>
-			<th>{{ locale["description"] }}</th>
-			<th>{{ locale["categories"] }}</th>
+			<th>{{ _("picture") }}</th>
+			<th>{{ _("description") }}</th>
+			<th>{{ _("categories") }}</th>
 		</thead>
 		<tbody>
 		</tbody>
 	</table>
-	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">{{ locale["submit"] }}</button>
+	<button onclick="sendForm()" class="btn wafes-effect wafes-light" id="send" disabled="">{{ _("submit") }}</button>
 </div>
 
 <script>

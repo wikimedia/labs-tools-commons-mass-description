@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container">
-	<h1>{{ locale["all-users"] }}</h1>
+	<h1>{{ _("all-users") }}</h1>
   <table>
     <thead>
       <tr>
-        <th>{{ locale["username"] }}</th>
-        <th>{{ locale["number-of-edits"] }}</th>
+        <th>{{ _("username") }}</th>
+        <th>{{ _("number-of-edits") }}</th>
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@
     </tbody>
 		<tfoot>
 			<tr>
-				<td>{{ locale["total"] }}</td>
+				<td>{{ _("total") }}</td>
 				<td>{{total}}</td>
 			</tr>
 		</tfoot>
