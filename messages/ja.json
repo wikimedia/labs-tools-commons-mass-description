@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Omotecho",
+			"Shirayuki"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">ログイン</a>してください",
+	"introduction": "<strong>Commons Mass Description</strong>を使うと利用者は<a href=\"https://commons.wikimedia.org\">ウィキメディア・コモンズ</a>で画像やマルチメディアファイルの説明を1件ずつではなく、まとめて記述できます。詳細については<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">対応するウィキメディア・コモンズのページ</a>を参照してください。",
+	"introduction-bugs": "このツールにバグを発見したときは\nぜひ<a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">ウィキメディア Phabricator にタスクを作成してください</a>。",
+	"report-bug": "バグを報告",
+	"login": "ログイン",
+	"logout": "ログアウト",
+	"users-using-tool": "このツールを使う利用者とは",
+	"you-were-blocked": "ご利用のアカウントはブロックされました",
+	"block-summary": "ブロックの概要",
+	"block-sysop": "ブロックをした管理者",
+	"block-reason": "ブロックの理由",
+	"block-expiration": "ブロック期限",
+	"choose-language": "言語を選択",
+	"option-display-images": "表示する画像の点数を指定",
+	"do-not-filter": "しぼりこまない",
+	"filter-by-category": "カテゴリでしぼりこみ",
+	"filter-by-uploader": "投稿者名でしぼりこみ",
+	"source-category": "下記の表の情報源欄 (source) に表示したいカテゴリ名を入力",
+	"helptext-category": "接頭辞カテゴリを含める:",
+	"source-uploader": "説明を入力する画像の投稿者の利用者名を入力",
+	"helptext-uploader": "「User:」の部分を除去した利用者名を入力。",
+	"load-pictures": "複数の画像を読み込む",
+	"submit": "送信",
+	"picture": "画像",
+	"description": "説明",
+	"Categories": "カテゴリ",
+	"all-users": "CMDを使ったことがある全利用者一覧",
+	"username": "利用者名",
+	"number-of-edits": "編集回数合計",
+	"total": "合計"
+}

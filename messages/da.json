@@ -10,6 +10,8 @@
 	"logout": "Log af",
 	"users-using-tool": "Bruger som anvender dette værktøj",
 	"choose-language": "Vælg sprog",
+	"do-not-filter": "Filtrer ikke",
+	"filter-by-category": "Filtrer efter kategori",
 	"load-pictures": "Indlæs billeder",
 	"submit": "Indsend",
 	"picture": "Billede",
