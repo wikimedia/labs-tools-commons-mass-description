@@ -84,7 +84,7 @@ def users():
     for user in data:
         rowres = []
         for item in user:
-            if type(item) == type(b'a'):
+            if isinstance(item, b'a'):
                 rowres.append(item.decode('utf-8'))
             else:
                 rowres.append(item)
