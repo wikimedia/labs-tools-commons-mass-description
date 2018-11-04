@@ -48,7 +48,8 @@ HTTP_BAD_REQUEST = 400
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
         return redirect(
-            'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
+            'https://' + request.headers['Host'] + request.headers[
+                'X-Original-URI'],
             code=301
         )
 
@@ -57,15 +58,19 @@ def index():
     username = flask.session.get('username')
     if username is not None:
         if blocked()['blockstatus']:
-            return flask.render_template('blocked.html', logged=logged(), username=getusername())
+            return flask.render_template('blocked.html', logged=logged(),
+                                         username=getusername())
         else:
-            return flask.render_template('tool.html', logged=logged(), username=getusername())
+            return flask.render_template('tool.html', logged=logged(),
+                                         username=getusername())
     else:
-        return flask.render_template('login.html', logged=logged(), username=getusername())
+        return flask.render_template('login.html', logged=logged(),
+                                     username=getusername())
 
 @app.route('/report')
 def report():
-    return redirect('https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description')
+    return redirect(('https://phabricator.wikimedia.org/maniphest/task/edit/'
+                    'form/1/?project=commons_mass_description'))
 
 def logged():
     return flask.session.get('username') is not None
@@ -77,7 +82,9 @@ def getusername():
 def users():
     conn = toolforge.connect('commonswiki')
     with conn.cursor() as cur:
-        sql = 'select rev_user_text, count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and rev_user>0 group by rev_user order by count(*) desc;'
+        sql = ('select rev_user_text, count(*) from change_tag join revision '
+               'on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and '
+               'rev_user>0 group by rev_user order by count(*) desc;')
         cur.execute(sql)
         data = cur.fetchall()
     users = []
@@ -90,11 +97,13 @@ def users():
                 rowres.append(item)
         users.append(rowres)
     with conn.cursor() as cur:
-        sql = 'select count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and rev_user>0;'
+        sql = ('select count(*) from change_tag join revision on ct_rev_id='
+               'rev_id where ct_tag="OAuth CID: 821" and rev_user>0;')
         cur.execute(sql)
         data = cur.fetchall()
     total = data[0][0]
-    return flask.render_template('users.html', users=users, total=total, logged=logged(), username=getusername())
+    return flask.render_template('users.html', users=users, total=total,
+                                 logged=logged(), username=getusername())
 
 @app.route('/api-username')
 def username():
@@ -126,7 +135,9 @@ def langs():
     return res
 
 def thumburl(url, size):
-    return url.replace('commons', 'commons/thumb') + '/' + str(size) + 'px-' + url.split('/')[-1] + '.png'
+    return url.replace(
+        'commons', 'commons/thumb'
+    ) + '/' + str(size) + 'px-' + url.split('/')[-1] + '.png'
 
 @app.route('/api-blocked')
 def apiblocked():
@@ -196,9 +207,11 @@ def described(page):
     pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
     code = mwparserfromhell.parse(pagecontent)
     for template in code.filter_templates():
-        if template.name.strip() == 'Information' or template.name.strip() == 'information':
+        if template.name.strip() == 'Information' \
+                or template.name.strip() == 'information':
             for param in template.params:
-                if param.name.strip() == 'description' or param.name.strip() == 'Description':
+                if param.name.strip() == 'description' \
+                        or param.name.strip() == 'Description':
                     if param.value.strip() != '':
                         return True
                     return False
@@ -219,7 +232,8 @@ def getcategories(id):
     categories = []
     for line in lines:
         if '[category' in line.lower():
-            categories.append(line.replace('[', '').replace(']', '').split('|')[0])
+            categories.append(line.replace('[', '')
+                              .replace(']', '').split('|')[0])
     return categories
 
 @app.route('/api-categories')
@@ -232,7 +246,8 @@ def api_categories():
             'categories': getcategories(pageid)
         })
     else:
-        return jsonify({'status': 'error', 'errorcode': 'mustpassparams'}), HTTP_BAD_REQUEST
+        return jsonify({'status': 'error',
+                        'errorcode': 'mustpassparams'}), HTTP_BAD_REQUEST
 
 @app.route('/api-images')
 def images():
@@ -282,7 +297,8 @@ def images():
     images = []
     for page in data['query']['pages']:
         imagedata = data['query']['pages'][page]
-        if category == "Category:Media_lacking_a_description" or described(imagedata['title']) is False:
+        if category == "Category:Media_lacking_a_description" \
+                or described(imagedata['title']) is False:
             newimagedata = {
                 'title': imagedata['title'],
                 'id': imagedata['pageid'],
@@ -309,7 +325,8 @@ def editall():
     for item in languages:
         langcodes.append(item['code'])
     for image in data:
-        if 'description' not in image or 'lang' not in image or 'id' not in image:
+        if 'description' not in image or 'lang' not in image \
+                or 'id' not in image:
             if 'id' in image:
                 id = image['id']
             else:
@@ -365,15 +382,18 @@ def edit(id, description, lang):
     pagecontent = data['query']['pages'][pageid]['revisions'][0]['*']
     code = mwparserfromhell.parse(pagecontent)
     for template in code.filter_templates():
-        if template.name.strip() == 'Information' or template.name.strip() == 'information':
+        if template.name.strip() == 'Information' \
+                or template.name.strip() == 'information':
             for param in template.params:
-                if param.name.strip() == 'description' or param.name.strip() == 'Description':
+                if param.name.strip() == 'description' \
+                        or param.name.strip() == 'Description':
                     if param.value.strip() != '':
                         return {
                             'status': 'error',
                             'errorcode': 'alreadydescribed'
                         }, HTTP_BAD_REQUEST
-                    param.value = '{{' + lang + '|1=' + description + '}}' + '\n'
+                    param.value = '{{' + lang + '|1=' + description + '}}'\
+                                  + '\n'
                     break
             break
     payload = {
@@ -393,7 +413,8 @@ def edit(id, description, lang):
         "format": "json",
         "pageid": id,
         "text": str(code),
-        "summary": "Added description with [[:toollabs:commons-mass-description|Commons mass description tool]]",
+        "summary": ("Added description with [[:toollabs:commons-mass-"
+                    "description|Commons mass description tool]]"),
         "token": token
     }
     r = requests.post(
@@ -449,7 +470,8 @@ def oauth_callback():
     if 'request_token' not in flask.session:
         flask.flash(u'OAuth callback failed. Are cookies disabled?')
         return flask.redirect(flask.url_for('index'))
-    consumer_token = mwoauth.ConsumerToken(app.config['CONSUMER_KEY'], app.config['CONSUMER_SECRET'])
+    consumer_token = mwoauth.ConsumerToken(app.config['CONSUMER_KEY'],
+                                           app.config['CONSUMER_SECRET'])
 
     try:
         access_token = mwoauth.complete(
@@ -457,12 +479,15 @@ def oauth_callback():
             consumer_token,
             mwoauth.RequestToken(**flask.session['request_token']),
             flask.request.query_string)
-        identity = mwoauth.identify(app.config['OAUTH_MWURI'], consumer_token, access_token)
+        identity = mwoauth.identify(app.config['OAUTH_MWURI'], consumer_token,
+                                    access_token)
     except Exception:
         app.logger.exception('OAuth authentication failed')
     else:
-        flask.session['request_token_secret'] = dict(zip(access_token._fields, access_token))['secret']
-        flask.session['request_token_key'] = dict(zip(access_token._fields, access_token))['key']
+        flask.session['request_token_secret'] = dict(
+            zip(access_token._fields, access_token))['secret']
+        flask.session['request_token_key'] = dict(zip(access_token._fields,
+                                                      access_token))['key']
         flask.session['username'] = identity['username']
 
     return flask.redirect(flask.url_for('index'))
