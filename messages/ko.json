@@ -17,6 +17,7 @@
 	"block-reason": "차단 이유",
 	"block-expiration": "차단 만료",
 	"choose-language": "언어 선택",
+	"option-display-images": "표시할 이미지의 수를 지정합니다",
 	"do-not-filter": "필터하지 않음",
 	"filter-by-category": "분류별 필터",
 	"filter-by-uploader": "업로더별 필터",

@@ -5,7 +5,7 @@
 			"Martin Urbanec"
 		]
 	},
-	"introduction-please-login": "<a href=\"login\">Најавете се</a>",
+	"introduction-please-login": "Please, <a href=\"login\">најавете се</a>",
 	"introduction": "<strong>Масовен опис на Ризницата</strong> е алатка што им овозможува на корисниците масовно да опишуваат слики и снимки на <a href=\"https://commons.wikimedia.org/Главна_страница\">Ризницата</a> без да треба рачно да ја уредуваат секоја посебно. Повеќе ќе дознаете на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">страницата на алатката</a>.",
 	"introduction-bugs": "Ако наидете на некоја грешка во алаткава, слободно <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">создајте задача на „Фабрикатор“</a>.",
 	"report-bug": "Пријави грешка",
