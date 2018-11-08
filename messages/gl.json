@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo",
+			"Elisardojm"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Inicie sesión</a>, por favor",
+	"introduction": "A <strong>Descrición en Masa de Commons</strong> é unha ferramenta que permite que os usuarios creen descricións en masa das imaxes e ficheiros multimedia na wiki <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>, sen ter que editar cada imaxe manualmente. Pode saber máis na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">páxina de Wikimedia Commons</a>.",
+	"introduction-bugs": "Se atopa algún erro nesta ferramenta, por favor, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">cree unha tarefa en Wikimedia Phabricator</a>.",
+	"report-bug": "Avisar dun erro",
+	"login": "Acceder",
+	"logout": "Saír",
+	"users-using-tool": "Usuarios desta ferramenta",
+	"you-were-blocked": "A súa conta de usuario foi bloqueada",
+	"block-summary": "Resumo do seu bloqueo",
+	"block-sysop": "Administrador que fixo o bloqueo",
+	"block-reason": "Razón do bloqueo",
+	"block-expiration": "Expiración do bloqueo",
+	"choose-language": "Escolla unha lingua",
+	"option-display-images": "Escolla o número de imaxes a visualizar",
+	"do-not-filter": "Non filtrar",
+	"filter-by-category": "Filtrar por categoría",
+	"filter-by-uploader": "Filtrar por usuario que fixo a suba",
+	"source-category": "Indique o nome da categoría que quere usar como fonte da táboa de abaixo",
+	"helptext-category": "Inclúa o prefixo Categoría:",
+	"source-uploader": "Indique o nome de usuario cuxas imaxes quere describir",
+	"helptext-uploader": "Nome de usuario, non inclúa o prefixo Userː",
+	"load-pictures": "Cargar imaxes",
+	"submit": "Enviar",
+	"picture": "Imaxe",
+	"description": "Descrición",
+	"Categories": "Categorías",
+	"all-users": "Tódolos usuarios que xa usaron CMD",
+	"username": "Nome de usuario",
+	"number-of-edits": "Número total de edicións",
+	"total": "Total"
+}

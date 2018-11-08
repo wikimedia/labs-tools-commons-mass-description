@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gwenn-Ael"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">kevreit</a>, mar plij",
+	"report-bug": "Kas keloù diwar-benn drein",
+	"login": "Kevreañ",
+	"logout": "Digevreañ",
+	"users-using-tool": "Implijerien ar benveg-mañ",
+	"you-were-blocked": "Stanket eo bet ho kont implijer.",
+	"block-reason": "Abeg evit stankañ.",
+	"choose-language": "Dibab ar yezh",
+	"option-display-images": "Dibab un niver a luc'hskeudennoù diskwelet",
+	"do-not-filter": "Arabat silañ",
+	"filter-by-category": "Silañ dre rummad",
+	"filter-by-uploader": "Silañ dre bellgarger",
+	"source-category": "Bizskrivañ anv ar rummad ho peus c'hoant da implijout evel mammenn eus an daolenn amañ dindan.",
+	"load-pictures": "Kargañ al luc'hskeudennoù",
+	"submit": "Kas",
+	"picture": "Luc'hskeudenn",
+	"description": "Deskrivadur",
+	"Categories": "Rummadoù",
+	"username": "Anv implijer",
+	"number-of-edits": "Niver hollek a bajennoù",
+	"total": "Hollad"
+}
