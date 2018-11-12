@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"introduction-please-login": "Ole hyvä, <a href=\"login\">kirjaudu</a>",
+	"login": "Kirjaudu",
+	"logout": "Kirjaudu ulos",
+	"users-using-tool": "Käyttäjät, jotka käyttävät tätä työkalua",
+	"you-were-blocked": "Käyttäjätilisi on estetty",
+	"choose-language": "Valitse kieli",
+	"do-not-filter": "Älä suodata",
+	"filter-by-category": "Suodata luokan mukaan",
+	"filter-by-uploader": "Suodata tallentajan mukaan",
+	"load-pictures": "Lataa kuvat",
+	"submit": "Lähetä",
+	"picture": "Kuva",
+	"description": "Kuvaus",
+	"Categories": "Luokat",
+	"username": "Käyttäjänimi",
+	"number-of-edits": "Muokkausten kokonaismäärä",
+	"total": "Yhteensä"
+}
