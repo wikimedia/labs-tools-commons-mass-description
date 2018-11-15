@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"introduction-please-login": "Пожалуйста, <a href=\"login\">войдите</a>",
@@ -15,6 +16,7 @@
 	"block-sysop": "Заблокировавший администратор",
 	"block-reason": "Причина блокировки",
 	"choose-language": "Выберите язык",
+	"option-display-images": "Укажите число показываемых изображений",
 	"do-not-filter": "Не фильтровать",
 	"filter-by-category": "Фильтр по категории",
 	"filter-by-uploader": "Фильтр по загрузившему",
@@ -23,6 +25,7 @@
 	"picture": "Изображение",
 	"description": "Описание",
 	"Categories": "Категории",
+	"all-users": "Все участники, когда-либо использовавшие CMD",
 	"username": "Имя участника",
 	"number-of-edits": "Общее число правок",
 	"total": "Всего"

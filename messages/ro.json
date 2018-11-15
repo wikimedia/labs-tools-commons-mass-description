@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Strainu"
+		]
+	},
+	"introduction-please-login": "Vă rugăm să vă <a href=\"login\">autentificați</a>",
+	"introduction": "<strong>Commons Mass Description</strong> este o unealtă ce permite utilizatorilor să descrie fotografii și filme de la <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> în masă fără a edita fiecare imagini manual. Puteți afla mai multe din <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">pagina sa de la Wikimedia Commons</a>.",
+	"introduction-bugs": "Dacă găsiți erori în această unealtă, vă rugăm să <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">deschideti un tichet pe Wikimedia Phabricator</a>.",
+	"report-bug": "Raportați o eroare",
+	"login": "Autentificare",
+	"logout": "Ieșire",
+	"users-using-tool": "Utilizatori ce folosesc această unealtă",
+	"you-were-blocked": "Contul dumneavoastră a fost blocat",
+	"block-summary": "Sumarul blocării dumneavoastră",
+	"block-sysop": "Administratorul care v-a blocat",
+	"block-reason": "Motivul blocării",
+	"block-expiration": "Expirarea blocării",
+	"choose-language": "Alegere limbă",
+	"option-display-images": "Alegeți numărul de imagini afișate",
+	"do-not-filter": "Nu filtra",
+	"filter-by-category": "Filtrează după categorie",
+	"filter-by-uploader": "Filtrează după utilizator",
+	"source-category": "Introduceți numele categoriei pe care doriți să o folosiți mai jos",
+	"helptext-category": "Includeți prefixul Category:",
+	"source-uploader": "Introduceți numele de utilizatori al celui ce a încărcat imaginile pe care doriți să le descrieți",
+	"helptext-uploader": "Nu de utilizator, fără prefixul User:",
+	"load-pictures": "Încarcă imagini",
+	"submit": "Trimite",
+	"picture": "Imagine",
+	"description": "Descriere",
+	"Categories": "Categorii",
+	"all-users": "Toți utilizatorii ce au folosit CMD",
+	"username": "Nume de utilizator",
+	"number-of-edits": "Număr total de modificări",
+	"total": "Total"
+}

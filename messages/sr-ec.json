@@ -7,7 +7,7 @@
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Пријавите се</a>",
-	"introduction": "<strong>Commons Mass Description</strong> је алатка која дозвољава корисницима да опишу слике и мултимедије на <a href=\"https://commons.wikimedia.org\">Викимедијиној остави</a> без потребе за уређивањем сваке слике ручно. Можете пронаћи више детаља <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">на страници на Викимедијиној Остави</a>.",
+	"introduction": "<strong>Commons Mass Description</strong> је алатка која дозвољава корисницима да опишу слике и мултимедију на <a href=\"https://commons.wikimedia.org\">Викимедијиној остави</a> без потребе за уређивањем сваке слике ручно. Можете пронаћи више детаља <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">на њеној страници на Викимедијиној остави</a>.",
 	"introduction-bugs": "Ако пронађете било какве грешке у овој алатки, слободно <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">направите задатак на Викимедијином фабрикатору</a>.",
 	"report-bug": "Пријавите грешку",
 	"login": "Пријави ме",
