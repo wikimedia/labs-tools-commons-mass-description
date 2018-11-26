@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"introduction-please-login": "Калі ласка, <a href=\"login\">увайдзіце</a>",
+	"introduction": "<strong>Масавае апісаньне Вікісховішча</strong> — інструмэнт, які дазваляе ўдзельніку, масава апісваць выявы і мультымэдыя ў <a href=\"https://commons.wikimedia.org\">Вікісховішчы</a> без патрэбы рэдагаваць кожную выяву ўручную. Вы можаце даведацца болей на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">старонцы ў Вікісховішчы</a>.",
+	"introduction-bugs": "Калі вы знайшлі памылкі ў гэтым інструмэнце, калі ласка, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">стварайце заданьне ў Wikimedia Phabricator</a>.",
+	"report-bug": "Паведаміць пра памылку",
+	"login": "Увайсьці",
+	"logout": "Выйсьці",
+	"users-using-tool": "Удзельнікі, якія карыстаюцца гэтым інструмэнтам",
+	"you-were-blocked": "Ваш рахунак удзельніка быў заблякаваны",
+	"block-summary": "Зьвесткі пра вашае блякаваньне",
+	"block-sysop": "Адміністратар, які заблякаваў",
+	"block-reason": "Прычына блякаваньня"
+}

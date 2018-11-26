@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"introduction-please-login": "ကျေးဇူးပြု၍ <a href=\"login\">လော့ဂ်အင်ဝင်ပါ</a>",
+	"login": "အကောင့်ထဲဝင်ရန်",
+	"logout": "အကောင့်မှပြန်ထွက်",
+	"choose-language": "ဘာသာစကားရွေးချယ်ရန်",
+	"submit": "ထည့်သွင်းရန်",
+	"picture": "ရုပ်ပုံ",
+	"description": "ဖော်ပြချက်",
+	"Categories": "ကဏ္ဍများ",
+	"username": "အသုံးပြုသူအမည်",
+	"number-of-edits": "စုစုပေါင်း တည်းဖြတ်မှု အရေအတွက်",
+	"total": "စုစုပေါင်း"
+}
