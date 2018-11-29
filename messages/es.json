@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ktranz",
+			"Tiberius1701"
+		]
+	},
+	"introduction-please-login": "Por favor, <a href=\"login\">Accede</a>",
+	"introduction": "<strong>Commons Mass Description</strong> es una herramienta que permite al usuario describir imágenes y multimedia en <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masa sin tener que editar cada imagen manualmente. Puedes encontrar más en <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">la página de Wikimedia Commons</a>.",
+	"introduction-bugs": "Si encuentras algún error en esta herramienta, no dudes en <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una tarea en Wikimedia Phabricator</a>.",
+	"report-bug": "Reportar un error",
+	"login": "Acceder",
+	"logout": "Salir",
+	"users-using-tool": "Usuarios usando esta herramienta",
+	"you-were-blocked": "Tu cuenta ha sido bloqueada",
+	"block-summary": "Sumario de tu bloqueo",
+	"block-sysop": "Bloqueando sysop",
+	"block-reason": "Razón del bloqueo",
+	"block-expiration": "Expiración del bloqueo",
+	"choose-language": "Elegir idioma",
+	"do-not-filter": "No filtrar",
+	"filter-by-category": "Filtro por categoría",
+	"filter-by-uploader": "Filtro por usuario de subida",
+	"source-category": "Introduce el nombre de la categoría que quieras usar como origen de la tabla siguiente",
+	"helptext-category": "Incluir el prefijo de la categoría:",
+	"source-uploader": "Introduce el nombre de usuario que haya subido las imágenes que quieres describir",
+	"helptext-uploader": "Nombre de usuario, no incluir prefijo de usuario:",
+	"load-pictures": "Cargar imágenes",
+	"submit": "Enviar",
+	"picture": "Imagen",
+	"description": "Descripción",
+	"Categories": "Categorías",
+	"username": "Nombre de usuario",
+	"number-of-edits": "Número total de ediciones",
+	"total": "Total"
+}
