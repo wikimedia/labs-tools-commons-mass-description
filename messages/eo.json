@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"YvesNevelsteen"
+		]
+	},
+	"introduction-please-login": "Bonvolu <a href=\"login\">ensaluti</a>",
+	"report-bug": "Raporti cimon",
+	"login": "Ensaluti",
+	"logout": "Elsaluti",
+	"users-using-tool": "Uzantoj kiuj uzas ĉi tiun ilon",
+	"you-were-blocked": "Via uzantokonto estas blokita",
+	"block-summary": "Resumo de via blokado",
+	"block-sysop": "Blokanta sistema administranto",
+	"block-reason": "Kialo de blokado",
+	"choose-language": "Elekti lingvon",
+	"option-display-images": "Elekti nombron de montrataj bildoj",
+	"do-not-filter": "Ne filtri",
+	"filter-by-category": "Filtri laŭ kategorio",
+	"filter-by-uploader": "Filtri laŭ alŝutinto",
+	"load-pictures": "Ŝargi la bildojn",
+	"submit": "Sendi",
+	"picture": "Bildo",
+	"description": "Priskribo",
+	"Categories": "Kategorioj",
+	"username": "Uzantnomo",
+	"number-of-edits": "Entuta nombro de redaktoj",
+	"total": "Sumo"
+}

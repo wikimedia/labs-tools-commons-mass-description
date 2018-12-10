@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
-			"Martin Urbanec"
+			"Martin Urbanec",
+			"Deathkon"
 		]
 	},
 	"introduction-please-login": "请您先 <a href=\"login\">登录账号</a>",
+	"introduction": "<strong> Commons Mass Description </ strong>是一个工具，允许用户在<a href=\"https://commons.wikimedia.org\"> Wikimedia Commons </a>中描述图片和多媒体资源，而无需手动编辑每个图像。您可以在<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">它的维基共享资源页面</a>中找到更多信息。",
+	"introduction-bugs": "如果您在此工具中发现任何漏洞，请随时<a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">在Wikimedia Phabricator中创建一项任务</a>。",
 	"report-bug": "报告漏洞",
 	"login": "登录",
 	"logout": "注销",
