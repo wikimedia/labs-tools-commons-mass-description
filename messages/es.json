@@ -2,22 +2,24 @@
 	"@metadata": {
 		"authors": [
 			"Ktranz",
-			"Tiberius1701"
+			"Tiberius1701",
+			"MarcoAurelio"
 		]
 	},
-	"introduction-please-login": "Por favor, <a href=\"login\">Accede</a>",
-	"introduction": "<strong>Commons Mass Description</strong> es una herramienta que permite al usuario describir imágenes y multimedia en <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masa sin tener que editar cada imagen manualmente. Puedes encontrar más en <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">la página de Wikimedia Commons</a>.",
+	"introduction-please-login": "Por favor, <a href=\"login\">inicia sesión</a>",
+	"introduction": "<strong><i>Commons Mass Description</i></strong> es una herramienta que permite al usuario describir imágenes y multimedia en <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masa sin tener que editar cada imagen manualmente. Puedes encontrar más en <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">la página de Wikimedia Commons</a>.",
 	"introduction-bugs": "Si encuentras algún error en esta herramienta, no dudes en <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una tarea en Wikimedia Phabricator</a>.",
 	"report-bug": "Reportar un error",
 	"login": "Acceder",
 	"logout": "Salir",
 	"users-using-tool": "Usuarios usando esta herramienta",
 	"you-were-blocked": "Tu cuenta ha sido bloqueada",
-	"block-summary": "Sumario de tu bloqueo",
-	"block-sysop": "Bloqueando sysop",
+	"block-summary": "Resumen de tu bloqueo",
+	"block-sysop": "Administrador que te ha bloqueado",
 	"block-reason": "Razón del bloqueo",
 	"block-expiration": "Expiración del bloqueo",
 	"choose-language": "Elegir idioma",
+	"option-display-images": "Escoge un número de imágenes a mostrar",
 	"do-not-filter": "No filtrar",
 	"filter-by-category": "Filtro por categoría",
 	"filter-by-uploader": "Filtro por usuario de subida",
@@ -30,6 +32,7 @@
 	"picture": "Imagen",
 	"description": "Descripción",
 	"Categories": "Categorías",
+	"all-users": "Todos los usuarios que alguna vez usaron esta herramienta",
 	"username": "Nombre de usuario",
 	"number-of-edits": "Número total de ediciones",
 	"total": "Total"

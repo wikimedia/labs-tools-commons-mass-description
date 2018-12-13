@@ -27,5 +27,8 @@
 	"helptext-uploader": "Імя ўдзельніка бяз прэфіксу User:",
 	"load-pictures": "Загрузіць выявы",
 	"submit": "Падаць",
-	"picture": "Выява"
+	"picture": "Выява",
+	"description": "Апісаньне",
+	"Categories": "Катэгорыі",
+	"all-users": "Усе ўдзельнікі, якія выкарыстоўвалі CMD"
 }
