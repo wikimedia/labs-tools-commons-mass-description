@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622"
+		]
+	},
+	"introduction-please-login": "โปรด<a href=\"login\">เข้าสู่ระบบ</a>",
+	"report-bug": "รายงานข้อผิดพลาด",
+	"login": "เข้าสู่ระบบ",
+	"logout": "ออกจากระบบ",
+	"users-using-tool": "ผู้ใช้ที่ใช้เครื่องมือนี้",
+	"you-were-blocked": "บัญชีผู้ใช้ของคุณถูกบล็อก",
+	"block-summary": "ข้อมูลสรุปเกี่ยวกับการบล็อกบัญชีผู้ใช้ของคุณ",
+	"block-reason": "เหตุผลสำหรับการบล็อก",
+	"block-expiration": "เวลาสิ้นสุดการบล็อก",
+	"choose-language": "เลือกภาษา",
+	"option-display-images": "เลือกจำนวนรูปภาพที่จะแสดงผล",
+	"do-not-filter": "ไม่ต้องกรอง",
+	"filter-by-category": "กรองตามหมวดหมู่",
+	"filter-by-uploader": "กรองตามผู้อัปโหลด",
+	"load-pictures": "โหลดรูปภาพ",
+	"submit": "ส่ง",
+	"picture": "รูปภาพ",
+	"description": "คำอธิบาย",
+	"Categories": "หมวดหมู่",
+	"username": "ชื่อผู้ใช้",
+	"number-of-edits": "จำนวนการแก้ไขทั้งหมด",
+	"total": "ทั้งหมด"
+}
