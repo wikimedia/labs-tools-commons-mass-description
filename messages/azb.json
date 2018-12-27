@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alp Er Tunqa"
+		]
+	},
+	"introduction-please-login": "لوطفا, <a href=\"login\">گیرین</a>",
+	"report-bug": "بیر باق بیلدیر",
+	"login": "گیریش",
+	"logout": "چیخیش",
+	"choose-language": "دیل سئچ",
+	"submit": "گؤندر",
+	"picture": "عکس",
+	"description": "آچیقلاما",
+	"Categories": "بؤلمه‌لر",
+	"username": "ایشلدن آدی",
+	"total": "جمعی"
+}

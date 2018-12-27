@@ -1,21 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Zaloguj się</a>",
+	"introduction": "<strong>Commons Mass Description</strong> to narzędzie umożliwiające użytkownikom masowe opisywanie zdjęć i multimediów na <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> bez konieczności edycji każdego pliku z osobna. Więcej informacji można znaleźć na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">stronie na Wikimedia Commons</a>.",
+	"introduction-bugs": "Jeżeli znajdziesz jakieś błędy w tym narzędziu, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">zgłoś je do  Wikimedia Phabricator</a>.",
 	"report-bug": "Zgłoś błąd",
 	"login": "Zaloguj się",
 	"logout": "Wyloguj się",
 	"users-using-tool": "Użytkownicy używający tego narzędzia",
 	"you-were-blocked": "Twoje konto użytkownika zostało zablokowane",
+	"block-summary": "Informacje o blokadzie",
+	"block-sysop": "Blokujący administrator",
 	"block-reason": "Powód blokady",
+	"block-expiration": "Czas wygaśnięcia blokady",
 	"choose-language": "Wybierz język",
+	"option-display-images": "Wybierz liczbę wyświetlanych zdjęć",
 	"do-not-filter": "Nie filtruj",
+	"filter-by-category": "Filtruj według kategorii",
+	"filter-by-uploader": "Filtruj według przesyłającego",
+	"source-category": "Wprowadź nazwę kategorii źródłowej dla poniższej tabeli",
+	"helptext-category": "Uwzględnij prefiks Category:",
+	"source-uploader": "Wprowadź nazwę użytkownika, którego zdjęcia chcesz opisywać",
+	"helptext-uploader": "Nazwa użytkownika, bez prefiksu User:",
+	"load-pictures": "Załaduj zdjęcia",
 	"submit": "Wyślij",
+	"picture": "Zdjęcie",
 	"description": "Opis",
 	"Categories": "Kategorie",
+	"all-users": "Wszyscy użytkownicy, którzy kiedykolwiek użyli CMD",
 	"username": "Nazwa użytkownika",
-	"number-of-edits": "Całkowita liczba edycji"
+	"number-of-edits": "Całkowita liczba edycji",
+	"total": "Razem"
 }

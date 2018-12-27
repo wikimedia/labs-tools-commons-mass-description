@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Ndecouck"
+			"Ndecouck",
+			"Marcelhospers",
+			"Optilete"
 		]
 	},
+	"introduction-please-login": "Alstublieft, <a href=\"login\">login</a>",
+	"introduction-bugs": "Als je bugs in deze tool tegenkomt, aarzel dan niet om <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> een taak te maken op Wikimedia Phabricator </a>.",
 	"report-bug": "Probleem melden",
 	"login": "Aanmelden",
 	"logout": "Afmelden",
@@ -13,11 +17,16 @@
 	"block-summary": "Samenvatting van de blokkade",
 	"block-sysop": "Blokkerende beheerder",
 	"block-reason": "Reden voor blokkade",
+	"block-expiration": "Blokker vervaltijdstip",
 	"choose-language": "Taal kiezen",
 	"option-display-images": "Kies een aantal van de weergegeven beelden",
 	"do-not-filter": "Niet filteren",
 	"filter-by-category": "Filteren op categorie",
 	"filter-by-uploader": "Filteren op uploader",
+	"source-category": "Voer de naam in van de categorie die u wilt gebruiken aan de bron van de onderstaande tabel",
+	"helptext-category": "Voeg de prefixcategorie toe:",
+	"source-uploader": "Voer de gebruikersnaam in van de uploader welke foto's je wilt beschrijven",
+	"helptext-uploader": "Gebruikersnaam, voeg geen voorvoegsel gebruiker toe:",
 	"load-pictures": "Afbeeldingen laden",
 	"submit": "Verzenden",
 	"picture": "Afbeelding",
