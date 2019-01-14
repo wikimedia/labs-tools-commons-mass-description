@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"introduction-please-login": "Будь ласка, <a href=\"login\">увійдіть</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — це інструмент, що дає користувачам змогу масово додавати описи до зображень та інших файлів мультимедіа на <a href=\"https://commons.wikimedia.org\">Вікісховищі</a> без потреби редагувати кожне зображення окремо. Дізнайтесь більше на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">відповідній сторінці у Вікісховищі</a>.",
+	"introduction-bugs": "Якщо виявите якісь проблеми з цим інструментом, будь ласка, не соромтесь і <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">створіть запит на Фабрикаторі</a>.",
+	"report-bug": "Повідомити про помилку",
+	"login": "Увійти",
+	"logout": "Вийти",
+	"users-using-tool": "Користувачі цього інструменту",
+	"you-were-blocked": "Ваш обліковий запис заблоковано",
+	"block-summary": "Опис блокування",
+	"block-sysop": "Адміністратор, що здійснив блокування",
+	"block-reason": "Причина блокування",
+	"block-expiration": "Час завершення блокування",
+	"choose-language": "Вибрати мову",
+	"option-display-images": "Вибрати кількість сторінок для показу",
+	"do-not-filter": "Не фільтрувати",
+	"filter-by-category": "Фільтрувати за категорією",
+	"filter-by-uploader": "Фільтрувати за завантажувачем",
+	"source-category": "Введіть назву категорії, яку Ви хотіли б використати як джерело для таблиці нижче",
+	"helptext-category": "Включити префікс Категорія:",
+	"source-uploader": "Введіть ім'я завантажувача, чиї зображення Ви хотіли б описати",
+	"helptext-uploader": "Ім'я користувача, без префікса Користувач:",
+	"load-pictures": "Завантажити зображення",
+	"submit": "Надіслати",
+	"picture": "Зображення",
+	"description": "Опис",
+	"Categories": "Категорії",
+	"all-users": "Усі користувачі, які коли-небудь користувались CMD",
+	"username": "Ім'я користувача",
+	"number-of-edits": "Загальна кількість редагувань",
+	"total": "Усього"
+}

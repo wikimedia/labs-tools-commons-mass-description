@@ -3,10 +3,11 @@
 		"authors": [
 			"Ktranz",
 			"Tiberius1701",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Fitoschido"
 		]
 	},
-	"introduction-please-login": "Por favor, <a href=\"login\">inicia sesión</a>",
+	"introduction-please-login": "<a href=\"login\">Accede</a> a tu cuenta",
 	"introduction": "<strong><i>Commons Mass Description</i></strong> es una herramienta que permite al usuario describir imágenes y multimedia en <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masa sin tener que editar cada imagen manualmente. Puedes encontrar más en <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">la página de Wikimedia Commons</a>.",
 	"introduction-bugs": "Si encuentras algún error en esta herramienta, no dudes en <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una tarea en Wikimedia Phabricator</a>.",
 	"report-bug": "Reportar un error",
