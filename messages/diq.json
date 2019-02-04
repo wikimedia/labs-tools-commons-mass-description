@@ -1,19 +1,34 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali"
+			"Mirzali",
+			"Orbot707"
 		]
 	},
+	"introduction-please-login": "Kerem ke, <a href=\"login\">cıkewe</a>",
 	"report-bug": "Xeta bırışê",
 	"login": "Cıkewtış",
 	"logout": "Veciyayış",
+	"users-using-tool": "Karberi nê hacetan gurenenê",
+	"you-were-blocked": "Hesabê karberiyê şıma bloke biyo",
+	"block-summary": "Xulasaya blokeyê şıma",
 	"block-sysop": "Kılitkerdışê idarekari",
 	"block-reason": "Sebebê kılitkerdışi",
+	"block-expiration": "Qediyayışê blokeyi",
 	"choose-language": "Zıwan weçine",
+	"option-display-images": "Aseyaye tay resima weçine",
+	"do-not-filter": "Parzûn çıniyo",
+	"filter-by-category": "Goreyê kategoriye parzûni",
+	"filter-by-uploader": "Goreyê barkerdoğan parzûni",
+	"source-category": "Çımeyê tabloyê cêrêni ra namey kategoriyea ke şıma wazenê bıkarne ay weçine",
+	"helptext-category": "Prefiksê kategoriye daxilo:",
+	"helptext-uploader": "Namey karberi, prefiksê karberi daxili niyo:",
+	"load-pictures": "Resıman bar ke",
 	"submit": "Bırışe",
 	"picture": "Resım",
 	"description": "Şınasnayış",
 	"Categories": "Kategoriyi",
+	"all-users": "Heme karberê ke CMD gurenayê",
 	"username": "Nameyê karberi",
 	"number-of-edits": "Amarê vırnayışanê pêroyinan",
 	"total": "Pêro piya"
