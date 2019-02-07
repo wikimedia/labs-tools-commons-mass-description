@@ -6,6 +6,8 @@
 		]
 	},
 	"introduction-please-login": "Kerem ke, <a href=\"login\">cıkewe</a>",
+	"introduction": "<strong>Commons Mass Description</strong> yew haceto ke şeno, şıma rê xeylê resıman û multimedya <a href=\"https://commons.wikimedia.org\">Embarê Wikimedya</a> de areze kero, bê her resım be dest ra bıgureno. Şıma şenê tayêna <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ena pela Embarê Wikimedya</a> de bımusê.",
+	"introduction-bugs": "Derheqê enê haceti ke qet yew xeta vêniye, kerem ke, ma rê <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedya Phabricator ra rapor ke</a>.",
 	"report-bug": "Xeta bırışê",
 	"login": "Cıkewtış",
 	"logout": "Veciyayış",
@@ -22,6 +24,7 @@
 	"filter-by-uploader": "Goreyê barkerdoğan parzûni",
 	"source-category": "Çımeyê tabloyê cêrêni ra namey kategoriyea ke şıma wazenê bıkarne ay weçine",
 	"helptext-category": "Prefiksê kategoriye daxilo:",
+	"source-uploader": "Nameyê barkerdoği cı kerê, resımê deyê ke şıma wazenê areze kerê",
 	"helptext-uploader": "Namey karberi, prefiksê karberi daxili niyo:",
 	"load-pictures": "Resıman bar ke",
 	"submit": "Bırışe",
