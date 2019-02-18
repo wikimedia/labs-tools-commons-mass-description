@@ -1,28 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Albe Albe 460"
 		]
 	},
 	"introduction-please-login": "Pere favore, <a href=\"login\">accedi</a>",
+	"introduction-bugs": "Se trovi qualche errore in questo strumento, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una segnalazione su Wikimedia Phabricator</a>.",
 	"report-bug": "Segnala un errore",
 	"login": "Accedi",
 	"logout": "Esci",
 	"users-using-tool": "Utenti che utilizzano questo strumento",
 	"you-were-blocked": "La tua utenza è stata bloccata",
+	"block-summary": "Motivo del tuo blocco",
+	"block-sysop": "Amministratore che ti ha bloccato",
 	"block-reason": "Motivo del blocco",
 	"block-expiration": "Scadenza del blocco",
 	"choose-language": "Scegli la lingua",
 	"option-display-images": "Scegli un numero di immagini visualizzate",
 	"do-not-filter": "Non filtrare",
 	"filter-by-category": "Filtra per categoria",
+	"filter-by-uploader": "Filtra per utente che ha caricato",
+	"source-category": "Inserisci il nome della categoria che vuoi utilizzare come origine della seguente tabella",
 	"helptext-category": "Includi il prefisso Categoria:",
+	"source-uploader": "Inserisci il nome utente di chi ha caricato le immagini che desideri descrivere",
 	"helptext-uploader": "Nome utente, non includere il prefisso Utente:",
 	"load-pictures": "Carica immagini",
 	"submit": "Invia",
 	"picture": "Immagine",
 	"description": "Descrizione",
 	"Categories": "Categorie",
+	"all-users": "Tutti gli utenti che hanno mai usato CMD",
 	"username": "Nome utente",
 	"number-of-edits": "Numero totale di modifiche",
 	"total": "Totale"
