@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"introduction-please-login": "נא <a href=\"login\">להיכנס</a>",
+	"introduction": "<strong>Commons Mass Description</strong> הוא כלי שמאפשר למשתמשים לתאר תמונות ומולטימדיה ב<a href=\"https://commons.wikimedia.org\">ויקישיתוף</a> בכמות גדולה מבלי לערוך כל תמונה ידנית. ניתן למצוא מידע נוסף ב<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">עמוד שלו בוויקישיתוף</a>.",
+	"introduction-bugs": "אם מצאת תקלה כלשהי בכלי הזה, נא <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">ליצור משימה ב Phabricator של ויקימדיה</a>.",
+	"report-bug": "דיווח על תקלה",
+	"login": "כניסה",
+	"logout": "יציאה",
+	"users-using-tool": "משתמשים שמשתמשים בכלי הזה",
+	"you-were-blocked": "חשבון המשתמש שלך נחסם",
+	"block-summary": "תקציר החסימה שלך",
+	"block-sysop": "המפעיל החוסם",
+	"block-reason": "סיבת החסימה",
+	"block-expiration": "תפוגת החסימה",
+	"choose-language": "בחירת שפה",
+	"option-display-images": "נא לבחור את מספר התמונות המוצגות",
+	"do-not-filter": "לא לסנן",
+	"filter-by-category": "סינון לפי קטגוריה",
+	"filter-by-uploader": "סינון לפי מי שהעלה",
+	"source-category": "נא להקליד את שם הקטגוריה בה ברצונך להשתמש כמקור לטבלה שלהלן",
+	"helptext-category": "כולל הקידומת קטגוריה:",
+	"source-uploader": "נא להקליד את שם המשתמש שברצונך לתאר את תמונותיו",
+	"helptext-uploader": "שם משתמש, ללא הקידומת משתמש:",
+	"load-pictures": "טעינת תמונות",
+	"submit": "הגשה",
+	"picture": "תמונה",
+	"description": "תיאור",
+	"Categories": "קטגוריות",
+	"all-users": "כל המשתמשים שאי פעם השתמשו ב־CMD",
+	"username": "שם משתמש",
+	"number-of-edits": "מספר העריכות הכולל",
+	"total": "סך הכול"
+}
