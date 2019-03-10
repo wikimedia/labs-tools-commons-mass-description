@@ -4,13 +4,13 @@
         "Martin Urbanec"
       ]
     },
-    "introduction-please-login": "Please, <a href=\"login\">login</a>",
+    "introduction-please-login": "Please, <a href=\"login\">log in</a>",
     "introduction": "<strong>Commons Mass Description</strong> is a tool that allows user to describe pictures and multimedia at <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse without having to edit each image manually. You can find more at <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
     "introduction-bugs": "If you find any bugs in this tool, please feel free to <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create a task at Wikimedia Phabricator</a>.",
     "report-bug": "Report a bug",
-    "login": "Login",
-    "logout": "Logout",
-    "users-using-tool": "Users using this tool",
+    "login": "Log in",
+    "logout": "Log out",
+    "users-using-tool": "Users of this tool",
     "you-were-blocked": "Your user account has been blocked",
     "block-summary": "Summary of your block",
     "block-sysop": "Blocking sysop",
