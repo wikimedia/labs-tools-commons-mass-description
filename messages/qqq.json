@@ -2,15 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Martin Urbanec",
-			"Robby"
+			"Robby",
+			"Kingu"
 		]
 	},
 	"introduction-please-login": "Headline of the introduction page",
 	"introduction": "Description of the tool",
 	"introduction-bugs": "Displayed on the introduction page and encouradges users to report any bugs they find via Phabricator",
 	"report-bug": "Link to bug report form",
-	"login": "Login button\n{Identical|Login}}",
-	"logout": "Logout button\n{{Identical|Logout}}",
+	"login": "Log in button\n{Identical|Login}}",
+	"logout": "Log out button\n{{Identical|Logout}}",
 	"users-using-tool": "Displayed in menu, linking to page displaying statistics on usage of the tool",
 	"you-were-blocked": "Headline of page announcing the user was blocked on wiki",
 	"block-summary": "Displayed on You were blocked page",

@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kingu"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Logg inn</a>",
+	"introduction": "<strong>Commons Mass Description</strong> er et verktøy som lare en bruker beskrive bilder og multimedia på <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> i bolker, uten å redigere hvert bilde manuelt. Mer info er å finne på <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">dets Wikimedia Commons-side</a>.",
+	"introduction-bugs": "Hvis du finner feil i dette verktøyet, innrapporter dem ved å <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">opprette sak i Wikimedia Phabricator</a>.",
+	"report-bug": "Innrapporter en feil",
+	"login": "Logg inn",
+	"logout": "Logg ut",
+	"users-using-tool": "Brukere av dette verktøyet",
+	"you-were-blocked": "Din brukerkonto har blitt blokkert",
+	"block-summary": "Sammendrag av din blokkering",
+	"block-sysop": "Blokkerer systemoperatør",
+	"block-reason": "Grunn for blokkering",
+	"block-expiration": "Blokkering utløper",
+	"choose-language": "Velg språk",
+	"option-display-images": "Velg et antall viste meldinger",
+	"do-not-filter": "Ikke filtrer",
+	"filter-by-category": "Filtrer etter kategori",
+	"filter-by-uploader": "Filtrer etter opplaster",
+	"source-category": "Skriv inn navn på kategori du ønsker å bruke som kilde i tabellen nedenfor",
+	"helptext-category": "Inkluder prefiks-kategori:",
+	"source-uploader": "Skriv inn brukernavn for opplasters bilder du ønsker å beskrive",
+	"helptext-uploader": "Brukernavn, ikke inkluder prefiks-bruker:",
+	"load-pictures": "Last inn bilder",
+	"submit": "Send inn",
+	"picture": "Bilde",
+	"description": "Beskrivelse",
+	"Categories": "Kategorier",
+	"all-users": "Alle brukere som noensinne har brukt CMD",
+	"username": "Brukernavn",
+	"number-of-edits": "Antall redigeringer",
+	"total": "Totalt"
+}
