@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adithyak1997",
+			"Praveenp"
+		]
+	},
+	"introduction-please-login": "ദയവായി <a href=\"login\">പ്രവേശിക്കുക</a>",
+	"report-bug": "ബഗ് അറിയിക്കുക",
+	"login": "പ്രവേശിക്കുക",
+	"logout": "ലോഗൗട്ട്",
+	"users-using-tool": "ഈ ഉപകരണം ഉപയോഗിക്കുന്ന ഉപയോക്താക്കൾ",
+	"you-were-blocked": "താങ്കളുടെ അംഗത്വം തടയപ്പെട്ടിരിക്കുന്നു",
+	"block-summary": "തടയലിന്റെ സംഗ്രഹം",
+	"block-sysop": "തടഞ്ഞ കാര്യനിർവാഹക(ൻ)",
+	"block-reason": "തടയലിന്റെ കാരണം",
+	"choose-language": "ഭാഷ തിരഞ്ഞെടുക്കുക",
+	"option-display-images": "കാണിച്ചിരിക്കുന്ന ചിത്രങ്ങളിൽ നിന്നും തിരഞ്ഞെടുക്കുക",
+	"helptext-category": "പൂർവ്വപദ വർഗ്ഗം ഉൾപ്പെടുത്തുക:",
+	"submit": "സമർപ്പിക്കുക",
+	"picture": "ചിത്രം",
+	"description": "വിവരണം",
+	"Categories": "വർഗ്ഗങ്ങൾ",
+	"username": "ഉപയോക്തൃനാമം",
+	"number-of-edits": "മൊത്തം തിരുത്തുകളുടെ എണ്ണം",
+	"total": "ആകെ"
+}

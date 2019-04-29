@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Martin Urbanec"
+			"Martin Urbanec",
+			"Matěj Suchánek"
 		]
 	},
-	"introduction-please-login": "Prosím, <a href=\"login\">přihlašte se</a>",
+	"introduction-please-login": "Prosím, <a href=\"login\">přihlaste se</a>",
 	"introduction-bugs": "Pokud v tomto nástroji naleznete jakékoliv chyby, neváhejte je <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">nahlásit na Wikimedia Phabricator</a>.",
 	"report-bug": "Nahlásit chybu",
 	"login": "Přihlásit se",

@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"introduction-please-login": "Бука диэн <a href=\"login\">киир</a> дуу",
+	"report-bug": "Алҕас туһунан этии",
+	"login": "Киир",
+	"logout": "Таҕыс",
+	"users-using-tool": "Бу тэрили туһанар кыттааччылар",
+	"you-were-blocked": "Эн бэлиэ-аатыҥ хааччахтаммыт",
+	"block-summary": "Хааччах туһунан",
+	"block-sysop": "Хааччахтаабыт дьаһабыл",
+	"block-reason": "Хааччах төрүөтэ",
+	"block-expiration": "Хааччах болдьоҕо",
+	"choose-language": "Тылгын тал",
+	"option-display-images": "Көстөр ойуулар ахсааннарын ый",
+	"do-not-filter": "Сиидэлээмэ",
+	"filter-by-category": "Категорияннан сиидэлээ",
+	"filter-by-uploader": "Киллэрбит киһинэн сиидэлээ",
+	"load-pictures": "Ойууну киллэр",
+	"submit": "Ыыт",
+	"picture": "Ойуу",
+	"description": "Быһаарыыта",
+	"Categories": "Категорията",
+	"all-users": "CMD-ны хаһан эмит туһаммыт кыттааччылар",
+	"username": "Бэлиэ-аат",
+	"number-of-edits": "Көннөрүү ахсаана барыта",
+	"total": "Барыта"
+}

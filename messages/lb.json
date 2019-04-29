@@ -4,6 +4,7 @@
 			"Robby"
 		]
 	},
+	"introduction-please-login": "W.E.G., <a href=\"login\">aloggen</a>",
 	"report-bug": "E Feeler mellen",
 	"login": "Aloggen",
 	"logout": "Ausloggen",

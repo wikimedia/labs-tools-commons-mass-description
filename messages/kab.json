@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Belkacem77"
+		]
+	},
+	"report-bug": "Azen abug",
+	"login": "Qqen",
+	"logout": "Tuffɣa",
+	"users-using-tool": "Iseqdacen n ufecku-a",
+	"you-were-blocked": "Amiḍan-ik n useqdac yewḥel",
+	"block-summary": "Agzul n usewḥel-ik",
+	"block-sysop": "Asewḥel n sysop",
+	"block-reason": "Taɣzint n  usewḥel",
+	"block-expiration": "Taggara n usewḥel",
+	"choose-language": "Fren tutlayt",
+	"option-display-images": "Fren amḍan n tugniwin ara d-yettwaseknen",
+	"do-not-filter": "Ur zizdig ara",
+	"filter-by-category": "Zizdeg s taggayt",
+	"filter-by-uploader": "Zizdeg s umsider"
+}

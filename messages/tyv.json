@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agilight"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Кирип моорлаңар</a>",
+	"report-bug": "Алдаг, чазыг дугайында дыңнадыр",
+	"login": "Кирер",
+	"logout": "Үнер",
+	"users-using-tool": "Ук херекселди ажыглап турар киржикчилер",
+	"you-were-blocked": "Силерниң бүрүткел адыңарны дуглаан",
+	"block-summary": "Дуглалдың тодаргай медээлели",
+	"block-sysop": "Дуглакчы удуртукчу",
+	"block-reason": "Дуглаан чылдагааны",
+	"block-expiration": "Дуглалдың доостуру",
+	"choose-language": "Дылды шилиңер",
+	"option-display-images": "Көргүзер чуруктарның санын айтыңар",
+	"do-not-filter": "Шүүрбес",
+	"filter-by-category": "Аңгылал-биле шүүр",
+	"filter-by-uploader": "Чүдүрүкчүзү-биле шүүр",
+	"helptext-category": "Аңгылал деп префиксти кожар:",
+	"helptext-uploader": "Киржикчи деп префикс чокка ажыглакчының ады",
+	"load-pictures": "Чуруктар чүдүрер",
+	"submit": "Күүседир",
+	"picture": "Чурук",
+	"description": "Тодарадылга",
+	"Categories": "Аңгылалдар",
+	"all-users": "CMD деп чүүлдү кажан-бир ажыглап чораан шупту киржикчилер",
+	"username": "Бүрүткел ат",
+	"number-of-edits": "Эдилгелериниң түң саны",
+	"total": "Шупту"
+}
