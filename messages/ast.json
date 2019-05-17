@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Anicia</a> sesión",
+	"introduction": "<strong>Commons Mass Description</strong> ye una ferramienta que permite al usuariu describir imaxes y multimedia en <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masa ensin tener qu'editar cada imaxe manualmente. Puedes atopar más información na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">so páxina de Wikimedia Commons</a>.",
+	"introduction-bugs": "Si atopes dalgún fallu nesta ferramienta, nun duldes en <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crear una xera en Wikimedia Phabricator</a>.",
+	"report-bug": "Informar d'un fallu",
+	"login": "Aniciar sesión",
+	"logout": "Salir",
+	"users-using-tool": "Usuarios usando esta ferramienta",
+	"you-were-blocked": "La to cuenta d'usuariu ta bloquiada",
+	"block-summary": "Resume del bloquéu",
+	"block-sysop": "Alministrador que te bloquió",
+	"block-reason": "Motivu del bloquéu",
+	"block-expiration": "Expiración del bloquéu",
+	"choose-language": "Escoyer llingua",
+	"option-display-images": "Escueye un númberu d'imaxes a amosar",
+	"do-not-filter": "Nun peñerar",
+	"filter-by-category": "Filtru per categoría",
+	"filter-by-uploader": "Filtru per usuariu que lo xubió",
+	"source-category": "Escribi'l nome de la categoría que quieras usar como orixe de la tabla siguiente",
+	"helptext-category": "Incluir el prefixu Categoría:",
+	"source-uploader": "Escribi'l nome del usuariu que xubió les imaxes que quies describir",
+	"helptext-uploader": "Nome d'usuariu, nun incluir el prefixu Usuariu:",
+	"load-pictures": "Cargar imaxes",
+	"submit": "Unviar",
+	"picture": "Semeya",
+	"description": "Descripción",
+	"Categories": "Categoríes",
+	"all-users": "Tolos usuarios que dacuando usaron CMD",
+	"username": "Nome d'usuariu",
+	"number-of-edits": "Númberu total d'ediciones",
+	"total": "Total"
+}

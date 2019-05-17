@@ -1,28 +1,37 @@
 {
 	"@metadata": {
 		"authors": [
-			"YvesNevelsteen"
+			"YvesNevelsteen",
+			"Mirin"
 		]
 	},
 	"introduction-please-login": "Bonvolu <a href=\"login\">ensaluti</a>",
+	"introduction": "<strong>Komuneja Amaspriskribo</strong> estas ilo por amase priskribi bildojn, sonojn, kaj videaĵojn ĉe <a href=\"https://commons.wikimedia.org/wiki/%C4%88efpa%C4%9Do\">Vikimedia Komunejo</a> sen redaktado de individuaj paĝoj. Vi povas lerni plu ĉe <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ĝia paĝo ĉe Vikimedia Komunejo</a>.",
+	"introduction-bugs": "Se vi trovas ajnan cimon pri tiu ilo, bonvolu laŭvole <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">krei taskon ĉe Vikimedia Phabricator</a>.",
 	"report-bug": "Raporti cimon",
 	"login": "Ensaluti",
 	"logout": "Elsaluti",
 	"users-using-tool": "Uzantoj kiuj uzas ĉi tiun ilon",
-	"you-were-blocked": "Via uzantokonto estas blokita",
-	"block-summary": "Resumo de via blokado",
-	"block-sysop": "Blokanta sistema administranto",
-	"block-reason": "Kialo de blokado",
+	"you-were-blocked": "Via uzantokonto estas forbarita",
+	"block-summary": "Resumo de via forbaro",
+	"block-sysop": "Forbaranta sistema administranto",
+	"block-reason": "Kialo de forbaro",
+	"block-expiration": "Eksvalidiĝo de Forbaro",
 	"choose-language": "Elekti lingvon",
 	"option-display-images": "Elekti nombron de montrataj bildoj",
 	"do-not-filter": "Ne filtri",
 	"filter-by-category": "Filtri laŭ kategorio",
 	"filter-by-uploader": "Filtri laŭ alŝutinto",
+	"source-category": "Enigu nomon de kategorion kiun vi volas uzi ĉe la fonto de la suba tabelo",
+	"helptext-category": "Inkluzivi la prefikson Category: (Kategorio:)",
+	"source-uploader": "Enigu uzantnomon de alŝutinto de priskribotaj bildoj",
+	"helptext-uploader": "Uzantnomo, ne inkluzivanta la prefikson User: (Uzanto:)",
 	"load-pictures": "Ŝargi la bildojn",
 	"submit": "Sendi",
 	"picture": "Bildo",
 	"description": "Priskribo",
 	"Categories": "Kategorioj",
+	"all-users": "Ĉiuj uzantoj kiuj iam uzis Komunejan Amaspriskribon",
 	"username": "Uzantnomo",
 	"number-of-edits": "Entuta nombro de redaktoj",
 	"total": "Sumo"
