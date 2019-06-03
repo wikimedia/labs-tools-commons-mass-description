@@ -1,15 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Papuass"
+			"Papuass",
+			"Silraks"
 		]
 	},
+	"introduction-please-login": "Lūdzu, <a href=\"login\">pieslēdzieties</a>",
 	"report-bug": "Ziņot par kļūdu",
+	"login": "Pieslēgties",
+	"logout": "Iziet",
+	"users-using-tool": "Lietotāji, kas lieto šo rīku",
+	"choose-language": "Izvēlies valodu",
 	"do-not-filter": "Nefiltrēt",
 	"load-pictures": "Ielādēt attēlus",
 	"submit": "Iesniegt",
 	"picture": "Attēls",
 	"description": "Apraksts",
 	"Categories": "Kategorijas",
+	"username": "Lietotājvārds",
+	"number-of-edits": "Kopējais labojumu skaits",
 	"total": "Kopā"
 }
