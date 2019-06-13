@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Martin Urbanec"
+			"Martin Urbanec",
+			"VIGNERON"
 		]
 	},
 	"introduction-please-login": "Veuillez vous <a href=\"login\">connecter</a>",
-	"introduction": "<strong>Descripion en masse de Communs</strong> est un outil qui permet à l’utilisateur de décrire en masse des images et du contenu multimédia sur <a href=\"https://commons.wikimedia.org\">Wikimédia Communs</a>, sans devoir modifier manuellement chaque image. Vous pouvez en apprendre plus sur <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sa page Wikimédia Communs</a>.",
+	"introduction": "<strong>Descripion en masse de Commons</strong> est un outil qui permet à l’utilisateur de décrire en masse des images et du contenu multimédia sur <a href=\"https://commons.wikimedia.org\">Wikimédia Commons</a>, sans devoir modifier manuellement chaque image. Vous pouvez en apprendre plus sur <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sa page Wikimédia Commons</a>.",
 	"introduction-bugs": "Si vous trouvez des bogues dans cet outil, merci de <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">créer une tâche dans Wikimédia Phabricator</a>.",
 	"report-bug": "Signaler un bogue",
 	"login": "Connexion",
