@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sorbat"
+		]
+	},
+	"login": "Кергәле",
+	"logout": "Цыҡҡалы",
+	"users-using-tool": "Пы инструментны ошланатығын ҡатнашыуцылар",
+	"you-were-blocked": "Сеснең аккаунтығысны пикләгән.",
+	"block-reason": "Пикләүнең сәбәбе",
+	"block-expiration": "Пикләүнең пөтөшө",
+	"choose-language": "Телне сайлаң",
+	"option-display-images": "Күргәсеү сүрәтләр ницәлеген сайлаң",
+	"do-not-filter": "Фильтрламасҡа",
+	"filter-by-category": "Категориялартан фильтр",
+	"filter-by-uploader": "Тейәгәнкетән фильтр",
+	"load-pictures": "Сүрәтләрне тейәгәле",
+	"submit": "Йебәргәле",
+	"picture": "Сүрәт",
+	"description": "Сүрәтләмә",
+	"Categories": "Категориялар",
+	"all-users": "Перәй ҡацан та CMD ошланҡанҡы пөтөн ҡатнашыуцылар",
+	"username": "Ҡатнашыуцыныңҡы исеме",
+	"number-of-edits": "Төсәтешләрнең умый исәбе",
+	"total": "Пөтөрә"
+}
