@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"ToJack"
+		]
+	},
+	"introduction-please-login": "Лутфан, <a href=\"login\">ворид шавед</a>",
+	"introduction": "<strong>Тавзеҳоти бисёраи Викианбор</strong> — ин асбобест, ки ба корбарон иҷозат медиҳад мултимедиа ва аксҳоро бисёрҷрниба тавзеҳот кунад,  <a href=\"https://commons.wikimedia.org\">дар Викианбор</a> бе оне, ки зар як аксро алоҳида тавзеҳот кунонад. Шумо метавонед зиёдтар дар<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">саҳифаи асбоб бихонед</a>.",
+	"login": "Вуруд",
+	"logout": "Хуруҷ",
+	"users-using-tool": "Корбароне, ки ин олотро истифода мебаранд",
+	"you-were-blocked": "Ҳисоби корбарии шумо баста шуд",
+	"choose-language": "Интихоби забон",
+	"filter-by-category": "Филтри гурӯҳ",
+	"picture": "Акс",
+	"description": "Тавзеҳот",
+	"Categories": "Гурӯҳҳо",
+	"all-users": "Тамоми корбароне, ки CMD истифода намебаранд",
+	"username": "Номи корбар",
+	"number-of-edits": "Шумораи умумии вироишот",
+	"total": "Кул"
+}
