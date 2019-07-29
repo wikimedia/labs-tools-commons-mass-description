@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Leducthn"
+		]
+	},
+	"introduction-please-login": "Vui lòng <a href=\"login\">đăng nhập</a>",
+	"introduction-bugs": "Nếu bạn tìm thấy lỗi trong công cụ, đừng ngần ngại <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">tạo task mới trên Wikimedia Phabricator</a>.",
+	"report-bug": "Báo lỗi",
+	"login": "Đăng nhập",
+	"logout": "Đăng xuất",
+	"users-using-tool": "Người đang dùng công cụ này",
+	"you-were-blocked": "Tài khoản của bạn đã bị cấm",
+	"block-summary": "Tóm tắt về việc bị cấm",
+	"block-sysop": "Bảo quản viên cấm",
+	"block-reason": "Lý do cấm",
+	"block-expiration": "Lệnh cấm hết hạn vào",
+	"choose-language": "Chọn ngôn ngữ",
+	"option-display-images": "Chọn số ảnh được hiển thị",
+	"do-not-filter": "Đừng lọc",
+	"filter-by-category": "Lọc theo thể loại",
+	"filter-by-uploader": "Lọc theo người tải lên",
+	"load-pictures": "Tải hình ảnh",
+	"submit": "Đăng",
+	"picture": "Hình",
+	"description": "Mô tả",
+	"Categories": "Thể loại",
+	"username": "Tên người dùng",
+	"number-of-edits": "Tổng số lần sửa đổi",
+	"total": "Tổng cộng"
+}
