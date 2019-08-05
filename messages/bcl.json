@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brazal.dang"
+		]
+	},
+	"introduction-please-login": "Tabi <a href=\"login\">maglaog</a>",
+	"introduction": "<strong>Commons Mass Description</strong> sarong gamit na nagtutugot sa paragamit na magladawan nin litrato asin mga multimedia sa <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> nin dakulan na dai na kaipuhan magliwat pasaro-saro. Mababasa an ibang impormasyon sa <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">pahina kan Wikimedia Commons</a>.",
+	"introduction-bugs": "Kung makahanap ka nin dawa anong bug sa gamit na ini, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">maggibo nin trabaho sa Wikimedia Phabricator</a>.",
+	"report-bug": "Magreport nin bug",
+	"login": "Maglaog",
+	"logout": "Magluwas",
+	"users-using-tool": "Mga paragamit na naggagamit kaini",
+	"you-were-blocked": "An saimong palaog binagat",
+	"block-summary": "Buod kan saimong pagkabagat",
+	"block-sysop": "Pagbagat sa sysop",
+	"block-reason": "Rason kan pagkabagat",
+	"block-expiration": "Pag-expire kan pagkabagat",
+	"choose-language": "Pilion an lengguwahe",
+	"option-display-images": "Magpili nin numero kan ipapahiling na mga imahe",
+	"do-not-filter": "Dai pagsaraon",
+	"filter-by-category": "Saraon ayon sa kategoriya",
+	"filter-by-uploader": "Saraon ayon sa nagkarga",
+	"source-category": "Ikaag an ngaran kan kategoriya na gusto mong gamiton bilang ginikanan kan talaan sa ibaba",
+	"helptext-category": "Iayon an prefix kan Kategoriya:",
+	"source-uploader": "Ikaag an ngaran kan paragamit na nagkaag kan mga ladawan na gusto mong iladawan",
+	"helptext-uploader": "Ngaran kan paragamit, dai na iayon an prefix Paragamit:",
+	"load-pictures": "Ipahiling an mga imahe",
+	"submit": "Isumite",
+	"picture": "Ladawan",
+	"description": "Deskripsyon",
+	"Categories": "Mga Kategoriya",
+	"all-users": "Gabos na paragamit na naggamit nin CMD",
+	"username": "Ngaran nin Paragamit",
+	"number-of-edits": "Kabilogan na bilang kan mga pagliwat",
+	"total": "Kabilogan"
+}
