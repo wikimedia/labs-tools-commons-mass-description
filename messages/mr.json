@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sureshkhole"
+		]
+	},
+	"introduction-please-login": "कृपया, <a href=\"login\">login</a>",
+	"report-bug": "गणकदोष अहवाल द्या",
+	"login": "प्रवेश करा",
+	"logout": "बाहेर पडा",
+	"users-using-tool": "हे अवजार वापरत असलेले सदस्य",
+	"you-were-blocked": "तुमचे खाते तडीपार केलेले आहे",
+	"block-summary": "तुमच्या तडीपारीचा अहवाल",
+	"block-sysop": "तडीपार करणारा प्रचालक",
+	"block-reason": "तडीपारीचे कारण",
+	"block-expiration": "तडीपारीची मुदत",
+	"choose-language": "भाषा बदला"
+}
