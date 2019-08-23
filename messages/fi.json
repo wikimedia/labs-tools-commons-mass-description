@@ -5,6 +5,7 @@
 		]
 	},
 	"introduction-please-login": "Ole hyvä, <a href=\"login\">kirjaudu</a>",
+	"report-bug": "Ilmoita bugista",
 	"login": "Kirjaudu",
 	"logout": "Kirjaudu ulos",
 	"users-using-tool": "Käyttäjät, jotka käyttävät tätä työkalua",
@@ -13,6 +14,7 @@
 	"do-not-filter": "Älä suodata",
 	"filter-by-category": "Suodata luokan mukaan",
 	"filter-by-uploader": "Suodata tallentajan mukaan",
+	"helptext-uploader": "Käyttäjänimi, älä sisällytä etuliitettä Käyttäjä:",
 	"load-pictures": "Lataa kuvat",
 	"submit": "Lähetä",
 	"picture": "Kuva",
