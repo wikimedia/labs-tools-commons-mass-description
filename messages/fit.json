@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"introduction-please-login": "Ole hyvä, <a href=\"login\">lokkaa sisäle</a>",
+	"login": "Lokkaa sisäle",
+	"logout": "Lokkaa ulos",
+	"filter-by-category": "Filtteröi katekuurin mukhaan",
+	"filter-by-uploader": "Filtteröi ylöslattaajan mukhaan",
+	"load-pictures": "Lattaa kuvat",
+	"picture": "Kuva",
+	"description": "Kuvvaus",
+	"Categories": "Katekuurit",
+	"number-of-edits": "Mookkausten kokonaismäärä"
+}

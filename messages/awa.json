@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeetsinghawadh"
+		]
+	},
+	"login": "लॉग इन",
+	"logout": "लॉग आउट करैं",
+	"choose-language": "भाषा चुनैं",
+	"do-not-filter": "फ़िल्टर न करैं",
+	"submit": "जमा करा जाय",
+	"picture": "चित्र",
+	"description": "जानकारी",
+	"Categories": "श्रेणियां",
+	"all-users": "सब उपयोगकर्ता जे कभो सीएमडी कय उपयोग केहे अहैं",
+	"username": "सदस्यनावँ",
+	"number-of-edits": "कुल सम्पादन गिन्ती",
+	"total": "कुल"
+}

@@ -4,6 +4,9 @@
 			"Belkacem77"
 		]
 	},
+	"introduction-please-login": "Ma ulac aɣilif<a href=\"login\">qqen</a>",
+	"introduction": "<strong>Abeddel u qettun n Commons</strong> d afecku i yettaǧan aseqdac ad iseglem s uqettun tugniwin akked ugbur agetmidya deg <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>, mebla ma ibeddel s ufus yal tugna. Tzemreḍ ad tissineḍ ugar deg <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">usebter-is Wikimedia Commons</a>.",
+	"introduction-bugs": "Ma temlaled-d ibugen deg ufecku-a, azen-it-id ma ulac aɣilif, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">rnu tawuri deg Wikimadia Phabricator</a>.",
 	"report-bug": "Azen abug",
 	"login": "Qqen",
 	"logout": "Tuffɣa",
@@ -17,5 +20,18 @@
 	"option-display-images": "Fren amḍan n tugniwin ara d-yettwaseknen",
 	"do-not-filter": "Ur zizdig ara",
 	"filter-by-category": "Zizdeg s taggayt",
-	"filter-by-uploader": "Zizdeg s umsider"
+	"filter-by-uploader": "Zizdeg s umsider",
+	"source-category": "Sekcem isem n taggayt i tebɣiḍ ad tesqedceḍ d taqbalut deg tfelwit ddaw-a",
+	"helptext-category": "Seddu uzwir Taggayt:",
+	"source-uploader": "Sekcem isem n useqdac n umsider anida tebɣiḍ ad ternuḍ aglam n tugna.",
+	"helptext-uploader": "Isem n useqdac, ur sedday ara uzwir n Aseqdac:",
+	"load-pictures": "Beddel tugniwin",
+	"submit": "Azen",
+	"picture": "Tugna",
+	"description": "Aglam",
+	"Categories": "Tiggayin",
+	"all-users": "Meṛṛa iseqdacen ur yesqedcen yakan CMD",
+	"username": "Isem n useqdac",
+	"number-of-edits": "Amḍan aɣrud n yibeddilen",
+	"total": "Amatu"
 }
