@@ -1,6 +1,6 @@
 flask
 pyyaml
-mwoauth
+mwoauth==0.3.2
 requests
 simplejson
 flask-mwoauth
