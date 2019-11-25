@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Martin Urbanec",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Juandev"
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">přihlaste se</a>",
@@ -10,17 +11,27 @@
 	"report-bug": "Nahlásit chybu",
 	"login": "Přihlásit se",
 	"logout": "Odhlásit se",
+	"users-using-tool": "Uživatelé používající tento nástroj",
 	"you-were-blocked": "Váš uživatelský účet byl zablokován",
 	"block-summary": "Odůvodnění vašeho zablokování",
 	"block-sysop": "Blokující správce",
+	"block-reason": "Důvod pro blok",
 	"block-expiration": "Blok vyprší",
+	"choose-language": "Vyberte jazyk",
+	"option-display-images": "Vyberte číslo zobrazených obrázků",
 	"do-not-filter": "Nefiltrovat",
 	"filter-by-category": "Filtrovat pomocí kategorie",
+	"filter-by-uploader": "Filtrujte podle nahrávatele",
+	"source-category": "Vložte název kategorie, kterou chcete používat ve zdroji tabulky, která se nachází dole",
 	"helptext-category": "Včetně prefixu Kategorie:",
+	"source-uploader": "Vložte uživatelské jméno nahrávatele jehož obrázky by jste rádi popsali",
 	"helptext-uploader": "Uživatelské jméno bez prefixu Uživatel:",
+	"load-pictures": "Nahrát obrázky",
 	"submit": "Odeslat",
+	"picture": "Obrázek",
 	"description": "Popisek",
 	"Categories": "Kategorie",
+	"all-users": "Všichni uživateleké, kteří někdy používali CMD",
 	"username": "Uživatelské jméno",
 	"number-of-edits": "Celkový počet editací",
 	"total": "Celkem"
