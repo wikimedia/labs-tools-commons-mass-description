@@ -21,7 +21,7 @@
     "do-not-filter": "Do not filter",
     "filter-by-category": "Filter by category",
     "filter-by-uploader": "Filter by uploader",
-    "source-category": "Enter name of category that you want to use at the source of the table below",
+    "source-category": "Enter name of category that you want to use as the source of the table below",
     "helptext-category": "Include the prefix Category:",
     "source-uploader": "Enter username of uploader which pictures you would like to describe",
     "helptext-uploader": "Username, do not include prefix User:",
