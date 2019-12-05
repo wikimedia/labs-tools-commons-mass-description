@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dj"
+		]
+	},
+	"introduction-please-login": "Kérlek, <a href=\"login\">jelentkezz be</a>",
+	"introduction": "A <strong>Commons Mass Description</strong> egy olyan eszköz, melynek segítségével a <a href=\"https://commons.wikimedia.org\">Wikimedia Commonsban</a> lévő képekhez és más multimédiás tartalmakhoz nagy mennyiségben lehet egyszerre leírást készíteni anélkül, hogy azokat kézzel egyesével szerkesztenénk. További információt az <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">eszköz Wikimedia Commons oldalán</a> találsz.",
+	"introduction-bugs": "Ha bármi hibát találsz az eszköz használat során, nyugodtan <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">jelezd azt a Wikimedia Phabricatorban</a>.",
+	"report-bug": "Hibajelentés",
+	"login": "Bejelentkezés",
+	"logout": "Kijelentkezés",
+	"users-using-tool": "Az eszközt használó felhasználók",
+	"you-were-blocked": "A felhasználói fiókod letiltásra került",
+	"block-summary": "A letiltás összefoglalója",
+	"block-sysop": "A tiltást végrehajtó sysop",
+	"block-reason": "A letiltás oka",
+	"block-expiration": "Letiltás vége",
+	"choose-language": "Nyelvválasztás",
+	"option-display-images": "Válaszd ki a megjelenő képek számát",
+	"do-not-filter": "Nincs szűrő",
+	"filter-by-category": "Szűrés kategória alapján",
+	"filter-by-uploader": "Szűrés feltöltő alapján",
+	"source-category": "Add meg a kategória nevét, amelyet az alábbi táblázat forrásaként akarsz használni",
+	"helptext-category": "kategória prefix használata:",
+	"source-uploader": "Add meg a annak a felhasználónak a nevét, akinek a feltöltött képeihez akarsz leírást készíteni",
+	"helptext-uploader": "Felhasználónév, a prefix nélkül:",
+	"load-pictures": "Képek betöltése",
+	"submit": "Küldés",
+	"picture": "Kép",
+	"description": "Leírás",
+	"Categories": "Kategóriák",
+	"all-users": "Összes felhasználó, aki valaha használta a CMD-t",
+	"username": "Felhasználónév",
+	"number-of-edits": "Szerkesztések teljes száma",
+	"total": "Összesen"
+}

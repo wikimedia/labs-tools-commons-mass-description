@@ -22,7 +22,7 @@
 	"do-not-filter": "Não filtre",
 	"filter-by-category": "Filtrar por categoria",
 	"filter-by-uploader": "Filtrar por uploader",
-	"source-category": "Digite o nome da categoria que você deseja usar na origem da tabela abaixo",
+	"source-category": "Digite o nome da categoria que você deseja usar como fonte da tabela abaixo",
 	"helptext-category": "Inclua o prefixo Categoria:",
 	"source-uploader": "Insira o nome de usuário do usuário que você gostaria de descrever",
 	"helptext-uploader": "Nome de usuário, não inclua o prefixo Usuário:",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
-			"Martin Urbanec"
+			"Martin Urbanec",
+			"BaRaN6161 TURK"
 		]
 	},
 	"introduction-please-login": "Lütfen, <a href=\"login\">oturum açın</a>",
@@ -22,7 +23,7 @@
 	"do-not-filter": "Filtreleme",
 	"filter-by-category": "Kategorilerine göre filtrele",
 	"filter-by-uploader": "Yükleyicilerine göre filtrele",
-	"source-category": "Aşağıdaki tablonun kaynağında kullanmak istediğiniz kategorinin adını girin",
+	"source-category": "Aşağıdaki tablonun kaynağı olarak kullanmak istediğiniz kategorinin adını girin",
 	"helptext-category": "Önek Kategori dahil",
 	"source-uploader": "Açıklamasını yapmak istediğiniz resimlerin yükleyenin kullanıcı adını girin",
 	"helptext-uploader": "Kullanıcı adı, önek Kullanıcı dahil değil:",
