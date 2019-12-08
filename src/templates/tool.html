@@ -9,6 +9,9 @@
 	<form>
 		<label for="langs">{{ _("choose-language") }}</label>
 		<select class="browser-default" name="langs" id="langs">
+			{% for lang in langs %}
+			<option value="{{lang.code}}" {% if lang.code=="cs" %}selected{% endif%}>{{lang.code}} - {{lang.name}}</option>
+			{% endfor %}
 		</select>
 		<label for="display">{{ _("option-display-images") }}</label>
 		<select class="browser-default" name="display" id="display">

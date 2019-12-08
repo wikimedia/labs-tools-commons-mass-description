@@ -62,7 +62,8 @@ def index():
                                          username=getusername())
         else:
             return flask.render_template('tool.html', logged=logged(),
-                                         username=getusername())
+                                         username=getusername(),
+                                         langs=langs()['langs'])
     else:
         return flask.render_template('login.html', logged=logged(),
                                      username=getusername())
@@ -130,7 +131,7 @@ def langs():
             })
     res = {
         'status': 'ok',
-        'langs': sorted(langs, key=lambda k: k['name'])
+        'langs': langs
     }
     return res
 
@@ -439,10 +440,6 @@ def edit(id, description, lang):
             'status': 'error',
             'errorcode': errorcode
         }, HTTP_BAD_REQUEST
-
-@app.route('/api-langs')
-def apilangs():
-    return jsonify(langs())
 
 @app.route('/login')
 def login():
