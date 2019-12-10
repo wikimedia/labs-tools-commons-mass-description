@@ -83,9 +83,11 @@ def getusername():
 def users():
     conn = toolforge.connect('commonswiki')
     with conn.cursor() as cur:
-        sql = ('select rev_user_text, count(*) from change_tag join revision '
-               'on ct_rev_id=rev_id where ct_tag="OAuth CID: 821" and '
-               'rev_user>0 group by rev_user order by count(*) desc;')
+        sql = ('SELECT actor_name, count(*) FROM actor_revision JOIN revision '
+               'ON rev_actor=actor_id JOIN change_tag ON ct_rev_id=rev_id '
+               'join change_tag_def ON ct_tag_id=ctd_id WHERE '
+               'ctd_name="OAuth CID: 821" and actor_user>0 group'
+               ' by actor_user order by count(*) desc')
         cur.execute(sql)
         data = cur.fetchall()
     users = []
@@ -98,8 +100,10 @@ def users():
                 rowres.append(item)
         users.append(rowres)
     with conn.cursor() as cur:
-        sql = ('select count(*) from change_tag join revision on ct_rev_id='
-               'rev_id where ct_tag="OAuth CID: 821" and rev_user>0;')
+        sql = ('SELECT count(*) FROM actor_revision JOIN revision ON '
+               'rev_actor=actor_id JOIN change_tag ON ct_rev_id=rev_id'
+               ' join change_tag_def ON ct_tag_id=ctd_id WHERE '
+               'ctd_name="OAuth CID: 821" AND actor_id>0')
         cur.execute(sql)
         data = cur.fetchall()
     total = data[0][0]
