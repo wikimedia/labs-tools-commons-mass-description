@@ -30,7 +30,7 @@
 	"submit": "送信",
 	"picture": "画像",
 	"description": "説明",
-	"Categories": "カテゴリ",
+	"categories": "カテゴリ",
 	"all-users": "CMDを使ったことがある全利用者一覧",
 	"username": "利用者名",
 	"number-of-edits": "編集回数合計",

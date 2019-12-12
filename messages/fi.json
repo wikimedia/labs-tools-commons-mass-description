@@ -19,7 +19,7 @@
 	"submit": "Lähetä",
 	"picture": "Kuva",
 	"description": "Kuvaus",
-	"Categories": "Luokat",
+	"categories": "Luokat",
 	"username": "Käyttäjänimi",
 	"number-of-edits": "Muokkausten kokonaismäärä",
 	"total": "Yhteensä"

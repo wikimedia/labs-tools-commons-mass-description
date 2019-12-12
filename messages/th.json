@@ -25,7 +25,7 @@
 	"submit": "ส่ง",
 	"picture": "รูปภาพ",
 	"description": "คำอธิบาย",
-	"Categories": "หมวดหมู่",
+	"categories": "หมวดหมู่",
 	"all-users": "ผู้ใช้ทั้งหมดที่เคยใช้ CMD",
 	"username": "ชื่อผู้ใช้",
 	"number-of-edits": "จำนวนการแก้ไขทั้งหมด",

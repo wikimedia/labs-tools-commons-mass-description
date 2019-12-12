@@ -17,7 +17,7 @@
 	"submit": "Indsend",
 	"picture": "Billede",
 	"description": "Beskrivelse",
-	"Categories": "Kategorier",
+	"categories": "Kategorier",
 	"username": "Brugernavn",
 	"number-of-edits": "Samlet antal redigeringer"
 }

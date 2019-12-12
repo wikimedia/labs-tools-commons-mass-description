@@ -29,7 +29,7 @@
 	"submit": "Küldés",
 	"picture": "Kép",
 	"description": "Leírás",
-	"Categories": "Kategóriák",
+	"categories": "Kategóriák",
 	"all-users": "Összes felhasználó, aki valaha használta a CMD-t",
 	"username": "Felhasználónév",
 	"number-of-edits": "Szerkesztések teljes száma",

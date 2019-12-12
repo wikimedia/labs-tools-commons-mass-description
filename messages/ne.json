@@ -27,7 +27,7 @@
 	"submit": "पेस गर्नुहोस्",
 	"picture": "तस्वीर",
 	"description": "वर्णन",
-	"Categories": "श्रेणीहरू",
+	"categories": "श्रेणीहरू",
 	"all-users": "कुल प्रयोगकर्ता जसले CMD प्रयोग गरे",
 	"username": "प्रयोगकर्ताको नाम",
 	"number-of-edits": "कुल सम्पादन संख्या",
