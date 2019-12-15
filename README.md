@@ -23,5 +23,5 @@
 3. Create Python3 virtual environment by running `virtualenv -p python3 venv`
 4. Activate the venv by running `source venv/bin/activate`
 5. Install required packages by running `pip install -r support/requirements.txt`
-6. Cd to src and copy config.example.yaml to config.yaml (there are localhost-only OAuth credentials predefined, in case they don't work, please request yours as described above)
-7. Run python app.py to run the development server
+6. In `src`, copy `config.example.yaml` to `config.yaml` (there are localhost-only OAuth credentials predefined, in case they don't work, please request yours as described above)
+7. Run `./app.py` to run the development server
