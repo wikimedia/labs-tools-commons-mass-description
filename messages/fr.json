@@ -4,7 +4,8 @@
 			"Gomoko",
 			"Martin Urbanec",
 			"VIGNERON",
-			"Verdy p"
+			"Verdy p",
+			"Thibaut120094"
 		]
 	},
 	"introduction-please-login": "Veuillez vous <a href=\"login\">connecter</a>",
@@ -25,9 +26,9 @@
 	"filter-by-category": "Filtrer par catégorie",
 	"filter-by-uploader": "Filtrer par téléverseur",
 	"source-category": "Saisir le nom de la catégorie que vous voulez utiliser comme source du tableau ci-dessous",
-	"helptext-category": "Inclure le préfixe « Catégorie: »",
+	"helptext-category": "Inclure le préfixe « Catégorie: »",
 	"source-uploader": "Saisir le nom d’utilisateur du téléverseur dont vous voulez décrire les images",
-	"helptext-uploader": "Nom d’utilisateur, ne pas inclure le préfixe « Utilisateur: »",
+	"helptext-uploader": "Nom d’utilisateur, ne pas inclure le préfixe « Utilisateur: »",
 	"load-pictures": "Charger les images",
 	"submit": "Soumettre",
 	"picture": "Image",

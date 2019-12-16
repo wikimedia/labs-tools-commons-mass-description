@@ -21,7 +21,7 @@
 	"do-not-filter": "Não filtrar",
 	"filter-by-category": "Filtrar por categoria",
 	"filter-by-uploader": "Filtrar pelo carregador",
-	"source-category": "Introduzir o nome da categoria que quer usar na origem da tabela abaixo",
+	"source-category": "Introduzir o nome da categoria que quer usar como origem da tabela abaixo",
 	"helptext-category": "Inclua o prefixo Categoria:",
 	"source-uploader": "Introduzir o nome do utilizador cujas imagens deseja descrever",
 	"helptext-uploader": "Nome de utilizador; não inclua o prefixo Utilizador:",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Woytecr"
+			"Woytecr",
+			"WaldiSt"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Zaloguj się</a>",
@@ -22,7 +23,7 @@
 	"do-not-filter": "Nie filtruj",
 	"filter-by-category": "Filtruj według kategorii",
 	"filter-by-uploader": "Filtruj według przesyłającego",
-	"source-category": "Wprowadź nazwę kategorii źródłowej dla poniższej tabeli",
+	"source-category": "Wpisz nazwę kategorii, której chcesz użyć jako źródło poniższej tabeli",
 	"helptext-category": "Uwzględnij prefiks Category:",
 	"source-uploader": "Wprowadź nazwę użytkownika, którego zdjęcia chcesz opisywać",
 	"helptext-uploader": "Nazwa użytkownika, bez prefiksu User:",
