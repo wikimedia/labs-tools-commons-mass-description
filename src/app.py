@@ -59,15 +59,15 @@ def index():
     username = flask.session.get('username')
     if username is not None:
         if blocked()['blockstatus']:
-            return flask.render_template('blocked.html', logged=logged(),
-                                         username=getusername())
+            return flask.render_template('blocked.html')
         else:
-            return flask.render_template('tool.html', logged=logged(),
-                                         username=getusername(),
-                                         langs=langs()['langs'])
+            return flask.render_template('tool.html', langs=langs()['langs'])
     else:
-        return flask.render_template('login.html', logged=logged(),
-                                     username=getusername())
+        return flask.render_template('login.html')
+
+@app.context_processor
+def logged_username():
+    return({"logged": logged(), "username": getusername()})
 
 @app.route('/report')
 def report():
@@ -108,8 +108,7 @@ def users():
         cur.execute(sql)
         data = cur.fetchall()
     total = data[0][0]
-    return flask.render_template('users.html', users=users, total=total,
-                                 logged=logged(), username=getusername())
+    return flask.render_template('users.html', users=users, total=total)
 
 @app.route('/api-username')
 def username():
