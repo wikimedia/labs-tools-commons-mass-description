@@ -22,7 +22,7 @@
 	"do-not-filter": "Filtrera inte",
 	"filter-by-category": "Filtrera efter kategori",
 	"filter-by-uploader": "Filtrera efter uppladdare",
-	"source-category": "Ange namnet på kategorin du vill använda i källan för tabellen nedan",
+	"source-category": "Ange namnet på kategorin du vill använda som källan för tabellen nedan",
 	"helptext-category": "Inkludera prefixet Category:",
 	"source-uploader": "Ange användarnamnet på uppladdaren av bilderna du vill beskriva",
 	"helptext-uploader": "Användarnamn, inkludera inte prefixet User:",
