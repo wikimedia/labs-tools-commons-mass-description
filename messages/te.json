@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Pavan santhosh.s"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">లాగినవండి</a>",
+	"introduction": "<strong>కామన్స్ మూకుమ్మడి వివరణ</strong>, <a href=\"https://commons.wikimedia.org\">వికీమీడియా కామన్స్</a> లోని బొమ్మలు, మల్టీమీడియాను మూకుమ్మడిగా వివరించేందుకు వాడుకరికి వీలు కల్పిస్తుంది. మరింత సమాచారాన్ని <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">దాని వికీమీడియా కామన్స్ పేజీలో</a> చూడవచ్చు.",
+	"introduction-bugs": "ఈ ఉపకరణంలో మీకు ఏమైనా సమస్యలు కనిపిస్తే, వెనకాడకుండా <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia Phabricator లో ఒక టాస్కును సృష్టించండి</a>.",
+	"report-bug": "సమస్యను నివేదించండి",
+	"login": "లాగినవండి",
+	"logout": "లాగౌటవండి",
+	"users-using-tool": "ఈ ఉపకరణాన్ని వాడుతున్న వాడుకరులు",
+	"you-were-blocked": "మీ వాడుకరి ఖాతాను నిరోధించారు",
+	"block-summary": "మీ నిరోధపు సారాంశం",
+	"block-sysop": "నిరోధించిన నిర్వాహకులు",
+	"block-reason": "నిరోధ కారణం",
+	"block-expiration": "నిరోధం ముగిసే సమయం",
+	"choose-language": "భాషను ఎంచుకోండి",
+	"option-display-images": "చూపించినవాటి లోంచి అనేక బొమ్మలను ఎంచుకోండి",
+	"do-not-filter": "వడపోయవద్దు",
+	"filter-by-category": "వర్గం వారీగా వడపోయి",
+	"filter-by-uploader": "ఎక్కించిన వాడుకరి వారీగా వడపోయి",
+	"source-category": "కింది పట్టికకు వనరుగా ఏ వర్గాన్ని వాడదలచారో దాని పేరు ఇవ్వండి",
+	"helptext-category": "Category: అనే ఆదిపదాన్ని ఉంచండి",
+	"source-uploader": "ఎవరి బొమ్మలకు వివరణ చేర్చదలచారో ఆ వాడుకరిపేరు ఇవ్వండి",
+	"helptext-uploader": "వాడుకరిపేరు ఇవ్వండి, User: అనే ఆదిపదం లేకుండా",
+	"load-pictures": "బొమ్మలను లోడు చెయ్యి",
+	"submit": "పంపించు",
+	"picture": "బొమ్మ",
+	"description": "వివరణ",
+	"categories": "వర్గాలు",
+	"all-users": "CMD ని వాడిన వాడుకరులందరూ",
+	"username": "వాడుకరిపేరు",
+	"number-of-edits": "మొత్తం దిద్దుబాట్ల సంఖ్య",
+	"total": "మొత్తం"
+}
