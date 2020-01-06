@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"J budissin"
+		]
+	},
+	"introduction-please-login": "Prošu <a href=\"login\">přizjew so</a>",
+	"report-bug": "Zmylk zdźělić",
+	"login": "Přizjewić",
+	"logout": "Wotzjewić",
+	"users-using-tool": "Wužiwarjo, kotřiž tutón grat wužiwaja",
+	"you-were-blocked": "Twoje wužiwarske konto je so blokowało",
+	"block-summary": "Zjeće twojeho blokowanja",
+	"block-sysop": "Blokowacy administrator",
+	"block-reason": "Přičina za blokowanje",
+	"block-expiration": "Kónc blokowanja",
+	"choose-language": "Wubjer rěč",
+	"option-display-images": "Wubjer ličbu pokazanych wobrazow",
+	"do-not-filter": "Njefiltrować",
+	"filter-by-category": "Po kategoriji filtrować",
+	"filter-by-uploader": "Po wužiwarju filtrować",
+	"source-category": "Zapodaj mjeno kategorije, kotruž chceš jako žórło tabulki deleka wužić",
+	"source-uploader": "Zapodaj wužiwarske mjeno wužiwarja, kotrehož wobrazy chceš wopisować.",
+	"helptext-uploader": "Wužiwarske mjeno, bjez prefiksa Wužiwar:",
+	"load-pictures": "Wobrazy začitać",
+	"submit": "Wotpósłać",
+	"picture": "Wobraz",
+	"description": "Wopis",
+	"categories": "Kategorije",
+	"all-users": "Wšitcy wužiwarjo, kiž su hdy CMD wužili",
+	"username": "Wužiwarske mjeno",
+	"number-of-edits": "Cyłkowna ličba změnow",
+	"total": "Dohromady"
+}
