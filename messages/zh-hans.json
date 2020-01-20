@@ -3,7 +3,8 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Martin Urbanec",
-			"Deathkon"
+			"Deathkon",
+			"VulpesVulpes825"
 		]
 	},
 	"introduction-please-login": "请您先 <a href=\"login\">登录账号</a>",
@@ -23,7 +24,7 @@
 	"do-not-filter": "不要过滤",
 	"filter-by-category": "按类别过滤",
 	"filter-by-uploader": "按上载者筛选",
-	"source-category": "在下面的表源中键入使用的分类名",
+	"source-category": "输入您想要作为以下来源表格的分类名称",
 	"helptext-category": "包括前缀类别：",
 	"source-uploader": "键入您想描述的图片的上传者的用户名",
 	"helptext-uploader": "用户名，不包括前缀用户：",
