@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"introduction-please-login": "ქორთხინთ, <a href=\"login\">გემშართით</a>",
+	"introduction": "<strong>მასობური ეჭარუა ვიკიოწკარუეს</strong> — ხეჭკუდი რე, ნამუთ მახვარებუეფს <a href=\"https://commons.wikimedia.org\">ვიკიოწკარუეს</a> სურათეფიშ დო მულტიმედიაშ მასობურ ეჭარუაშ  მეშქაშობას არზენს, ირ სურათიშ ზოხოთ ხეთ რედაქტირაფაშ უმუშო. უმოსი ინფორმაციაშ გეშა გეგნორთით <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ხეჭკუდიშ ხასჷლაშა</a>.",
+	"introduction-bugs": "თე ხეჭკუდის მუთუნნერი ჩილათა ქოძირით-და, ქორთხინთ, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">გაჭყით თემა „ფაბრიკატორს“</a>.",
+	"report-bug": "ქუგმოგებაფეთ ჩილათაშ გეშა",
+	"login": "მიშულა",
+	"logout": "გიშულა",
+	"users-using-tool": "მახვარებუეფი, ნამუეფქჷთ თე ხეჭკუდი გიმირინესინ",
+	"you-were-blocked": "თქვანი ანგარიში ბლოკირი რე",
+	"block-summary": "ინფორმაცია ბლოკირაფაშ გეშა",
+	"block-sysop": "მაბლოკარი ადმინისტრატორი",
+	"block-reason": "ბლოკირაფაშ სამანჯელი",
+	"block-expiration": "ბლოკირაფაშ ხანი",
+	"choose-language": "გეგშაგორით ნინა",
+	"option-display-images": "ქემიოწურთ ოძირე სურათეფიშ მუდანობა",
+	"do-not-filter": "ვახინტკუათ",
+	"filter-by-category": "ხინტკი კატეგორიეფიშ მეჯინათ",
+	"filter-by-uploader": "ხინტკი ეხარგუაშ მეჯინათ",
+	"source-category": "გემშიონით თი კატეგორიაშ ჯოხო, ნამუშ გიმორონაფა გოკონა მუჭოთ გიმემეწურაფილი რცხილიშ წყუთ",
+	"helptext-category": "ჩართით პრეფიქსი კატეგორია:",
+	"source-uploader": "გემშიონით თი მახვარებუშ ჯოხო, ნამუშ სურათეფიშ ეჭარუა გოკონან",
+	"helptext-uploader": "მახვარებუშ ჯოხო, პრეფიქსი მახვარებუშ უმუშო:",
+	"load-pictures": "სურათეფიშ ეხარგუა",
+	"submit": "ჯღონუა",
+	"picture": "სურათი",
+	"description": "ეჭარუა",
+	"categories": "კატეგორიეფი",
+	"all-users": "არძა მახვარებუ, ნამუეფსჷთ მუდგაინ ბორჯის CMD გუმურინუაფუნა",
+	"username": "მახვარებუშ ჯოხო",
+	"number-of-edits": "რედაქტირაფეფიშ ედომუშამი მუდანობა",
+	"total": "გვალო"
+}
