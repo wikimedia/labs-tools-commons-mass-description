@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Les Meloures"
+			"Les Meloures",
+			"Soued031"
 		]
 	},
-	"introduction-please-login": "W.E.G., <a href=\"login\">aloggen</a>",
+	"introduction-please-login": "WGL., <a href=\"login\">aloggen</a>",
 	"report-bug": "E Feeler mellen",
 	"login": "Aloggen",
 	"logout": "Ausloggen",
