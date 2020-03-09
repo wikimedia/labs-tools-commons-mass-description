@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lancine.kounfantoh.fofana"
+		]
+	},
+	"introduction-please-login": "ߖߊ߰ߣߌ߲߬ <a href=\"ߜߊ߲߬ߞߎ߲߬ߠߌ߲\">ߜߊ߲߬ߞߎ߲߬ߠߌ߲</a>",
+	"introduction": "<strong>ߞߐߡߐ߲ ߞߊ߲߬ߛߓߍ߬ߟߌ ߘߐ߬ߥߙߊ߬ߟߌ</strong> ߦߋ߫ ߖߐ߯ߙߊ߲ ߠߋ߬ ߘߌ߫ ߡߍ߲ ߦߋ߫ ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߟߊߘߌ߬ߢߍ߬ ߟߊ߫ ߖߌ߬ߦߊ߬ߓߍ ߣߌ߫ ߟߊ߬ߛߋ߬ߢߊ߬ߥߙߍ ߟߎ߬ ߕߐ߯ߛߓߍߟߌ ߘߐ߫ <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a> ߞߊ߲߬.",
+	"introduction-bugs": "ߣߴߌ ߞߊ߬ ߝߍ߭ ߘߏ߫ ߟߊߞߏߟߐ߲߫ ߖߐ߯ߙߊ߲ ߣߌ߲߬ ߠߊߞߏ߫ ߘߐ߫߸ ߖߊ߰ߣߌ߲߬ ߌ ߞߊߣߊ߬ ߕߎ߲߬ߞߎߙߎ߲߫ ߦߊ߲߬ <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">ߘߊߞߎ߲ ߘߏ߫ ߛߌ߲ߘߌ߫ ߥߞߌߡߋߘߌߦߊ ߛߌ߲ߘߌߟߊ߲ ߠߊ߫</a>",
+	"report-bug": "ߝߍ߭ ߘߏ߫ ߟߊߞߏߝߐ߫",
+	"login": "ߌ ߜߊ߲߬ߞߎ߲߫",
+	"logout": "ߌ ߜߊ߲߬ߞߎ߲߬ߣߍ߲ ߓߐ߫",
+	"users-using-tool": "ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߡߍ߲ ߠߎ߬ ߦߋ߫ ߖߐ߯ߙߊ߲ ߣߌ߲߬ ߠߊߓߊ߯ߙߊ߫ ߟߊ߫",
+	"you-were-blocked": "ߌ ߟߊ߫ ߜߊ߲߬ߞߎ߲߬ߠߌ߲ ߖߊ߬ߕߋ߬ߘߊ ߓߘߊ߫ ߓߊ߬ߟߊ߲߬",
+	"block-summary": "ߌ ߓߊ߬ߟߊ߲߬ߠߌ߲ ߟߊߘߛߏߣߍ߲",
+	"block-sysop": "ߕߟߋ߬ߓߊ߰ߜߟߊ߬ߟߊ߬ߕߌ߮ ߓߊ߬ߟߌ߬ߟߌ",
+	"block-reason": "ߓߊ߬ߟߊ߲߬ߠߌ߲ ߞߎ߲߭",
+	"block-expiration": "ߓߊ߬ߟߊ߲߬ߠߌ߲ ߛߕߊ",
+	"choose-language": "ߞߊ߲ ߛߎߥߊ߲ߘߟߌ",
+	"option-display-images": "ߖߌ߬ߦߊ߬ߓߍ߫ ߟߊߓߊ߯ߙߕߊ ߟߎ߬ ߦߙߌߞߊ ߘߏ߫ ߛߎߥߊ߲ߘߌ߫",
+	"do-not-filter": "ߌ ߞߊߣߵߊ߬ ߥߣߊ߬ߙߌ߬",
+	"filter-by-category": "ߊ߬ ߥߣߊ߬ߙߌ߬ ߦߌߟߡߊ ߡߊ߬",
+	"filter-by-uploader": "ߊ߬ ߥߣߊ߬ߙߌ߫ ߟߊ߬ߦߟߍ߬ߟߊ߲ ߡߊ߬",
+	"source-category": "ߞߎߡߘߊ ߕߐ߮ ߘߏ߫ ߟߊߘߏ߲߬ ߌ ߦߴߊ߬ ߝߍ߬ ߞߊ߬ ߡߍ߲ ߠߊߓߊ߯ߙߊ߫ ߘߎ߰ߟߊ߬ߘߐ߬ ߥߟߊߟߋ߲ ߓߐߛߎ߲ ߘߐ߫ ߘߎ߰ߟߊ ߘߐ߫",
+	"helptext-category": "ߢߍߣߙߊ ߦߌߟߡߊ ߟߎ߬ ߟߊߘߏ߲߬:",
+	"source-uploader": "ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߟߊ߬ߦߟߍ߬ߟߌ߬ߟߊ ߘߏ߫ ߕߐ߮ ߟߊߘߏ߲߬ ߌ ߦߴߊ߬ ߝߍ߬ ߞߊ߬ ߡߍ߲ ߠߊ߫ ߖߌ߬ߦߊ߬ߓߍ ߟߎ߬ ߕߐ߮ ߛߓߍ߫.",
+	"helptext-uploader": "ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߏ߬ ߕߐ߮ ߕߍ߫ ߢߍߣߙߊ ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߟߎ߬ ߘߐ߫:",
+	"load-pictures": "ߖߌ߬ߦߊ߬ߓߍ ߟߊߦߟߍ߬",
+	"submit": "ߊ߬ ߞߘߊߡߊ߫",
+	"picture": "ߖߌ߬ߦߊ߬ߓߍ",
+	"description": "ߞߊ߲߬ߛߓߍߟߌ",
+	"categories": "ߦߌߟߡߊ ߟߎ߬",
+	"all-users": "ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߛߎ߯-ߎ-ߛߎ߯ ߓߘߊ߫ CMD ߛߊ߲ߘߐߟߊ ߟߊߓߊ߯ߙߊ߫",
+	"username": "ߕߐ߯ߟߊߓߊ߯ߙߕߊ",
+	"number-of-edits": "ߡߊߦߟߍ߬ߡߊ߲߬ߠߌ߲ ߠߎ߫ ߝߙߍߕߍ ߡߎ߰ߡߍ",
+	"total": "ߞߙߎߞߍ߬ߙߍ"
+}
