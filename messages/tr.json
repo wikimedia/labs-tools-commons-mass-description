@@ -7,7 +7,7 @@
 		]
 	},
 	"introduction-please-login": "Lütfen <a href=\"login\">oturum açın</a>",
-	"introduction": "<strong>Commons Kütle Açıklaması</strong>, kullanıcının her görüntüyü manüel olarak düzenlemesine gerek kalmadan <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>'ta resim ve multimedyaların açıklamalarını toplu yapmasına izin veren bir araçtır. Daha fazla bilgi için <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Wikimedia Commons sayfasına bakınız</a>.",
+	"introduction": "<strong>Commons Kütle Açıklaması</strong>, kullanıcının her görüntüyü manüel olarak düzenlemesine gerek kalmadan <a href=\"https://commons.wikimedia.org/wiki/Anasayfa\">Wikimedia Commons</a>'ta resim ve multimedyaların açıklamalarını toplu yapmasına izin veren bir araçtır. Daha fazla bilgi için <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool/tr\">Wikimedia Commons sayfasına</a> görebilirsiniz.",
 	"introduction-bugs": "Bu araçta herhangi bir hata bulursanız, lütfen <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia Phabricator'da bir görev oluşturun</a>.",
 	"report-bug": "Hata bildir",
 	"login": "Oturum aç",
