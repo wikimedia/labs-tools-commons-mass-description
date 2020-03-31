@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Orbot707"
+		]
+	},
+	"introduction-please-login": "Kerem ke, <a href=\"login\">cıkewe</a>",
+	"introduction": "<strong>Commons Mass Description</strong> yew haceto ke şeno, şıma rê xeylê resıman û multimedya <a href=\"https://commons.wikimedia.org\">Embarê Wikimedya</a> de areze kero, bê her resım be dest ra bıgureno. Şıma şenê tayêna <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ena pela Embarê Wikimedya</a> de bımusê.<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"></a>",
+	"introduction-bugs": "Derheqê enê haceti ke qet yew xeta vêniye, kerem ke, ma rê <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedya Phabricator ra rapor ke</a>.",
+	"report-bug": "Xeta rapor ke",
+	"login": "Cı kuye",
+	"logout": "Veciye",
+	"users-using-tool": "Karberi nê hacetan gurenenê",
+	"you-were-blocked": "Hesabê karberiyê şıma bloke biyo",
+	"block-summary": "Xulasaya blokeyê şıma",
+	"block-sysop": "Kılitkerdışê idarekari",
+	"block-reason": "Sebebê kılitkerdışi",
+	"block-expiration": "Qediyayışê blokeyi",
+	"choose-language": "Zıwan weçine",
+	"option-display-images": "Aseye tay resıma weçine",
+	"do-not-filter": "Parzûn çıniyo",
+	"filter-by-category": "Gorê kategoriye parzûni",
+	"filter-by-uploader": "Gorê barkerdoğan parzûni",
+	"source-category": "Çımeyê tabloyê cêrêni ra nameyê kategoriya ke şıma wazenê bıgurenê, aye cı kerê",
+	"helptext-category": "Prefiksê kategoriye daxilo:",
+	"source-uploader": "Nameyê barkerdoği cı kerê, resımê deyê ke şıma wazenê areze kerê",
+	"helptext-uploader": "Namey karberi, prefiksê karberi daxili niyo:",
+	"load-pictures": "Resıman bar ke",
+	"submit": "Bıerşave",
+	"picture": "Resım",
+	"description": "Terif",
+	"categories": "Kategoriyi",
+	"all-users": "Heme karberê ke CMD gurenayê",
+	"username": "Namê karberi",
+	"number-of-edits": "Amarê vurnayışanê pêroyi",
+	"total": "Pêro pia"
+}
