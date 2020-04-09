@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"Okras",
-			"Vlad5250",
-			"Movses"
+			"Vlad5250"
 		]
 	},
 	"introduction-please-login": "Пожалуйста, <a href=\"login\">войдите</a>",

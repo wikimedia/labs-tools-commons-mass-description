@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Juandev",
 			"Martin Urbanec",
-			"Matěj Suchánek",
-			"Juandev"
+			"Matěj Suchánek"
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">přihlaste se</a>",

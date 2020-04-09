@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fulup",
 			"Gwenn-Ael"
 		]
 	},
@@ -21,7 +22,7 @@
 	"do-not-filter": "Arabat silañ",
 	"filter-by-category": "Silañ dre rummad",
 	"filter-by-uploader": "Silañ dre bellgarger",
-	"source-category": "Bizskrivañ anv ar rummad ho peus c'hoant da implijout evel mammenn eus an daolenn amañ dindan.",
+	"source-category": "Bizskrivañ anv ar rummad a fell deoc'h implijout evel mammenn evit an daolenn a-is.",
 	"helptext-category": "Lakaat ar rakger Rummad : e-barzh",
 	"source-uploader": "Bizskrivañ anv implijer ar pellgarger ho peus c'hoant da zeskrivañ e skeudennoù",
 	"helptext-uploader": "Anv implijer, chom hep lakaat ar rakger Implijer : e-barzh",
