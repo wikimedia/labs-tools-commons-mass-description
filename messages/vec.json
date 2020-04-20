@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fierodelveneto"
+		]
+	},
+	"introduction-please-login": "Par favore, <a href=\"login\">va drento</a>",
+	"introduction": "<strong>Commons Mass Description</strong> el xé on instrumento che el consente ai utenti de descrivare foto e file de multimedia so <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> in manjiera masiva sensa ła neçesità de modifegare a man imàjine par imàjine. Te połi catar pì informasion in te ła <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">pàjina so Wikimedia Commons</a>.",
+	"introduction-bugs": "Se te cati calche erore in sto instrumento, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea na segnałasion so Wikimedia Phabricator</a>.",
+	"report-bug": "Reportane on erore",
+	"login": "Va drento",
+	"logout": "Va fora",
+	"users-using-tool": "Utenti che dopara sto instrumento",
+	"you-were-blocked": "La to utensa ła xé stada blocada",
+	"block-summary": "Motivasion del bloco",
+	"block-sysop": "Aministradore che te ga blocà",
+	"block-reason": "Motiasion del bloco",
+	"block-expiration": "Fin del bloco",
+	"choose-language": "Sełesiona ła lengua",
+	"option-display-images": "Deçidi on numaro de imàjini vixuałixae",
+	"do-not-filter": "No filtrare",
+	"filter-by-category": "Filtra par categoria",
+	"filter-by-uploader": "Filtra par utente che ga cargà",
+	"source-category": "Inserisi el nome de ła categoria che te vołi doparare cofà orìxane de ła tabeła che vien",
+	"helptext-category": "Includi el prefiso \"Categoria:\"",
+	"source-uploader": "Inserisi el nome utente de chi che ga cargà łe imàjini che te vołi descrìvare",
+	"helptext-uploader": "Nome utente, no sta includare el prefiso \"Utente:\"",
+	"load-pictures": "Carga imàjini",
+	"submit": "Invia",
+	"picture": "Imàjine",
+	"description": "Descrision",
+	"categories": "Categorie",
+	"all-users": "Tuti i utenti che i ga mai doparà CMD",
+	"username": "Nome utente",
+	"number-of-edits": "Nùmaro totale de canbiamenti",
+	"total": "Totałe"
+}
