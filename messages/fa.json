@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amirsara",
+			"FarsiNevis"
+		]
+	},
+	"introduction-please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"report-bug": "گزارش یک اشکال",
+	"login": "ورود",
+	"logout": "خروج از سامانه",
+	"users-using-tool": "کاربران استفاده‌کننده از این ابزار",
+	"you-were-blocked": "حساب کاربری شما مسدود شده است",
+	"block-summary": "شرح خلاصهٔ مسدودسازی شما",
+	"block-reason": "علت مسدودسازی",
+	"block-expiration": "انقضای مسدودسازی",
+	"choose-language": "انتخاب زبان",
+	"option-display-images": "انتخاب تعداد تصویرها برای نمایش",
+	"do-not-filter": "عدم پالایش",
+	"filter-by-category": "پالایش بر اساس رده",
+	"filter-by-uploader": "پالایش بر اساس بارگذار",
+	"picture": "عکس",
+	"categories": "رده‌ها",
+	"username": "نام کاربری",
+	"number-of-edits": "تعداد کل ویرایش‌ها",
+	"total": "مجموع"
+}
