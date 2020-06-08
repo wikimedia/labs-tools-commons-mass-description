@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MSClaudiu",
 			"Strainu"
 		]
 	},
@@ -21,7 +22,7 @@
 	"do-not-filter": "Nu filtra",
 	"filter-by-category": "Filtrează după categorie",
 	"filter-by-uploader": "Filtrează după utilizator",
-	"source-category": "Introduceți numele categoriei pe care doriți să o folosiți mai jos",
+	"source-category": "Introduceți numele categoriei pe care doriți să o utilizați ca sursă a tabelului de mai jos",
 	"helptext-category": "Includeți prefixul Category:",
 	"source-uploader": "Introduceți numele de utilizatori al celui ce a încărcat imaginile pe care doriți să le descrieți",
 	"helptext-uploader": "Nu de utilizator, fără prefixul User:",
