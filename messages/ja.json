@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Omotecho",
-			"Shirayuki"
+			"Shirayuki",
+			"Siglite3"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">ログイン</a>してください",
@@ -11,7 +12,7 @@
 	"report-bug": "バグを報告",
 	"login": "ログイン",
 	"logout": "ログアウト",
-	"users-using-tool": "このツールを使う利用者とは",
+	"users-using-tool": "このツールの利用者",
 	"you-were-blocked": "ご利用のアカウントはブロックされました",
 	"block-summary": "ブロックの概要",
 	"block-sysop": "ブロックをした管理者",
@@ -19,20 +20,20 @@
 	"block-expiration": "ブロック期限",
 	"choose-language": "言語を選択",
 	"option-display-images": "表示する画像の点数を指定",
-	"do-not-filter": "しぼりこまない",
-	"filter-by-category": "カテゴリでしぼりこみ",
-	"filter-by-uploader": "投稿者名でしぼりこみ",
+	"do-not-filter": "絞り込まない",
+	"filter-by-category": "カテゴリで絞り込む",
+	"filter-by-uploader": "投稿者で絞り込む",
 	"source-category": "下記の表の情報源欄 (source) に表示したいカテゴリ名を入力",
-	"helptext-category": "接頭辞カテゴリを含める:",
+	"helptext-category": "「Category:」接頭辞を含む",
 	"source-uploader": "説明を入力する画像の投稿者の利用者名を入力",
-	"helptext-uploader": "「User:」の部分を除去した利用者名を入力。",
-	"load-pictures": "複数の画像を読み込む",
+	"helptext-uploader": "利用者名（「User:」接頭辞は省いてください）",
+	"load-pictures": "画像を読み込む",
 	"submit": "送信",
 	"picture": "画像",
 	"description": "説明",
 	"categories": "カテゴリ",
-	"all-users": "CMDを使ったことがある全利用者一覧",
+	"all-users": "CMDの利用者一覧",
 	"username": "利用者名",
-	"number-of-edits": "編集回数合計",
+	"number-of-edits": "総編集回数",
 	"total": "合計"
 }
