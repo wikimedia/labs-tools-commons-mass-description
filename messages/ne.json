@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nirajan pant",
 			"सरोज कुमार ढकाल",
 			"हिमाल सुबेदी"
 		]
 	},
 	"introduction-please-login": "कृपया , <a href=\"login\">प्रवेश गर्नुहोस्</a>",
+	"introduction-bugs": "यदि तपाईँले यस उपकरणमा कुनै त्रुटि भेट्टाउनु भएमा <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">विकिमिडिया फ्याब्रिकेटरमा काम सिर्जना गर्नुहोस्</a>।",
 	"report-bug": "बग उजुरी गर्ने",
 	"login": "प्रवेश",
 	"logout": "लगआउट गर्नुहोस्",
@@ -20,7 +22,7 @@
 	"do-not-filter": "फिल्टर नगर्नुहोस्",
 	"filter-by-category": "श्रेणी प्रयोग गरेर फिल्टर गर्नुहोस्",
 	"filter-by-uploader": "अपोडकर्ता अनुसार फिल्टर गर्नुहोस्",
-	"source-category": "तपाईँले तालिकामा स्रोतको रूपमा प्रयोग गर्न चाहनु भएको श्रेणीको नाम प्रविष्ठ गर्नुहोस्",
+	"source-category": "तलको तालिकाको स्रोतको रूपमा प्रयोग गर्न चाहनु भएको श्रेणीको नाम राख्नुहोस्",
 	"helptext-category": "प्रिफिक्स श्रेणी समावेश गर्नुहोस्:",
 	"source-uploader": "तपाईँले जसको तस्विर व्याख्या गर्न चाहनुभएको अपलोडकर्ताको नाम प्रविष्ठ गर्नुहोस्",
 	"helptext-uploader": "प्रयोगकर्ता नाम User: प्रिफिक्स नराख्नुहोस् :",
