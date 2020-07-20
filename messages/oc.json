@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Guilhelma"
+		]
+	},
+	"introduction-please-login": "Se vos plai, <a href=\"login\">connectatz vos</a>",
+	"introduction": "<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"><strong>Descripcions en grand nombre sus Commons</strong> es una aisina que permet de descriure d'imatges e multimedias en nombre sus <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> sens dever editar cada imatge manualament. Podètz ne saber mai sus <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sa pagina  Wikimedia Common</a>.",
+	"introduction-bugs": "Se trobatz de bugs dins aquesta aisina, mercés de  <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crear un prètzfach dins Wikimedia Phabricator</a>.",
+	"report-bug": "Senhalar una error",
+	"login": "Se connectar",
+	"logout": "Tampar la session",
+	"users-using-tool": "Usatgièrs d'aquesta aisina",
+	"you-were-blocked": "Lo vòstre compte es estat blocat",
+	"block-summary": "Resumit del vòstre blocatge",
+	"block-sysop": "Blocatge per un administrator",
+	"block-reason": "Motiu del blocatge",
+	"block-expiration": "Expiracion del blocatge",
+	"choose-language": "Causir una lenga",
+	"option-display-images": "Causir lo nombre d'imatges de mostrar",
+	"do-not-filter": "Filtrar pas",
+	"filter-by-category": "Filtrar per categoria",
+	"filter-by-uploader": "Filtrar per autors dels telecargaments",
+	"source-category": "Picar lo nom de la categoria que vòlguètz utilizar coma origina de la taula çai-jos",
+	"helptext-category": "Inclure lo prefixe de la categoria:",
+	"source-uploader": "Picar lo nom d'usatgièr que telecarguèt los imatges que volètz descriure",
+	"helptext-uploader": "Nom d'usatgièr, pas inclure lo prefixe d'usatgièr:",
+	"load-pictures": "Cargar los imatges",
+	"submit": "Mandar",
+	"picture": "Imatge",
+	"description": "Descripcion",
+	"categories": "Categorias",
+	"all-users": "Totes los usatgièrs qu'an ja utilizat CMD",
+	"username": "Nom d'utilizaire",
+	"number-of-edits": "Nombre total de modificacions",
+	"total": "Total"
+}
