@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kiathy"
+		]
+	},
+	"introduction-please-login": "Ngiachhiepa ta, <a href=\"login\">Angia bei teih</a>",
+	"introduction": "<strong>Commons Mass Description</strong> is a tool that allows user to describe pictures and multimedia at <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse without having to edit each image manually. You can find more at <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
+	"introduction-bugs": "If you find any bugs in this tool, please feel free to <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create a task at Wikimedia Phabricator</a>.",
+	"report-bug": "Fihma chyh-ie chho",
+	"login": "Angia",
+	"logout": "Pua",
+	"users-using-tool": "Hmâhtuhpazy ta he chhaichhi ama hmâna",
+	"you-were-blocked": "Hmâhtuhpa account cha â khaw haw",
+	"block-summary": "Nâma block biepachhoh",
+	"block-sysop": "Blocking sysop",
+	"block-reason": "Papo chhânapa",
+	"block-expiration": "Block expiration",
+	"choose-language": "Reihchâ a tlyh teih",
+	"option-display-images": "A lâpa hmâthlâzy maluh a tlyh teih",
+	"do-not-filter": "Athli khâ",
+	"filter-by-category": "Pha ta athli",
+	"filter-by-uploader": "Khâhtuhpa ta athli",
+	"source-category": "kao hnawh ta na hmâ khohpa pho moh kha a ry liata roh teih.",
+	"helptext-category": "Hmiabai pho Â hlao:",
+	"source-uploader": "Na palâsa khohpa hmâthlâ a khâhtuhpa hmâhtuhpa moh roh teih",
+	"helptext-uploader": "Hmâhtuhpa, hmiabai Hmâhtuhpa a hlao leipa:",
+	"load-pictures": "Hmâthlâzy khâh teih",
+	"submit": "Pangia",
+	"picture": "Hmâthlâ",
+	"description": "Palâsana",
+	"categories": "Phozy",
+	"all-users": "CMD hmâh thlâhha tyhpa hmâhtuhpa zydua",
+	"username": "Hmâtuhpa moh",
+	"number-of-edits": "Taopathinazy nuby pahlyhpa",
+	"total": "Azydua"
+}
