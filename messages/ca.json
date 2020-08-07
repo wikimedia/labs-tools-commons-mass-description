@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Mguix"
+		]
+	},
+	"introduction-please-login": "Si us plau, <a href=\"inicieu la sessió\">login</a>",
+	"introduction": "<Strong>Commons Mass Description</ strong> és una eina que permet a l'usuari descriure imatges i multimèdia a <a href=\"https://commons.wikimedia.org\"> Wikimedia Commons </a > en massa sense haver d'editar cada imatge manualment. Pots trobar més en <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"> la pàgina de Wikimedia Commons </a>.",
+	"introduction-bugs": "Si trobeu algun error en aquesta eina, no dubteu en <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> crear una tasca a Wikimedia Phabricator </a>.",
+	"report-bug": "Informar d'un error",
+	"login": "Accedir",
+	"logout": "Sortir",
+	"users-using-tool": "Usuaris utilitzant aquesta eina",
+	"you-were-blocked": "El vostre compte d’usuari s’ha bloquejat",
+	"block-summary": "Resum del vostre bloqueig",
+	"block-sysop": "Bloqueig d’un sysop",
+	"block-reason": "Motiu del bloqueig",
+	"block-expiration": "Expiració del bloqueig",
+	"choose-language": "Trieu un idioma",
+	"option-display-images": "Trieu un nombre d'imatges a mostrar",
+	"do-not-filter": "No filtrar",
+	"filter-by-category": "Filtre per categoria",
+	"filter-by-uploader": "Filtra segons qui ha carregat",
+	"source-category": "lIntroduïu el nom de la categoria que vulgueu utilitzar com a origen de la taula següent",
+	"helptext-category": "Incloure el prefix \"Categoria\":",
+	"source-uploader": "Introduir el nom d'usuari de qui hagi pujat les imatges que voleu descriure",
+	"helptext-uploader": "Nom d'usuari, no incloure prefix d'usuari:",
+	"load-pictures": "Carregar les imatges",
+	"submit": "Envia",
+	"picture": "Imatge",
+	"description": "Descripció",
+	"categories": "Categories",
+	"all-users": "Tots els usuaris que mai han utilitzat CMD",
+	"username": "Nom d’usuari",
+	"number-of-edits": "Nombre total d'edicions",
+	"total": "Total"
+}
