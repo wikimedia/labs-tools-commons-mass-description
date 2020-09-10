@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Şeyx Şamil"
+		]
+	},
+	"introduction-please-login": "Zəhmət olmasa, <a href=\"login\">daxil olun</a>",
+	"report-bug": "Xəta bildir",
+	"login": "Daxil ol",
+	"logout": "Çıxış",
+	"users-using-tool": "Alətdən istifadə edən istifadəçilər",
+	"you-were-blocked": "İstifadəçi hesabınız bloklanıb",
+	"block-summary": "Blokunuzun xülasəsi",
+	"block-sysop": "Bloklayan idarəçi",
+	"block-reason": "Bloklanma səbəbi",
+	"block-expiration": "Blokun başa çatması",
+	"choose-language": "Dili seç",
+	"picture": "Şəkil",
+	"categories": "Kateqoriyalar",
+	"username": "İstifadəçi adı",
+	"number-of-edits": "Redaktələrin ümumi sayı",
+	"total": "Ümumi"
+}
