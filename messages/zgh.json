@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hakim1bal"
+		]
+	},
+	"introduction-please-login": "ⵎⴽ ⵜⵓⴼⵉⴷ, <a href=\"login\">ⴽⵛⵎ</a>",
+	"report-bug": "ⵎⵍ ⵜⵉⵎⵓⴽⵔⵉⵙⵉⵏ",
+	"login": "ⴽⵛⵎ",
+	"logout": "ⴼⴼⵖ",
+	"users-using-tool": "ⵉⵏⵙⵙⵎⵔⴰⵙ ⵏⵏⴰ ⵙⵙⵎⵔⴰⵙⵏ ⵉⵎⵉⵙ ⴰⴷ",
+	"choose-language": "ⴷⵖⵔ ⵜⵓⵜⵍⴰⵢⵜ",
+	"load-pictures": "ⵣⴷⵎ ⵜⵉⵡⵍⴰⴼⵉⵏ",
+	"submit": "ⴰⵣⵏ",
+	"description": "ⴰⴳⵍⴰⵎ",
+	"number-of-edits": "ⵜⴰⵎⵓⵜⵜⵔⵜ ⵏ ⵓⵟⵟⵓⵏ ⵏ ⵉⵙⵏⴼⴰⵍⵏ",
+	"total": "ⵜⴰⵎⵓⵜⵜⵔⵜ"
+}

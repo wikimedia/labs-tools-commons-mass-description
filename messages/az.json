@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nargizhasanli",
 			"Şeyx Şamil"
 		]
 	},
@@ -15,8 +16,20 @@
 	"block-reason": "Bloklanma səbəbi",
 	"block-expiration": "Blokun başa çatması",
 	"choose-language": "Dili seç",
+	"option-display-images": "Göstərilən bir sıra şəkilləri seçin",
+	"do-not-filter": "Filtrləməyin",
+	"filter-by-category": "Kateqoriya üzrə sıralayın",
+	"filter-by-uploader": "Yükləyiciyə görə filtrləyin",
+	"source-category": "Aşağıdakı cədvəlin mənbəyi kimi istifadə etmək istədiyiniz kateqoriyanın adını daxil edin",
+	"helptext-category": "Prefiks kateqoriyasına daxil edin:",
+	"source-uploader": "Hansı şəkilləri təsvir etmək istədiyinizi yükləyən istifadəçi adını daxil edin",
+	"helptext-uploader": "İstifadəçi adı, istifadəçi prefiksini daxil etməyin:",
+	"load-pictures": "Şəkilləri yükləyin",
+	"submit": "Təsdiq edin",
 	"picture": "Şəkil",
+	"description": "İzah",
 	"categories": "Kateqoriyalar",
+	"all-users": "CMD istifadə edən bütün istifadəçilər",
 	"username": "İstifadəçi adı",
 	"number-of-edits": "Redaktələrin ümumi sayı",
 	"total": "Ümumi"
