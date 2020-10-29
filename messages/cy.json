@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin Owain"
+		]
+	},
+	"introduction-please-login": "Mewngofnodwch <a href=\"login\">os gwelwch yn dda</a>",
+	"introduction": "Pwrpas <strong>Commons Mass Description</strong> yw galluogi defnyddiwr i ddisgrifio lluniau a ffeiliau amlgyfrwng ar  <a href=\"https://commons.wikimedia.org\">Gomin Wicimedia</a> en massm heb orfod golygu pob un yn unigol. Ceir rhagor o fanylion <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">yma</a>.",
+	"introduction-bugs": "Os y cewch hyd i wallau yn y cod, gallwch <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">greu tasg ar Wikimedia Phabricator</a>.",
+	"report-bug": "Adrodd am wall",
+	"login": "Mewngofnodi",
+	"logout": "Allgofnodi",
+	"users-using-tool": "Defnyddwyr y teclyn yma",
+	"you-were-blocked": "Mae eich cyfri wedi ei flocio",
+	"block-summary": "Crynodeb o'ch cyfri",
+	"block-sysop": "Y Gweinyddwr a wnaeth eich blocio",
+	"block-reason": "Rheswm dros flocio",
+	"block-expiration": "Daw'r bloc i ben",
+	"choose-language": "Dewis iaith",
+	"option-display-images": "Dewisiwch sawl llun i'w arddangos",
+	"do-not-filter": "Peidio a hidlo",
+	"filter-by-category": "Hidlo yn ol categori",
+	"filter-by-uploader": "Hidlo yn ol uwchlwythwr",
+	"load-pictures": "Llwytho lluniau",
+	"submit": "Danfon",
+	"picture": "Llun",
+	"description": "Disgrifiad",
+	"categories": "Categoriau",
+	"username": "Enw'r defnyddiwr",
+	"number-of-edits": "Cyfanswm y golygiadau",
+	"total": "Cyfanswm"
+}
