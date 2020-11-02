@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Helpau",
 			"Movses",
 			"Okras",
 			"Vlad5250"
 		]
 	},
 	"introduction-please-login": "Пожалуйста, <a href=\"login\">войдите</a>",
-	"introduction": "<strong>Массовое описание на Викискладе</strong> — это инструмент, позволяющий пользователям массово описывать изображения и мультимедиа на <a href=\"https://commons.wikimedia.org\">Викискладе</a> без необходимости вручную редактировать каждое изображение отдельно. Вы можете узнать больше на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">странице инструмента</a>.",
+	"introduction": "<strong>Commons Mass Description</strong> — это инструмент, позволяющий пользователям массово описывать изображения и мультимедиа на <a href=\"https://commons.wikimedia.org\">Викискладе</a> без необходимости вручную редактировать каждое изображение отдельно. Вы можете узнать больше на <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">странице инструмента</a>.",
 	"introduction-bugs": "Если вы нашли ошибки в этом инструменте, пожалуйста, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">создайте задачу на «Фабрикаторе»</a>.",
 	"report-bug": "Сообщить об ошибке",
 	"login": "Войти",
