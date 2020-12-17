@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bikarhêner",
+			"George Animal"
+		]
+	},
+	"introduction-please-login": "Ji kerema xwe, <a href=\"login\">têkeve</a>",
+	"introduction": "<strong>Danasîna Komî ya Commonsê</strong> amûreke ye ku îmkan dide bikarhêneran ji bo ku karibin wêne û multîmedyayên li a href=\"https://commons.wikimedia.org\">Wîkîmedya Commonsê</a> bêyî ku yek bi yek biguherînin, bi komî pêk bînin. Alîkariyên zêdetir ji <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">rûpela wê ya Wîkîmedya Commonsê</a> peyda bikî.",
+	"introduction-bugs": "Ger ru çewtiyekê bibînî di vê amûrê de, ji kerema xwe xwe serbest hîs bike ji bo <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">çêkirina wezîfeyekê li ser Wîkîmedya Fabrîkatorê</a>.",
+	"report-bug": "Çewtiyekê ragihîne",
+	"login": "Têkeve",
+	"logout": "Derkeve",
+	"users-using-tool": "Bikarhênerên vê alavê bi kar tînin",
+	"you-were-blocked": "Hesabê te hatiye astengkirin",
+	"block-summary": "Kurteya astengiya te",
+	"block-sysop": "Astengkirina rêvebirê",
+	"block-reason": "Sedema astengkirinê",
+	"block-expiration": "Xilasbûna astengiyê",
+	"choose-language": "Zimanekî bibijêre",
+	"option-display-images": "Hejmarake wêneyên nîşandayî bibijêre",
+	"do-not-filter": "Parzûn neke",
+	"filter-by-category": "Parzûna bi kategoriyê",
+	"filter-by-uploader": "Parzûna bi hilbarkerê",
+	"source-category": "Navê kategoriyê yê ku dixwazî wek çavkaniya şablona li jêr bi kar bînî têkeve",
+	"helptext-category": "Tevî pêşgirê 「Kategorî:」",
+	"source-uploader": "Navê bikarhênerê yê hilbarker ê ku wêneyên tu dixwazî danasînên wan tevlî bikî têkeve",
+	"helptext-uploader": "Navê bikarhêner, pêşgira Bikarhêner nahewîne:",
+	"load-pictures": "Risman bar bike",
+	"submit": "Bişîne",
+	"picture": "Wêne",
+	"description": "Danasîn",
+	"categories": "Kategorî",
+	"all-users": "Temamiya bikarhênerên ku CMDê bi kar anîne",
+	"username": "Navê bikarhêner",
+	"number-of-edits": "Hejmara guherandinan",
+	"total": "Tevahî"
+}
