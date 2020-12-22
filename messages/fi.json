@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Maantietäjä",
 			"Pyscowicz"
 		]
 	},
@@ -10,6 +11,8 @@
 	"logout": "Kirjaudu ulos",
 	"users-using-tool": "Käyttäjät, jotka käyttävät tätä työkalua",
 	"you-were-blocked": "Käyttäjätilisi on estetty",
+	"block-reason": "Eston syy",
+	"block-expiration": "Eston vahentuminen",
 	"choose-language": "Valitse kieli",
 	"do-not-filter": "Älä suodata",
 	"filter-by-category": "Suodata luokan mukaan",
