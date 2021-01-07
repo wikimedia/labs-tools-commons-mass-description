@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Smobile"
+		]
+	},
+	"introduction-please-login": "Meharbani kar ke, <a href=\"login\">login karo</a>",
+	"login": "Login karo",
+	"logout": "Logout ho",
+	"you-were-blocked": "Aap ke account ke rok dewa gais hai",
+	"block-reason": "Roke ke kaaran",
+	"choose-language": "Basa ke select karo",
+	"picture": "Chaapa",
+	"description": "Baare me",
+	"categories": "Vibhag",
+	"username": "Sadasya ke naam:",
+	"total": "Kul jorr"
+}

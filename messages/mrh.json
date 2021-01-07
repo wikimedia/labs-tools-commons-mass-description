@@ -1,23 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kiathy"
+			"Kiathy",
+			"Reihpaleituh"
 		]
 	},
 	"introduction-please-login": "Ngiachhiepa ta, <a href=\"login\">Angia bei teih</a>",
-	"introduction": "<strong>Commons Mass Description</strong> is a tool that allows user to describe pictures and multimedia at <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse without having to edit each image manually. You can find more at <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
-	"introduction-bugs": "If you find any bugs in this tool, please feel free to <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create a task at Wikimedia Phabricator</a>.",
+	"introduction": "<strong>Commons Mass Palâsana</strong> cha <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> liata hmâthlâzy nata multimedia palâsa awpa ta hmâhtuhpa a pasaihpa chhaichhi sâkha a châ. Hmâthlâ zy kha sâkha hnoh sâkha châ leipa ta a hluhpi ta taopathi mah y. <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a> liata moh via mah y.",
+	"introduction-bugs": "He chhaichhi lia he fihmazy na hmâ khiah, ngiachhiepa ta <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> Wikimedia Phabricator liata rai sâkha tao</a> lâ he a saipa ta tao mah y.",
 	"report-bug": "Fihma chyh-ie chho",
 	"login": "Angia",
 	"logout": "Pua",
 	"users-using-tool": "Hmâhtuhpazy ta he chhaichhi ama hmâna",
-	"you-were-blocked": "Hmâhtuhpa account cha â khaw haw",
-	"block-summary": "Nâma block biepachhoh",
+	"you-were-blocked": "Nâma hmâhtuhpa account cha â khaw haw",
+	"block-summary": "Nâma block chhopasiana",
 	"block-sysop": "Blocking sysop",
 	"block-reason": "Papo chhânapa",
-	"block-expiration": "Block expiration",
+	"block-expiration": "Papo bitaina",
 	"choose-language": "Reihchâ a tlyh teih",
-	"option-display-images": "A lâpa hmâthlâzy maluh a tlyh teih",
+	"option-display-images": "Palâpa hmâthlâzy maluh sâkha a tlyh teih",
 	"do-not-filter": "Athli khâ",
 	"filter-by-category": "Pha ta athli",
 	"filter-by-uploader": "Khâhtuhpa ta athli",
