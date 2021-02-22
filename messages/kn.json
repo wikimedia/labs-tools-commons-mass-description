@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"AVSmalnad77"
+		]
+	},
+	"login": "ಲಾಗ್ ಇನ್",
+	"logout": "ಲಾಗ್ ಔಟ್",
+	"block-reason": "ನಿರ್ಬಂಧನೆಯ ಕಾರಣ",
+	"choose-language": "ಭಾಷೆ ಆಯ್ದುಕೊಳ್ಳಿ",
+	"submit": "ಸಲ್ಲಿಸಿ",
+	"picture": "ಚಿತ್ರ",
+	"description": "ವಿವರ",
+	"categories": "ವರ್ಗಗಳು",
+	"username": "ಬಳಕೆದಾರರ ಹೆಸರು",
+	"number-of-edits": "ಒಟ್ಟು ಸಂಪಾದನೆಗಳ ಸಂಖ್ಯೆ",
+	"total": "ಒಟ್ಟು"
+}
