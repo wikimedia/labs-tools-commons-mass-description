@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jaroslav.micek"
+		]
+	},
+	"introduction-please-login": "Prosím, <a href=\"login\">prihláste sa</a>",
+	"introduction": "<strong>Commons Mass Description</strong> je nástroj umožňujúci používateľovi hromadne pridávať popis k obrázkom a multimédiám na <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a>. Viac informácií na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
+	"introduction-bugs": "Ak v tomto nástroji nájdete chybu, neváhajte a <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">nahláste chybu na Wikimedia Phabricator</a>.",
+	"report-bug": "Nahlásiť chybu",
+	"login": "Prihlásenie",
+	"logout": "Odhlásenie",
+	"users-using-tool": "Používatelia používajúci tento nástroj",
+	"you-were-blocked": "Váš užívateľský účet bol zablokovaný",
+	"block-summary": "Zhrnutie vášho zablokovania",
+	"block-sysop": "Blokujúci správca",
+	"block-reason": "Dôvod blokovania",
+	"block-expiration": "Ukončenie bloku",
+	"choose-language": "Zvoliť jazyk",
+	"option-display-images": "Vyberte počet zobrazených obrázkov",
+	"do-not-filter": "Nefiltrovať",
+	"filter-by-category": "Filtrovať podľa kategórie",
+	"filter-by-uploader": "Filtrovať podľa nahrávateľa",
+	"source-category": "Zadajte názov kategórie, ktorú chcete použiť ako zdroj pre tabuľku nižšie",
+	"helptext-category": "Zahrnúť predponu kategórie:",
+	"source-uploader": "Zadajte meno používateľa, ktorého obrázky chcete popísať",
+	"helptext-uploader": "Meno používateľa, nezahrňovať predponu Používateľ:",
+	"load-pictures": "Načítať obrázky",
+	"submit": "Odoslať",
+	"picture": "Obrázok",
+	"description": "Popis",
+	"categories": "Kategórie",
+	"all-users": "Všetci používatelia, ktorí niekedy použili tento nástroj",
+	"username": "Meno používateľa",
+	"number-of-edits": "Celkový počet úprav",
+	"total": "Celkom"
+}
