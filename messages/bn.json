@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Md. Golam Mukit Khan",
 			"আফতাবুজ্জামান"
 		]
 	},
 	"introduction-please-login": "দয়া করে, <a href=\"login\">প্রবেশ করুন</a>",
 	"login": "প্রবেশ করুন",
 	"logout": "প্রস্থান",
+	"choose-language": "ভাষা নির্বাচন করুন",
 	"load-pictures": "ছবি লোড কোড়ূণ",
 	"submit": "জমা দিন",
 	"picture": "চিত্র",
