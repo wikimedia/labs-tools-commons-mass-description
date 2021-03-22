@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"introduction-please-login": "Prosimo, <a href=\"login\">prijavite se</a>",
+	"introduction": "<strong>Množični opis za Zbirko</strong> (Commons Mass Description) je orodje, ki uporabniku omogoča množičen opis slik in predstavnostnih datotek v <a href=\"https://commons.wikimedia.org\">Wikimedijini zbirki</a>, ne da bi moral vsako sliko urediti ročno. Več o tem lahko izveste na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">strani orodja v Wikimedijini zbirki</a>.",
+	"introduction-bugs": "Če boste pri uporabi orodja naleteli na hrošče, vas prosimo, da jih sporočite z <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">ustvaritvijo opravila v Wikimedijinem Fabrikatorju</a>.",
+	"report-bug": "Sporočite hrošča",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"users-using-tool": "Uporabniki, ki uporabljajo to orodje",
+	"you-were-blocked": "Vaš uporabniški račun je blokiran",
+	"block-summary": "Povzetek bloka",
+	"block-sysop": "Administrator, ki je blokiral",
+	"block-reason": "Razlog za blok",
+	"block-expiration": "Potek bloka",
+	"choose-language": "Izberite jezik",
+	"option-display-images": "Izberite število prikazanih slik",
+	"do-not-filter": "Ne filtriraj",
+	"filter-by-category": "Filtriraj po kategoriji",
+	"filter-by-uploader": "Filtriraj po naložniku",
+	"source-category": "V spodnjo preglednico vnesite ime kategorije, ki jo želite uporabiti",
+	"helptext-category": "Vključite predpono »Category:«",
+	"source-uploader": "Vnesite uporabniško ime naložnika, katerega slike želite opisati",
+	"helptext-uploader": "Uporabniško ime brez predpone »User:« (Uporabnik:)",
+	"load-pictures": "Naložite slike",
+	"submit": "Pošlji",
+	"picture": "Slika",
+	"description": "Opis",
+	"categories": "Kategorije",
+	"all-users": "Vsi uporabniki, ki so kadar koli uporabljali CMD",
+	"username": "Uporabniško ime",
+	"number-of-edits": "Skupno število urejanj",
+	"total": "Skupaj"
+}
