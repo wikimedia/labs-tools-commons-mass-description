@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lea.Fakauvea"
+		]
+	},
+	"introduction-please-login": "Malo si'i <a href=\"login\">login</a>",
+	"introduction": "Ko te <strong>Commons Mass Description</strong> ko he me'a gaue e ina fakagafua te fakahinohino o te 'u pāki mo 'ata i te <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> fakatahi mo fakahagatonu. Ki hona fakakātoa: \n<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
+	"introduction-bugs": "Ka tō hala hina koga i te gaue aeni, kataki mai ki te <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">create a task at Wikimedia Phabricator</a>.",
+	"report-bug": "Fakahā mai he koga e hala",
+	"login": "Hū mai",
+	"logout": "Hū ki tu'a",
+	"users-using-tool": "Kaiga e faka'aoga'i te me'a gaue aeni",
+	"you-were-blocked": "Kua ta'ofi tau numelo gaue",
+	"block-summary": "Ko 'e kua ta'ofi koe",
+	"block-sysop": "Ta'ofi sysop",
+	"block-reason": "Ko 'e ne'e ta'ofi",
+	"block-expiration": "Kua 'osi te ta'ofi",
+	"choose-language": "Fili hau lea",
+	"option-display-images": "Fili ko pāki e fia e fakahā",
+	"do-not-filter": "Tuku mai fuli",
+	"filter-by-category": "Fili hona fa'ahiga tuku atu",
+	"filter-by-uploader": "Fili he kaiga",
+	"source-category": "Fili he fa'ahiga matapuna ke faka'aoga'i i heni",
+	"helptext-category": "Tohi te mu'a fa'ahiga:",
+	"source-uploader": "Tohi te higoa o te kaiga toho pāki e ke fia fakahinohino",
+	"helptext-uploader": "Higoa, 'aua te tohi o te mu'a higoa:",
+	"load-pictures": "Fakahū he 'u pāki",
+	"submit": "Fakahū",
+	"picture": "Pāki",
+	"description": "Fakahinohino",
+	"categories": "Fa'ahiga",
+	"all-users": "Kaiga e faka'aoga'i te CMD",
+	"username": "Higoa",
+	"number-of-edits": "Fetogi e fia ne'e fai",
+	"total": "Kātoa"
+}
