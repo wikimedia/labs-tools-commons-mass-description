@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"L2212"
+		]
+	},
+	"introduction-please-login": "Pro praghere, <a href=\"login\">intra</a>",
+	"introduction": "<strong>Commons Mass Description</strong> est un'aina chi permitit a un'impitadore de descrìere immàgines e elementos multimediales in <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> in massa chene dèpere modificare cada immàgine a manu. Podes agatare prus informatziones in <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sa pàgina de Wikimedia Commons sua</a>.",
+	"introduction-bugs": "Si agatades carchi faddina in custa aina <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una tarea in Wikimedia Phabricator</a>.",
+	"report-bug": "Sinnala una faddina",
+	"login": "Intra",
+	"logout": "Essi",
+	"users-using-tool": "Impitadores chi impreant custa aina",
+	"you-were-blocked": "Su contu tuo de impitadore est istadu blocadu",
+	"block-summary": "Resumu de su blocu tuo",
+	"block-sysop": "Blocu de unu sysop",
+	"block-reason": "Resone de su blocu",
+	"block-expiration": "Iscadidura de su blocu",
+	"choose-language": "Issèbera sa limba",
+	"option-display-images": "Issèbera unu nùmeru de immàgines de ammustrare",
+	"do-not-filter": "Non filtres",
+	"filter-by-category": "Filtra pro categoria",
+	"filter-by-uploader": "Filtra pro carrigadore",
+	"source-category": "Inserta su nùmene de sa categoria chi boles impreare che a orìgine de sa tabella inoghe in suta",
+	"helptext-category": "Include su prefissu \"Categoria\":",
+	"source-uploader": "Inserta su nùmene de impitadore de chie at carrigadu sas immàgines chi cherides descrìere",
+	"helptext-uploader": "Nùmene de impitadore, chene incluire su prefissu \"Usuàriu\":",
+	"load-pictures": "Carriga sas immàgines",
+	"submit": "Imbia",
+	"picture": "Immàgine",
+	"description": "Descritzione",
+	"categories": "Categorias",
+	"all-users": "Totu sos impitadores chi apant mai impreadu CMD",
+	"username": "Nùmene impitadore",
+	"number-of-edits": "Nùmeru totale de modìficas",
+	"total": "Totale"
+}
