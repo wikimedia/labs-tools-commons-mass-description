@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Maantietäjä",
 			"Pyscowicz"
 		]
@@ -11,9 +12,11 @@
 	"logout": "Kirjaudu ulos",
 	"users-using-tool": "Käyttäjät, jotka käyttävät tätä työkalua",
 	"you-were-blocked": "Käyttäjätilisi on estetty",
+	"block-summary": "Estosi yhteenveto",
 	"block-reason": "Eston syy",
 	"block-expiration": "Eston vahentuminen",
 	"choose-language": "Valitse kieli",
+	"option-display-images": "Valitse näytettävien kuvien lukumäärä",
 	"do-not-filter": "Älä suodata",
 	"filter-by-category": "Suodata luokan mukaan",
 	"filter-by-uploader": "Suodata tallentajan mukaan",
