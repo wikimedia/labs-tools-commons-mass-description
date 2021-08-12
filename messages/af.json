@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winstonza"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Meld aan</a>, asseblief",
+	"introduction": "<strong>Commons Mass Description</strong> is 'n werktuig waarmee gebruikers afbeeldings en multimedia by <a href=\"https://commons.wikimedia.org\">Wikimediuma Commons</a> tegelyk kan beskryf sonder om elke beeld afsonderlik te redigeer. Jy kan meer inligting kry op <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">die Wikimedia Commons-bladsy</a>.",
+	"introduction-bugs": "As jy foute in dié program kry, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">rapporteer dit by Wikimedia Phabricator</a>.",
+	"report-bug": "Rapporteer ’n fout",
+	"login": "Meld aan",
+	"logout": "Meld af",
+	"users-using-tool": "Gebruikers wat dié werktuig gebruik",
+	"you-were-blocked": "U gebruikersrekening is geblokkeer",
+	"block-summary": "Opsomming van jou blokkering",
+	"block-sysop": "Sisop wat jou geblokkeer het",
+	"block-reason": "Rede vir blokkering",
+	"block-expiration": "Verval van die blokkering",
+	"choose-language": "Kies 'n taal",
+	"option-display-images": "Kies 'n getal beelde om te vertoon",
+	"do-not-filter": "Moenie filtreer nie",
+	"filter-by-category": "Filtreer volgens kategorie",
+	"filter-by-uploader": "Filtreer volgens oplaaier",
+	"source-category": "Vul die naam van die kategorie in wat jy wil gebruik as die bron van die onderstaande tabel",
+	"helptext-category": "Voeg by die voorvoegsel Kategorie:",
+	"source-uploader": "Vul die gebruikersnaam van die oplaaier in wie se beelde jy wil beskryf",
+	"helptext-uploader": "Gebruikersnaam, sonder die voorvoegsel User:",
+	"load-pictures": "Laai beelde",
+	"submit": "Laai",
+	"picture": "Beeld",
+	"description": "Beskrywing",
+	"categories": "Kategorieë",
+	"all-users": "Alle gebruikers wat al CMD gebruik het",
+	"username": "Gebruikersnaam",
+	"number-of-edits": "Totale aantal wysigings",
+	"total": "Totaal"
+}
