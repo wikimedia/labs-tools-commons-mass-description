@@ -2,16 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Amirsara",
+			"Darafsh",
 			"FarsiNevis"
 		]
 	},
 	"introduction-please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"introduction": "<strong>توضیحات دسته‌جمعی ویکی‌انبار (Commons Mass Description)</strong> ابزاری است که به کاربران امکان می‌دهد تا به تصاویر و پرونده‌های <a href=\"https://commons.wikimedia.org\">ویکی‌انبار</a> به‌صورت دسته‌جمعی و بدون ویرایش یک‌یک آن‌ها، توضیحات اضافه کنند. اطلاعات بیش‌تر را می‌توانید در <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">صفحهٔ ویکی‌انبار ابزار</a> بیابید.",
+	"introduction-bugs": "اگر اشکالی در این ابزار پیدا کردید، لطفاً با خیال راحت <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">درخواستی در اینجا ثبت کنید</a>.",
 	"report-bug": "گزارش یک اشکال",
 	"login": "ورود",
 	"logout": "خروج از سامانه",
 	"users-using-tool": "کاربران استفاده‌کننده از این ابزار",
 	"you-were-blocked": "حساب کاربری شما مسدود شده است",
 	"block-summary": "شرح خلاصهٔ مسدودسازی شما",
+	"block-sysop": "در حال بندایش مدیر",
 	"block-reason": "علت مسدودسازی",
 	"block-expiration": "انقضای مسدودسازی",
 	"choose-language": "انتخاب زبان",
@@ -19,8 +23,16 @@
 	"do-not-filter": "عدم پالایش",
 	"filter-by-category": "پالایش بر اساس رده",
 	"filter-by-uploader": "پالایش بر اساس بارگذار",
+	"source-category": "نام رده‌ای که می‌خواهید به‌عنوان منبع جدول زیر استفاده کنید را وارد نمایید",
+	"helptext-category": "شامل پیشوند رده: (Category:)",
+	"source-uploader": "نام کاربری بارگذار تصاویر را وارد نمایید",
+	"helptext-uploader": "نام کاربری، بدون پیشوند کاربر:",
+	"load-pictures": "بارگیری تصاویر",
+	"submit": "ثبت",
 	"picture": "عکس",
+	"description": "توضیحات",
 	"categories": "رده‌ها",
+	"all-users": "همهٔ کاربرانی که تاکنون از CMD استفاده کرده‌اند",
 	"username": "نام کاربری",
 	"number-of-edits": "تعداد کل ویرایش‌ها",
 	"total": "مجموع"
