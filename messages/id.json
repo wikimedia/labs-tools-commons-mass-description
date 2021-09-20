@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akmaie Ajam",
+			"Joseagush"
+		]
+	},
+	"introduction-please-login": "Tulung, <a href=\"login\">ngranjing log</a>",
+	"introduction": "<strong>Commons Mass Description</strong> adalah sebuah alat untuk menggambarkan gambar dan multimedia pada <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> secara massal tanpa menyunting setiap gambar secara manual. Anda dapat melihat lebih lanjut di <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">di halaman Wikimedia Commons-nya</a>.",
+	"introduction-bugs": "Jika Anda menemukan bug pada alat ini, silakan <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">membuat tugas di Wikimedia Phabricator</a>.",
+	"report-bug": "Laporkan kesalahan",
+	"login": "Ngranjing log",
+	"logout": "Keluar log",
+	"users-using-tool": "Pengguna yagn menggunakan alat ini",
+	"you-were-blocked": "Akun pengguna Anda telah diblokir",
+	"block-summary": "Rincian pemblokiran Anda",
+	"block-sysop": "Sysop pemblokir",
+	"block-reason": "Alasan pemblokiran",
+	"block-expiration": "Kadaluwarsa pemblokiran",
+	"choose-language": "Pilih bahasa",
+	"option-display-images": "Pilih jumlah gambar yang ditampilkan",
+	"do-not-filter": "Jangan filter",
+	"filter-by-category": "Filter menurut kategori",
+	"filter-by-uploader": "Filter menurut pengunggah",
+	"source-category": "Masukkan nama kategori yang ingin Anda gunakan sebagai sumber tabel di bawah ini",
+	"helptext-category": "Sertakan awalan/prefix Kategori:",
+	"source-uploader": "Masukkan nama pengguna pengunggahl gambar mana yang ingin Anda gambarkan",
+	"helptext-uploader": "Nama pengguna, jangan sertakan awalan Pengguna:",
+	"load-pictures": "Muat gambar",
+	"submit": "Kirim",
+	"picture": "Gambar",
+	"description": "Deskripsi",
+	"categories": "Kategori",
+	"all-users": "Semua pengguna yang telah menggunakan CMD",
+	"username": "Nama pengguna",
+	"number-of-edits": "Jumlah total suntingan",
+	"total": "Total"
+}

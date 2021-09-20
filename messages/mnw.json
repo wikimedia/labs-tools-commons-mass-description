@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Htawmonzel"
+			"Htawmonzel",
+			"Ranger-Mon"
 		]
 	},
 	"introduction-please-login": "ပဂုန်တုဲ, <a href=\"login\">လုပ်လံက်အေန်</a>",
@@ -22,10 +23,10 @@
 	"filter-by-category": "ခ္ဍိုဟ် နကဵု ကဏ္ဍ",
 	"filter-by-uploader": "ခ္ဍိုဟ် နကဵု မၞိဟ်မပတိုန်",
 	"source-category": "စုတ် ယၟု ကဏ္ဍ မဒှ်အရာ မၞး မိက်ဂွံ စကာ ပ္ဍဲတင်ဂၞင် သ္ၚိအင် ဗွဲသၟဝ်ဝွံ",
-	"helptext-category": "စုတ်ပၠောပ် ကဏ္ဍ",
+	"helptext-category": "စုတ်ပၠုပ် ကဏ္ဍ:",
 	"source-uploader": "စုတ် ယၟုညးလွပ် မပတိုန်လဝ် နကဵု ဗီုရုပ် မၞးမိက်ဂွံ ဗၟံက်ထ္ၜး",
 	"helptext-uploader": "ယၟုညးလွပ် ဟွံပၠောပ်စုတ် -",
-	"load-pictures": "လံက်ပၠောပ် ဗီုဂမၠိုၚ်",
+	"load-pictures": "ပၠုပ် ဗီုရုပ်ဂမၠိုင်",
 	"submit": "ဗပေင်",
 	"picture": "ဗီုရုပ်",
 	"description": "မဗမံက်ထ္ၜး",
@@ -33,5 +34,5 @@
 	"all-users": "ညးလွပ် သီုဖအိုတ် မဟွံ စကာ CMD",
 	"username": "ယၟုညးလွပ်",
 	"number-of-edits": "လၟိဟ် မပလေဝ်ဒါန်လဝ် သီုဖအိုတ်",
-	"total": "ပံၚ်ဖအိုတ်"
+	"total": "ပံင်ဖအိုတ်"
 }
