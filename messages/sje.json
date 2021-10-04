@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Luggi sisa</a>",
+	"report-bug": "Diededa vige birra",
+	"login": "Luggi sisa",
+	"logout": "Luggi ulgus",
+	"users-using-tool": "Adneja gie idni dav riejdov",
+	"you-were-blocked": "Duv adnejkånntå l buddusum.",
+	"choose-language": "Vällji gielav",
+	"helptext-category": "Sebrudahte prefiksav Kategorijja:",
+	"helptext-uploader": "Adnejnamma, ij sebrudahte prefiksav Adnej:",
+	"load-pictures": "Lässti sisa gåvåjt",
+	"submit": "Säddi",
+	"picture": "Gåvvå",
+	"categories": "Kategorija",
+	"username": "Adnejnamma"
+}
