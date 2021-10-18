@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abbaty"
+		]
+	},
+	"report-bug": "ka bada labarin duk wata matsala",
+	"login": "shigar da bayanan ka",
+	"logout": "ka fita daga shafin",
+	"you-were-blocked": "An riga da an rufe shafinka",
+	"block-summary": "Bayani akan shafinka",
+	"block-reason": "Dalilin rufe shafin",
+	"choose-language": "Ka zabi yare",
+	"load-pictures": "ka shigar da hotuna",
+	"picture": "Hoto",
+	"username": "Sunan mai aiki",
+	"number-of-edits": "Adadin da aka Ta ce",
+	"total": "Duka"
+}
