@@ -4,8 +4,10 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"introduction-please-login": "Pi favuri, <a href=\"login\">trasi</a>",
 	"login": "Trasi",
 	"logout": "Nesci",
+	"choose-language": "Scegghi la lingua",
 	"picture": "Mmàggini",
 	"description": "Discrizzioni",
 	"categories": "Catigurìi",
