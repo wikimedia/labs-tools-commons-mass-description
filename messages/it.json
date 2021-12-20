@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Albe Albe 460",
 			"Beta16"
 		]
 	},
-	"introduction-please-login": "Pere favore, <a href=\"login\">accedi</a>",
+	"introduction-please-login": "Per favore, <a href=\"login\">accedi</a>",
 	"introduction": "<strong>Commons Mass Description</strong> è uno strumento che consente agli utenti di descrivere foto e file multimediali su <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> in maniera massiva senza la necessità modificare manualmente ogni singola immagine. Puoi trovare più informazioni nella <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">pagina su Wikimedia Commons</a>.",
 	"introduction-bugs": "Se trovi qualche errore in questo strumento, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">crea una segnalazione su Wikimedia Phabricator</a>.",
 	"report-bug": "Segnala un errore",
