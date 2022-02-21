@@ -1,33 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
-			"Agilight"
+			"Agilight",
+			"Riverman"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Кирип моорлаңар</a>",
-	"report-bug": "Алдаг, чазыг дугайында дыңнадыр",
+	"report-bug": "Чазыг дугайын билдирер",
 	"login": "Кирер",
 	"logout": "Үнер",
-	"users-using-tool": "Ук херекселди ажыглап турар киржикчилер",
-	"you-were-blocked": "Силерниң бүрүткел адыңарны дуглаан",
-	"block-summary": "Дуглалдың тодаргай медээлели",
-	"block-sysop": "Дуглакчы удуртукчу",
-	"block-reason": "Дуглаан чылдагааны",
-	"block-expiration": "Дуглалдың доостуру",
+	"users-using-tool": "Ук херекселди ажыглап турар ажыглакчылар",
+	"you-were-blocked": "Ажыглакчы аккаунтуңар блоктаткан",
+	"block-summary": "Блоктуң допчулалы",
+	"block-sysop": "Блоктаан администратору",
+	"block-reason": "Блоктуң чылдагааны",
+	"block-expiration": "Блоктуң доостуру",
 	"choose-language": "Дылды шилиңер",
 	"option-display-images": "Көргүзер чуруктарның санын айтыңар",
 	"do-not-filter": "Шүүрбес",
 	"filter-by-category": "Аңгылал-биле шүүр",
 	"filter-by-uploader": "Чүдүрүкчүзү-биле шүүр",
+	"source-category": "Куду таблицаның дөзү кылдыр ажыглаар деп турар аңгылалыңар адын киириңер",
 	"helptext-category": "Аңгылал деп префиксти кожар:",
+	"source-uploader": "Тодарадыр деп турар чурууңар чүдүрүкчүзүнүң ажыглакчы адын киириңер",
 	"helptext-uploader": "Киржикчи деп префикс чокка ажыглакчының ады",
-	"load-pictures": "Чуруктар чүдүрер",
+	"load-pictures": "Чуруктарны чүдүрер",
 	"submit": "Күүседир",
 	"picture": "Чурук",
 	"description": "Тодарадылга",
 	"categories": "Аңгылалдар",
-	"all-users": "CMD деп чүүлдү кажан-бир ажыглап чораан шупту киржикчилер",
-	"username": "Бүрүткел ат",
+	"all-users": "Кажан-бир CMD ажыглап чораан шупту киржикчилер",
+	"username": "Ажыглакчы ат",
 	"number-of-edits": "Эдилгелериниң түң саны",
 	"total": "Шупту"
 }
