@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
 	"login": "Čäälit jieijâd siisâ",
 	"logout": "Čäälit jieijâd olgos",
+	"choose-language": "Valjii kielâ",
 	"load-pictures": "Luođii kuuvijd",
 	"picture": "Kove",
 	"description": "Kuvvim",
