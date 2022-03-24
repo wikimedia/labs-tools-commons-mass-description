@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amirsara",
+			"Beginneruser",
 			"Darafsh",
 			"FarsiNevis"
 		]
@@ -15,7 +16,7 @@
 	"users-using-tool": "کاربران استفاده‌کننده از این ابزار",
 	"you-were-blocked": "حساب کاربری شما مسدود شده است",
 	"block-summary": "شرح خلاصهٔ مسدودسازی شما",
-	"block-sysop": "در حال بندایش مدیر",
+	"block-sysop": "درحال بستن مدیر",
 	"block-reason": "علت مسدودسازی",
 	"block-expiration": "انقضای مسدودسازی",
 	"choose-language": "انتخاب زبان",
