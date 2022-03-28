@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mirin",
+			"Robin van der Vliet",
 			"YvesNevelsteen"
 		]
 	},
@@ -22,7 +23,7 @@
 	"do-not-filter": "Ne filtri",
 	"filter-by-category": "Filtri laŭ kategorio",
 	"filter-by-uploader": "Filtri laŭ alŝutinto",
-	"source-category": "Enigu nomon de kategorion kiun vi volas uzi ĉe la fonto de la suba tabelo",
+	"source-category": "Enigu nomon de kategorion kiun vi volas uzi kiel la fonton de la suba tabelo",
 	"helptext-category": "Inkluzivi la prefikson Category: (Kategorio:)",
 	"source-uploader": "Enigu uzantnomon de alŝutinto de priskribotaj bildoj",
 	"helptext-uploader": "Uzantnomo, ne inkluzivanta la prefikson User: (Uzanto:)",
