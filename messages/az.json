@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Nargizhasanli",
+			"Serkanland",
 			"Şeyx Şamil"
 		]
 	},
@@ -12,7 +13,7 @@
 	"users-using-tool": "Alətdən istifadə edən istifadəçilər",
 	"you-were-blocked": "İstifadəçi hesabınız bloklanıb",
 	"block-summary": "Blokunuzun xülasəsi",
-	"block-sysop": "Bloklayan idarəçi",
+	"block-sysop": "Bloklayan inzibatçı",
 	"block-reason": "Bloklanma səbəbi",
 	"block-expiration": "Blokun başa çatması",
 	"choose-language": "Dili seç",
