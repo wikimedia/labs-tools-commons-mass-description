@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"F Samaritani"
+		]
+	},
+	"login": "Intra",
+	"logout": "Iscidda",
+	"block-reason": "Rasgiòni par lu broccu.",
+	"choose-language": "Ciambà linga",
+	"description": "Deschrizioni",
+	"categories": "Categuri",
+	"username": "Innòmu utenti",
+	"number-of-edits": "Innùmaru totari di modìfichi",
+	"total": "Tutari"
+}
