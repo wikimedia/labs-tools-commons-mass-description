@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Akmaie Ajam",
+			"Frezvent",
 			"Joseagush"
 		]
 	},
-	"introduction-please-login": "Tulung, <a href=\"login\">ngranjing log</a>",
+	"introduction-please-login": "Tolong, <a href=\"login\">ngranjing log</a>",
 	"introduction": "<strong>Commons Mass Description</strong> adalah sebuah alat untuk menggambarkan gambar dan multimedia pada <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> secara massal tanpa menyunting setiap gambar secara manual. Anda dapat melihat lebih lanjut di <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">di halaman Wikimedia Commons-nya</a>.",
 	"introduction-bugs": "Jika Anda menemukan bug pada alat ini, silakan <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">membuat tugas di Wikimedia Phabricator</a>.",
 	"report-bug": "Laporkan kesalahan",
