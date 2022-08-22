@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"GinawaSaHapon"
+		]
+	},
+	"introduction-please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
+	"introduction": "Isang kagamitan ang <strong>Commons Mass Description</strong> para sa paglalarawan sa mga larawan at multimedia sa <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse nang hindi na nangangailangan mano-mano pang i-edit ang bawat isang larawan. Matuto pa sa <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">pahina nito sa Wikimedia Commons</a>.",
+	"introduction-bugs": "Kung nakakita ka ng mga bug sa kagamitan na ito, malaya po kayong <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">gumawa ng gawain sa Wikimedia Phabricator</a>.",
+	"report-bug": "Mag-ulat ng bug",
+	"login": "Mag-login",
+	"logout": "Mag-logout",
+	"users-using-tool": "Mga gumagamit sa kagamitang ito",
+	"you-were-blocked": "Hinaharangan sa ngayon ang account mo",
+	"block-summary": "Buod ng pagharang",
+	"block-sysop": "Humaharang na sysop",
+	"block-reason": "Dahilan ng pagharang",
+	"block-expiration": "Hinaharangan hanggang",
+	"choose-language": "Pumili ng wika",
+	"option-display-images": "Pumili ng bilang ng ipapakitang larawan",
+	"do-not-filter": "Wag i-filter",
+	"filter-by-category": "I-filter base sa kategorya",
+	"filter-by-uploader": "I-filter base sa nag-upload",
+	"source-category": "Ilagay ang pangalan ng kategorya na gusto mong gamiting source ng table sa baba",
+	"helptext-category": "Isama ang unlaping Category:",
+	"source-uploader": "Ilagay ang username ng nag-upload ng mga larawang ilalarawan mo",
+	"helptext-uploader": "Username, hindi kasama ang unlaping User:",
+	"load-pictures": "I-load ang mga larawan",
+	"submit": "Ipasa",
+	"picture": "Larawan",
+	"description": "Paglalarawan",
+	"categories": "Mga kategorya",
+	"all-users": "Lahat ng mg gumamit ng CMD",
+	"username": "Username",
+	"number-of-edits": "Kabuuang bilang ng mga edit",
+	"total": "Kabuuan"
+}
