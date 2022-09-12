@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tajamul9"
+		]
+	},
+	"introduction": "<strong>کامنٕز ماس تفصیٖل</strong> چھُ اکھ اَوزار یُس أکِس صٲرفس چھِ اِجازَت دِوان تصویٖرَن ہِنٛز تفصیٖل دِنَس تہٕ مَلٹیٖمیٖڈِیا <a href=\"https://commons.wikimedia.org\"> </a> en masse ورٲی ہَر کُنہِ تصویٖرِ پانَے اؠڑِٹ کٕرِتھ. تُہہ ہیکیوٚ بییہٚ ژھٲرِتھ <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">اَمہِ کِس وِکیٖمیڈِیا کامنٕز صَفس پؠٹھ</a> پؠٹھ",
+	"introduction-bugs": "اگر تۄہِہ کانٛہہ تہِ خٲمی یتھ اَوزارس منٛز لبنہٕ یِیو، مہربأنی کٕرِتھ وُچھو <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">درخواست کٕریٚو پیش</a>",
+	"report-bug": "خٲمی ہِنٛز خبر دِیوُ",
+	"login": "دٲخل گژھن",
+	"logout": "کھاتہٕ منٛز نؠبر نیرُن",
+	"users-using-tool": "یہِ اَوزار چھِ صٲرفیٖن استعمال کران",
+	"you-were-blocked": "تُہُنٛد صٲرف کھاتہٕ چھُ آمُت بَند کرنہٕ",
+	"block-summary": "تُہُنٛد کھاتہٕ بَند گژٕھنُک خُلاصہٕ",
+	"block-sysop": "بند کرنُک سِسٹم آپریٹر",
+	"block-reason": "کھاتہٕ بند گژٕھنُک وجہ",
+	"block-expiration": "بند گۄمُتِیوک تٲریٖخ ہِیوٚنٛد اَنٛد",
+	"choose-language": "زَبان چُنِیوٚ",
+	"option-display-images": "نمر اکھ چُنِیوٚ ہاوٕنہٕ آمتؠن تصویٖرَن ہِنٛز",
+	"do-not-filter": "فِلٹر مَہ کٕریٚو",
+	"filter-by-category": "زٲژ ہِنٛدی طرفہٕ فلٹر",
+	"filter-by-uploader": "اپلوڈر سٕنٛدی طرفہٕ فِلٹر",
+	"source-category": "تَمہِ زٲژ ہِیوٚنٛد ناو کٕریٚو تُہہ درٕج یَمیوٚک تُہہ یژھان چھ استعمال کرُن بحیثِیَتہِ آگُر بۄنہٕ کَنہِ کِس ٹیبلَس کھٲترٕ",
+	"helptext-category": "گۄڈٕ یِنہٕ واجِنی زٲژ ناو ہؠتھ",
+	"source-uploader": "اپلوڈر سُنٛد صٲرف ناو کٕریٚو درٕج کَمہٕ تصویٖرٕ چھو تُہہ یژھان پسن کرٕنی تفصیٖل دِنہٕ کھٲترٕ",
+	"helptext-uploader": "صٲرِف ناو، صٲرف سُند برونٛہم لفظ مٕہ رلٲوِو اتھ سٕتی",
+	"load-pictures": "تصویٖرٕ کٕریٚو لوڈ",
+	"submit": "دَرٕج",
+	"picture": "تصویٖر",
+	"description": "وَضاحَت",
+	"categories": "زٲژ",
+	"all-users": "سأری صٲرِف یِمہٕ CMD چھِ استعمال کران",
+	"username": "صٲرِف ناو",
+	"number-of-edits": "تَمام اؠڈِٹَن ہُنٛد تعداد",
+	"total": "کُل"
+}
