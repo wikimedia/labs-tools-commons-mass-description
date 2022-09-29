@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GinawaSaHapon"
+			"GinawaSaHapon",
+			"Jojit fb"
 		]
 	},
 	"introduction-please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
@@ -32,6 +33,6 @@
 	"categories": "Mga kategorya",
 	"all-users": "Lahat ng mg gumamit ng CMD",
 	"username": "Username",
-	"number-of-edits": "Kabuuang bilang ng mga edit",
+	"number-of-edits": "Kabuuang bilang ng binago",
 	"total": "Kabuuan"
 }
