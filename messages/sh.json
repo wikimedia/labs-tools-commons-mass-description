@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Prijavite se</a>",
+	"report-bug": "Prijavi grešku",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"you-were-blocked": "Vaš korisnički račun je blokiran",
+	"choose-language": "Izaberite jezik",
+	"submit": "Unesi",
+	"picture": "Slika",
+	"description": "Opis",
+	"categories": "Kategorije",
+	"username": "Korisničko ime",
+	"number-of-edits": "Ukupni broj izmjena",
+	"total": "Ukupno"
+}
