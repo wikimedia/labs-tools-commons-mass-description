@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"introduction-please-login": "Къыйын тюл эсе<a href=\"login\">Киригиз</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — къошулуучулагъа <a href=\"https://commons.wikimedia.org\">Викигёзенде</a> суратла бла мультимедианы, хар бирин тюзетмей, кёбчюлюк халда суратларгъа мадар берген адырды. Кёбюрек <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">адырны бетинде</a> билирге боллукъсуз.",
+	"introduction-bugs": "Бу адырда халат табдыгъыз эсе, шо, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Фабрикаторда нюзюр къурагъыз</a>.",
+	"report-bug": "Халатны юсюнден билдир",
+	"login": "Кириу",
+	"logout": "Чыгъыу",
+	"users-using-tool": "Бу адырны хайырланнган къошулуучула",
+	"you-were-blocked": "Къошулуучу хыйсабыгъыз блок этилгенди",
+	"block-summary": "Блогугъузну юсюнден",
+	"block-sysop": "Блок этген администратор",
+	"block-reason": "Блокну чуруму",
+	"block-expiration": "Блокну бошалыуу",
+	"choose-language": "Тилни сайла",
+	"option-display-images": "Кёргюзюлген суратланы санын белгилегиз",
+	"do-not-filter": "Фильтрлемегиз",
+	"filter-by-category": "Категория кёре фильтр",
+	"filter-by-uploader": "Джюклеучюге кёре фильтр",
+	"source-category": "Тюбюндеги таблицаны къайнагъы болуб, хайырланыргъа излеген категориягъызны атын киргизигиз",
+	"helptext-category": "Префикс категориягъа киргиз:",
+	"source-uploader": "Къайсы суратланы суратларгъа излей эсегиз, аланы джюклеген къошулуучу атын киргизигиз",
+	"helptext-uploader": "Къошулуучуну аты, Къошлуучу префиксин киргизмегиз:",
+	"load-pictures": "Суратны джюкле",
+	"submit": "Джибер",
+	"picture": "Сурат",
+	"description": "Ачыкълау",
+	"categories": "Категорияла",
+	"all-users": "CMD хайырланнган бютеу къошулуучула",
+	"username": "Къошулуучуну аты",
+	"number-of-edits": "Бютеу тюрлендириулени саны",
+	"total": "Бютеулей"
+}
