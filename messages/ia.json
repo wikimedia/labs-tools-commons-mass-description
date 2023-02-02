@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"introduction-please-login": "Per favor <a href=\"login\">aperi session</a>",
+	"introduction": "<strong>Description in Massa sur Commons</strong> es un instrumento que permitte a usatores describer imagines e multimedia sur <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> in massa sin besonio de modificar cata imagine manualmente. Plus information se trova sur <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">le relative pagina sur Wikimedia Commons</a>.",
+	"introduction-bugs": "Si tu trova qualcunque defecto in iste utensile, per favor <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">signala le problema a Wikimedia Phabricator</a>.",
+	"report-bug": "Reportar un defecto",
+	"login": "Aperir session",
+	"logout": "Clauder session",
+	"users-using-tool": "Usatores de iste utensile",
+	"you-were-blocked": "Tu conto de usator ha essite blocate",
+	"block-summary": "Summario de tu blocada",
+	"block-sysop": "Le administrator qui te ha blocate",
+	"block-reason": "Motivo del blocada",
+	"block-expiration": "Expiration del blocada",
+	"choose-language": "Elige un lingua",
+	"option-display-images": "Elige le numero de imagines a monstrar",
+	"do-not-filter": "Non filtrar",
+	"filter-by-category": "Filtrar per categoria",
+	"filter-by-uploader": "Filtrar per incargator",
+	"source-category": "Insere le nomine del categoria que tu vole usar como le origine del tabella hic infra",
+	"helptext-category": "Includer le prefixo Category:",
+	"source-uploader": "Insere le nomine de usator del incargator cuje imagines tu vole describer",
+	"helptext-uploader": "Nomine de usator, non includer le prefixo User:",
+	"load-pictures": "Cargar imagines",
+	"submit": "Submitter",
+	"picture": "Imagine",
+	"description": "Description",
+	"categories": "Categorias",
+	"all-users": "Tote le usatores que ha jammais usate DMC",
+	"username": "Nomine de usator",
+	"number-of-edits": "Numero total de modificationes",
+	"total": "Total"
+}

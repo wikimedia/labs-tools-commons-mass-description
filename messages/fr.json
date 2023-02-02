@@ -17,7 +17,7 @@
 	"users-using-tool": "Utilisateurs de cet outil",
 	"you-were-blocked": "Votre compte utilisateur a été bloqué",
 	"block-summary": "Résumé de votre blocage",
-	"block-sysop": "Blocage d’un sysop",
+	"block-sysop": "L’administrateur qui vous a bloqué",
 	"block-reason": "Motif de blocage",
 	"block-expiration": "Expiration du blocage",
 	"choose-language": "Choisir la langue",

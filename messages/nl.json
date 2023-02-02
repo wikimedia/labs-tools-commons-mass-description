@@ -3,11 +3,12 @@
 		"authors": [
 			"Mainframe98",
 			"Marcelhospers",
+			"McDutchie",
 			"Ndecouck",
 			"Optilete"
 		]
 	},
-	"introduction-please-login": "Alstublieft, <a href=\"login\">meldt u aan</a>",
+	"introduction-please-login": "Gelieve <a href=\"login\">in te loggen</a>",
 	"introduction": "<strong>Commons Mass Description</strong> is een tool waarmee gebruikers afbeeldingen en multimedia op <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> massaal kunnen beschrijven zonder elke afbeelding handmatig te bewerken. U kunt meer informatie vinden op <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">de Wikimedia Commons-pagina</a>.",
 	"introduction-bugs": "Als je bugs in deze tool tegenkomt, aarzel dan niet om <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> een taak te maken op Wikimedia Phabricator </a>.",
 	"report-bug": "Probleem melden",
