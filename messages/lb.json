@@ -3,10 +3,13 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"introduction-please-login": "WGL., <a href=\"login\">aloggen</a>",
+	"introduction": "<strong>Commons Mass Description</strong> ass een Tool, dat et Benotzer erlaabt fir Biller a Multimedia op <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> masseweis ze beschreiwen ouni all eenzelt Bild manuell änneren ze mussen. Dir gitt méi op <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">dëser Wikimedia-Commons-Säit</a> gewuer.",
+	"introduction-bugs": "Wann Dir an dësem Tool iergendwellech Softwarefeeler fannt, kënnt Dir gären <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">eng Task bei Wikimedia Phabricator opmaachen</a>.",
 	"report-bug": "E Feeler mellen",
 	"login": "Aloggen",
 	"logout": "Ausloggen",
@@ -17,14 +20,20 @@
 	"block-reason": "Grond fir d'Spär",
 	"block-expiration": "Ënn vun der Spär",
 	"choose-language": "Sprooch eraussichen",
+	"option-display-images": "Wielt eng Zuel vu Biller fir ze weisen",
 	"do-not-filter": "Net filteren",
 	"filter-by-category": "No Kategorie filteren",
+	"filter-by-uploader": "No Uploader filteren",
+	"source-category": "Gitt den Numm vun der Kategorie an, déi Dir als Quell vun der Tabell ënne benotze wëllt",
+	"helptext-category": "Inklusiv de Präfix vun der Kategorie:",
+	"source-uploader": "Gitt de Benotzernumm vum Uploader un, deem seng Biller Dir beschreiwe wëllt",
 	"helptext-uploader": "Benotzernumm ouni Prefix Benotzer:",
 	"load-pictures": "Biller lueden",
 	"submit": "Schécken",
 	"picture": "Bild",
 	"description": "Beschreiwung",
 	"categories": "Kategorien",
+	"all-users": "All d'Benotzer, déi jeemools CMD benotzt hunn",
 	"username": "Benotzernumm",
 	"number-of-edits": "Gesamtzuel vun den Ännerungen",
 	"total": "Total"
