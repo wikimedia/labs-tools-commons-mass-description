@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Blackisnewyellow"
+		]
+	},
+	"introduction-please-login": "Рәхим итеп, <a href=\"login\">керегезче</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — бу корал кулланучыларга <a href=\"https://commons.wikimedia.org\">Викиҗыентыктагы</a> сурәтләр һәм мультимедиа өчен берәмләп урынына күпләп тасвирлама өстәргә мөмкинлек бирә. <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Корал битендә</a> күбрәк мәгълүмат бар.",
+	"introduction-bugs": "Бу коралда хата тапсагыз, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">«Фабрикаторда» мәсьәлә ясагыз</a>.",
+	"report-bug": "Хата турында белдерү",
+	"login": "Керү",
+	"logout": "Чыгу",
+	"users-using-tool": "Бу коралны кулланучылар",
+	"you-were-blocked": "Сезнең хисапъязмагыз тыелды",
+	"block-summary": "Тыю турында мәгълүмат",
+	"block-sysop": "Тыйган идарәче",
+	"block-reason": "Тыюның сәбәбе",
+	"block-expiration": "Тыюның ахырлашуы",
+	"choose-language": "Телне сайлау",
+	"option-display-images": "Күрсәтелә торган сурәтләр саны",
+	"do-not-filter": "Сөзгечне сүндерү",
+	"filter-by-category": "Сөзгеч: төркем буенча",
+	"filter-by-uploader": "Сөзгеч: төюче буенча",
+	"source-category": "Түбәндәге җәдвәл өчен чыганак булучы төркем өстәү"
+}
