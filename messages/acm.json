@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"MRidhaAJ"
+		]
+	},
+	"introduction-please-login": "الرجاء <a href=\"login\"> تسجيل الدخول</a>",
+	"report-bug": "بلغ على خطأ",
+	"login": "إفتح حساب",
+	"logout": "سد الحساب",
+	"you-were-blocked": "حسابك انحظر",
+	"block-summary": "ملخص حظرك",
+	"block-sysop": "الإداري المانع",
+	"block-reason": "سبب الحظر",
+	"block-expiration": "إنتهاء صلاحية الحظر",
+	"choose-language": "إختار اللغة"
+}
