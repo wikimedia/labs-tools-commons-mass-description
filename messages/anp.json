@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Proabscorp!"
+		]
+	},
+	"introduction-please-login": "कृपया <a href=\"login\">लॉग-इन करौ</a>",
+	"introduction": "<strong>Commons Mass Description</strong> एगो उपकरण छेकै जेकरा सँ सदस्य सब चित्र क स्वयं सँ संपादित करलौ बिन सामूहिक रूप सँ <a href=\"https://commons.wikimedia.org\">विकिमीडिया कॉमन्स</a> प चित्र सिनी आरो मल्टीमीडिया फ़ाइल प विवरण जोड़ै सकै छै। तोंय <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">विकिमीडिया कॉमन्स मँ एकरौ पृष्ठ</a> प अधिक जानै सकै छौ।",
+	"introduction-bugs": "यदि तोरा हैय उपकरण मँ कोय बग देखाय छौं त कृपया <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">विकिमीडिया Phabricator प एगो टास्क ज़रूर बनाबौ</a>।",
+	"report-bug": "बग क रिपोर्ट करौ",
+	"login": "लॉग इन करौ",
+	"logout": "लॉगआउट  करौ",
+	"users-using-tool": "हैय उपकरण क उपयोग करै वाला सदस्य",
+	"you-were-blocked": "तोरौ सदस्य खाता क अवरोधित करी देलौ गेलौ छौं",
+	"block-summary": "तोरौ अवरोध केरौ सारांश",
+	"block-sysop": "अवरोधित करै बला सिसॉप",
+	"block-reason": "अवरोध करै केरौ कारण",
+	"block-expiration": "अवरोध समाप्ति",
+	"choose-language": "भाषा चुनौ",
+	"option-display-images": "देखाय जाय बला चित्र सिनी क संख्या चुनौ",
+	"do-not-filter": "नाय छानौ",
+	"filter-by-category": "श्रणी केरौ अनुसार छानौ",
+	"filter-by-uploader": "अपलोड करै बला केरौ अनुसार छानौ",
+	"source-category": "उ श्रेणी क नाँव दर्ज करौ जेकरा तोंय नीच्चँ देलौ गेलौ तालिका के स्रोत केरौ रूप मँ उपयोग करै ल चाहै छौ",
+	"helptext-category": "'श्रेणी:' उपसर्ग सम्मिलित करौ",
+	"source-uploader": "अपलोड करै बला क सदस्यनाम दर्ज करौ जेकरौ चित्र प तोंय विवरण जोड़ै ल चाहै छौ",
+	"helptext-uploader": "सदस्यनाम, 'सदस्य:' उपसर्ग सम्मिलित नाय करौ",
+	"load-pictures": "चित्र लोड करौ",
+	"submit": "जमा करौ",
+	"picture": "चित्र",
+	"description": "विवरण",
+	"categories": "श्रेणी सिनी",
+	"all-users": "CMD क उपयोग करै बला सब्भे सदस्य",
+	"username": "सदस्यनाम",
+	"number-of-edits": "संपादन केरौ कुल संख्या",
+	"total": "कुल"
+}

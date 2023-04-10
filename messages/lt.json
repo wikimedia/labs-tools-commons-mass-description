@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"introduction-please-login": "Prašome <a href=\"login\">prisijungti</a>",
+	"introduction": "<strong>„Commons Mass Description“</strong> yra įrankis, leidžiantis naudotojui masiškai apibūdinti paveikslėlius ir mediją <a href=\"https://commons.wikimedia.org\">Vikitekoje</a> neredaguojant kiekvieno paveikslėlio rankiniu būdu. Daugiau informacijos galite rasti <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Vikitekos puslapyje</a>.",
+	"introduction-bugs": "Jei radote šio įrankio klaidų, nedvejodami <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">sukurkite užduotį Vikitekos Fabrikatoriuje</a>.",
+	"report-bug": "Pranešti apie klaidą",
+	"login": "Prisijungti",
+	"logout": "Atsijungti",
+	"users-using-tool": "Naudotojai, naudojantys šį įrankį",
+	"you-were-blocked": "Jūsų paskyra užblokuota",
+	"block-summary": "Jūsų blokavimo santrauka",
+	"block-sysop": "Blokuojantis sysop",
+	"block-reason": "Blokavimo priežastis",
+	"block-expiration": "Blokavimo pabaiga",
+	"choose-language": "Pasirinkite kalbą",
+	"option-display-images": "Pasirinkite rodomų vaizdų skaičių",
+	"do-not-filter": "Nefiltruoti",
+	"filter-by-category": "Filtruoti pagal kategoriją",
+	"filter-by-uploader": "Filtruoti pagal įkėlusį",
+	"source-category": "Įveskite kategorijos, kurią norite naudoti kaip toliau pateiktos lentelės šaltinį, pavadinimą",
+	"source-uploader": "Įveskite įkėlusio naudotojo vardą, kurio nuotraukas norite apibūdinti",
+	"load-pictures": "Įkelti nuotraukas",
+	"submit": "Siųsti",
+	"picture": "Nuotrauka",
+	"description": "Aprašymas",
+	"categories": "Kategorijos",
+	"all-users": "Visi naudotojai, kurie kada nors naudojo CMD",
+	"username": "Naudotojo vardas",
+	"number-of-edits": "Keitimų skaičius",
+	"total": "Viso"
+}
