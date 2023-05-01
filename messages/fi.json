@@ -8,7 +8,7 @@
 	},
 	"introduction-please-login": "Ole hyvä, <a href=\"login\">kirjaudu</a>",
 	"report-bug": "Ilmoita bugista",
-	"login": "Kirjaudu",
+	"login": "Kirjaudu sisään",
 	"logout": "Kirjaudu ulos",
 	"users-using-tool": "Käyttäjät, jotka käyttävät tätä työkalua",
 	"you-were-blocked": "Käyttäjätilisi on estetty",
