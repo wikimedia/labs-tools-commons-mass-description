@@ -4,6 +4,8 @@
 			"Saraiki"
 		]
 	},
+	"introduction-please-login": "سوہݨا، <a href=\"لاگ ان تھیوو\">login</a>",
+	"report-bug": "بڳ دی رپورٹ کرو",
 	"login": "لاگ ان",
 	"logout": "لاگ آؤٹ",
 	"block-reason": "پابندی دی وجہ",
