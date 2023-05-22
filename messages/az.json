@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"AZISS",
 			"Nargizhasanli",
 			"Serkanland",
 			"Şeyx Şamil"
 		]
 	},
 	"introduction-please-login": "Zəhmət olmasa, <a href=\"login\">daxil olun</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — bu alət, istifadəçilərə <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> yerləşən şəkil və multimediaları toplu şəkildə təsvir etmək imkanı verir, hər bir şəkili ayrı-ayrılıqda redaktəyə ehtiyac qalmır. Daha artıq məlumatı <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">alətin səhifəsindən</a> ala bilərsiniz.",
+	"introduction-bugs": "Zəhmət olmasa, bu alətdən istifadə zamanı hər hansı səhv tapsanız, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia Phabricator-da bununla bağlı iş açın</a>.",
 	"report-bug": "Xəta bildir",
 	"login": "Daxil ol",
 	"logout": "Çıxış",
