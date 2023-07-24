@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Caden99",
 			"Leducthn"
 		]
 	},
 	"introduction-please-login": "Vui lòng <a href=\"login\">đăng nhập</a>",
+	"introduction": "<strong>Commons Mass Description</strong> là một công cụ cho phép người dùng mô tả hình ảnh và đa phương tiện tại <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> en masse mà không cần phải chỉnh sửa thủ công từng hình ảnh. Bạn có thể tìm thêm tại <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">trang Wikimedia Commons của nó</a> .",
 	"introduction-bugs": "Nếu bạn tìm thấy lỗi trong công cụ, đừng ngần ngại <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">tạo task mới trên Wikimedia Phabricator</a>.",
 	"report-bug": "Báo lỗi",
 	"login": "Đăng nhập",
@@ -20,11 +22,16 @@
 	"do-not-filter": "Đừng lọc",
 	"filter-by-category": "Lọc theo thể loại",
 	"filter-by-uploader": "Lọc theo người tải lên",
+	"source-category": "Nhập tên danh mục mà bạn muốn sử dụng làm nguồn của bảng bên dưới",
+	"helptext-category": "Bao gồm tiền tố Danh mục:",
+	"source-uploader": "Nhập tên người dùng của người tải lên những hình ảnh bạn muốn mô tả",
+	"helptext-uploader": "Tên người dùng, không bao gồm tiền tố Người dùng:",
 	"load-pictures": "Tải hình ảnh",
 	"submit": "Đăng",
 	"picture": "Hình",
 	"description": "Mô tả",
 	"categories": "Thể loại",
+	"all-users": "Tất cả người dùng đã từng sử dụng CMD",
 	"username": "Tên người dùng",
 	"number-of-edits": "Tổng số lần sửa đổi",
 	"total": "Tổng cộng"
