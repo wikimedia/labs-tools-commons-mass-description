@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"CptViraj"
+		]
+	},
+	"login": "પ્રવેશ કરો",
+	"logout": "પ્રસ્થાન કરો",
+	"users-using-tool": "આ સાધનનો ઉપયોગ કરતા સભ્યો",
+	"you-were-blocked": "તમારું સભ્ય ખાતું અવરોધિત કરવામાં આવ્યું છે",
+	"block-sysop": "અવરોધનાર પ્રબંધક",
+	"block-reason": "અવરોધનું કારણ",
+	"block-expiration": "અવરોધની સમાપ્તિ",
+	"choose-language": "ભાષા પસંદ કરો",
+	"helptext-category": "શ્રેણી: પૂર્વગ ઉમેરવો",
+	"helptext-uploader": "સભ્યનામ, સભ્ય: પૂર્વગ ઉમેરવો નહીં",
+	"submit": "જમા કરો",
+	"picture": "ચિત્ર",
+	"description": "વર્ણન",
+	"categories": "શ્રેણીઓ",
+	"username": "સભ્યનામ",
+	"number-of-edits": "સંપાદનોની કુલ સંખ્યા",
+	"total": "કુલ"
+}
