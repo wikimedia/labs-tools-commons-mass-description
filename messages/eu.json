@@ -1,15 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"An13sa"
+			"An13sa",
+			"Atzerritik"
 		]
 	},
+	"introduction-please-login": "Mesedez, <a href=\"login\">hasi saioa</a>",
+	"introduction": "<strong>Commons Mass Description</strong> <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> n irudiak eta multimedia deskribatzeko aukera ematen dio erabiltzaileari, irudi bakoitza eskuz editatu beharrik gabe. Gehiago aurki dezakezu hemen: <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">its Wikimedia Commons page</a>.",
+	"introduction-bugs": "Tresna honetan errorerik aurkitzen baduzu, mesedez, ez izan zalantzarik <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> Wikimedia\n Phabricator</a> en zeregin bat sortzen.",
+	"report-bug": "Akats bat jakinarazi",
 	"login": "Saioa hasi",
 	"logout": "Saioa itxi",
+	"users-using-tool": "Tresna hau erabiltzen duten erabiltzaileak",
+	"you-were-blocked": "Zure erabiltzaile-kontua blokeatu da",
+	"block-summary": "Zure blokearen laburpena",
+	"block-sysop": "Sysop blokeatzea",
+	"block-reason": "Blokeatzeko arrazoia",
+	"block-expiration": "Blokearen iraungipena",
+	"choose-language": "Hizkuntza aukeratu",
+	"option-display-images": "Aukeratu bistaratzen diren hainbat irudi",
+	"do-not-filter": "Ez iragazi",
+	"filter-by-category": "Iragazi kategoriaren arabera",
+	"filter-by-uploader": "Igotzailearen arabera iragazi",
+	"source-category": "Sartu beheko taularen iturri gisa erabili nahi duzun kategoriaren izena",
+	"helptext-category": "Sartu aurrizkia Kategoria:",
+	"source-uploader": "Idatzi deskribatu nahi dituzun argazkien erabiltzaile-izena",
+	"helptext-uploader": "Erabiltzaile izena, ez sartu aurrizkia Erabiltzailea:",
+	"load-pictures": "Irudiak igo",
 	"submit": "Bidali",
 	"picture": "Irudia",
 	"description": "Deskribapena",
 	"categories": "Kategoriak",
+	"all-users": "CMD noizbait erabili dute erabiltzaile guztiak",
 	"username": "Erabiltzaile izena",
+	"number-of-edits": "Edizio kopurua, guztira",
 	"total": "Guztira"
 }
