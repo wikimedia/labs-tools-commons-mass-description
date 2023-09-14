@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"Atzerritik"
+			"Atzerritik",
+			"Juele"
 		]
 	},
 	"introduction-please-login": "Mesedez, <a href=\"login\">hasi saioa</a>",
@@ -23,7 +24,7 @@
 	"filter-by-category": "Iragazi kategoriaren arabera",
 	"filter-by-uploader": "Igotzailearen arabera iragazi",
 	"source-category": "Sartu beheko taularen iturri gisa erabili nahi duzun kategoriaren izena",
-	"helptext-category": "Sartu aurrizkia Kategoria:",
+	"helptext-category": "Sartu aurrizki Kategoria:",
 	"source-uploader": "Idatzi deskribatu nahi dituzun argazkien erabiltzaile-izena",
 	"helptext-uploader": "Erabiltzaile izena, ez sartu aurrizkia Erabiltzailea:",
 	"load-pictures": "Irudiak igo",
