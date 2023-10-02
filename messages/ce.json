@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"introduction-please-login": "Дехар до, <a href=\"login\">чугӀо</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — хӀокху гӀирсо аьтту бо дуккху суьртех а, мультимедиах а лаьцна хаамаш дӀайазбан <a href=\"https://commons.wikimedia.org\">Викиларма</a> тӀехь, хӀора сурт ша-ша куьйга тадан ца дезаш. Кхин сов хьажа <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">гӀирсан агӀонгахь</a>.",
+	"introduction-bugs": "Хьайна кху гӀирсан гӀалаташ карийнехь, дехар до, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">йазде «Фабрикаторехь»</a>.",
+	"report-bug": "Хаийта гӀалатах",
+	"login": "ЧугӀо",
+	"logout": "Аравала(йала)",
+	"users-using-tool": "ХӀара гӀирс лелош болу декъашхой",
+	"you-were-blocked": "Хьан аккаунтан блоктоьхна",
+	"block-summary": "Блоктохарах хаам",
+	"block-sysop": "Блоктоьхна администратор",
+	"block-reason": "Блоктохаран бахьана",
+	"block-expiration": "Блоктохаран хан чекхйалар",
+	"choose-language": "Харжа мотт",
+	"option-display-images": "Гойтуш долу суьртийн барам билгалбаккха",
+	"do-not-filter": "Ма литта",
+	"filter-by-category": "Категорешкахула литтар",
+	"filter-by-uploader": "Чудаьккхинчунца литтар",
+	"source-category": "Лахарчу таблицехь ахьа хьост санна лелор йолу категорин цӀе йазйе",
+	"helptext-category": "Латайе категорин префикс:",
+	"source-uploader": "Йазйе сурт чудаьккхинчу декъашхочун цӀе, ахьа хаама билгалбокхуш болу",
+	"helptext-uploader": "Декъашхочун цӀе, Декъашхо префикс йоцуш:",
+	"load-pictures": "Чудаха суьрташ",
+	"submit": "ДӀадахьийта",
+	"picture": "Сурт",
+	"description": "Цуьнах лаьцна",
+	"categories": "Категореш",
+	"all-users": "Мацца а CMD лелина декъашхой",
+	"username": "Декъашхочун цӀе",
+	"number-of-edits": "Дерриге нисдарш",
+	"total": "Йерриге"
+}
