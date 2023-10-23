@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"introduction-please-login": "Voluntez <a href=\"login\">enirar</a>",
+	"introduction": "L'utensilo nomizita ''<strong>Commons Mass Description</strong>'' uzesas por deskriptar, en granda quanto, imaji ed altr arkivi che <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> sen bezono pri redaktar irga imajo manuale. Savez pluse pri to che <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sua pagino en Wikimedia Commons</a>.",
+	"introduction-bugs": "Se vu trovos irga problemo en ca utensilo, sentez su libera por <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">krear tasko che Wikimedia Phabricator</a>.",
+	"report-bug": "Informez defekto",
+	"login": "Enirar",
+	"logout": "Ekirar",
+	"users-using-tool": "Uzeri uzanta ca utensilo",
+	"you-were-blocked": "Vua uzero-konto blokusesis.",
+	"block-summary": "Rezumo di vua blokuso",
+	"block-sysop": "Administrero di blokuso-sistemo",
+	"block-reason": "Motivo por blokuso",
+	"block-expiration": "Kande blokuso finos",
+	"choose-language": "Selektez idiomo",
+	"option-display-images": "Selektez quanto di imaji por montrar",
+	"do-not-filter": "Ne uzes filtrilo",
+	"filter-by-category": "Filtrar segun kategorio",
+	"filter-by-uploader": "Filtrar segun sendanto",
+	"source-category": "Informez la kategorio quan vu deziras uzar kom fonto por la tabelo adinfre",
+	"helptext-category": "Inkluzez prefixo ''Kategorio'':",
+	"source-uploader": "Informez uzero-nomo qua sendis imaji quin vu deziras deskriptar",
+	"helptext-uploader": "Uzero-nomo, sen inkluzar prefixo:",
+	"load-pictures": "Sendez imaji",
+	"submit": "Sendez",
+	"picture": "Imajo",
+	"description": "Deskripto",
+	"categories": "Kategorii",
+	"all-users": "Omna uzeri qui uzis CMD-utensilo",
+	"username": "Uzeronomo",
+	"number-of-edits": "Quanto totala di redakturi",
+	"total": "Sumo"
+}
