@@ -7,7 +7,7 @@
 			"Volvox"
 		]
 	},
-	"introduction-please-login": "WGL., <a href=\"login\">aloggen</a>",
+	"introduction-please-login": "Wgl. <a href=\"login\">aloggen</a>",
 	"introduction": "<strong>Commons Mass Description</strong> ass een Tool, dat et Benotzer erlaabt fir Biller a Multimedia op <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> masseweis ze beschreiwen ouni all eenzelt Bild manuell änneren ze mussen. Dir gitt méi op <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">dëser Wikimedia-Commons-Säit</a> gewuer.",
 	"introduction-bugs": "Wann Dir an dësem Tool iergendwellech Softwarefeeler fannt, kënnt Dir gären <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">eng Task bei Wikimedia Phabricator opmaachen</a>.",
 	"report-bug": "E Feeler mellen",

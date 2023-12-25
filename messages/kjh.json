@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Oxianboal",
 			"Матыр"
 		]
 	},
@@ -19,10 +20,10 @@
 	"filter-by-category": "категорияларҷа таллағ",
 	"filter-by-uploader": "Кирілгенінҷе таллағ",
 	"source-uploader": "Кемнің хоостарын чарыдарға сағынчазар, ол араласчының адын пазыңар",
-	"load-pictures": "Хоосты кирерге",
+	"load-pictures": "Хоостарны кирерге",
 	"submit": "Ызыбызарға",
 	"picture": "Хоос",
-	"description": "Искіріг",
+	"description": "Хысхаҷахти пазылғаны",
 	"categories": "Категориялар",
 	"all-users": "Пірее хаҷан CMD тузаланған прай араласчылар",
 	"username": "Араласчының ады",
