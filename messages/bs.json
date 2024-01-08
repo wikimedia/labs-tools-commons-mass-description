@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Palapa"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Prijavite se</a>",
+	"report-bug": "Prijavi grešku",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"users-using-tool": "Korisnici koji koriste ovaj alat",
+	"you-were-blocked": "Vaš korisnički račun je blokiran",
+	"block-summary": "Sažetak vašeg bloka",
+	"block-reason": "Razlog za blokadu",
+	"block-expiration": "Rok isteka bloka",
+	"choose-language": "Odaberite jezik",
+	"option-display-images": "Odaberite broj prikazanih slika",
+	"do-not-filter": "Nemojte filtrirati",
+	"filter-by-category": "Filtrirajte po kategoriji",
+	"load-pictures": "Učitaj slike",
+	"submit": "Pošalji",
+	"picture": "Slika",
+	"description": "Opis",
+	"categories": "Kategorije",
+	"all-users": "Svi korisnici koji su ikada koristili CMD",
+	"username": "Korisničko ime",
+	"number-of-edits": "Ukupan broj izmjena",
+	"total": "Ukupno"
+}
