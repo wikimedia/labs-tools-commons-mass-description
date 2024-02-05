@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Inabat Allanova"
+		]
+	},
+	"introduction-please-login": "Ótinish, <a href=\"login\">kiriń</a>",
+	"introduction": "<strong>Commons Mass Description</strong> - bul paydalanıwshıǵa <a href=\"https://commons.wikimedia.org\">Wikimedia Commonsta</a> redaktorlawsız súwretler hám multimediyalardı ǵalabalıq túrde hár bir súwretti qolda islep júrmesten súwretlew imkaniyatın beretuǵın qural bolıp tabıladı. Kóbirek maǵlıwmattı <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Wikimedia Commons betinde</a> tabıwıńız múmkin.",
+	"introduction-bugs": "Eger bul quralda qanday da bir qátelik tapsańız, ótinish, <a href=\" https://phabricator.wikimedia.org/maniphest/task/edit/form/1/? project=commons_mass_description\">Wikimedia Fabrikatorda jazıp qaldırıń</a>.",
+	"report-bug": "Qátelik haqqında xabar beriń",
+	"login": "Kiriw",
+	"logout": "Shıǵıw",
+	"users-using-tool": "Bul ásbaptan paydalanatuǵın paydalanıwshılar",
+	"you-were-blocked": "Siziń paydalanıwshı esabıńız bloklandı",
+	"block-summary": "Blokıńızdıń qısqasha mazmunı",
+	"block-sysop": "Sisoptı bloklaw",
+	"block-reason": "Bloklanıw sebebi",
+	"block-expiration": "Bloklanıw múddeti",
+	"choose-language": "Tildi saylań",
+	"option-display-images": "Kórsetilgen súwretlerden birqanshasın saylań",
+	"do-not-filter": "Filtrlemeń",
+	"filter-by-category": "Kategoriya arqalı filtrleń",
+	"filter-by-uploader": "Júklewshi arqalı filtrleń",
+	"source-category": "Tómendegi keste deregi sıpatında paydalanbaqshı bolǵan kategoriya atın kiritiń",
+	"helptext-category": "Kategoriya prefiksin kiritiń:",
+	"source-uploader": "Súwretlerdi táriylewdi qáleytuǵın juklewshiniń paydalanıwshı atın kiritiń",
+	"helptext-uploader": "Paydalanıwshı atı, paydalanıwshı prefiksin kiritpeń:",
+	"load-pictures": "Súwretlerdi júklew",
+	"submit": "Jiberiw",
+	"picture": "Súwret",
+	"description": "Sıpatlama",
+	"categories": "Kategoriyalar",
+	"all-users": "CMD den paydalanǵan barlıq paydalanıwshılar",
+	"username": "Paydalanıwshı atı",
+	"number-of-edits": "Ulıwma redaktorlawlar sanı",
+	"total": "Jámi"
+}
