@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kitanago"
+		]
+	},
+	"introduction-please-login": "Tanpri, <a href=\"login\">konekte</a>",
+	"introduction": "<strong>Commons Mass Description</strong> se yon zouti ki pèmèt itilizatè yo dekri foto ak miltimedya nan <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> an mas san yo pa bezwen modifye chak imaj manyèlman. Ou ka jwenn plis nan <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">paj Wikimedia Commons li yo</a> .",
+	"introduction-bugs": "Si ou jwenn nenpòt ki anomali nan zouti sa a, tanpri ou lib pou <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">kreye yon tach nan Wikimedia Phabricator</a>.",
+	"report-bug": "Rapòte yon anomali",
+	"login": "Konekte",
+	"logout": "Dekonekte",
+	"users-using-tool": "Itilizatè yo itilize zouti sa a",
+	"you-were-blocked": "Kont itilizatè ou a te bloke",
+	"block-summary": "Rezime blòkaj ou a",
+	"block-sysop": "Administratè ki bloke w la",
+	"block-reason": "Rezon ki blokaj la",
+	"block-expiration": "Ekspirasyon blokaj la",
+	"choose-language": "Chwazi lang",
+	"option-display-images": "Chwazi yon kantite imaj ki pou afiche",
+	"do-not-filter": "Pa filtre",
+	"filter-by-category": "Filtre pa kategori"
+}
