@@ -9,7 +9,7 @@
 	"introduction-bugs": "Бу адырда халат табдыгъыз эсе, шо, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Фабрикаторда нюзюр къурагъыз</a>.",
 	"report-bug": "Халатны юсюнден билдир",
 	"login": "Кириу",
-	"logout": "Чыгъыу",
+	"logout": "Чыкъ",
 	"users-using-tool": "Бу адырны хайырланнган къошулуучула",
 	"you-were-blocked": "Къошулуучу хыйсабыгъыз блок этилгенди",
 	"block-summary": "Блогугъузну юсюнден",
