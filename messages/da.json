@@ -1,23 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fugithora",
 			"Saederup92"
 		]
 	},
 	"introduction-please-login": "Venligst, <a href=\"login\">log på</a>",
+	"introduction": "<strong>Commons Mass Description</strong> er et værktøj, der giver brugeren mulighed for at beskrive mange billeder og multimedier på <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> uden at skulle redigere hvert billede manuelt. Du kan finde mere information på <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">dets Wikimedia Commons-side</a> .",
+	"introduction-bugs": "Hvis du finder nogen fejl i dette værktøj, er du velkommen til at <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">oprette en opgave på Wikimedia Phabricator</a>.",
 	"report-bug": "Rapportér en fejl",
 	"login": "Log på",
 	"logout": "Log af",
 	"users-using-tool": "Bruger som anvender dette værktøj",
+	"you-were-blocked": "Din brugerkonto er blevet blokeret",
+	"block-summary": "Opsummering af din blokering",
+	"block-sysop": "Blokerer sysop",
 	"block-reason": "Årsag til blokering",
+	"block-expiration": "Blokering udløb",
 	"choose-language": "Vælg sprog",
+	"option-display-images": "Vælg et antal viste billeder",
 	"do-not-filter": "Filtrer ikke",
 	"filter-by-category": "Filtrer efter kategori",
+	"filter-by-uploader": "Filtrér efter uploader",
+	"source-category": "Indtast navnet på den kategori, du vil bruge som kilde til tabellen nedenfor",
+	"helptext-category": "Inkluder præfiks-kategorien:",
+	"source-uploader": "Indtast brugernavn på uploaderen, hvis billeder du gerne vil beskrive",
+	"helptext-uploader": "Brugernavn, inkluder ikke præfikset Bruger:",
 	"load-pictures": "Indlæs billeder",
 	"submit": "Indsend",
 	"picture": "Billede",
 	"description": "Beskrivelse",
 	"categories": "Kategorier",
+	"all-users": "Alle brugere, der nogensinde har brugt CMD",
 	"username": "Brugernavn",
-	"number-of-edits": "Samlet antal redigeringer"
+	"number-of-edits": "Samlet antal redigeringer",
+	"total": "I alt"
 }
