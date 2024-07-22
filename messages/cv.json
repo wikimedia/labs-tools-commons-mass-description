@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Astahar"
+		]
+	},
+	"introduction-please-login": "Тархасшӑн, <a href=\"login\">логинланӑр</a>",
+	"login": "Кĕр",
+	"logout": "Тух",
+	"users-using-tool": "Ҫак хатӗрпе усӑ куракан хутшӑнакансем",
+	"you-were-blocked": "Сирӗн аккаунта блокланӑ",
+	"block-summary": "Блонлани пирки тӗплӗнрех",
+	"block-sysop": "Блокланӑ администратор",
+	"block-reason": "Блонкланин сӑлтавӗ",
+	"block-expiration": "Блокланӑ вӑхӑт вӗҫӗ",
+	"choose-language": "Чӗлхе суйлӑр",
+	"option-display-images": "Кӑтартӑнакан сӑнсен шутне палӑртӑр",
+	"do-not-filter": "Фильтрламасӑр",
+	"filter-by-category": "Категорипе фильтрласа",
+	"filter-by-uploader": "Тиекеннипе фильтрласа",
+	"source-category": "Аяларахри таблицӑн ҫӑлкуҫӗ пек усӑ курас шухӑшлӑ категори ятне кӗртӗр",
+	"helptext-category": "Категори: префикса шута илмелле",
+	"source-uploader": "Сӑнласа тухмалли ӳкерчӗксене кӗртнӗ хутшӑнакан ятне ҫырӑр",
+	"helptext-uploader": "Хутшӑнакан ячӗ, Хутшӑнакан: префикссӑр",
+	"load-pictures": "Ӳкерчӗксем тие",
+	"submit": "Яр",
+	"picture": "Ӳкерчĕк",
+	"description": "Сӑнласа пани",
+	"categories": "Категорисем",
+	"all-users": "CMD-па хӑҫан та пулин усӑ курнӑ мӗнпур хутшӑнакансем",
+	"username": "Хутшӑнакан",
+	"number-of-edits": "Мӗнпур тӳрлетӳсен шучӗ",
+	"total": "Пурӗ"
+}
