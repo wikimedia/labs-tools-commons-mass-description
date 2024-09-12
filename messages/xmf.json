@@ -4,7 +4,7 @@
 			"Narazeni"
 		]
 	},
-	"introduction-please-login": "ქორთხინთ, <a href=\"login\">გემშართით</a>",
+	"introduction-please-login": "ქორთხინთ, <a href=\"login\">გენშართით</a>",
 	"introduction": "<strong>მასობური ეჭარუა ვიკიოწკარუეს</strong> — ხეჭკუდი რე, ნამუთ მახვარებუეფს <a href=\"https://commons.wikimedia.org\">ვიკიოწკარუეს</a> სურათეფიშ დო მულტიმედიაშ მასობურ ეჭარუაშ  მეშქაშობას არზენს, ირ სურათიშ ზოხოთ ხეთ რედაქტირაფაშ უმუშო. უმოსი ინფორმაციაშ გეშა გეგნორთით <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ხეჭკუდიშ ხასჷლაშა</a>.",
 	"introduction-bugs": "თე ხეჭკუდის მუთუნნერი ჩილათა ქოძირით-და, ქორთხინთ, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">გაჭყით თემა „ფაბრიკატორს“</a>.",
 	"report-bug": "ქუგმოგებაფეთ ჩილათაშ გეშა",
