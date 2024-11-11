@@ -1,13 +1,29 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"Gmelfi"
 		]
 	},
 	"introduction-please-login": "Pi favuri, <a href=\"login\">trasi</a>",
+	"introduction": "<strong>Commons Mass Description</strong> è nu strumentu ca pirmetti a l'utenti di discrìviri mmàggini e multimedia 'n massa a <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> senza ca s'avi a mudificari manualmenti ogni mmàggini. Puoi truvari cchiossai nnâ <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">sò pàggina di Wikimedia Commons</a> .",
+	"introduction-bugs": "Si attruvati quarchi erruri nna stu strumentu, nun ti scantàri di <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">criari nu compitu a Wikimedia Phabricator</a> .",
+	"report-bug": "Signala nu erruri",
 	"login": "Trasi",
 	"logout": "Nesci",
+	"users-using-tool": "L'utenti ca ùsanu stu strummentu",
+	"you-were-blocked": "Lu tò cuntu utenti fu bluccatu",
+	"block-summary": "Riassuntu dû tò bloccu",
+	"block-sysop": "L'amministraturi ca ti bluccau",
+	"block-reason": "Mutivu dû bloccu",
+	"block-expiration": "Scadenza dû bloccu",
 	"choose-language": "Scegghi la lingua",
+	"option-display-images": "Scegghi nu nùmmaru di mmàggini visualizzati",
+	"do-not-filter": "Nun filtrari",
+	"filter-by-category": "Filtrari pi catigurìa",
+	"filter-by-uploader": "Filtra pi utenti ca carricau",
+	"source-category": "Dìggita lu nomu dâ catigurìa ca vuoi usari comu funti dâ tabbella cassutta",
+	"helptext-category": "Nclùdiri lu prifissu Catigurìa:",
 	"picture": "Mmàggini",
 	"description": "Discrizzioni",
 	"categories": "Catigurìi",
