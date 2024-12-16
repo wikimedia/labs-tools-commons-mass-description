@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bgo eiu",
+			"Cabal"
+		]
+	},
+	"introduction-please-login": "ਕਿਰਪਾ ਕਰਕੇ, <a href=\"login\">ਦਾਖ਼ਲ ਹੋਵੋ</a>",
+	"report-bug": "ਮਾਂਙਣੂ ਦੀ ਇਤਲਾਹ ਦਿਓ",
+	"login": "ਦਾਖ਼ਲ ਹੋਵੋ",
+	"logout": "ਬਾਹਰ ਆਉ",
+	"users-using-tool": "ਇਸ ਸਾਧਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਵਰਤੋਂਕਾਰ",
+	"block-summary": "ਤੁਹਾਡੀ ਪਾਬੰਦੀਆਂ ਦਾ ਸਾਰ",
+	"block-reason": "ਰੋਕ ਦਾ ਕਾਰਨ",
+	"categories": "ਸ਼੍ਰੇਣੀਆਂ"
+}
