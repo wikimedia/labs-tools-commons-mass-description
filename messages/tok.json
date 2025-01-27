@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eic17H"
+		]
+	},
+	"introduction-please-login": "sina <a href=\"login\">o kama lon sijelo</a>",
+	"report-bug": "o toki e pakala ilo",
+	"login": "o kama lon sijelo",
+	"logout": "o weka tan sijelo",
+	"users-using-tool": "jan seme li kepeken ilo ni",
+	"you-were-blocked": "jan li weka e ken tan sijelo sina",
+	"block-reason": "tan pi weka ken",
+	"block-expiration": "tenpo seme la ken li kama sin",
+	"choose-language": "o wile e toki",
+	"option-display-images": "o wile e mute sitelen",
+	"submit": "o pana",
+	"picture": "sitelen",
+	"description": "sona",
+	"categories": "kulupu",
+	"username": "nimi jan",
+	"number-of-edits": "tenpo pi mute seme la ni li kama ante",
+	"total": "ale"
+}
