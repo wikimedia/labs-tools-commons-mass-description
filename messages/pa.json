@@ -10,7 +10,18 @@
 	"login": "ਦਾਖ਼ਲ ਹੋਵੋ",
 	"logout": "ਬਾਹਰ ਆਉ",
 	"users-using-tool": "ਇਸ ਸਾਧਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਵਰਤੋਂਕਾਰ",
+	"you-were-blocked": "ਤੁਹਾਡਾ ਵਰਤੋਂਕਾਰ ਖਾਤੇ ਤੇ ਰੋਕ ਲਾਈ ਗਈ ਐ",
 	"block-summary": "ਤੁਹਾਡੀ ਪਾਬੰਦੀਆਂ ਦਾ ਸਾਰ",
 	"block-reason": "ਰੋਕ ਦਾ ਕਾਰਨ",
-	"categories": "ਸ਼੍ਰੇਣੀਆਂ"
+	"block-expiration": "ਮਿਆਦ ਪੁੱਗ ਰਹੀ ਹੈ ਉਤੇ ਰੋਕ ਲਾਓ",
+	"choose-language": "ਬੋਲੀ ਚੁਣੋ",
+	"helptext-uploader": "ਵਰਤੋਂਕਾਰ ਨਾਂ, ਵਰਤੋਂਕਾਰ ਅਗੇਤਰ ਸ਼ਾਮਲ ਨਾ ਕਰੋ",
+	"submit": "ਹਵਾਲੇ ਕਰੋ",
+	"picture": "ਤਸਵੀਰ",
+	"description": "ਵੇਰਵਾ",
+	"categories": "ਸ਼੍ਰੇਣੀਆਂ",
+	"all-users": "ਉਹ ਸਾਰੇ ਵਰਤੋਂਕਾਰ ਜਿਨ੍ਹਾਂ ਨੇ ਕਦੇ CMD ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਹੈ",
+	"username": "ਵਰਤੋਂਕਾਰ ਨਾਂ",
+	"number-of-edits": "ਸੋਧਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ",
+	"total": "ਕੁੱਲ"
 }
