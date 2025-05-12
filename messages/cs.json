@@ -3,10 +3,12 @@
 		"authors": [
 			"Juandev",
 			"Martin Urbanec",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"The astrea"
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">přihlaste se</a>",
+	"introduction": "<strong>Commons Mass Description</strong> je nástroj, který umožňuje uživatelům hromadně popisovat obrázky a multimédia na <a href=\"https://commons.wikimedia.org\">Wikimedia Commons,</a> aniž by museli každý obrázek ručně upravovat. Více informací naleznete na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">stránce Wikimedia Commons</a> .",
 	"introduction-bugs": "Pokud v tomto nástroji naleznete jakékoliv chyby, neváhejte je <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">nahlásit na Wikimedia Phabricator</a>.",
 	"report-bug": "Nahlásit chybu",
 	"login": "Přihlásit se",
@@ -22,7 +24,7 @@
 	"do-not-filter": "Nefiltrovat",
 	"filter-by-category": "Filtrovat pomocí kategorie",
 	"filter-by-uploader": "Filtrujte podle nahrávatele",
-	"source-category": "Vložte název kategorie, kterou chcete používat jako zdroj tabulky, která se nachází dole",
+	"source-category": "Vložte název kategorie, kterou chcete použít jako zdroj níže uvedené tabulky",
 	"helptext-category": "Včetně prefixu Kategorie:",
 	"source-uploader": "Vložte uživatelské jméno nahrávatele, jehož obrázky byste rádi popsali",
 	"helptext-uploader": "Uživatelské jméno bez prefixu Uživatel:",
