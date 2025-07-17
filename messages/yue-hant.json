@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim",
+			"Winston Sung"
+		]
+	},
+	"introduction-please-login": "唔該，<a href=\"login\">登入</a>",
+	"introduction": " <strong>公共群眾描述</strong> 係一個畀用戶描述啲相同多媒體嘅工具<a href=\"https://commons.wikimedia.org\">維基媒體共享</a>大量唔使手動編輯每張相。你可以喺<a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">佢嘅維基媒體共享頁面</a>。",
+	"introduction-bugs": "如果你喺呢個工具入面發現任何錯誤，請隨時搵 <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">喺維基媒體詞彙器度建立一個任務</a>.",
+	"report-bug": "報告錯誤",
+	"login": "簽到",
+	"logout": "簽走",
+	"users-using-tool": "用緊呢個工具嘅用戶",
+	"you-were-blocked": "你嘅用戶帳戶已經被封鎖",
+	"block-summary": "你個區塊嘅摘要"
+}
