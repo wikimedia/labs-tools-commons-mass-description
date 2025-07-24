@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"introduction-please-login": "مهرباني وکړئ، <a href=\"login\">ننوځئ</a>",
+	"introduction": "<strong>د کامنز ټوليز څرگنداوی</strong> يو توکی دی چې کارنانو ته پرېښولی ورکوي چې په <a href=\"https://commons.wikimedia.org\">ويکيمېډيا کامنز</a>  کې په ډله‌ييزه توگه انځورونه او گڼ‌رسنۍ تشرېح کړي پرته له دې چې هر انځور په لاسي ډول سم کړي. تاسو کولی شئ د دوی په اړه نور مالومات په <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ويکي‌رسنۍ ټولگړي مخ</a> کې ومومئ.",
+	"introduction-bugs": "که تاسو په دې توکي کې کومه تېروتنه ومومئ، مهرباني وکړئ <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\"> په ويکي‌رسنۍ فابريکيټر کې يوې دندې جوړولو</a> زحمت وباسئ.",
+	"report-bug": "تېروتنې خبر ورکول",
+	"login": "ننوتل",
+	"logout": "وتل",
+	"users-using-tool": "کارنان چې دا توکی کاروي",
+	"you-were-blocked": "ستاسو کارن گڼون باندې بنديز لگېدلی",
+	"block-summary": "ستاسو د بنديز لنډيز",
+	"block-sysop": "بنديز لگوونکی غونډال‌چلوونکی",
+	"block-reason": "د بنديز لامل",
+	"block-expiration": "بنديز پای موده",
+	"choose-language": "ژبه ټاکل",
+	"option-display-images": "د ښودل شویو انځورونو شمېر غوره کړئ",
+	"do-not-filter": "چاڼ کوئ يې مه",
+	"filter-by-category": "وېشنيزې له مخې چاڼول",
+	"filter-by-uploader": "د راپورته‌کوونکي له مخې چاڼول",
+	"source-category": "د هغه وېشنيزې نوم دننه کړئ چې تاسو د لاندې لښتيال د سرچينې په توگه کارول غواړئ.",
+	"helptext-category": "د وېشنيزې مختاړي رانغاړل:",
+	"source-uploader": "د راپورته کوونکي کارن‌نوم دننه کړئ د کوم انځور چې تاسو څرگنداوی ليکل غواړئ",
+	"helptext-uploader": "کارن‌نوم، کارن مختاړي نه رانغاړي:",
+	"load-pictures": "انځورونه بارېږي",
+	"submit": "سپارل",
+	"picture": "انځور",
+	"description": "څرگنداوی",
+	"categories": "وېشنيزې",
+	"all-users": "ټول هغه کارنان چې کله يې سي‌اېم‌ډي کارولی دی",
+	"username": "کارن‌نوم",
+	"number-of-edits": "د ټولو سمونونو شمېر",
+	"total": "ټولټال"
+}
