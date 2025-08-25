@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Belkacem77",
+			"ButterflyOfFire",
 			"YouvaDjouadi"
 		]
 	},
@@ -13,7 +14,7 @@
 	"logout": "Ffeɣ",
 	"users-using-tool": "Iseqdacen n ufecku-ya",
 	"you-were-blocked": "Amiḍan-ik n useqdac yettwasewḥel",
-	"block-summary": "Agzul ɣef usewḥel-ik/im",
+	"block-summary": "Agzul ɣef usewḥel-ik·im",
 	"block-sysop": "Asewḥel n sysop",
 	"block-reason": "Sebba n usewḥel",
 	"block-expiration": "Taggara n usewḥel",
