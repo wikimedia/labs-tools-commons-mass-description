@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Les Meloures",
 			"Robby",
 			"Soued031",
@@ -15,7 +16,7 @@
 	"logout": "Ausloggen",
 	"users-using-tool": "Benotzer, déi dëst Geschier benotzen",
 	"you-were-blocked": "Äre Benotzerkont gouf gespaart",
-	"block-summary": "Resumé vun Ärer Spär",
+	"block-summary": "Resümmee vun Ärer Spär",
 	"block-sysop": "Administrateur dee gespaart huet",
 	"block-reason": "Grond fir d'Spär",
 	"block-expiration": "Ënn vun der Spär",
