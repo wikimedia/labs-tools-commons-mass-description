@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Incall"
+		]
+	},
+	"introduction-please-login": "Сураныч, <a href=\"login\">кириңиз</a>",
+	"introduction": "<strong>Commons Mass Description</strong> — бул колдонуучуларга сүрөттөрдү жана мультимедияны <a href=\"https://commons.wikimedia.org\">Виктказына</a> долбоорунда ар бир сүрөттү кол менен түзөтпөстөн массалык түрдө сүрөттөө мүмкүнчүлүгүн берген курал. Көбүрөөк маалыматты анын <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">Викиказына барагынан</a> таба аласыз.",
+	"introduction-bugs": "Эгерде сиз бул куралда кандайдыр бир мүчүлүштүктөрдү тапсаңыз, сураныч, эркин түрдө <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Фабрикаторда тапшырма түзүңүз</a>.",
+	"report-bug": "Ката тууралуу кабарлоо",
+	"login": "Кирүү",
+	"logout": "Чыгуу",
+	"users-using-tool": "Бул куралды колдонгон колдонуучулар",
+	"you-were-blocked": "Сиздин колдонуучу эсеп жазууңуз бөгөтөлгөн",
+	"block-summary": "Сиздин бөгөтүңүз тууралуу кыскача маалымат",
+	"block-sysop": "Бөгөттө жүргүзгөн администратор",
+	"block-reason": "Бөгөттөгөндүн себеби",
+	"block-expiration": "Бөгөттөгөндүн мөөнөтү",
+	"choose-language": "Тилди тандаңыз",
+	"option-display-images": "Көрсөтүлүүчү сүрөттөрдүн санын тандаңыз",
+	"do-not-filter": "Фильтрлөнбөсүн",
+	"filter-by-category": "Категория боюнча фильтрдөңүз",
+	"filter-by-uploader": "Жүктөгөн адам боюнча фильтрдөңүз",
+	"source-category": "Төмөнкү таблицанын булагы катары колдонгуңуз келген категориянын атын киргизиңиз",
+	"helptext-category": "«Категория:» префиксин кошуңуз",
+	"source-uploader": "Сүрөттөрүн сүрөттөп берүүнү каалаган жүктөөнүн колдонуучу атын киргизиңиз",
+	"helptext-uploader": "Колдонуучу аты, «Колдоонучу:» префиксин кошпоңуз",
+	"load-pictures": "Сүрөттөрдү жүктөө",
+	"submit": "Жөнөтүү",
+	"picture": "Сүрөт",
+	"description": "Сыпаттама",
+	"categories": "Категориялар",
+	"all-users": "CMDди колдонгон бардык колдонуучулар",
+	"username": "Колдонуучунун аты",
+	"number-of-edits": "Түзөтүүлөрдүн жалпы саны",
+	"total": "Бардыгы"
+}
