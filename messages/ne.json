@@ -3,11 +3,13 @@
 		"authors": [
 			"Nirajan pant",
 			"पर्वत सुबेदी",
+			"बडा काजी",
 			"सरोज कुमार ढकाल",
 			"हिमाल सुबेदी"
 		]
 	},
 	"introduction-please-login": "कृपया , <a href=\"login\">प्रवेश गर्नुहोस्</a>",
+	"introduction": "<strong>कमन्स मास विवरण</strong> एउटा उपकरण हो जसले प्रयोगकर्तालाई प्रत्येक छविलाई म्यानुअल रूपमा सम्पादन नगरीकनै <a href=\"https://commons.wikimedia.org\">विकिमिडिया कमन्समा</a> सामूहिक रूपमा तस्विरहरू र मल्टिमिडिया वर्णन गर्न अनुमति दिन्छ। तपाईंले <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">यसको विकिमिडिया कमन्स पृष्ठमा</a> थप जानकारी पाउन सक्नुहुन्छ।",
 	"introduction-bugs": "यदि तपाईँले यस उपकरणमा कुनै त्रुटि भेट्टाउनु भएमा <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">विकिमिडिया फ्याब्रिकेटरमा काम सिर्जना गर्नुहोस्</a>।",
 	"report-bug": "बग उजुरी गर्ने",
 	"login": "प्रवेश",
