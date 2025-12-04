@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"سعيد الشاعر الغريب"
+		]
+	},
+	"introduction-please-login": "عافاك، <a href=\"login\">دخل </a>",
+	"introduction": "<strong>لوصف لكلي ديال لكومنز</strong> هي واحد تويشية تتخلي لخدايمي بوصف تصاور ولوسائط لخرى على <a href=\"https://commons.wikimedia.org\">ويكيميديا كومنز</a> بشكل جماعي بلا ما تكون لحاجة باش تحرر كل تصويرة بليد، يمكن ليك تلقى  لمزيد على <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\"> صفحة ويكيميديا ​​كومنز لخاصة به</a>.",
+	"introduction-bugs": "إلى لقيتي شي عيب برمجي، يمكن لك بكل حرية دير <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">صاوب مهمة ف Wikimedia Phabricator</a>.",
+	"report-bug": "علم على شي عيب برمجي أو خطأ برمجي",
+	"login": "تكونيكطا",
+	"logout": "خرج",
+	"users-using-tool": "النَّاسْ لِّي كَيستَعمْلُوا هَادْ لأَدَاةْ.",
+	"you-were-blocked": "لكُونْطْ ديالك تْبْلُوكَا.",
+	"block-summary": "مُلَخَّصْ دْيالْ تبْلُوكَاجْ دْيالكْ.",
+	"block-sysop": "تَبْلُوكِي لْأَدْمِينْ / لْسِيسُوبْ.",
+	"block-reason": "سَّبَبْ دْيالْ تَّبْلُوكَاجْ.",
+	"block-expiration": "سالات مدة لبلوك.",
+	"choose-language": "ختارْ للُّغة.",
+	"option-display-images": "ختار شحال من تصويرة لي بغيتي تبان.",
+	"do-not-filter": "ما تُفَلِّطُرشْ",
+	"filter-by-category": "فيلتري حسب لفئة",
+	"filter-by-uploader": "فيلتري على حساب اللِّي صِيفْطْ.",
+	"source-category": "دخل سميت لفئة/ تصنيف لي بغيتي تستعملو كمصدر لهاد طابلو لي كاين لتحت.",
+	"helptext-category": "دخل/زيد لبادئة قبل من سمية.",
+	"source-uploader": "دخل سمية ليوزر لي لوح تصاور لي بغيتي توصف.",
+	"helptext-uploader": "اسم لخدايمي، بلا ما تدخل لبادئة فاللول ديال لخدايمي:",
+	"load-pictures": "تيليشارجي تصاور",
+	"submit": "صيفط",
+	"picture": "تصويرة",
+	"description": "لوصف",
+	"categories": "تصنيفات",
+	"all-users": "جْمِيعْ لخدايمية لِّي سَبَقْ لِيهُمْ سْتَعْمْلُو CMD.",
+	"username": "سميت لخدايمي",
+	"number-of-edits": "عدد تبديلات",
+	"total": "كولشي / لمجموع"
+}
