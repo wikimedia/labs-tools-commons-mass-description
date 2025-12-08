@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"MacTire02"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Loggal stiagh</a>, my sailt",
+	"introduction": "She greie ta <strong>Commons Mass Description</strong> ta lhiggey da’n ymmydeyr dy chur sheese er jallooyn as yl-veanyn ec <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> rere possanyn mooarey gyn feme er reaghey dagh jalloo er lheh er laueyn. Foddee oo çheet er tooilley fysseree ec <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">y duillag Wikimedia Commons echey</a>.",
+	"introduction-bugs": "My yinnys oo feddyn foill erbee ayn ‘sy ghreie shoh, foddee oo <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">croo cooish ec Wikimedia Phabricator</a>.",
+	"report-bug": "Jean coontys foill",
+	"login": "Loggal stiagh",
+	"logout": "Loggal magh",
+	"users-using-tool": "Ymmydeyryn gymmydey yn greie shoh",
+	"you-were-blocked": "Ta dty choontys ymmydeyr fo ghlass",
+	"block-summary": "Giare-choontys yn ghlesh",
+	"block-sysop": "Sysop chur oo fo ghlass",
+	"block-reason": "Oyr y ghlesh",
+	"block-expiration": "Jerrey yn ghlesh",
+	"choose-language": "Reih çhengey",
+	"option-display-images": "Reih earroo ny jallooyn taishbynit",
+	"do-not-filter": "Ny jean sheeley",
+	"filter-by-category": "Jean sheeley rere ronney",
+	"filter-by-uploader": "Jean sheeley rere laadeyder",
+	"source-category": "Cur stiagh ennym y ronney t’ou laccal myr bun y taabyl heese",
+	"helptext-category": "Gow stiagh y roie-veer Ronney:",
+	"source-uploader": "Cur stiagh ennym laadeyder ny jallooyn t’ou shirrey dy chur sheese",
+	"helptext-uploader": "Ennym ymmydeyr, ny gow stiagh y roie-veer Ymmydeyr:",
+	"load-pictures": "Laad jallooyn",
+	"submit": "Cur stiagh",
+	"picture": "Jalloo",
+	"description": "Cur-sheese",
+	"categories": "Ronnaghyn",
+	"all-users": "Dagh ymmydeyr ren ymmydey CMD rieau",
+	"username": "Ennym ymmydeyr",
+	"number-of-edits": "Slane earroo ny reaghaghyn",
+	"total": "Y clane"
+}
