@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"J budissin"
+			"J budissin",
+			"Michawiki"
 		]
 	},
 	"introduction-please-login": "Prošu <a href=\"login\">přizjew so</a>",
+	"introduction": "<strong>Commons Mass Description</strong> je nastroj, kotryž wužiwarjej zmóžnja, wobrazy a multimedije na <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> z masami wopisować, bjeztoho zo by kóždy wobraz manuelnje wobdźěłował. Za wjace informacijow hlejće <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">jeho stronu Wikimedia Commons</a>.",
+	"introduction-bugs": "Jeli zmylki w tutym nastroju namakaće, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">wutwor prošu nadawk na Wikimedia Phabricator</a>.",
 	"report-bug": "Zmylk zdźělić",
 	"login": "Přizjewić",
 	"logout": "Wotzjewić",
@@ -20,6 +23,7 @@
 	"filter-by-category": "Po kategoriji filtrować",
 	"filter-by-uploader": "Po wužiwarju filtrować",
 	"source-category": "Zapodaj mjeno kategorije, kotruž chceš jako žórło tabulki deleka wužić",
+	"helptext-category": "Inkluziwnje prefiks  Kategorija:",
 	"source-uploader": "Zapodaj wužiwarske mjeno wužiwarja, kotrehož wobrazy chceš wopisować.",
 	"helptext-uploader": "Wužiwarske mjeno, bjez prefiksa Wužiwar:",
 	"load-pictures": "Wobrazy začitać",

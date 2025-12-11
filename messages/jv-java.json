@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bennylin"
+		]
+	},
+	"introduction-please-login": "ꦠꦸꦭꦸꦁ<a href=\"login\">ꦩ꧀ꦊꦧꦸ​ꦭꦺꦴꦒ꧀</a>",
+	"introduction": "<strong>Commons Mass Description</strong> adalah sebuah alat untuk menggambarkan gambar dan multimedia pada <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> secara massal tanpa menyunting setiap gambar secara manual. Anda dapat melihat lebih lanjut di <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">di halaman Wikimedia Commons-nya</a>.",
+	"introduction-bugs": "Jika Anda menemukan bug pada alat ini, silakan <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">membuat tugas di Wikimedia Phabricator</a>.",
+	"report-bug": "ꦭꦥꦺꦴꦂ​ꦏꦼꦏꦸꦠꦸ",
+	"login": "ꦩ꧀ꦊꦧꦸ​ꦭꦺꦴꦒ꧀",
+	"logout": "ꦩꦼꦠꦸ​ꦭꦺꦴꦒ꧀",
+	"users-using-tool": "ꦤꦫꦒꦸꦤ​ꦱꦶꦁ​ꦔꦁꦒꦺꦴ​ꦥꦶꦫꦤ꧀ꦠꦶ​ꦲꦶꦏꦶ",
+	"you-were-blocked": "ꦤꦫꦒꦸꦤ​ꦱꦩ꧀ꦥꦺꦪꦤ꧀ꦱꦩ꧀ꦥꦸꦤ꧀ꦢꦶꦧ꧀ꦭꦺꦴꦏꦶꦂ",
+	"block-summary": "ꦫꦶꦁꦏꦼꦱ꧀ꦱꦤ꧀​​ꦧ꧀ꦭꦺꦴꦏꦺꦴꦲꦶꦂ​ꦱꦩ꧀ꦥꦺꦪꦤ꧀",
+	"block-sysop": "ꦥꦤꦠ​ꦱꦶꦁ​ꦲꦩ꧀​ꦧ꧀ꦭꦺꦴꦏꦶꦂ",
+	"block-reason": "ꦲꦊꦱ꧀ꦱꦤ꧀​ꦧ꧀ꦭꦺꦴꦏꦶꦂ",
+	"block-expiration": "ꦏꦢꦭꦸꦮꦂꦱ​ꦧ꧀ꦭꦺꦴꦏꦶꦂ",
+	"choose-language": "ꦥꦶꦭꦶꦃ​ꦧꦱ",
+	"option-display-images": "ꦥꦶꦭꦶꦃ​ꦕꦕꦃ​ꦒꦩ꧀ꦧꦂ​ꦱꦶꦁ​ꦢꦶꦠꦩ꧀ꦥꦶꦭ꧀ꦤꦺ",
+	"do-not-filter": "ꦲꦗ​ꦢꦶꦥ꦳ꦶꦭ꧀ꦠꦼꦂ",
+	"filter-by-category": "ꦥ꦳ꦶꦭ꧀ꦠꦼꦂ​ꦩꦶꦠꦸꦫꦸꦠ꧀ꦏꦠꦺꦒꦺꦴꦫꦶ",
+	"filter-by-uploader": "ꦥ꦳ꦶꦭ꧀ꦠꦼꦂ​ꦩꦶꦠꦸꦫꦸꦠ꧀ꦥꦁꦔꦸꦁꦒꦃ",
+	"source-category": "Lebokna jeneng kategori sing péngin digunakaké minangka sumber tabèl ing ngisor iki",
+	"helptext-category": "ꦱꦼꦂꦠꦏ꧀ꦤ​ꦲꦮꦭ꧀ꦭꦤ꧀/ꦥꦿꦺꦥ꦳ꦶꦏ꧀ꦱ꧀​ꦏꦠꦺꦒꦺꦴꦫꦶ:",
+	"source-uploader": "Lebokna jeneng panganggo sing ngunggah gambar sing péngin kokgambaraké",
+	"helptext-uploader": "ꦗꦼꦤꦼꦁ​ꦤꦫꦒꦸꦤ꧈ꦲꦗ​ꦢꦶꦮꦺꦤꦺꦲꦶ​ꦥꦿꦺꦥ꦳ꦶꦏ꧀ꦱ꧀​꧌ꦤꦫꦒꦸꦤ:꧌",
+	"load-pictures": "ꦲꦩꦺꦴꦠ꧀ꦒꦩ꧀ꦧꦂ",
+	"submit": "ꦏꦶꦫꦶꦩ꧀",
+	"picture": "ꦒꦩ꧀ꦧꦂ",
+	"description": "ꦮꦼꦝꦂꦫꦤ꧀",
+	"categories": "ꦏꦠꦺꦒꦺꦴꦫꦶ",
+	"all-users": "ꦏꦧꦺꦃ​ꦤꦫꦒꦸꦤ​ꦱꦶꦁ​ꦠꦲꦸ​ꦔꦁꦒꦺꦴ​CMD",
+	"username": "ꦗꦼꦤꦼꦁ​ꦤꦫꦒꦸꦤ",
+	"number-of-edits": "ꦕꦕꦃꦲꦶꦁ​ꦧꦼꦱꦸꦠ꧀ꦠꦤ꧀",
+	"total": "ꦠꦺꦴꦠꦭ꧀"
+}
