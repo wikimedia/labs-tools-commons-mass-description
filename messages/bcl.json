@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Brazal.dang"
+			"Brazal.dang",
+			"Jp2593"
 		]
 	},
 	"introduction-please-login": "Tabi <a href=\"login\">maglaog</a>",
@@ -21,7 +22,7 @@
 	"do-not-filter": "Dai pagsaraon",
 	"filter-by-category": "Saraon ayon sa kategoriya",
 	"filter-by-uploader": "Saraon ayon sa nagkarga",
-	"source-category": "Ikaag an ngaran kan kategoriya na gusto mong gamiton bilang ginikanan kan talaan sa ibaba",
+	"source-category": "Ikaag an ngaran kan kategorya na gusto mong gamiton bilang gikanan kan talaan sa ibaba",
 	"helptext-category": "Iayon an prefix kan Kategoriya:",
 	"source-uploader": "Ikaag an ngaran kan paragamit na nagkaag kan mga ladawan na gusto mong iladawan",
 	"helptext-uploader": "Ngaran kan paragamit, dai na iayon an prefix Paragamit:",
