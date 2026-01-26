@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aindriu80"
+		]
+	},
+	"introduction-please-login": "Le do thoil, <a href=\"login\">logáil isteach</a>",
+	"introduction": "Is uirlis í <strong>Commons Mass Description</strong> a ligeann d'úsáideoirí cur síos a dhéanamh ar phictiúir agus ar ilmheáin ag <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> gan gach íomhá a chur in eagar de láimh. Is féidir leat tuilleadh eolais a fháil ar <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">a leathanach Wikimedia Commons</a>.",
+	"introduction-bugs": "Má aimsíonn tú aon fhabhtanna san uirlis seo, bíodh leisce ort <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">tasc a chruthú ag Wikimedia Phabricator</a>.",
+	"report-bug": "Tuairiscigh fabht",
+	"login": "Logáil Isteach",
+	"logout": "Logáil Amach",
+	"users-using-tool": "Úsáideoirí a úsáideann an uirlis seo",
+	"you-were-blocked": "Tá do chuntas úsáideora blocáilte",
+	"block-summary": "Achoimre ar do bhloc",
+	"block-sysop": "Córais blocála",
+	"block-reason": "Cúis an bhac",
+	"block-expiration": "Éaga bloc",
+	"choose-language": "Roghnaigh teanga",
+	"option-display-images": "Roghnaigh líon na n-íomhánna a thaispeántar",
+	"do-not-filter": "Ná scag",
+	"filter-by-category": "Scag de réir catagóire",
+	"filter-by-uploader": "Scag de réir uaslódálaí",
+	"source-category": "Cuir isteach ainm na catagóire ar mhaith leat a úsáid mar fhoinse an tábla thíos",
+	"helptext-category": "Cuir an réimír Catagóir san áireamh:",
+	"source-uploader": "Cuir isteach ainm úsáideora an uaslódálaí agus na pictiúir ar mhaith leat cur síos a dhéanamh orthu",
+	"helptext-uploader": "Ainm úsáideora, gan réimír a chur san áireamh Úsáideoir:",
+	"load-pictures": "Luchtaigh pictiúir",
+	"submit": "Cuir isteach",
+	"picture": "Pictiúr",
+	"description": "Cur síos",
+	"categories": "Catagóirí",
+	"all-users": "Gach úsáideoir a d'úsáid CMD riamh",
+	"username": "Ainm úsáideora",
+	"number-of-edits": "Líon iomlán na n-eagarthóireacht",
+	"total": "Iomlán"
+}
