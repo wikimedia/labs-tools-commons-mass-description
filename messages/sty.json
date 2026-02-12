@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sorbat"
+			"Sorbat",
+			"Арбыуын"
 		]
 	},
 	"login": "Кергәле",
@@ -11,17 +12,17 @@
 	"block-reason": "Пикләүнең сәбәбе",
 	"block-expiration": "Пикләүнең пөтөшө",
 	"choose-language": "Телне сайлаң",
-	"option-display-images": "Күргәсеү сүрәтләр ницәлеген сайлаң",
+	"option-display-images": "Күргәселгән сүрәтләрнең исәбен сайлаң",
 	"do-not-filter": "Фильтрламасҡа",
 	"filter-by-category": "Категориялартан фильтр",
-	"filter-by-uploader": "Тейәгәнкетән фильтр",
+	"filter-by-uploader": "Тейәүце пуйынца фильтрлағалы",
 	"load-pictures": "Сүрәтләрне тейәгәле",
 	"submit": "Йебәргәле",
 	"picture": "Сүрәт",
 	"description": "Сүрәтләмә",
 	"categories": "Категориялар",
-	"all-users": "Перәй ҡацан та CMD ошланҡанҡы пөтөн ҡатнашыуцылар",
+	"all-users": "CMD ошланҡан парлыҡ ҡатнашыуцылар",
 	"username": "Ҡатнашыуцыныңҡы исеме",
-	"number-of-edits": "Төсәтешләрнең умый исәбе",
+	"number-of-edits": "Төсәтеүләрнең умумий исәбе",
 	"total": "Пөтөрә"
 }
