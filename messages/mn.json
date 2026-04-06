@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChocolateLemon"
+		]
+	},
+	"login": "Нэвтрэх",
+	"logout": "Гарах",
+	"users-using-tool": "Энэ багажийг ашиглаж байгаа хүмүүс",
+	"you-were-blocked": "Таны хэрэглэгчийн данс түгжигдсэн байна.",
+	"block-summary": "Түгжигдсэн шалтгааны хураангуй",
+	"block-reason": "Түгжигдсэн шалтгаан",
+	"block-expiration": "Түгжээ дуусах хугацаа",
+	"choose-language": "Хэлээ сонгоно уу",
+	"option-display-images": "Үзүүдсэн зурагнуудаас хэдийг сонгоно уу",
+	"do-not-filter": "Бүү шүү",
+	"filter-by-category": "Ангиллаар шүүх",
+	"filter-by-uploader": "Байршуулагчаар шүүх"
+}
