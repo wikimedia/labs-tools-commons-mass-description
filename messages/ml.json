@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Adithyak1997",
-			"Praveenp"
+			"Praveenp",
+			"Shem.iz"
 		]
 	},
 	"introduction-please-login": "ദയവായി <a href=\"login\">പ്രവേശിക്കുക</a>",
+	"introduction": "<strong>കോമൺസ് മാസ് ഡിസ്‌ക്രിപ്ഷൻ</strong> എന്നത് ഉപയോക്താവിന് ഓരോ ചിത്രവും സ്വമേധയാ എഡിറ്റ് ചെയ്യാതെ തന്നെ <a href=\"https://commons.wikimedia.org\">വിക്കിമീഡിയ കോമൺസിലെ</a> ചിത്രങ്ങളും മൾട്ടിമീഡിയയും കൂട്ടത്തോടെ വിവരിക്കാൻ അനുവദിക്കുന്ന ഒരു ഉപകരണമാണ്. കൂടുതൽ വിവരങ്ങൾക്ക് <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">അതിന്റെ വിക്കിമീഡിയ കോമൺസ് പേജ്</a> സന്ദർശിക്കുക.",
+	"introduction-bugs": "ഈ ഉപകരണത്തിൽ എന്തെങ്കിലും ബഗുകൾ കണ്ടെത്തിയാൽ, ദയവായി <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">വിക്കിമീഡിയ ഫാബ്രിക്കേറ്ററിൽ ഒരു ടാസ്‌ക് സൃഷ്ടിക്കാൻ</a> മടിക്കേണ്ടതില്ല.",
 	"report-bug": "ബഗ് അറിയിക്കുക",
 	"login": "പ്രവേശിക്കുക",
 	"logout": "ലോഗൗട്ട്",
@@ -14,13 +17,22 @@
 	"block-summary": "തടയലിന്റെ സംഗ്രഹം",
 	"block-sysop": "തടഞ്ഞ കാര്യനിർവാഹക(ൻ)",
 	"block-reason": "തടയലിന്റെ കാരണം",
+	"block-expiration": "കാലഹരണപ്പെടൽ തടയുക",
 	"choose-language": "ഭാഷ തിരഞ്ഞെടുക്കുക",
 	"option-display-images": "കാണിച്ചിരിക്കുന്ന ചിത്രങ്ങളിൽ നിന്നും തിരഞ്ഞെടുക്കുക",
+	"do-not-filter": "ഫിൽട്ടർ ചെയ്യരുത്",
+	"filter-by-category": "വിഭാഗം അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക",
+	"filter-by-uploader": "അപ്‌ലോഡർ അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക",
+	"source-category": "താഴെയുള്ള പട്ടികയുടെ ഉറവിടമായി നിങ്ങൾ ഉപയോഗിക്കാൻ ആഗ്രഹിക്കുന്ന വിഭാഗത്തിന്റെ പേര് നൽകുക.",
 	"helptext-category": "പൂർവ്വപദ വർഗ്ഗം ഉൾപ്പെടുത്തുക:",
+	"source-uploader": "നിങ്ങൾ വിവരിക്കാൻ ആഗ്രഹിക്കുന്ന ചിത്രങ്ങൾ അപ്‌ലോഡ് ചെയ്തയാളുടെ ഉപയോക്തൃനാമം നൽകുക.",
+	"helptext-uploader": "ഉപയോക്തൃനാമം, ഉപയോക്തൃ പ്രിഫിക്‌സ് ഉൾപ്പെടുത്തരുത്:",
+	"load-pictures": "ചിത്രങ്ങൾ ലോഡ് ചെയ്യുക",
 	"submit": "സമർപ്പിക്കുക",
 	"picture": "ചിത്രം",
 	"description": "വിവരണം",
 	"categories": "വർഗ്ഗങ്ങൾ",
+	"all-users": "സിഎംഡി ഉപയോഗിച്ചിട്ടുള്ള എല്ലാ ഉപയോക്താക്കളും",
 	"username": "ഉപയോക്തൃനാമം",
 	"number-of-edits": "മൊത്തം തിരുത്തുകളുടെ എണ്ണം",
 	"total": "ആകെ"

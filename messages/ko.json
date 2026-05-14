@@ -3,6 +3,7 @@
 		"authors": [
 			"Martin Urbanec",
 			"Revi",
+			"Tensama0415",
 			"Ykhwong",
 			"그냥기여자"
 		]
@@ -27,7 +28,7 @@
 	"source-category": "아래 표의 소스로 사용할 카테고리 이름을 입력하십시오.",
 	"helptext-category": "분류: 접두어 포함",
 	"source-uploader": "설명하고 싶은 사진을 올리는 업로더의 사용자 이름을 입력하세요.",
-	"helptext-uploader": "사용자이름 (사용자: 접두어를 포함하지 마십시오)",
+	"helptext-uploader": "사용자 이름 (사용자: 접두어를 포함하지 마십시오)",
 	"load-pictures": "사진 불러오기",
 	"submit": "제출",
 	"picture": "사진",
