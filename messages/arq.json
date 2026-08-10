@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"introduction-please-login": "من فضلك <a href=\"login\"> تسجيل الدخول</a>",
+	"introduction": "<strong>الوصف الكامل نتاع كومنس</strong> هي أداة تخلي المستعمل يوصف التصاوير والوسايط فـ <a href=\"https://commons.wikimedia.org\">ويكيميديا كومونس</a> بالجملة من غير ما يعدل كل تصويره وحده باليد. تقدر تلقي معلومات زيادة فـ <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">صفحتها فـ ويكيميديا كومونس</a>.",
+	"introduction-bugs": "إذا لقيت أي غلطه فهاد الأداة، تفضل <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">اصنع مهمة فـ ويكيميديا فابريكيتر</a>.",
+	"report-bug": "بلغ عن غلطه",
+	"login": "تسجيل تاع الدخول",
+	"logout": "خروج",
+	"users-using-tool": "المستعملين اللي يستعملو هاد الأداة",
+	"you-were-blocked": "حسابك تاع المستعمل تمنع",
+	"block-summary": "خلاصة تاع المنع تاعك",
+	"block-sysop": "الإداري اللي حبسك",
+	"block-reason": "سباب المنع",
+	"block-expiration": "تاريخ انتهاء المنع",
+	"choose-language": "ختار اللوغة",
+	"option-display-images": "ختار التصاوير اللي تبان",
+	"do-not-filter": "ما ترشحش",
+	"filter-by-category": "رشح حسب التصنيف",
+	"filter-by-uploader": "رشح حسب الرافع",
+	"source-category": "دخل اسم التصنيف الذي تريد تستعملو مصدر تاع الجدول التحته",
+	"helptext-category": "تضمين تصنيف البادئة:",
+	"source-uploader": "دخل اسم المستخدم تاع اللي رفع الصور اللي تحب تصفهم",
+	"helptext-uploader": "اسم المستخدم، ما تحطش البادئة User:",
+	"load-pictures": "حمّل التصاوير",
+	"submit": "ابعت",
+	"picture": "تصويره",
+	"description": "توصيفه",
+	"categories": "تصنيفات",
+	"all-users": "كل المستعملين اللي استعملو CMD من قبل",
+	"username": "اسم المستخدم",
+	"number-of-edits": "العُدّة تاع كامل التبدبلات",
+	"total": "المجموع"
+}
