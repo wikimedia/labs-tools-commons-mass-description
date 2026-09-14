@@ -9,7 +9,7 @@
 	"introduction-bugs": "Хьайна кху гӀирсан гӀалаташ карийнехь, дехар до, <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">йазде «Фабрикаторехь»</a>.",
 	"report-bug": "Хаийта гӀалатах",
 	"login": "ЧугӀо",
-	"logout": "Аравала(йала)",
+	"logout": "Ара",
 	"users-using-tool": "ХӀара гӀирс лелош болу декъашхой",
 	"you-were-blocked": "Хьан аккаунтан блоктоьхна",
 	"block-summary": "Блоктохарах хаам",
