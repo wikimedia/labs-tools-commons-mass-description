@@ -1,21 +1,37 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saraiki"
+			"Saraiki",
+			"Tauqeerkhansurani"
 		]
 	},
 	"introduction-please-login": "سوہݨا، <a href=\"لاگ ان تھیوو\">login</a>",
+	"introduction": "<strong>Commons Mass Description</strong> ہک اوزار ہے جیڑھا ورتیوݨ آلے کوں <a href=\"https://commons.wikimedia.org\">Wikimedia Commons</a> تے تصویراں اتے ملٹی میڈیا کوں اکٹھے وکھاݨ دی اجازت ݙیندا ہے بغیر ہر تصویر کوں دستی ترمیم کرݨ دے۔ تساں <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">ایندے Wikimedia Commons صفحے</a> تے مزید معلومات لبھ سڳدے ہو۔",
+	"introduction-bugs": "اڳر تساں کوں ایندے اوزار وچ کوئی بگ لبھے، تاں مہربانی کرکے <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">Wikimedia Phabricator تے ہک ٹاسک بݨاؤ</a>۔",
 	"report-bug": "بڳ دی رپورٹ کرو",
 	"login": "لاگ ان",
 	"logout": "لاگ آؤٹ",
+	"users-using-tool": "ایں اوزار دے ورتیوݨ آلے",
+	"you-were-blocked": "تہاݙے ورتیوݨ آلے کھاتے تے پابندی لڳا ݙتی ڳئی ہے",
+	"block-summary": "تہاݙی پابندی دا خلاصہ",
+	"block-sysop": "پابندی لاوݨ آلا سیساپ",
 	"block-reason": "پابندی دی وجہ",
+	"block-expiration": "پابندی دی مدت",
 	"choose-language": "زبان چݨو",
+	"option-display-images": "کھلیاں تصویراں دی ڳݨتری چُݨو",
 	"do-not-filter": "نہ چھاݨو",
+	"filter-by-category": "زمرے دے حساب نال فلٹر",
+	"filter-by-uploader": "اپ لوڈ کرݨ آلے دے حساب نال فلٹر",
+	"source-category": "او زمرے دا ناں لکھو جیندے کوں تساں ہیٹھلی میز دا ذریعہ بݨاوݨ چاہندے ہو",
+	"helptext-category": "Category: دا سابقہ شامل کرو",
+	"source-uploader": "او اپ لوڈ کرݨ آلے دا ورتیوݨ آلا ناں لکھو جیندی تصویراں کوں تساں وکھاݨ چاہندے ہو",
+	"helptext-uploader": "ورتیوݨ آلا ناں، User: دا سابقہ شامل نہ کرو",
 	"load-pictures": "تصویراں لوڈ کرو",
 	"submit": "جمع کرواؤ",
 	"picture": "تصویر",
 	"description": "تفصیل",
 	"categories": "ونکیاں",
+	"all-users": "سارے ورتیوݨ آلے جیہاں کہیں وی وقت CMD ورتے",
 	"username": "ورتݨ آلا ناں",
 	"number-of-edits": "ترامیم دی مجموعی تعداد",
 	"total": "مجموعہ"
