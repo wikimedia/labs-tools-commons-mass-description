@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"GwennoG",
 			"Robin Owain"
 		]
 	},
-	"introduction-please-login": "Mewngofnodwch <a href=\"login\">os gwelwch yn dda</a>",
+	"introduction-please-login": "Mewngofnodwch <a href=\"login\"></a>",
 	"introduction": "Pwrpas <strong>Commons Mass Description</strong> yw galluogi defnyddiwr i ddisgrifio lluniau a ffeiliau amlgyfrwng ar  <a href=\"https://commons.wikimedia.org\">Gomin Wicimedia</a> en massm heb orfod golygu pob un yn unigol. Ceir rhagor o fanylion <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">yma</a>.",
 	"introduction-bugs": "Os y cewch hyd i wallau yn y cod, gallwch <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">greu tasg ar Wikimedia Phabricator</a>.",
 	"report-bug": "Adrodd am wall",
