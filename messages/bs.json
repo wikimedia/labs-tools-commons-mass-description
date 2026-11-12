@@ -1,22 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"Palapa"
+			"Palapa",
+			"Panasko"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Prijavite se</a>",
+	"introduction": "<strong>Commons Massi Description</strong> je alat koji korisniku omogućava da opisuje slike i multimedije na a href=\"https://commons.wikimedia.org\">Wikimedia Commons-u</a> masovno bez potrebe za ručno uređivanjem svake slike. Više možete naći na <a href=\"https://commons.wikimedia.org/wiki/Commons:Commons_mass_description_tool\">njenoj stranici</a>.",
+	"introduction-bugs": "Ako pronađete bilo kakve greške u ovom alatu, slobodno <a href=\"https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=commons_mass_description\">napravite zadatak na Wikimedia Phabricatoru</a> .",
 	"report-bug": "Prijavi grešku",
 	"login": "Prijava",
 	"logout": "Odjava",
 	"users-using-tool": "Korisnici koji koriste ovaj alat",
 	"you-were-blocked": "Vaš korisnički račun je blokiran",
 	"block-summary": "Sažetak vašeg bloka",
+	"block-sysop": "Blokiranje sysopsa",
 	"block-reason": "Razlog za blokadu",
 	"block-expiration": "Rok isteka bloka",
 	"choose-language": "Odaberite jezik",
 	"option-display-images": "Odaberite broj prikazanih slika",
 	"do-not-filter": "Nemojte filtrirati",
 	"filter-by-category": "Filtrirajte po kategoriji",
+	"filter-by-uploader": "Filtriranje po uploaderu",
+	"source-category": "Unesite naziv kategorije koju želite koristiti kao izvor tabele ispod",
+	"helptext-category": "Uključite prefiks Kategorija:",
+	"source-uploader": "Unesite korisničko ime osobe koja je postavila sliku koju želite opisati",
+	"helptext-uploader": "Korisničko ime, ne uključujte prefiks Korisnik:",
 	"load-pictures": "Učitaj slike",
 	"submit": "Pošalji",
 	"picture": "Slika",
